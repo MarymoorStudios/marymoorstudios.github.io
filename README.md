@@ -1,3 +1,3 @@
 
-This is a compressed-commit version of
+Basic single-page website based on:
 [github.com/t413/SinglePaged](https://github.com/t413/SinglePaged)

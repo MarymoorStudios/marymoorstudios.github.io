@@ -1,8 +1,8 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
+Marymoor Studios &copy; 2025
 &mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
+[MarymoorStudios Core Library](https://github.com/MarymoorStudios/Core)
 &mdash;
-this site is [open source]({{ site.source_link }})
+Games (coming soon!)
 
