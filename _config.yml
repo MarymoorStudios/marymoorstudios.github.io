@@ -7,8 +7,8 @@ safe: false
 
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore, .gitattributes]
-permalink: / ## disables post output
-timezone: America/Los_Angeles
+permalink: /:title ## disables post output
+timezone: null
 lsi: false
 markdown: kramdown
 
@@ -17,7 +17,7 @@ markdown: kramdown
 title:       "Marymoor Studios"
 keywords:    "marymoorstudios, gaming, promises"
 description: "Marymoor Studios is a video game design startup."
-source_link: "https://github.com/MarymoorStudios/Core"
+source_link: "https://github.com/MarymoorStudios/marymoorstudios.github.io"
 favicon:     # "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
