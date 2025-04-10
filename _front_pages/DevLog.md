@@ -9,9 +9,9 @@ fa-icon: comments
 
 <div>
 <ul>
-  {% for post in site.posts limit: 3 %}
+  {% for post in site.posts | where: "categories", "devlog" | limit: 3 %}
     <li>
-      {{ post.date | date: "%Y-%m-%d" }} - <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}

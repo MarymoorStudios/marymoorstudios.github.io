@@ -7,9 +7,9 @@ color: white
 
 <div>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts | where: "categories", "devlog" %}
     <li>
-      {{ post.date | date: "%Y-%m-%d" }} - <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
