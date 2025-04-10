@@ -5,13 +5,17 @@ bg: black
 color: white
 fa-icon: comments
 ---
-# Posts
+# Recent Posts
 
 <div>
 <ul>
   {% for post in site.posts limit: 3 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.date | date: "%Y-%m-%d" }} - <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
-</ul></div>
+</ul>
+</div>
+
+[Read More](devlog.html)
