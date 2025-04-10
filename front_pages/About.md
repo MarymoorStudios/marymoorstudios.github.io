@@ -1,4 +1,5 @@
 ---
+order: 1
 title: "About"
 bg: white
 color: black

@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "Core"
 bg: orange
 color: black
@@ -11,8 +12,8 @@ The Marymoor Studios Core Libraries are a set of tools for developing concurrent
 
 ## Contact and Pricing
 Explore license purchase options at the [Marymoor Studios Online Store][store]. Or, contact Marymoor Studios, LLC at 
-info@marymoorstudios.com to inquire about additional license pricing and purchase options.  Both **free** non-commercial
-use licenses, and paid commercial licenses are available.
+[info@marymoorstudios.com](mail://info@marymoorstudios.com) to inquire about additional license pricing and purchase options.
+Both **free** non-commercial use licenses, and paid commercial licenses are available.
 
 ## The Core Libraries
 The Core Libraries are a suite of C# tools offering a unique, easy to use, correct-by-construction, approach to

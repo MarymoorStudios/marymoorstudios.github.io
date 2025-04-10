@@ -36,3 +36,7 @@ colors:
 kramdown:
   auto_ids:  false
 
+collections:
+  front_pages:
+    output: true
+    sort_by: order
