@@ -28,6 +28,8 @@
       </ul>
     </nav>
 
+  {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+  <div id="{{id}}" class="section p-{{id}}">
     <div class="container {{ page.style }}">
       {{ content }}
     </div>
@@ -38,6 +40,7 @@
         {{ foottext | markdownify }}
       </div>
     </div>
+  </div>
   </div>
 </body>
 </html>
