@@ -18,7 +18,6 @@
 </head>
 <body>
   <div id="main">
-
     <nav>
       <ul>
         {% for node in site.front_pages %}
@@ -28,10 +27,11 @@
       </ul>
     </nav>
 
-  {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-  <div id="{{id}}" class="section p-{{id}}">
-    <div class="container {{ page.style }}">
-      {{ content }}
+    {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+    <div id="{{id}}" class="section p-{{id}}">
+      <div class="container {{ page.style }}">
+        {{ content }}
+      </div>
     </div>
 
     <div id="footer" class="section text-white">
@@ -40,7 +40,6 @@
         {{ foottext | markdownify }}
       </div>
     </div>
-  </div>
   </div>
 </body>
 </html>
