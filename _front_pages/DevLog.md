@@ -18,4 +18,6 @@ fa-icon: comments
 </ul>
 </div>
 
-[Read More](devlog.html)
+<div style="text-align: center;">
+  <a href="devlog.html">Read More</a>
+</div>
