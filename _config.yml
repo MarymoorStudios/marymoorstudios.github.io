@@ -18,7 +18,7 @@ title:       "Marymoor Studios"
 keywords:    "marymoorstudios, gaming, promises"
 description: "Marymoor Studios is a video game design startup."
 source_link: "https://github.com/MarymoorStudios/marymoorstudios.github.io"
-favicon:     # "img/favicon.ico"
+favicon:     "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
