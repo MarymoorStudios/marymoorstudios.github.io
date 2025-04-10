@@ -8,12 +8,10 @@ fa-icon: comments
 # Posts
 
 <div>
-    {% for page in site.posts reverse %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        <div class="container {{ page.style }}">
-          {{ page.excerpt }}
-        </div>
-      </div>
-    {% endfor %}
-</div>
+<ul>
+  {% for post in site.posts limit: 3 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul></div>
