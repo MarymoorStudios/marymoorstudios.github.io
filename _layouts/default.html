@@ -7,14 +7,23 @@
 <body>
   <div id="main">
 
-    <nav><ul>
-      {% for node in site.front_pages %}
+    <nav>
+      <ul>
+        {% for node in site.front_pages %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
+        {% endfor %}
+      </ul>
+    </nav>
 
     {{ content }}
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        {% capture foottext %} {% include footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
+      </div>
+    </div>
   </div>
 </body>
 </html>
