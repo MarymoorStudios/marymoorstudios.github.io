@@ -5,9 +5,16 @@
   <title>{{ page.title }}</title>
 </head>
 <body>
-{% include header.html %}
-<main>
-  {{ content }}
-</main>
+  <div id="main">
+
+    <nav><ul>
+      {% for node in site.front_pages %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
+
+    {{ content }}
+  </div>
 </body>
 </html>
