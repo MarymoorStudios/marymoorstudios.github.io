@@ -12,7 +12,7 @@ fa-icon: comments
   {% for post in site.posts | where: "categories", "devlog" | limit: 3 %}
     <li>
       <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
-      <br>{{ post.excerpt | strip }}
+      <p style="line-height: 1.0;">{{ post.excerpt | strip }}</p>
     </li>
   {% endfor %}
 </ul>

@@ -10,7 +10,7 @@ color: white
   {% for post in site.posts | where: "categories", "devlog" %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
-      <br>{{ post.excerpt | strip }}
+      <p style="line-height: 1.0;">{{ post.excerpt | strip }}</p>
     </li>
   {% endfor %}
 </ul>
