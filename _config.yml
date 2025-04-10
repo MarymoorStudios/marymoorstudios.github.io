@@ -1,6 +1,6 @@
 ---
 
-port: 8888
+port: 4000
 host: 0.0.0.0
 safe: false
 
@@ -15,7 +15,7 @@ markdown: kramdown
 
 ### content configuration ###
 title:       "Marymoor Studios"
-keywords:    "Marymoor Studios, marymoorstudios.com, gaming, promises"
+keywords:    "marymoorstudios, gaming, promises"
 description: "Marymoor Studios is a video game design startup."
 source_link: "https://github.com/MarymoorStudios/Core"
 favicon:     # "img/favicon.ico"
