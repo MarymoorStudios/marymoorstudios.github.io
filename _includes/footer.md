@@ -6,4 +6,4 @@ Marymoor Studios &copy; 2025
 &mdash;
 Games (coming soon!)
 &mdash;
-Built: {{ "now" | date: "%Y-%m-%d %H:%M:%S %Z" }}
+{{ "now" | date: "%Y-%m-%d %H:%M:%S %Z" }}
