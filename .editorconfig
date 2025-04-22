@@ -1,0 +1,9 @@
+# All files
+[*]
+guidelines = 120
+guidelines_style = 1px dotted light green
+rewrap.wholeComment = true
+rewrap.doubleSentenceSpacing: true
+
+[md]
+rewrap.autoWrap.enabled = true
