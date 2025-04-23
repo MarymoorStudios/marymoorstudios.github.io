@@ -40,3 +40,6 @@ collections:
   front_pages:
     output: true
     sort_by: order
+  devlog:
+    output: true
+    sort_by: order

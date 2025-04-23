@@ -9,7 +9,7 @@ fa-icon: comments
 
 <div>
 <ul>
-  {% for post in site.posts | where: "categories", "devlog" | limit: 3 %}
+  {% for post in site.devlog | where: "featured", true | limit: 3 %}
     <li>
       <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
       <p style="line-height: 0.5;">{{ post.excerpt | strip }}</p>
