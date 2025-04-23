@@ -10,11 +10,11 @@ fa-icon: comments
 <div>
 <ul>
   {% for post in site.devlog reversed limit:3 %}
-    <li>
-      {% if post.featured != "true" %}
-        {% continue %}
-      {% endif %}
+    {% if post.featured != "true" %}
+      {% continue %}
+    {% endif %}
 
+    <li>
       {% if post.hideDate == "true" %}
         <a href="{{ post.url }}">{{ post.title }}</a>
       {% else %}        
