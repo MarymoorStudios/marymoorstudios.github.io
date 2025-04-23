@@ -43,3 +43,10 @@ collections:
   devlog:
     output: true
     sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: "devlog"
+    values:
+      layout: "devlog"
