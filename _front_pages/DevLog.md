@@ -13,7 +13,7 @@ fa-icon: comments
     <li>
       {% if post.featured != "true" %}
         {% continue %}
-      {% endif %}        
+      {% endif %}
 
       {% if post.hideDate == "true" %}
         <a href="{{ post.url }}">{{ post.title }}</a>
