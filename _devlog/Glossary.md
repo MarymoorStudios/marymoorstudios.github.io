@@ -9,16 +9,12 @@ excerpt: "Glossary of terms."
 featured: "false"
 hideDate: "true"
 ---
-
-<div style="text-align: center;">
 ## Glossary
-</div>
-
 The following contains a glossary of terms used in the documentation and blog entries.
 
 ### Terms:
 
-#### Activity
+#### **Activity**
 A logical thread of execution.  An activity is a logical representation of a single-threaded sequential flow of control
 within a larger program.  Programs can be a single activity but are usually comprised of more than one activity.
 Activities can form a hierarchy with parent activities creating one or more child activities.  Activities can also spawn
@@ -36,19 +32,19 @@ based on their experience with these previously existing abstractions. For examp
 abstraction in the C# Language Runtime.  A "Thread" class can be _one of the ways_ to implement an activity, but it is
 not the _only way_.
 
-#### Deterministic
+#### **Deterministic**
 Something that produces the same outcome given the same inputs.
 
 Deterministic software is much easier to write and test because its behavior is repeatable and predicable.  It exhibits
 the same behavior during every execution.
 
-#### Interleaving
+#### **Interleaving**
 A unique sequence of turns executed by a scheduler.  An interleaving is always a total order of the actual set of turns
 that were executed.  An interleaving only captures the sequence of operations on a single logical vCore.  There can be
 no specific total across the set of interleavings spanning all of the vCores in a multicore system, as some of the
 operation happen simultaneously, but a partial order could be specified.
 
-#### Nondeterministic
+#### **Nondeterministic**
 Something that may produce different outcomes even with the same inputs due to factors beyond than the inputs.
 
 Nondeterministic softwware can be harder to write and test because it exhibits different behavior during each execution.
@@ -56,14 +52,14 @@ Most software has some sources of nondeterminism, but it is a good principle to 
 to control the points in the software where they can introduce variability.  This helps isolation that variability
 making the remaining portions of the software easier to write and test.
 
-#### Scheduler
+#### **Scheduler**
 Something that decides which activity to execute next.  If there is only a single runnable activity then the choice is
 obvious.  When there are multiple runnable activities then the scheduler will use a _scheduling algorithm_ (or
 _scheduling policy_) to determine which actitivity to choose next.  The scheduler continues to make activity choices at
 each turn boundary until either: (1) all activities terminate (which ends the computation), or (2) external termination
 signals the scheduler to stop (such as process termination).
 
-#### Top of Turn
+#### **Top of Turn**
 A property of a computation such that no other application logic appears higher on stack than the currently executing
 stack frame.  The first stack frame entered by the Promise scheduler at the beginning of each new turn has this
 property.  A computation with Top-of-Turn is guaranteed that it cannot be reentering another abstraction when calling
@@ -83,7 +79,7 @@ by scheduling such an upcall in a future turn the abstraction has a more natural
 invariants _before_ the caller controlled code executes. Since the upcall then executes in a new turn that is itself
 Top-of-Turn, no reentrancy occurs and no invariants are violated.
 
-#### Turn
+#### **Turn**
 An bounded, finite, prompt computation that forms part of a larger activity.  A turn ends when the computation is either
 (1) interrupted (say, by the scheduler), (2) yields on its own (say, as part of cooperative scheduling), or (3) awaits
 on an awaitable (such as on IO, a Promise, or a Task).  In a single-threaded, cooperative scheduling environment, such
