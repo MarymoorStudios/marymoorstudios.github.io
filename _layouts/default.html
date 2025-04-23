@@ -29,6 +29,11 @@
 
     {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
     <div id="{{id}}" class="section p-{{id}}">
+      <style>
+        .container h1, .container h2, .container h3, .container h4 {
+          text-align: left;
+        }
+      </style>
       <div class="container {{ page.style }}">
         {{ content }}
       </div>
