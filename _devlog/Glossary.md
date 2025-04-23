@@ -10,7 +10,10 @@ featured: "false"
 hideDate: "true"
 ---
 
+<div style="text-align: center;">
 ## Glossary
+</div>
+
 The following contains a glossary of terms used in the documentation and blog entries.
 
 ### Terms:
