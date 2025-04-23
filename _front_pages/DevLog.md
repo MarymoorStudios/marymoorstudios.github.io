@@ -9,9 +9,9 @@ fa-icon: comments
 
 <div>
 <ul>
-  {% for post in site.devlog | reverse | where: "featured", "true" | limit: 3 %}
+  {% for post in site.devlog | reverse | where: post.featured | limit: 3 %}
     <li>
-      {% if post.hideDate == true %}
+      {% if post.hideDate == "true" %}
         <a href="{{ post.url }}">{{ post.title }}</a>
       {% else %}        
         <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
