@@ -4,7 +4,7 @@ title: "Glossary"
 date: 2025-04-10 12:00:00
 bg: white
 color: black
-style: left
+style: "left"
 excerpt: "Glossary of terms."
 featured: "false"
 hideDate: "true"
