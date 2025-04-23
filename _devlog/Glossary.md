@@ -6,8 +6,8 @@ bg: white
 color: black
 style: left
 excerpt: "Glossary of terms."
-featured: false
-includeDate: false
+featured: "false"
+hideDate: "true"
 ---
 
 ## Glossary
