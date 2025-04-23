@@ -9,7 +9,11 @@ color: white
 <ul>
   {% for post in site.devlog | reverse %}
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
+      {% if post.includeDate == true %}
+        <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
+      {% else %}        
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}        
       <br>{{ post.excerpt | strip }}
     </li>
   {% endfor %}
