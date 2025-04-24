@@ -9,7 +9,7 @@ fa-icon: comments
 
 <div>
 <ul>
-  {% for post in site.devlog reversed limit:3 %}
+  {% for post in site.devlog reverse limit:3 %}
     {% if post.featured != "true" %}
       {% continue %}
     {% endif %}

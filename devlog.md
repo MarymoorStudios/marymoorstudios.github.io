@@ -7,7 +7,7 @@ color: white
 
 <div>
 <ul>
-  {% for post in site.devlog reversed %}
+  {% for post in site.devlog reverse %}
     <li>
       {% if post.hideDate == "true" %}
         <a href="{{ post.url }}">{{ post.title }}</a>
