@@ -98,4 +98,4 @@ Write us with [feedback][feedback].
 
 [MSC]: https://github.com/MarymoorStudios/Core
 [all-posts]: /devlog.html
-[feedback]: email://feedback@marymoorstudios.com
+[feedback]: mailto:feedback@marymoorstudios.com
