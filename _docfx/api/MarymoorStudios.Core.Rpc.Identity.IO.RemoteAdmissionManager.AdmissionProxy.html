@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RemoteAdmissionManager.AdmissionProxy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RemoteAdmissionManager.AdmissionProxy ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy">
+
+
+
+  <h1 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy" class="text-break">
+Class RemoteAdmissionManager.AdmissionProxy  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.html">Rpc</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.html">Identity</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Rpc.Identity.IO.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class RemoteAdmissionManager.AdmissionProxy : Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;, IProxy&lt;RemoteAdmissionManager.AdmissionProxy, RemoteAdmissionManager.AdmissionServer&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Rpc/Proxy.cs">Proxy</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</div>
+      <div><span class="xref">RemoteAdmissionManager.AdmissionProxy</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Rpc/Proxy.cs">IProxy</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a>, <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_Sync">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.Sync()</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_GetRemoteIdentity">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.GetRemoteIdentity()</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_AppendOne_MarymoorStudios_Core_Promises_ResolverTurn__0__">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.AppendOne(ResolverTurn&lt;RemoteAdmissionManager.AdmissionServer&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_IsFailed">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.IsFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_IsResolved">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.IsResolved</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.Proxy-1.html#MarymoorStudios_Core_Rpc_Proxy_1_Failure">Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt;.Failure</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_MarymoorStudios_Core_Promises_Promise_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor(MarymoorStudios.Core.Promises.Promise{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  AdmissionProxy(Promise&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a forwarded promise whose outcome will be the same as <code class="paramref">p</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdmissionProxy(Promise&lt;RemoteAdmissionManager.AdmissionServer&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_MarymoorStudios_Core_Promises_Resolver_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor(MarymoorStudios.Core.Promises.Resolver{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  AdmissionProxy(Resolver&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an unresolved promise whose future outcome is defined by <code class="paramref">r</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdmissionProxy(Resolver&lt;RemoteAdmissionManager.AdmissionServer&gt; r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/Resolver.cs">Resolver</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor(MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer)">
+  AdmissionProxy(AdmissionServer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a successfully resolved promise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdmissionProxy(RemoteAdmissionManager.AdmissionServer value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_MarymoorStudios_Core_Rpc_Proxy_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor(MarymoorStudios.Core.Rpc.Proxy{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  AdmissionProxy(Proxy&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a forwarded promise whose outcome will be the same as <code class="paramref">p</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdmissionProxy(Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Rpc/Proxy.cs">Proxy</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy__ctor_System_Exception_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.#ctor(System.Exception)">
+  AdmissionProxy(Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a failed promise whose outcome is <code class="paramref">ex</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdmissionProxy(Exception ex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_OnAdmit_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.OnAdmit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_OnAdmit_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_Collections_Generic_IEnumerable_MarymoorStudios_Core_Rpc_Identity_Endorsement__System_DateTime_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.OnAdmit(MarymoorStudios.Core.Rpc.Identity.UserIdentity,System.Collections.Generic.IEnumerable{MarymoorStudios.Core.Rpc.Identity.Endorsement},System.DateTime)">
+  OnAdmit(UserIdentity, IEnumerable&lt;Endorsement&gt;, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteAdmissionManager.AdmissionOutcome&gt; OnAdmit(UserIdentity identity, IEnumerable&lt;Endorsement&gt; endorsements, DateTime timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd></dd>
+    <dt><code>endorsements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Endorsement.html">Endorsement</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcome.html">AdmissionOutcome</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_op_Implicit_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.op_Implicit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_op_Implicit_MarymoorStudios_Core_Promises_Promise_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy___MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.op_Implicit(MarymoorStudios.Core.Promises.Promise{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy})~MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy">
+  implicit operator AdmissionProxy(Promise&lt;AdmissionProxy&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implicit conversion to its syntax.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator RemoteAdmissionManager.AdmissionProxy(Promise&lt;RemoteAdmissionManager.AdmissionProxy&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_MarymoorStudios_Core_Promises_Promise_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create(MarymoorStudios.Core.Promises.Promise{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  Create(Promise&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a forwarded promise whose outcome will be the same as <code class="paramref">p</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RemoteAdmissionManager.AdmissionProxy Create(Promise&lt;RemoteAdmissionManager.AdmissionServer&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_MarymoorStudios_Core_Promises_Resolver_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create(MarymoorStudios.Core.Promises.Resolver{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  Create(Resolver&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an unresolved promise whose future outcome is defined by <code class="paramref">r</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RemoteAdmissionManager.AdmissionProxy Create(Resolver&lt;RemoteAdmissionManager.AdmissionServer&gt; r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Promises/Resolver.cs">Resolver</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create(MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer)">
+  Create(AdmissionServer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a successfully resolved promise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RemoteAdmissionManager.AdmissionProxy Create(RemoteAdmissionManager.AdmissionServer value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_MarymoorStudios_Core_Rpc_Proxy_MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionServer__" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create(MarymoorStudios.Core.Rpc.Proxy{MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer})">
+  Create(Proxy&lt;AdmissionServer&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a forwarded promise whose outcome will be the same as <code class="paramref">p</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RemoteAdmissionManager.AdmissionProxy Create(Proxy&lt;RemoteAdmissionManager.AdmissionServer&gt; p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=60ba276f678d66e94593fcb78c94b7f44df9f2cb&amp;path=/Core/MarymoorStudios.Core.Rpc/Proxy.cs">Proxy</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html">AdmissionServer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_IO_RemoteAdmissionManager_AdmissionProxy_Create_System_Exception_" data-uid="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.Create(System.Exception)">
+  Create(Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a failed promise whose outcome is <code class="paramref">ex</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RemoteAdmissionManager.AdmissionProxy Create(Exception ex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html">RemoteAdmissionManager</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html">AdmissionProxy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UserIdentityCollection </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UserIdentityCollection ">
+      
+      <meta name="description" content="An unordered set of .">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection">
+
+
+
+  <h1 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection" class="text-break">
+Class UserIdentityCollection  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.html">Rpc</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.html">Identity</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Rpc.Identity.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An unordered set of <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+public sealed class UserIdentityCollection : IEnumerable&lt;UserIdentity&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UserIdentityCollection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection__ctor" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.#ctor">
+  UserIdentityCollection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an empty collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserIdentityCollection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection__ctor_System_Collections_Generic_IEnumerable_MarymoorStudios_Core_Rpc_Identity_UserIdentity__" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.#ctor(System.Collections.Generic.IEnumerable{MarymoorStudios.Core.Rpc.Identity.UserIdentity})">
+  UserIdentityCollection(IEnumerable&lt;UserIdentity&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a collection prepopulated with a set of initial members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserIdentityCollection(IEnumerable&lt;UserIdentity&gt; members)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>members</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</dt>
+    <dd><p>The initial members.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Count_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Count*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Count" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of entries in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Members_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Members*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Members" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Members">
+  Members
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The members of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public IEnumerable&lt;UserIdentity&gt; Members { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Add_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Add*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Add_MarymoorStudios_Core_Rpc_Identity_UserIdentity_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Add(MarymoorStudios.Core.Rpc.Identity.UserIdentity)">
+  Add(UserIdentity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a user identity to the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(UserIdentity identity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd><p>The user identity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if successfully added, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_AddOrUpdate_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.AddOrUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_AddOrUpdate_MarymoorStudios_Core_Rpc_Identity_UserIdentity_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.AddOrUpdate(MarymoorStudios.Core.Rpc.Identity.UserIdentity)">
+  AddOrUpdate(UserIdentity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds or updates a user identity to the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddOrUpdate(UserIdentity identity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd><p>The user identity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if updated, false if added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Contains_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Contains*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Contains_MarymoorStudios_Core_Rpc_Identity_UserIdentity_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Contains(MarymoorStudios.Core.Rpc.Identity.UserIdentity)">
+  Contains(UserIdentity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the identity is a member of the collection, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(UserIdentity identity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_GetEnumerator_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.GetEnumerator*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_GetEnumerator" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;UserIdentity&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Remove_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Remove*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentityCollection_Remove_MarymoorStudios_Core_Rpc_Identity_UserIdentity_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.Remove(MarymoorStudios.Core.Rpc.Identity.UserIdentity)">
+  Remove(UserIdentity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a user identity from the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(UserIdentity identity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd><p>The user identity.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if removed, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

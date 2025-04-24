@@ -1,0 +1,3388 @@
+{
+  "source_base_path": "D:/MarymoorStudios/Core/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.CertificateExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.CertificateExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.CertificateExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Contract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Contract.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Contract",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Contract.yml\" sourcestartlinenumber=\"1\">Used to check contract invariants in either Debug-only (Assert) or Debug and Release\n(Requires, Invariant, etc.). Contract failures will attempt to break into the debugger, will trace\nthe error, and will throw a ContractViolationException.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Crc32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Crc32.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Crc32",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Crc32.yml\" sourcestartlinenumber=\"1\">CRC Generator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.EnumTraits-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.EnumTraits-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.EnumTraits<TEnum>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.GcNotify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.GcNotify.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.GcNotify",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.GcNotify.yml\" sourcestartlinenumber=\"1\">Notifies when garbage collection occurs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Linear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Linear.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Linear",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.LinqExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.LinqExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.LinqExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.MathExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.MathExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.MathExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.MemoryPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.MemoryPool-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.MemoryPool<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.MemoryPool-1.yml\" sourcestartlinenumber=\"1\">A pool of memory blocks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.MurmurHash3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.MurmurHash3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.MurmurHash3",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.MurmurHash3.yml\" sourcestartlinenumber=\"1\">MurmurHash3 for x64 (Little Endian).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.OwnedMem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.OwnedMem-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.OwnedMem<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.OwnedMem-1.yml\" sourcestartlinenumber=\"1\">A capability for the exclusive ownership rights to an underlying memory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.AResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.AResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.AResolver",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.AResolver.yml\" sourcestartlinenumber=\"1\">Abstract base class for <xref href=\"MarymoorStudios.Core.Promises.Resolver%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.AutoResetEventAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.AutoResetEventAsync.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.AutoResetEventAsync",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.AutoResetEventAsync.yml\" sourcestartlinenumber=\"1\">An eventual auto-reset event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ArgumentAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ArgumentAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.ArgumentAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.ArgumentAttribute.yml\" sourcestartlinenumber=\"1\">Defines a command line command group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandAttribute.yml\" sourcestartlinenumber=\"1\">Defines a command line command group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandGroupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandGroupAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandGroupAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandGroupAttribute.yml\" sourcestartlinenumber=\"1\">Defines a command line command group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.yml\" sourcestartlinenumber=\"1\">Extensions for <xref href=\"System.CommandLine.Builder.CommandLineBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.yml\" sourcestartlinenumber=\"1\">Extends <xref href=\"System.CommandLine\" data-throw-if-not-resolved=\"false\"></xref> with support for Promise-based handlers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.yml\" sourcestartlinenumber=\"1\">Extends <xref href=\"System.CommandLine\" data-throw-if-not-resolved=\"false\"></xref> with support for Promise-based handlers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.OptionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.OptionAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.OptionAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.OptionAttribute.yml\" sourcestartlinenumber=\"1\">Defines a command line command group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.yml\" sourcestartlinenumber=\"1\">Custom binder for binding through a <xref href=\"System.CommandLine.Binding.BindingContext\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.CommandLine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.DiagnosticId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.DiagnosticId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.DiagnosticId",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.DiagnosticId.yml\" sourcestartlinenumber=\"1\">A unique id for diagnostic purposes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IIPromiseEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IIPromiseEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IIPromiseEnumerator<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.IIPromiseEnumerator-1.yml\" sourcestartlinenumber=\"1\">Supports a simple asynchronous iteration over a generic collection.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.FileIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.FileIO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.FileIO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.FileProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.FileProxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.FileProxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.FileProxyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.FileProxyExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.FileProxyExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.FileServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.FileServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.FileServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.IFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.IFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.IFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.RecordIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.RecordIO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO.RecordIO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IPromiseDisposable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IPromiseDisposable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IPromiseDisposable",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.IPromiseDisposable.yml\" sourcestartlinenumber=\"1\">A promise-based replacement for <xref href=\"System.IAsyncDisposable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.IPromiseEnumerable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.IPromiseEnumerable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.IPromiseEnumerable<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.IPromiseEnumerable-1.yml\" sourcestartlinenumber=\"1\">Factory for asynchronous enumerators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Joiner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Joiner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Joiner",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Joiner.yml\" sourcestartlinenumber=\"1\">Joins multiple promises together.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Promise-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Promise-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Promise<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Promise-1.yml\" sourcestartlinenumber=\"1\">A representation of the future outcome of a computation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Promise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Promise.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Promise",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Promise.yml\" sourcestartlinenumber=\"1\">A representation of the future outcome of a computation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseAwaiter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseAwaiter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseAwaiter<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.PromiseAwaiter-1.yml\" sourcestartlinenumber=\"1\">Enables the <code>await</code> keyword for <xref href=\"MarymoorStudios.Core.Promises.Promise%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseAwaiter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseAwaiter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseAwaiter",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.PromiseAwaiter.yml\" sourcestartlinenumber=\"1\">Enables the <code>await</code> keyword for <xref href=\"MarymoorStudios.Core.Promises.Promise\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseJoin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseJoin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseJoin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseMethodBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseMethodBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseMethodBuilder<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.PromiseMethodBuilder-1.yml\" sourcestartlinenumber=\"1\">Enables the <code>async</code> keyword for methods that return a <xref href=\"MarymoorStudios.Core.Promises.Promise%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseMethodBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseMethodBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseMethodBuilder",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.PromiseMethodBuilder.yml\" sourcestartlinenumber=\"1\">Enables the <code>async</code> keyword for methods that return a <xref href=\"MarymoorStudios.Core.Promises.Promise\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseOnCompleted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseOnCompleted.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseOnCompleted",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseWhen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseWhen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseWhen",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.PromiseWithCancellation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.PromiseWithCancellation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.PromiseWithCancellation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Resolver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Resolver-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Resolver<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Resolver-1.yml\" sourcestartlinenumber=\"1\">A capability for resolving an eventual computation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.ResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.ResolverExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.ResolverExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.ResolverExtensions.yml\" sourcestartlinenumber=\"1\">Extensions for <xref href=\"MarymoorStudios.Core.Promises.Resolver%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.ResolverTurn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.ResolverTurn-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.ResolverTurn<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.RingBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.RingBuffer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.RingBuffer<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.RingBuffer-1.yml\" sourcestartlinenumber=\"1\">A fixed-sized, shared-memory, <xref href=\"MarymoorStudios.Core.Promises.Transport%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.SafeDispose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.SafeDispose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.SafeDispose",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.SafeDispose.yml\" sourcestartlinenumber=\"1\">Utilities to safely dispose generic values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Scheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Scheduler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Scheduler",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Scheduler.yml\" sourcestartlinenumber=\"1\">A scheduler of turns.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Sip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Sip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Sip",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Sip.yml\" sourcestartlinenumber=\"1\">A Software Isolated Process (SIP).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Transport-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Transport-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Transport<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Transport-1.yml\" sourcestartlinenumber=\"1\">A FIFO queue of ordered discrete items.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.TransportFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.TransportFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.TransportFlags",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.TransportFlags.yml\" sourcestartlinenumber=\"1\">Status flags for a <xref href=\"MarymoorStudios.Core.Promises.Transport%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Turn.TurnEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Turn.TurnEnumerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Turn.TurnEnumerator",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Turn.TurnEnumerator.yml\" sourcestartlinenumber=\"1\">An enumerator for a <xref href=\"MarymoorStudios.Core.Promises.TurnList\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Turn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Turn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Turn",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Turn.yml\" sourcestartlinenumber=\"1\">The basic unit of work in the scheduler.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.TurnList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.TurnList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.TurnList",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.TurnList.yml\" sourcestartlinenumber=\"1\">A circular, singularly-linked list of turns.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.Void.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.Void.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.Void",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.Void.yml\" sourcestartlinenumber=\"1\">A marker type that reifies void.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.RandomExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.RandomExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.RandomExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.ReadLockScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.ReadLockScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.ReadLockScope",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.ReadLockScope.yml\" sourcestartlinenumber=\"1\">A read-lock scope for use with <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ABytesRpcMessage-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ABytesRpcMessage-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ABytesRpcMessage<TMessage, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.ABytesRpcMessage-2.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated data-returning message types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ADataRpcMessage-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ADataRpcMessage-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ADataRpcMessage<TMessage, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.ADataRpcMessage-2.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated void-returning message types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ADataRpcMessage-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ADataRpcMessage-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ADataRpcMessage<TMessage, TResult, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.ADataRpcMessage-3.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated data-returning message types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.AProxyRpcMessage-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.AProxyRpcMessage-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.AProxyRpcMessage<TMessage, TReturnProxy, TReturnServer, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.AProxyRpcMessage-4.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated proxy-returning message types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ARpcMessage-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ARpcMessage-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ARpcMessage<TServer>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ASequenceRpcMessage-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ASequenceRpcMessage-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ASequenceRpcMessage<TMessage, TItem, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.ASequenceRpcMessage-3.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated data-returning message types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.AServer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.AServer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.AServer<TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.AServer-1.yml\" sourcestartlinenumber=\"1\">Abstract base class for all eventual server types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.BackgroundSip-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.BackgroundSip-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.BackgroundSip<TChildProxy, TChildServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.BackgroundSip-2.yml\" sourcestartlinenumber=\"1\">A Software Isolated Process (<xref href=\"MarymoorStudios.Core.Promises.Sip\" data-throw-if-not-resolved=\"false\"></xref>) that runs in a background thread.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Bytes.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Bytes.Writer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Bytes.Writer",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Bytes.Writer.yml\" sourcestartlinenumber=\"1\">The writer capability for a <xref href=\"MarymoorStudios.Core.Rpc.Bytes\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Bytes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Bytes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Bytes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.BytesSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.BytesSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.BytesSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.CommException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.CommException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.CommException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.CommExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.CommExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.CommExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.CommId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.CommId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.CommId",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.CommId.yml\" sourcestartlinenumber=\"1\">A unique id that represents an object (local or remote) to the channel.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.CommIdSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.CommIdSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.CommIdSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.CommProtocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.CommProtocol.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.CommProtocol",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.EventualAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.EventualAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.EventualAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.EventualType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.EventualType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.EventualType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AbortedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AbortedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.AbortedException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.AbortedException.yml\" sourcestartlinenumber=\"1\">The operation has been terminated ungracefully.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AbortedExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AbortedExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.AbortedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsException.yml\" sourcestartlinenumber=\"1\">The operation failed because the target already exists.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.AlreadyExistsExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceException.yml\" sourcestartlinenumber=\"1\">A sequence has been read past its EOS.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionException.yml\" sourcestartlinenumber=\"1\">The operation was rejected because the system is not in a state required for the operation's\nexecution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.FailedPreconditionExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesException.yml\" sourcestartlinenumber=\"1\">The needed resource are not available to complete the operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.InsufficientResourcesExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.InvalidArgumentExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.NotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.NotFoundException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.NotFoundException.yml\" sourcestartlinenumber=\"1\">The operation failed because the target could not be found.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.NotFoundExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.NotFoundExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.NotFoundExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.Test2Exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.Test2Exception.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.Test2Exception",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.Test2Exception.yml\" sourcestartlinenumber=\"1\">An exception used in testing for type-based error discrimination.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.Test2ExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.Test2ExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.Test2ExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.TestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.TestException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.TestException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.TestException.yml\" sourcestartlinenumber=\"1\">An exception used in testing for type-based error discrimination.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.TestExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.TestExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.TestExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedException.yml\" sourcestartlinenumber=\"1\">Insufficient authentication credentials to perform the requested operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnauthenticatedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnavailableException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.yml\" sourcestartlinenumber=\"1\">The service is currently unavailable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnavailableExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnavailableExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnavailableExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnimplementedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnimplementedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnimplementedException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.UnimplementedException.yml\" sourcestartlinenumber=\"1\">The operation is not implemented, not supported or disabled.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnimplementedExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UnimplementedExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UnimplementedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UninitializedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UninitializedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UninitializedException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.UninitializedException.yml\" sourcestartlinenumber=\"1\">Exception thrown when an uninitialized structure is used.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UninitializedExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.UninitializedExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.UninitializedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.IByRefRemotable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.IByRefRemotable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.IByRefRemotable",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.IByRefRemotable.yml\" sourcestartlinenumber=\"1\">Objects that are remoted by reference (instead of by value).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.Descriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.Descriptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.IMetadata.Descriptor",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.IMetadata.Descriptor.yml\" sourcestartlinenumber=\"1\">The base type for all late-bound capability descriptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.DescriptorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.DescriptorSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.IMetadata.DescriptorSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.IMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.IMetadata",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.IMetadata.yml\" sourcestartlinenumber=\"1\">A general mechanism for publishing late-bound eventual capabilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.INothing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.INothing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.INothing",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.INothing.yml\" sourcestartlinenumber=\"1\">Empty eventual interface that grants no capabilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.IProxy-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.IProxy-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.IProxy<TProxy, TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.IProxy-2.yml\" sourcestartlinenumber=\"1\">Interface that provides generic constraints.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicy",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicy.yml\" sourcestartlinenumber=\"1\">The admission policy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicySerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicySerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.AdmissionManager.AdmissionPolicySerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.AdmissionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.AdmissionManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.CertificateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.CertificateManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.CertificateManager",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.CertificateManager.yml\" sourcestartlinenumber=\"1\">Manages the certificates that provide identity to others.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.Endorsement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.Endorsement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.Endorsement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.EndorsementCollection",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.EndorsementCollection.yml\" sourcestartlinenumber=\"1\">An unordered set of <xref href=\"MarymoorStudios.Core.Rpc.Identity.Endorsement\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementCollectionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementCollectionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.EndorsementCollectionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.EndorsementSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.EndorsementSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IAdmissionManager-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IAdmissionManager-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IAdmissionManager<TAdmissionManager, TArg>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.IAdmissionManager-2.yml\" sourcestartlinenumber=\"1\">Interface that provides generic constraints.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.AdmissionPolicyFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.AdmissionPolicyFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.AdmissionPolicyFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcome.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcome",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcome.yml\" sourcestartlinenumber=\"1\">The outcome of an admission decision.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcomeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcomeSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionOutcomeSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionProxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.AdmissionServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.IAdmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.IAdmission.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.IAdmission",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.IAdmission.yml\" sourcestartlinenumber=\"1\">An eventual interface that can be implemented to received remote admission requests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.IO.RemoteAdmissionManager.yml\" sourcestartlinenumber=\"1\">An <xref href=\"MarymoorStudios.Core.Rpc.Identity.AdmissionManager\" data-throw-if-not-resolved=\"false\"></xref> that delegates admission decisions through a proxy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.IO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.yml\" sourcestartlinenumber=\"1\">An implementation of <xref href=\"MarymoorStudios.Core.Rpc.Identity.CertificateManager\" data-throw-if-not-resolved=\"false\"></xref> that stores its certificates in an\n<xref href=\"System.Security.Cryptography.X509Certificates.X509Store\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentity",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.yml\" sourcestartlinenumber=\"1\">The identity of an RPC peer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.UserIdentityCollection.yml\" sourcestartlinenumber=\"1\">An unordered set of <xref href=\"MarymoorStudios.Core.Rpc.Identity.UserIdentity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityCollectionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityCollectionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentityCollectionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.Entry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.Entry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.UserIdentityRecencyList.yml\" sourcestartlinenumber=\"1\">A set of <xref href=\"MarymoorStudios.Core.Rpc.Identity.UserIdentity\" data-throw-if-not-resolved=\"false\"></xref> that keeps track of accesses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.MetadataProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.MetadataProxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.MetadataProxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.MetadataPublisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.MetadataPublisher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.MetadataPublisher",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.MetadataPublisher.yml\" sourcestartlinenumber=\"1\">An implementation of <xref href=\"MarymoorStudios.Core.Rpc.IMetadata\" data-throw-if-not-resolved=\"false\"></xref> from a static, potentially non-unique, set of\ncapabilities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.MetadataServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.MetadataServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.MetadataServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.MethodId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.MethodId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.MethodId",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.MethodId.yml\" sourcestartlinenumber=\"1\">An identifier for a unique method within a remotable type hierarchy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpFactory-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Net.TcpFactory<TRoot>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Net.TcpFactory-1.yml\" sourcestartlinenumber=\"1\">Establishes a scope for incoming and outgoing TCP-based channels.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpFactoryConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpFactoryConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Net.TcpFactoryConfig",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Net.TcpFactoryConfig.yml\" sourcestartlinenumber=\"1\">Configures policy for <xref href=\"MarymoorStudios.Core.Rpc.Net.TcpFactory%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpListener.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Net.TcpListener",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Net.TcpListener.yml\" sourcestartlinenumber=\"1\">Manages the lifetime of a listening endpoint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Net.TcpTransport.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Net.TcpTransport",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Net.TcpTransport.yml\" sourcestartlinenumber=\"1\">Transport that acts as an adapter between a <xref href=\"MarymoorStudios.Core.Rpc.CommChannel\" data-throw-if-not-resolved=\"false\"></xref> and a <xref href=\"System.Net.Sockets.Socket\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Net.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Net.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Net",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.NothingProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.NothingProxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.NothingProxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.NothingServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.NothingServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.NothingServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Pipe-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Pipe-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Pipe<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Pipe-1.yml\" sourcestartlinenumber=\"1\">A unidirectional flow of items.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PipeExtensions.PipeReaderEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PipeExtensions.PipeReaderEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PipeExtensions.PipeReaderEnumerator<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.PipeExtensions.PipeReaderEnumerator-1.yml\" sourcestartlinenumber=\"1\">An enumerator for a <xref href=\"MarymoorStudios.Core.Rpc.PipeReader%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PipeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PipeExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PipeExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.PipeExtensions.yml\" sourcestartlinenumber=\"1\">Provides convenience extensions for <xref href=\"MarymoorStudios.Core.Rpc.Pipe%601\" data-throw-if-not-resolved=\"false\"></xref> and its related classes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PipeQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PipeQueue-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PipeQueue<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PipeReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PipeReader-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PipeReader<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.PipeReader-1.yml\" sourcestartlinenumber=\"1\">Capability for reading an ordered sequence of items from a pipe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PipeWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PipeWriter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PipeWriter<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.PipeWriter-1.yml\" sourcestartlinenumber=\"1\">Capability for writing an ordered sequence of items to a pipe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PromiseSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PromiseSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PromiseSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.PromiseSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.PromiseSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.PromiseSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ProtocolViolationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ProtocolViolationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ProtocolViolationException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ProtocolViolationExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ProtocolViolationExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ProtocolViolationExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Proxy-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Proxy-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Proxy<TServer>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Proxy-1.yml\" sourcestartlinenumber=\"1\">Abstract base class for all generated proxy types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Proxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Proxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Proxy",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Proxy.yml\" sourcestartlinenumber=\"1\">Static helpers for mapping between TProxy and TServer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ProxySerializer-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ProxySerializer-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ProxySerializer<TProxy, TServer>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.RemotedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.RemotedException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.RemotedException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.RemotedException.yml\" sourcestartlinenumber=\"1\">An exception that was transmitted across a <xref href=\"MarymoorStudios.Core.Rpc.CommChannel\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.RemotedExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.RemotedExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.RemotedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.ResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.ResolverExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.ResolverExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.ResolverExtensions.yml\" sourcestartlinenumber=\"1\">Extensions for <xref href=\"MarymoorStudios.Core.Promises.Resolver%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.SequenceEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.SequenceEnumerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Sequence<T>.SequenceEnumerator",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Sequence-1.SequenceEnumerator.yml\" sourcestartlinenumber=\"1\">An enumerator for a <xref href=\"MarymoorStudios.Core.Rpc.Sequence%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.Writer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Sequence<T>.Writer",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Sequence-1.Writer.yml\" sourcestartlinenumber=\"1\">The writer capability for a <xref href=\"MarymoorStudios.Core.Rpc.Sequence%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Sequence-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Sequence<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Sequence-1.yml\" sourcestartlinenumber=\"1\">Provides iterators for <xref href=\"MarymoorStudios.Core.Rpc.Sequence%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SequenceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.SequenceExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.SequenceExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.SequenceExtensions.yml\" sourcestartlinenumber=\"1\">Provides convenience extensions for <xref href=\"MarymoorStudios.Core.Rpc.Sequence%601\" data-throw-if-not-resolved=\"false\"></xref> and its related classes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SequenceSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.SequenceSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.SequenceSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.SyncMessage<TServer>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.SyncMessage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessageSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessageSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.SyncMessageSerializer<TServer>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.ArrayMemoryResizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.ArrayMemoryResizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.ArrayMemoryResizer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.DataContractAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.DataContractAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.DataContractAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.DataContractSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.DataContractSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.DataContractSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.DataMemberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.DataMemberAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.DataMemberAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.IMemoryResizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.IMemoryResizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.IMemoryResizer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.RecordVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.RecordVisitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.RecordVisitor",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Serialization.RecordVisitor.yml\" sourcestartlinenumber=\"1\">Visitor that can walk the structure of any serialized record.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.SerializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.SerializationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.SerializationException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Serialization.SerializationException.yml\" sourcestartlinenumber=\"1\">Exception thrown during serialization or deserialization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.SerializationExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.SerializationExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.SerializationExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ArraySerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ArraySerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ArraySerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.BooleanSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.BooleanSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.BooleanSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.CollectionsSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.CollectionsSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.CollectionsSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.DateTimeSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.DateTimeSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.DateTimeSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.DecimalSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.DecimalSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.DecimalSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.DefaultSerializationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.DefaultSerializationContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.DefaultSerializationContext",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Serialization.System.DefaultSerializationContext.yml\" sourcestartlinenumber=\"1\">Default <xref href=\"MarymoorStudios.Core.Serialization.System.SerializationContext\" data-throw-if-not-resolved=\"false\"></xref> that does nothing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Float32Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Float32Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Float32Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Float64Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Float64Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Float64Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.GuidSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.GuidSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.GuidSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.IDerivedSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.IDerivedSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.IDerivedSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.IDerivedSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.IDerivedSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.IDerivedSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.IEnumerableSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.IEnumerableSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.IEnumerableSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.IPAddressSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.IPAddressSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.IPAddressSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.IPEndPointSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.IPEndPointSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.IPEndPointSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Int16Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Int16Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Int16Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Int32Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Int32Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Int32Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Int64Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Int64Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Int64Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Int8Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Int8Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Int8Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ListSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ListSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ListSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.MemorySerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.MemorySerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.MemorySerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.NullableSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.NullableSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.NullableSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ObjectSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ObjectSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ObjectSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.OwnedMemSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.OwnedMemSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.OwnedMemSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlyMemorySerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlyMemorySerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ReadOnlyMemorySerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlySpanSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ReadOnlySpanSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ReadOnlySpanSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.RowBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.RowBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.RowBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.SerializationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.SerializationContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.SerializationContext",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Serialization.System.SerializationContext.yml\" sourcestartlinenumber=\"1\">Abstract base type for a context passed to <xref href=\"MarymoorStudios.Core.Serialization.System.Serializer%601\" data-throw-if-not-resolved=\"false\"></xref> during serialization and\nmaterialization operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Serializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Serializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Serializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.SpanSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.SpanSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.SpanSerializer<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.StringSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.StringSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.StringSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.TimeSpanSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.TimeSpanSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.TimeSpanSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.TypeId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeIdSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeIdSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.TypeIdSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeMarker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.TypeMarker",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Serialization.System.TypeMarker.yml\" sourcestartlinenumber=\"1\">1-byte type code indicating the structure of the following bytes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeMarkerSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.TypeMarkerSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.TypeMarkerSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt16Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt16Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.UInt16Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt32Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt32Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.UInt32Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt64Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt64Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.UInt64Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt8Serializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.UInt8Serializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.UInt8Serializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3, T4>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3, T4, T5>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3, T4, T5, T6>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3, T4, T5, T6, T7>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.ValueTupleSerializer-8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System.ValueTupleSerializer<T1, T2, T3, T4, T5, T6, T7, TRest>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.System.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.System.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization.System",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Serialization.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Serialization",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.SlabMemoryPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.SlabMemoryPool-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.SlabMemoryPool<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.SpanBase58Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.SpanBase58Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.SpanBase58Extensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.SpanBase58Extensions.yml\" sourcestartlinenumber=\"1\">Base58 Encoder.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.SpanHexExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.SpanHexExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.SpanHexExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.UpgradableLockScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.UpgradableLockScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.UpgradableLockScope",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.UpgradableLockScope.yml\" sourcestartlinenumber=\"1\">An upgradable read-lock scope for use with <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.WaitHandleExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.WaitHandleExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.WaitHandleExtensions",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.WaitHandleExtensions.yml\" sourcestartlinenumber=\"1\">Extensions to the standard <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.WriteLockScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.WriteLockScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.WriteLockScope",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.WriteLockScope.yml\" sourcestartlinenumber=\"1\">A write-lock scope for use with <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Marymoor Studios Logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Marymoor Studios Logo.svg"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

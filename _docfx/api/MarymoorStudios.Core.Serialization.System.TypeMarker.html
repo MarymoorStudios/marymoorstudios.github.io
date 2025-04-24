@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum TypeMarker </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum TypeMarker ">
+      
+      <meta name="description" content="1-byte type code indicating the structure of the following bytes.">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Serialization.System.TypeMarker">
+
+
+
+
+  <h1 id="MarymoorStudios_Core_Serialization_System_TypeMarker" data-uid="MarymoorStudios.Core.Serialization.System.TypeMarker" class="text-break">
+Enum TypeMarker  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Serialization.html">Serialization</a>.<a class="xref" href="MarymoorStudios.Core.Serialization.System.html">System</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Serialization.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>1-byte type code indicating the structure of the following bytes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum TypeMarker : byte</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Invalid"><code>Invalid = 0</code></dt>
+  
+  <dd><p>Invalid type code (useful for detecting corruption and initialization errors).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Null"><code>Null = 1</code></dt>
+  
+  <dd><p>A null literal.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_BooleanTrue"><code>BooleanTrue = 2</code></dt>
+  
+  <dd><p>8-bit boolean.  (bool in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_BooleanFalse"><code>BooleanFalse = 3</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Int8"><code>Int8 = 4</code></dt>
+  
+  <dd><p>8-bit signed integer.  (sbyte in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Int16"><code>Int16 = 5</code></dt>
+  
+  <dd><p>16-bit signed integer.  (short in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Int32"><code>Int32 = 6</code></dt>
+  
+  <dd><p>32-bit signed integer.  (int in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Int64"><code>Int64 = 7</code></dt>
+  
+  <dd><p>64-bit signed integer.  (long in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_UInt8"><code>UInt8 = 8</code></dt>
+  
+  <dd><p>8-bit unsigned integer.  (byte in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_UInt16"><code>UInt16 = 9</code></dt>
+  
+  <dd><p>16-bit unsigned integer.  (ushort in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_UInt32"><code>UInt32 = 10</code></dt>
+  
+  <dd><p>32-bit unsigned integer.  (uint in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_UInt64"><code>UInt64 = 11</code></dt>
+  
+  <dd><p>64-bit unsigned integer.  (ulong in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Float32"><code>Float32 = 12</code></dt>
+  
+  <dd><p>32-bit IEEE floating point value.  (float in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Float64"><code>Float64 = 13</code></dt>
+  
+  <dd><p>64-bit IEEE floating point value.  (double in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Decimal"><code>Decimal = 14</code></dt>
+  
+  <dd><p>128-bit extended floating point value.  (decimal in C#).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_DateTime"><code>DateTime = 15</code></dt>
+  
+  <dd><p>64-bit time value.  The number of 100-nanosecond ticks since 1/1/0001 12:00am.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_TimeSpan"><code>TimeSpan = 16</code></dt>
+  
+  <dd><p>64-bit time value.  A number of 100-nanosecond ticks in elapsed time (positive or negative).</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Guid"><code>Guid = 17</code></dt>
+  
+  <dd><p>128-bit globally unique identifier.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_TypeMarker"><code>TypeMarker = 18</code></dt>
+  
+  <dd><p>8-bit type code from this enumeration.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumInt8"><code>EnumInt8 = 20</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 8-bit signed integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumInt16"><code>EnumInt16 = 21</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 16-bit signed integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumInt32"><code>EnumInt32 = 22</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 32-bit signed integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumInt64"><code>EnumInt64 = 23</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 64-bit signed integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumUInt8"><code>EnumUInt8 = 24</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 8-bit unsigned integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumUInt16"><code>EnumUInt16 = 25</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 16-bit unsigned integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumUInt32"><code>EnumUInt32 = 26</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 32-bit unsigned integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_EnumUInt64"><code>EnumUInt64 = 27</code></dt>
+  
+  <dd><p>An alias for an integral underlying type with a range of 64-bit unsigned integer.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_String"><code>String = 30</code></dt>
+  
+  <dd><p>A variable-length (possibly empty) sequence of UTF16 code points.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_TypeId"><code>TypeId = 31</code></dt>
+  
+  <dd><p>Logical Type Identifier.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Promise"><code>Promise = 40</code></dt>
+  
+  <dd><p>A void data promise.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_PromiseT"><code>PromiseT = 41</code></dt>
+  
+  <dd><p>A typed data promise.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Proxy"><code>Proxy = 42</code></dt>
+  
+  <dd><p>A proxy (by ref) promise.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Object"><code>Object = 51</code></dt>
+  
+  <dd><p>A structural composition of other primitives, objects, or arrays.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple1"><code>Tuple1 = 52</code></dt>
+  
+  <dd><p>An n-tuple of types.</p>
+</dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple2"><code>Tuple2 = 53</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple3"><code>Tuple3 = 54</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple4"><code>Tuple4 = 55</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple5"><code>Tuple5 = 56</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple6"><code>Tuple6 = 57</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple7"><code>Tuple7 = 58</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Tuple8"><code>Tuple8 = 59</code></dt>
+  
+  <dd></dd>
+    <dt id="MarymoorStudios_Core_Serialization_System_TypeMarker_Array"><code>Array = 60</code></dt>
+  
+  <dd><p>A variable-length (possibly empty) sequence of variable-length elements.  Each element is of the
+same declared type, but allowing for subtypes and variable-length structures within.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

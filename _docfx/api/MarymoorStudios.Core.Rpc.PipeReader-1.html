@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PipeReader&lt;T&gt; </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PipeReader&lt;T&gt; ">
+      
+      <meta name="description" content="Capability for reading an ordered sequence of items from a pipe.">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Rpc.PipeReader`1">
+
+
+
+  <h1 id="MarymoorStudios_Core_Rpc_PipeReader_1" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1" class="text-break">
+Class PipeReader&lt;T&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.html">Rpc</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Rpc.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Capability for reading an ordered sequence of items from a pipe.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PipeReader&lt;T&gt; : IPromiseDisposable, IDisposable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PipeReader&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MarymoorStudios.Core.Promises.IPromiseDisposable.html">IPromiseDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MarymoorStudios.Core.Rpc.PipeExtensions.html#MarymoorStudios_Core_Rpc_PipeExtensions_GetAsyncEnumerator__1_MarymoorStudios_Core_Rpc_PipeReader___0__">PipeExtensions.GetAsyncEnumerator&lt;T&gt;(PipeReader&lt;T&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1__ctor_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1__ctor" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.#ctor">
+  PipeReader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PipeReader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Cancel*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_System_Exception_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Cancel(System.Exception)">
+  Cancel(Exception?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to perform a graceful early termination by the Reader with a diagnostic error for the
+Writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Cancel(Exception? error = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>An optional diagnostic error.  If no error is provided then
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a> will be sent.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_System_Exception__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+The <a class="xref" href="MarymoorStudios.Core.Rpc.PipeReader-1.html#MarymoorStudios_Core_Rpc_PipeReader_1_Read">Read()</a> method will eventually return EOS (or error) after <a class="xref" href="MarymoorStudios.Core.Rpc.PipeReader-1.html#MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_System_Exception_">Cancel(Exception?)</a> has been
+called, either because cancellation is successfully propagated to the Writer or because the underlying
+channel is aborted before cancellation can be propagated.
+</p>
+<p>Cancellation is pr</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_Dispose_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Dispose*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_Dispose" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases all received but unread items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Rpc_PipeReader_1_Dispose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Implies a call to <a class="xref" href="MarymoorStudios.Core.Rpc.PipeReader-1.html#MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_System_Exception_">Cancel(Exception?)</a> if the sequence has not seen EOS or already been cancelled.</p>
+<p>
+Any items that are received by the transport after the Reader has been disposed will be immediately
+released.
+</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_Dispose_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Dispose*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_Dispose_System_Boolean_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_DisposeAsync_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.DisposeAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_DisposeAsync" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases all received but unread items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a></dt>
+    <dd><p>A promise that resolves when all in-flight items have been exhausted from the transport.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Rpc_PipeReader_1_DisposeAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Implies a call to <a class="xref" href="MarymoorStudios.Core.Rpc.PipeReader-1.html#MarymoorStudios_Core_Rpc_PipeReader_1_Cancel_System_Exception_">Cancel(Exception?)</a> if the sequence has not seen EOS or already been cancelled.</p>
+<p>
+Any items that are received by the transport after the Reader has been disposed will be immediately
+released.
+</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_DisposeAsyncCore_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.DisposeAsyncCore*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_DisposeAsyncCore" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.DisposeAsyncCore">
+  DisposeAsyncCore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Promise DisposeAsyncCore()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_PipeReader_1_Read_" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Read*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_PipeReader_1_Read" data-uid="MarymoorStudios.Core.Rpc.PipeReader`1.Read">
+  Read()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads the next available item from the pipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Promise&lt;T&gt; Read()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise-1.html">Promise</a>&lt;T&gt;</dt>
+    <dd><p>The next item or an error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Rpc_PipeReader_1_Read_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+Returns the next item in the sequence.  If there are no items available immediately, then the return
+resolves when the next item arrives.
+</p>
+<p>
+On a successful return ownership for the item returned is transferred to the caller who is responsible
+for disposing it.
+</p>
+<p>
+If the end of the sequence (EOS) is reached (i.e. a finite sequence) then reading after the EOS will
+yield an <a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.EndOfSequenceException.html">EndOfSequenceException</a> error.
+</p>
+<p>
+If the sequence is closed by the Writer with an error, that error will be returned in sequence order
+after all items successfully written before the error have been delivered.
+</p>
+<p>
+If the sequence is aborted by the Writer or the underlying pipe transport a read will yield an
+<a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.AbortedException.html">AbortedException</a>.  Some items in the sequence may have been lost in the event of an abort.
+</p>
+</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

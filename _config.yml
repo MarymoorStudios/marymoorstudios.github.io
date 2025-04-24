@@ -11,7 +11,8 @@ permalink: /:title ## disables post output
 timezone: America/Los_Angeles
 lsi: false
 markdown: kramdown
-
+include:
+  - "_docfx"
 
 ### content configuration ###
 title:       "Marymoor Studios"
