@@ -89,9 +89,13 @@ A bounded, finite, prompt computation that forms part of a larger activity.  A t
 (1) preempted (say, by the scheduler), (2) yields on its own (say, as part of cooperative scheduling), or
 (3) awaits on an awaitable (such as on IO, a Promise, or a Task).  
 
+## Feedback
+Write us with [feedback][feedback].
+
 ## See Also
 * [All Posts][all-posts]
 * [MSC (Marymoor Studios Core libraries)][MSC]
 
 [MSC]: https://github.com/MarymoorStudios/Core
 [all-posts]: /devlog.html
+[feedback]: email://feedback@marymoorstudios.com
