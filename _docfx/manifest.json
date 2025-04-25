@@ -3371,10 +3371,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/Marymoor Studios Logo.svg",
+      "source_relative_path": "img/Marymoor Studios Logo.svg",
       "output": {
         "resource": {
-          "relative_path": "images/Marymoor Studios Logo.svg"
+          "relative_path": "img/Marymoor Studios Logo.svg"
         }
       },
       "version": ""
