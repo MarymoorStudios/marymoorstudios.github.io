@@ -21,7 +21,8 @@ race-free concurrent programming.  Inspired by Midori, E-lang and Erlang, the Co
 software-isolated process (Sip) model loosely conforming to Tony Hoarse's Communicating Sequential Processes (CSP)
 formalism.
 
-[Documentation](https://github.com/MarymoorStudios/Core)
+* [API Documentation](_docfx/api/MarymoorStudios.Core.html)
+* [Samples](https://github.com/MarymoorStudios/Core)
 
 [logo]: https://raw.githubusercontent.com/MarymoorStudios/Core/main/Images/Marymoor%20Studios%20Logo%20NM%2064x64.png
 [store]: https://marymoorstudios.square.site/
