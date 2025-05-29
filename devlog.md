@@ -7,7 +7,8 @@ color: white
 
 <div>
 <ul>
-  {% for post in site.devlog reverse %}
+  {% assign sorted_devlog = site.devlog | sort: "order" | reverse %}
+  {% for post in sorted_devlog %}
     <li>
       {% if post.hideDate == "true" %}
         <a href="{{ post.url }}">{{ post.title }}</a>
