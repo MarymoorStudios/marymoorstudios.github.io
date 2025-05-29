@@ -30,11 +30,28 @@ based on their experience with these previously existing abstractions. For examp
 abstraction in the C# Language Runtime.  A "Thread" class can be _one of the ways_ to implement an activity, but it is
 not the _only way_.
 
+#### **Caller (RPC)**
+The sender of a message.
+
+#### **Callee (RPC)**
+The receiver of a message.
+
+#### **Distributed System**
+A system with multiple independent concurrent activities which communicate with each other by message passing so as to
+coordinate their operation to achieve a higher goal.
+
+#### **Distributed Computing**
+The field of computer science dedicated to the design, development and understanding of distributed systems.
+
 #### **Deterministic**
 Something that produces the same outcome given the same inputs.
 
 Deterministic software is much easier to write and test because its behavior is repeatable and predicable.  It exhibits
 the same behavior during every execution.
+
+#### **Global Reasoning**
+When you have to think globally about the entire program (or a large portion of it) when deciding if the logic program
+is correct.  Contrast with [Local Reasoning](#local-reasoning).
 
 #### **Interleaving**
 A unique sequence of turns executed by a scheduler.  An interleaving is always a total order of the actual set of turns
@@ -42,6 +59,10 @@ that were executed.  An interleaving only captures the sequence of operations on
 no specific total order across the set of interleavings spanning all of the vCores in a multicore system because some of
 the operations happen simultaneously.  A partial order that is essentially a merge of multiple core-specific
 interleavings _can_ be specified.
+
+#### **Local Reasoning**
+When you only have to look at a small subset of the program to determine if that _part_ of the program is correct.
+Contrast with [Global Reasoning](#global-reasoning).
 
 #### **Nondeterministic**
 Something that may produce different outcomes even with the same inputs due to factors beyond than the inputs.
