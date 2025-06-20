@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamGameServer </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamGameServer ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamGameServer" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer" class="text-break">
+Class ISteamGameServer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamGameServer : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamGameServer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamGameServer015&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_AssociateWithClan_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.AssociateWithClan*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_AssociateWithClan_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.AssociateWithClan(MarymoorStudios.Core.Steamworks.CSteamID)">
+  AssociateWithClan(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;AssociateWithClanResult&gt; AssociateWithClan(CSteamID steamIDClan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDClan</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.AssociateWithClanResult.html">AssociateWithClanResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BLoggedOn_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BLoggedOn*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BLoggedOn" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BLoggedOn">
+  BLoggedOn()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BLoggedOn()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BSecure_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BSecure*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BSecure" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BSecure">
+  BSecure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BSecure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BUpdateUserData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BUpdateUserData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BUpdateUserData_MarymoorStudios_Core_Steamworks_CSteamID_System_String_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BUpdateUserData(MarymoorStudios.Core.Steamworks.CSteamID,System.String,System.UInt32)">
+  BUpdateUserData(CSteamID, string, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BUpdateUserData(CSteamID steamIDUser, string playerName, uint score)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>playerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BeginAuthSession_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BeginAuthSession*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_BeginAuthSession_System_ReadOnlySpan_System_Byte__MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.BeginAuthSession(System.ReadOnlySpan{System.Byte},MarymoorStudios.Core.Steamworks.CSteamID)">
+  BeginAuthSession(ReadOnlySpan&lt;byte&gt;, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EBeginAuthSessionResult BeginAuthSession(ReadOnlySpan&lt;byte&gt; authTicket, CSteamID steamID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>authTicket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>steamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EBeginAuthSessionResult.html">EBeginAuthSessionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_CancelAuthTicket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.CancelAuthTicket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_CancelAuthTicket_MarymoorStudios_Core_Steamworks_HAuthTicket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.CancelAuthTicket(MarymoorStudios.Core.Steamworks.HAuthTicket)">
+  CancelAuthTicket(HAuthTicket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelAuthTicket(HAuthTicket authTicket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>authTicket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HAuthTicket.html">HAuthTicket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_ClearAllKeyValues_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.ClearAllKeyValues*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_ClearAllKeyValues" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.ClearAllKeyValues">
+  ClearAllKeyValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllKeyValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_ComputeNewPlayerCompatibility_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.ComputeNewPlayerCompatibility*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_ComputeNewPlayerCompatibility_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.ComputeNewPlayerCompatibility(MarymoorStudios.Core.Steamworks.CSteamID)">
+  ComputeNewPlayerCompatibility(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;ComputeNewPlayerCompatibilityResult&gt; ComputeNewPlayerCompatibility(CSteamID steamIDNewPlayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDNewPlayer</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.ComputeNewPlayerCompatibilityResult.html">ComputeNewPlayerCompatibilityResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_CreateUnauthenticatedUserConnection_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.CreateUnauthenticatedUserConnection*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_CreateUnauthenticatedUserConnection" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.CreateUnauthenticatedUserConnection">
+  CreateUnauthenticatedUserConnection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSteamID CreateUnauthenticatedUserConnection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_EndAuthSession_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.EndAuthSession*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_EndAuthSession_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.EndAuthSession(MarymoorStudios.Core.Steamworks.CSteamID)">
+  EndAuthSession(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndAuthSession(CSteamID steamID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetAuthSessionTicket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetAuthSessionTicket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetAuthSessionTicket_System_Span_System_Byte__System_UInt32__MarymoorStudios_Core_Steamworks_SteamNetworkingIdentity__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetAuthSessionTicket(System.Span{System.Byte},System.UInt32@,MarymoorStudios.Core.Steamworks.SteamNetworkingIdentity@)">
+  GetAuthSessionTicket(Span&lt;byte&gt;, out uint, in SteamNetworkingIdentity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HAuthTicket GetAuthSessionTicket(Span&lt;byte&gt; ticket, out uint ticketCount, in SteamNetworkingIdentity snid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ticket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>ticketCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>snid</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNetworkingIdentity.html">SteamNetworkingIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.HAuthTicket.html">HAuthTicket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetGameplayStats_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetGameplayStats*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetGameplayStats" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetGameplayStats">
+  GetGameplayStats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetGameplayStats()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetNextOutgoingPacket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetNextOutgoingPacket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetNextOutgoingPacket_System_Span_System_Byte__System_UInt32__System_UInt16__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetNextOutgoingPacket(System.Span{System.Byte},System.UInt32@,System.UInt16@)">
+  GetNextOutgoingPacket(Span&lt;byte&gt;, out uint, out ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNextOutgoingPacket(Span&lt;byte&gt; packet, out uint netAdr, out ushort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>netAdr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetPublicIP_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetPublicIP*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetPublicIP" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetPublicIP">
+  GetPublicIP()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SteamIPAddress GetPublicIP()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamIPAddress.html">SteamIPAddress</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetServerReputation_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetServerReputation*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetServerReputation" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetServerReputation">
+  GetServerReputation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;GSReputation&gt; GetServerReputation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSReputation.html">GSReputation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetSteamID*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_GetSteamID" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.GetSteamID">
+  GetSteamID()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSteamID GetSteamID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_HandleIncomingPacket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.HandleIncomingPacket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_HandleIncomingPacket_System_ReadOnlySpan_System_Byte__System_UInt32_System_UInt16_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.HandleIncomingPacket(System.ReadOnlySpan{System.Byte},System.UInt32,System.UInt16)">
+  HandleIncomingPacket(ReadOnlySpan&lt;byte&gt;, uint, ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandleIncomingPacket(ReadOnlySpan&lt;byte&gt; data, uint srcIP, ushort srcPort)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>srcIP</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>srcPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOff_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOff*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOff" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOff">
+  LogOff()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogOff()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOn_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOn*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOn_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOn(System.String)">
+  LogOn(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogOn(string pszToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOnAnonymous_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOnAnonymous*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_LogOnAnonymous" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.LogOnAnonymous">
+  LogOnAnonymous()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogOnAnonymous()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientAchievementStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientAchievementStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientAchievementStatus_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSClientAchievementStatus__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientAchievementStatus(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSClientAchievementStatus})">
+  OnGSClientAchievementStatus(CallbackAction&lt;GSClientAchievementStatus&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSClientAchievementStatus(CallbackAction&lt;GSClientAchievementStatus&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSClientAchievementStatus.html">GSClientAchievementStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientApprove_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientApprove*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientApprove_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSClientApprove__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientApprove(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSClientApprove})">
+  OnGSClientApprove(CallbackAction&lt;GSClientApprove&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSClientApprove(CallbackAction&lt;GSClientApprove&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSClientApprove.html">GSClientApprove</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientDeny_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientDeny*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientDeny_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSClientDeny__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientDeny(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSClientDeny})">
+  OnGSClientDeny(CallbackAction&lt;GSClientDeny&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSClientDeny(CallbackAction&lt;GSClientDeny&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSClientDeny.html">GSClientDeny</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientGroupStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientGroupStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientGroupStatus_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSClientGroupStatus__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientGroupStatus(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSClientGroupStatus})">
+  OnGSClientGroupStatus(CallbackAction&lt;GSClientGroupStatus&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSClientGroupStatus(CallbackAction&lt;GSClientGroupStatus&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSClientGroupStatus.html">GSClientGroupStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientKick_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientKick*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSClientKick_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSClientKick__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSClientKick(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSClientKick})">
+  OnGSClientKick(CallbackAction&lt;GSClientKick&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSClientKick(CallbackAction&lt;GSClientKick&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSClientKick.html">GSClientKick</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSGameplayStats_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSGameplayStats*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnGSGameplayStats_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GSGameplayStats__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnGSGameplayStats(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GSGameplayStats})">
+  OnGSGameplayStats(CallbackAction&lt;GSGameplayStats&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGSGameplayStats(CallbackAction&lt;GSGameplayStats&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GSGameplayStats.html">GSGameplayStats</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServerConnectFailure_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServerConnectFailure*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServerConnectFailure_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamServerConnectFailure__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServerConnectFailure(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamServerConnectFailure})">
+  OnSteamServerConnectFailure(CallbackAction&lt;SteamServerConnectFailure&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamServerConnectFailure(CallbackAction&lt;SteamServerConnectFailure&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServerConnectFailure.html">SteamServerConnectFailure</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServersConnected_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServersConnected*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServersConnected_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamServersConnected__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServersConnected(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamServersConnected})">
+  OnSteamServersConnected(CallbackAction&lt;SteamServersConnected&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamServersConnected(CallbackAction&lt;SteamServersConnected&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServersConnected.html">SteamServersConnected</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServersDisconnected_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServersDisconnected*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_OnSteamServersDisconnected_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamServersDisconnected__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.OnSteamServersDisconnected(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamServersDisconnected})">
+  OnSteamServersDisconnected(CallbackAction&lt;SteamServersDisconnected&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamServersDisconnected(CallbackAction&lt;SteamServersDisconnected&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServersDisconnected.html">SteamServersDisconnected</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_RequestUserGroupStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.RequestUserGroupStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_RequestUserGroupStatus_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.RequestUserGroupStatus(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.CSteamID)">
+  RequestUserGroupStatus(CSteamID, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestUserGroupStatus(CSteamID steamIDUser, CSteamID steamIDGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>steamIDGroup</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SendUserConnectAndAuthenticate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SendUserConnectAndAuthenticate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SendUserConnectAndAuthenticate_System_UInt32_System_ReadOnlySpan_System_Byte__MarymoorStudios_Core_Steamworks_CSteamID__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SendUserConnectAndAuthenticate(System.UInt32,System.ReadOnlySpan{System.Byte},MarymoorStudios.Core.Steamworks.CSteamID@)">
+  SendUserConnectAndAuthenticate(uint, ReadOnlySpan&lt;byte&gt;, out CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool SendUserConnectAndAuthenticate(uint ipClient, ReadOnlySpan&lt;byte&gt; authBlob, out CSteamID steamIDUser)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ipClient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>authBlob</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SendUserDisconnect_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SendUserDisconnect*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SendUserDisconnect_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SendUserDisconnect(MarymoorStudios.Core.Steamworks.CSteamID)">
+  SendUserDisconnect(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SendUserDisconnect(CSteamID steamIDUser)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetAdvertiseServerActive_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetAdvertiseServerActive*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetAdvertiseServerActive_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetAdvertiseServerActive(System.Boolean)">
+  SetAdvertiseServerActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAdvertiseServerActive(bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetBotPlayerCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetBotPlayerCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetBotPlayerCount_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetBotPlayerCount(System.Int32)">
+  SetBotPlayerCount(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBotPlayerCount(int botplayers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>botplayers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetDedicatedServer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetDedicatedServer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetDedicatedServer_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetDedicatedServer(System.Boolean)">
+  SetDedicatedServer(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDedicatedServer(bool dedicated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dedicated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameData_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameData(System.String)">
+  SetGameData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameData(string gameData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameDescription_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameDescription*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameDescription_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameDescription(System.String)">
+  SetGameDescription(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameDescription(string pszGameDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszGameDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetGameTags_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetGameTags(System.String)">
+  SetGameTags(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameTags(string gameTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameTags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetKeyValue_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetKeyValue*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetKeyValue_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetKeyValue(System.String,System.String)">
+  SetKeyValue(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyValue(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetMapName_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetMapName*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetMapName_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetMapName(System.String)">
+  SetMapName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMapName(string pszMapName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszMapName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetMaxPlayerCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetMaxPlayerCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetMaxPlayerCount_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetMaxPlayerCount(System.Int32)">
+  SetMaxPlayerCount(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxPlayerCount(int playersMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playersMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetModDir_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetModDir*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetModDir_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetModDir(System.String)">
+  SetModDir(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetModDir(string pszModDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszModDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetPasswordProtected_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetPasswordProtected*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetPasswordProtected_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetPasswordProtected(System.Boolean)">
+  SetPasswordProtected(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPasswordProtected(bool passwordProtected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>passwordProtected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetProduct_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetProduct*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetProduct_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetProduct(System.String)">
+  SetProduct(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProduct(string pszProduct)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszProduct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetRegion_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetRegion*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetRegion_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetRegion(System.String)">
+  SetRegion(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRegion(string pszRegion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszRegion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetServerName_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetServerName*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetServerName_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetServerName(System.String)">
+  SetServerName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetServerName(string pszServerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszServerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetSpectatorPort_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetSpectatorPort*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetSpectatorPort_System_UInt16_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetSpectatorPort(System.UInt16)">
+  SetSpectatorPort(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpectatorPort(ushort spectatorPort)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spectatorPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetSpectatorServerName_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetSpectatorServerName*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_SetSpectatorServerName_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.SetSpectatorServerName(System.String)">
+  SetSpectatorServerName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSpectatorServerName(string pszSpectatorServerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszSpectatorServerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_UntilLogOn_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.UntilLogOn*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_UntilLogOn_System_String_System_Threading_CancellationToken_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.UntilLogOn(System.String,System.Threading.CancellationToken)">
+  UntilLogOn(string?, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Log in to a generic anonymous account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise UntilLogOn(string? token = null, CancellationToken cancel = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A Game Server account token.  If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/default">default</a> then log on anonymously.</p>
+</dd>
+    <dt><code>cancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a></dt>
+    <dd><p>Resolves ONLY when successfully connected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_ISteamGameServer_UntilLogOn_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+This method resolves ONLY when the game server becomes successfully connected.  To determine real-time status
+<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameServer.html#MarymoorStudios_Core_Steamworks_ISteamGameServer_BLoggedOn">BLoggedOn()</a> or listen for <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServersConnected.html">SteamServersConnected</a>,
+<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServerConnectFailure.html">SteamServerConnectFailure</a> , <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamServersDisconnected.html">SteamServersDisconnected</a>  callbacks. Typically, log
+in completes in a few seconds.
+</p>
+<p>
+Game Server account token MUST be preallocated by following the instructions at
+<a href="https://steamcommunity.com/dev/managegameservers">https://steamcommunity.com/dev/managegameservers</a>.
+</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_UserHasLicenseForApp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.UserHasLicenseForApp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_UserHasLicenseForApp_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_AppId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.UserHasLicenseForApp(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.AppId)">
+  UserHasLicenseForApp(CSteamID, AppId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EUserHasLicenseForAppResult UserHasLicenseForApp(CSteamID steamID, AppId appId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EUserHasLicenseForAppResult.html">EUserHasLicenseForAppResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameServer_WasRestartRequested_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.WasRestartRequested*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameServer_WasRestartRequested" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameServer.WasRestartRequested">
+  WasRestartRequested()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WasRestartRequested()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

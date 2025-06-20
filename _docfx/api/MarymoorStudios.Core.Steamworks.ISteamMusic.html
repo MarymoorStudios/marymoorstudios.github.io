@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamMusic </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamMusic ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamMusic" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic" class="text-break">
+Class ISteamMusic  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamMusic : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamMusic</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMMUSIC_INTERFACE_VERSION001&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_BIsEnabled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.BIsEnabled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_BIsEnabled" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.BIsEnabled">
+  BIsEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BIsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_BIsPlaying_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.BIsPlaying*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_BIsPlaying" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.BIsPlaying">
+  BIsPlaying()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BIsPlaying()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_GetPlaybackStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.GetPlaybackStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_GetPlaybackStatus" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.GetPlaybackStatus">
+  GetPlaybackStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioPlayback_Status GetPlaybackStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.AudioPlayback_Status.html">AudioPlayback_Status</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_GetVolume_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.GetVolume*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_GetVolume" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.GetVolume">
+  GetVolume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetVolume()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerSelectsPlaylistEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerSelectsPlaylistEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerSelectsPlaylistEntry_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerSelectsPlaylistEntry__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerSelectsPlaylistEntry(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerSelectsPlaylistEntry})">
+  OnMusicPlayerSelectsPlaylistEntry(CallbackAction&lt;MusicPlayerSelectsPlaylistEntry&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerSelectsPlaylistEntry(CallbackAction&lt;MusicPlayerSelectsPlaylistEntry&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerSelectsPlaylistEntry.html">MusicPlayerSelectsPlaylistEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerSelectsQueueEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerSelectsQueueEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerSelectsQueueEntry_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerSelectsQueueEntry__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerSelectsQueueEntry(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerSelectsQueueEntry})">
+  OnMusicPlayerSelectsQueueEntry(CallbackAction&lt;MusicPlayerSelectsQueueEntry&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerSelectsQueueEntry(CallbackAction&lt;MusicPlayerSelectsQueueEntry&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerSelectsQueueEntry.html">MusicPlayerSelectsQueueEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerWantsVolume_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerWantsVolume*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnMusicPlayerWantsVolume_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsVolume__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnMusicPlayerWantsVolume(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsVolume})">
+  OnMusicPlayerWantsVolume(CallbackAction&lt;MusicPlayerWantsVolume&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsVolume(CallbackAction&lt;MusicPlayerWantsVolume&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsVolume.html">MusicPlayerWantsVolume</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnPlaybackStatusHasChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnPlaybackStatusHasChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnPlaybackStatusHasChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_PlaybackStatusHasChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnPlaybackStatusHasChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.PlaybackStatusHasChanged})">
+  OnPlaybackStatusHasChanged(CallbackAction&lt;PlaybackStatusHasChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnPlaybackStatusHasChanged(CallbackAction&lt;PlaybackStatusHasChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.PlaybackStatusHasChanged.html">PlaybackStatusHasChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnVolumeHasChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnVolumeHasChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_OnVolumeHasChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_VolumeHasChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.OnVolumeHasChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.VolumeHasChanged})">
+  OnVolumeHasChanged(CallbackAction&lt;VolumeHasChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnVolumeHasChanged(CallbackAction&lt;VolumeHasChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.VolumeHasChanged.html">VolumeHasChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_Pause_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.Pause*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_Pause" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.Pause">
+  Pause()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_Play_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.Play*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_Play" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.Play">
+  Play()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_PlayNext_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.PlayNext*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_PlayNext" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.PlayNext">
+  PlayNext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayNext()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_PlayPrevious_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.PlayPrevious*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_PlayPrevious" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.PlayPrevious">
+  PlayPrevious()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayPrevious()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusic_SetVolume_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.SetVolume*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusic_SetVolume_System_Single_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusic.SetVolume(System.Single)">
+  SetVolume(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVolume(float volume)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4019 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamUGC </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamUGC ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamUGC" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC" class="text-break">
+Class ISteamUGC  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamUGC : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamUGC</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMUGC_INTERFACE_VERSION021&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddAppDependency_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddAppDependency*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddAppDependency_MarymoorStudios_Core_Steamworks_PublishedFileId_MarymoorStudios_Core_Steamworks_AppId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddAppDependency(MarymoorStudios.Core.Steamworks.PublishedFileId,MarymoorStudios.Core.Steamworks.AppId)">
+  AddAppDependency(PublishedFileId, AppId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;AddAppDependencyResult&gt; AddAppDependency(PublishedFileId publishedFileID, AppId appId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.AddAppDependencyResult.html">AddAppDependencyResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddContentDescriptor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddContentDescriptor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddContentDescriptor_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_MarymoorStudios_Core_Steamworks_EUGCContentDescriptorID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddContentDescriptor(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID)">
+  AddContentDescriptor(UGCUpdateHandle, EUGCContentDescriptorID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddContentDescriptor(UGCUpdateHandle handle, EUGCContentDescriptorID descid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>descid</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID.html">EUGCContentDescriptorID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddDependency_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddDependency*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddDependency_MarymoorStudios_Core_Steamworks_PublishedFileId_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddDependency(MarymoorStudios.Core.Steamworks.PublishedFileId,MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  AddDependency(PublishedFileId, PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;AddUGCDependencyResult&gt; AddDependency(PublishedFileId parentPublishedFileID, PublishedFileId childPublishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentPublishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>childPublishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.AddUGCDependencyResult.html">AddUGCDependencyResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddExcludedTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddExcludedTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddExcludedTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddExcludedTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String)">
+  AddExcludedTag(UGCQueryHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddExcludedTag(UGCQueryHandle handle, string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemKeyValueTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemKeyValueTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemKeyValueTag_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemKeyValueTag(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String,System.String)">
+  AddItemKeyValueTag(UGCUpdateHandle, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddItemKeyValueTag(UGCUpdateHandle handle, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemPreviewFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemPreviewFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemPreviewFile_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_MarymoorStudios_Core_Steamworks_EItemPreviewType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemPreviewFile(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String,MarymoorStudios.Core.Steamworks.EItemPreviewType)">
+  AddItemPreviewFile(UGCUpdateHandle, string, EItemPreviewType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddItemPreviewFile(UGCUpdateHandle handle, string pszPreviewFile, EItemPreviewType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>pszPreviewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EItemPreviewType.html">EItemPreviewType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemPreviewVideo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemPreviewVideo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemPreviewVideo_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemPreviewVideo(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  AddItemPreviewVideo(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddItemPreviewVideo(UGCUpdateHandle handle, string pszVideoID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>pszVideoID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemToFavorites_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemToFavorites*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddItemToFavorites_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddItemToFavorites(MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  AddItemToFavorites(AppId, PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;UserFavoriteItemsListChanged&gt; AddItemToFavorites(AppId appId, PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.UserFavoriteItemsListChanged.html">UserFavoriteItemsListChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredKeyValueTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredKeyValueTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredKeyValueTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredKeyValueTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String,System.String)">
+  AddRequiredKeyValueTag(UGCQueryHandle, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddRequiredKeyValueTag(UGCQueryHandle handle, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String)">
+  AddRequiredTag(UGCQueryHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddRequiredTag(UGCQueryHandle handle, string tagName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>tagName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredTagGroup_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredTagGroup*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_AddRequiredTagGroup_MarymoorStudios_Core_Steamworks_UGCQueryHandle_MarymoorStudios_Core_Steamworks_SteamParamStringArray__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.AddRequiredTagGroup(MarymoorStudios.Core.Steamworks.UGCQueryHandle,MarymoorStudios.Core.Steamworks.SteamParamStringArray@)">
+  AddRequiredTagGroup(UGCQueryHandle, in SteamParamStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddRequiredTagGroup(UGCQueryHandle handle, in SteamParamStringArray tagGroups)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>tagGroups</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_BInitWorkshopForGameServer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.BInitWorkshopForGameServer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_BInitWorkshopForGameServer_MarymoorStudios_Core_Steamworks_DepotId_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.BInitWorkshopForGameServer(MarymoorStudios.Core.Steamworks.DepotId,System.String)">
+  BInitWorkshopForGameServer(DepotId, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BInitWorkshopForGameServer(DepotId workshopDepotID, string pszFolder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>workshopDepotID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.DepotId.html">DepotId</a></dt>
+    <dd></dd>
+    <dt><code>pszFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateItem_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_EWorkshopFileType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateItem(MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.EWorkshopFileType)">
+  CreateItem(AppId, EWorkshopFileType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;CreateItemResult&gt; CreateItem(AppId consumerAppId, EWorkshopFileType fileType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>consumerAppId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>fileType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopFileType.html">EWorkshopFileType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.CreateItemResult.html">CreateItemResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryAllUGCRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryAllUGCRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryAllUGCRequest_MarymoorStudios_Core_Steamworks_EUGCQuery_MarymoorStudios_Core_Steamworks_EUGCMatchingUGCType_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_AppId_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryAllUGCRequest(MarymoorStudios.Core.Steamworks.EUGCQuery,MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType,MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.AppId,System.String)">
+  CreateQueryAllUGCRequest(EUGCQuery, EUGCMatchingUGCType, AppId, AppId, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCQueryHandle CreateQueryAllUGCRequest(EUGCQuery queryType, EUGCMatchingUGCType matchingeMatchingUGCTypeFileType, AppId creatorAppID, AppId consumerAppID, string cursor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>queryType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCQuery.html">EUGCQuery</a></dt>
+    <dd></dd>
+    <dt><code>matchingeMatchingUGCTypeFileType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType.html">EUGCMatchingUGCType</a></dt>
+    <dd></dd>
+    <dt><code>creatorAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>consumerAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>cursor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryAllUGCRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryAllUGCRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryAllUGCRequest_MarymoorStudios_Core_Steamworks_EUGCQuery_MarymoorStudios_Core_Steamworks_EUGCMatchingUGCType_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_AppId_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryAllUGCRequest(MarymoorStudios.Core.Steamworks.EUGCQuery,MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType,MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.AppId,System.UInt32)">
+  CreateQueryAllUGCRequest(EUGCQuery, EUGCMatchingUGCType, AppId, AppId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCQueryHandle CreateQueryAllUGCRequest(EUGCQuery queryType, EUGCMatchingUGCType matchingeMatchingUGCTypeFileType, AppId creatorAppID, AppId consumerAppID, uint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>queryType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCQuery.html">EUGCQuery</a></dt>
+    <dd></dd>
+    <dt><code>matchingeMatchingUGCTypeFileType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType.html">EUGCMatchingUGCType</a></dt>
+    <dd></dd>
+    <dt><code>creatorAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>consumerAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryUGCDetailsRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryUGCDetailsRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryUGCDetailsRequest_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryUGCDetailsRequest(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32)">
+  CreateQueryUGCDetailsRequest(out PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCQueryHandle CreateQueryUGCDetailsRequest(out PublishedFileId publishedFileID, uint numPublishedFileIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>numPublishedFileIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryUserUGCRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryUserUGCRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_CreateQueryUserUGCRequest_MarymoorStudios_Core_Steamworks_AccountID_MarymoorStudios_Core_Steamworks_EUserUGCList_MarymoorStudios_Core_Steamworks_EUGCMatchingUGCType_MarymoorStudios_Core_Steamworks_EUserUGCListSortOrder_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_AppId_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.CreateQueryUserUGCRequest(MarymoorStudios.Core.Steamworks.AccountID,MarymoorStudios.Core.Steamworks.EUserUGCList,MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType,MarymoorStudios.Core.Steamworks.EUserUGCListSortOrder,MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.AppId,System.UInt32)">
+  CreateQueryUserUGCRequest(AccountID, EUserUGCList, EUGCMatchingUGCType, EUserUGCListSortOrder, AppId, AppId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCQueryHandle CreateQueryUserUGCRequest(AccountID accountID, EUserUGCList listType, EUGCMatchingUGCType matchingUGCType, EUserUGCListSortOrder sortOrder, AppId creatorAppID, AppId consumerAppID, uint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accountID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AccountID.html">AccountID</a></dt>
+    <dd></dd>
+    <dt><code>listType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUserUGCList.html">EUserUGCList</a></dt>
+    <dd></dd>
+    <dt><code>matchingUGCType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCMatchingUGCType.html">EUGCMatchingUGCType</a></dt>
+    <dd></dd>
+    <dt><code>sortOrder</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUserUGCListSortOrder.html">EUserUGCListSortOrder</a></dt>
+    <dd></dd>
+    <dt><code>creatorAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>consumerAppID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_DeleteItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.DeleteItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_DeleteItem_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.DeleteItem(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  DeleteItem(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;DeleteItemResult&gt; DeleteItem(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.DeleteItemResult.html">DeleteItemResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_DownloadItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.DownloadItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_DownloadItem_MarymoorStudios_Core_Steamworks_PublishedFileId_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.DownloadItem(MarymoorStudios.Core.Steamworks.PublishedFileId,System.Boolean)">
+  DownloadItem(PublishedFileId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DownloadItem(PublishedFileId publishedFileID, bool highPriority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>highPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetAppDependencies_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetAppDependencies*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetAppDependencies_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetAppDependencies(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  GetAppDependencies(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;GetAppDependenciesResult&gt; GetAppDependencies(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GetAppDependenciesResult.html">GetAppDependenciesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemDownloadInfo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemDownloadInfo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemDownloadInfo_MarymoorStudios_Core_Steamworks_PublishedFileId_System_UInt64__System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemDownloadInfo(MarymoorStudios.Core.Steamworks.PublishedFileId,System.UInt64@,System.UInt64@)">
+  GetItemDownloadInfo(PublishedFileId, out ulong, out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemDownloadInfo(PublishedFileId publishedFileID, out ulong bytesDownloaded, out ulong bytesTotal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>bytesDownloaded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>bytesTotal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemInstallInfo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemInstallInfo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemInstallInfo_MarymoorStudios_Core_Steamworks_PublishedFileId_System_UInt64__System_Span_System_Byte__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemInstallInfo(MarymoorStudios.Core.Steamworks.PublishedFileId,System.UInt64@,System.Span{System.Byte},System.UInt32@)">
+  GetItemInstallInfo(PublishedFileId, out ulong, Span&lt;byte&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemInstallInfo(PublishedFileId publishedFileID, out ulong sizeOnDisk, Span&lt;byte&gt; folder, out uint timeStamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>sizeOnDisk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>folder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>timeStamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemState_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemState*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemState_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemState(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  GetItemState(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetItemState(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemUpdateProgress_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemUpdateProgress*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetItemUpdateProgress_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_UInt64__System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetItemUpdateProgress(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.UInt64@,System.UInt64@)">
+  GetItemUpdateProgress(UGCUpdateHandle, out ulong, out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EItemUpdateStatus GetItemUpdateProgress(UGCUpdateHandle handle, out ulong bytesProcessed, out ulong bytesTotal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>bytesProcessed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>bytesTotal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EItemUpdateStatus.html">EItemUpdateStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetNumSubscribedItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetNumSubscribedItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetNumSubscribedItems_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetNumSubscribedItems(System.Boolean)">
+  GetNumSubscribedItems(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetNumSubscribedItems(bool includeLocallyDisabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>includeLocallyDisabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetNumSupportedGameVersions_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetNumSupportedGameVersions*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetNumSupportedGameVersions_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetNumSupportedGameVersions(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  GetNumSupportedGameVersions(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetNumSupportedGameVersions(UGCQueryHandle handle, uint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCAdditionalPreview_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCAdditionalPreview*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCAdditionalPreview_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_UInt32_System_Span_System_Byte__System_Span_System_Byte__MarymoorStudios_Core_Steamworks_EItemPreviewType__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCAdditionalPreview(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.UInt32,System.Span{System.Byte},System.Span{System.Byte},MarymoorStudios.Core.Steamworks.EItemPreviewType@)">
+  GetQueryUGCAdditionalPreview(UGCQueryHandle, uint, uint, Span&lt;byte&gt;, Span&lt;byte&gt;, out EItemPreviewType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCAdditionalPreview(UGCQueryHandle handle, uint index, uint previewIndex, Span&lt;byte&gt; urlOrVideoID, Span&lt;byte&gt; originalFileName, out EItemPreviewType previewType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>previewIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>urlOrVideoID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>originalFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>previewType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EItemPreviewType.html">EItemPreviewType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCChildren_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCChildren*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCChildren_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCChildren(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32)">
+  GetQueryUGCChildren(UGCQueryHandle, uint, out PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCChildren(UGCQueryHandle handle, uint index, out PublishedFileId publishedFileID, uint maxEntries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>maxEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCContentDescriptors_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCContentDescriptors*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCContentDescriptors_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_MarymoorStudios_Core_Steamworks_EUGCContentDescriptorID__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCContentDescriptors(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID@,System.UInt32)">
+  GetQueryUGCContentDescriptors(UGCQueryHandle, uint, out EUGCContentDescriptorID, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetQueryUGCContentDescriptors(UGCQueryHandle handle, uint index, out EUGCContentDescriptorID descriptors, uint maxEntries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>descriptors</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID.html">EUGCContentDescriptorID</a></dt>
+    <dd></dd>
+    <dt><code>maxEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCKeyValueTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCKeyValueTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCKeyValueTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_String_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCKeyValueTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.String,System.Span{System.Byte})">
+  GetQueryUGCKeyValueTag(UGCQueryHandle, uint, string, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCKeyValueTag(UGCQueryHandle handle, uint index, string key, Span&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCKeyValueTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCKeyValueTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCKeyValueTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_UInt32_System_Span_System_Byte__System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCKeyValueTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.UInt32,System.Span{System.Byte},System.Span{System.Byte})">
+  GetQueryUGCKeyValueTag(UGCQueryHandle, uint, uint, Span&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCKeyValueTag(UGCQueryHandle handle, uint index, uint keyValueTagIndex, Span&lt;byte&gt; key, Span&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>keyValueTagIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCMetadata_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCMetadata*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCMetadata_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCMetadata(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.Span{System.Byte})">
+  GetQueryUGCMetadata(UGCQueryHandle, uint, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCMetadata(UGCQueryHandle handle, uint index, Span&lt;byte&gt; metadata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>metadata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumAdditionalPreviews_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumAdditionalPreviews*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumAdditionalPreviews_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumAdditionalPreviews(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  GetQueryUGCNumAdditionalPreviews(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetQueryUGCNumAdditionalPreviews(UGCQueryHandle handle, uint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumKeyValueTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumKeyValueTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumKeyValueTags_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumKeyValueTags(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  GetQueryUGCNumKeyValueTags(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetQueryUGCNumKeyValueTags(UGCQueryHandle handle, uint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCNumTags_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCNumTags(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  GetQueryUGCNumTags(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetQueryUGCNumTags(UGCQueryHandle handle, uint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCPreviewURL_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCPreviewURL*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCPreviewURL_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCPreviewURL(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.Span{System.Byte})">
+  GetQueryUGCPreviewURL(UGCQueryHandle, uint, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCPreviewURL(UGCQueryHandle handle, uint index, Span&lt;byte&gt; url)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCResult_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_MarymoorStudios_Core_Steamworks_SteamUGCDetails__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCResult(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,MarymoorStudios.Core.Steamworks.SteamUGCDetails@)">
+  GetQueryUGCResult(UGCQueryHandle, uint, out SteamUGCDetails)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCResult(UGCQueryHandle handle, uint index, out SteamUGCDetails details)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>details</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamUGCDetails.html">SteamUGCDetails</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCStatistic_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCStatistic*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCStatistic_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_MarymoorStudios_Core_Steamworks_EItemStatistic_System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCStatistic(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,MarymoorStudios.Core.Steamworks.EItemStatistic,System.UInt64@)">
+  GetQueryUGCStatistic(UGCQueryHandle, uint, EItemStatistic, out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCStatistic(UGCQueryHandle handle, uint index, EItemStatistic statType, out ulong statValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>statType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EItemStatistic.html">EItemStatistic</a></dt>
+    <dd></dd>
+    <dt><code>statValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_UInt32_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.UInt32,System.Span{System.Byte})">
+  GetQueryUGCTag(UGCQueryHandle, uint, uint, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCTag(UGCQueryHandle handle, uint index, uint indexTag, Span&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>indexTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCTagDisplayName_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCTagDisplayName*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetQueryUGCTagDisplayName_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_UInt32_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetQueryUGCTagDisplayName(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.UInt32,System.Span{System.Byte})">
+  GetQueryUGCTagDisplayName(UGCQueryHandle, uint, uint, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQueryUGCTagDisplayName(UGCQueryHandle handle, uint index, uint indexTag, Span&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>indexTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetSubscribedItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetSubscribedItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetSubscribedItems_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetSubscribedItems(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32,System.Boolean)">
+  GetSubscribedItems(out PublishedFileId, uint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetSubscribedItems(out PublishedFileId publishedFileID, uint maxEntries, bool includeLocallyDisabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>maxEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>includeLocallyDisabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetSupportedGameVersionData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetSupportedGameVersionData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetSupportedGameVersionData_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_System_UInt32_System_Span_System_Byte__System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetSupportedGameVersionData(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32,System.UInt32,System.Span{System.Byte},System.Span{System.Byte})">
+  GetSupportedGameVersionData(UGCQueryHandle, uint, uint, Span&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSupportedGameVersionData(UGCQueryHandle handle, uint index, uint versionIndex, Span&lt;byte&gt; gameBranchMin, Span&lt;byte&gt; gameBranchMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>versionIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>gameBranchMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>gameBranchMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetUserContentDescriptorPreferences_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetUserContentDescriptorPreferences*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetUserContentDescriptorPreferences_MarymoorStudios_Core_Steamworks_EUGCContentDescriptorID__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetUserContentDescriptorPreferences(MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID@,System.UInt32)">
+  GetUserContentDescriptorPreferences(out EUGCContentDescriptorID, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetUserContentDescriptorPreferences(out EUGCContentDescriptorID descriptors, uint maxEntries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>descriptors</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID.html">EUGCContentDescriptorID</a></dt>
+    <dd></dd>
+    <dt><code>maxEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetUserItemVote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetUserItemVote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetUserItemVote_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetUserItemVote(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  GetUserItemVote(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;GetUserItemVoteResult&gt; GetUserItemVote(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GetUserItemVoteResult.html">GetUserItemVoteResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetWorkshopEULAStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetWorkshopEULAStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_GetWorkshopEULAStatus" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.GetWorkshopEULAStatus">
+  GetWorkshopEULAStatus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;WorkshopEULAStatus&gt; GetWorkshopEULAStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.WorkshopEULAStatus.html">WorkshopEULAStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnDownloadItemResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnDownloadItemResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnDownloadItemResult_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_DownloadItemResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnDownloadItemResult(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.DownloadItemResult})">
+  OnDownloadItemResult(CallbackAction&lt;DownloadItemResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnDownloadItemResult(CallbackAction&lt;DownloadItemResult&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.DownloadItemResult.html">DownloadItemResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnItemInstalled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnItemInstalled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnItemInstalled_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_ItemInstalled__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnItemInstalled(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.ItemInstalled})">
+  OnItemInstalled(CallbackAction&lt;ItemInstalled&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnItemInstalled(CallbackAction&lt;ItemInstalled&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.ItemInstalled.html">ItemInstalled</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnUserSubscribedItemsListChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnUserSubscribedItemsListChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_OnUserSubscribedItemsListChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_UserSubscribedItemsListChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.OnUserSubscribedItemsListChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.UserSubscribedItemsListChanged})">
+  OnUserSubscribedItemsListChanged(CallbackAction&lt;UserSubscribedItemsListChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnUserSubscribedItemsListChanged(CallbackAction&lt;UserSubscribedItemsListChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.UserSubscribedItemsListChanged.html">UserSubscribedItemsListChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_ReleaseQueryUGCRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.ReleaseQueryUGCRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_ReleaseQueryUGCRequest_MarymoorStudios_Core_Steamworks_UGCQueryHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.ReleaseQueryUGCRequest(MarymoorStudios.Core.Steamworks.UGCQueryHandle)">
+  ReleaseQueryUGCRequest(UGCQueryHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReleaseQueryUGCRequest(UGCQueryHandle handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveAllItemKeyValueTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveAllItemKeyValueTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveAllItemKeyValueTags_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveAllItemKeyValueTags(MarymoorStudios.Core.Steamworks.UGCUpdateHandle)">
+  RemoveAllItemKeyValueTags(UGCUpdateHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAllItemKeyValueTags(UGCUpdateHandle handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveAppDependency_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveAppDependency*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveAppDependency_MarymoorStudios_Core_Steamworks_PublishedFileId_MarymoorStudios_Core_Steamworks_AppId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveAppDependency(MarymoorStudios.Core.Steamworks.PublishedFileId,MarymoorStudios.Core.Steamworks.AppId)">
+  RemoveAppDependency(PublishedFileId, AppId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoveAppDependencyResult&gt; RemoveAppDependency(PublishedFileId publishedFileID, AppId appId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoveAppDependencyResult.html">RemoveAppDependencyResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveContentDescriptor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveContentDescriptor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveContentDescriptor_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_MarymoorStudios_Core_Steamworks_EUGCContentDescriptorID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveContentDescriptor(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID)">
+  RemoveContentDescriptor(UGCUpdateHandle, EUGCContentDescriptorID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveContentDescriptor(UGCUpdateHandle handle, EUGCContentDescriptorID descid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>descid</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCContentDescriptorID.html">EUGCContentDescriptorID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveDependency_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveDependency*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveDependency_MarymoorStudios_Core_Steamworks_PublishedFileId_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveDependency(MarymoorStudios.Core.Steamworks.PublishedFileId,MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  RemoveDependency(PublishedFileId, PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoveUGCDependencyResult&gt; RemoveDependency(PublishedFileId parentPublishedFileID, PublishedFileId childPublishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentPublishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>childPublishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoveUGCDependencyResult.html">RemoveUGCDependencyResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemFromFavorites_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemFromFavorites*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemFromFavorites_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemFromFavorites(MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  RemoveItemFromFavorites(AppId, PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;UserFavoriteItemsListChanged&gt; RemoveItemFromFavorites(AppId appId, PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.UserFavoriteItemsListChanged.html">UserFavoriteItemsListChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemKeyValueTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemKeyValueTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemKeyValueTags_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemKeyValueTags(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  RemoveItemKeyValueTags(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveItemKeyValueTags(UGCUpdateHandle handle, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemPreview_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemPreview*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RemoveItemPreview_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RemoveItemPreview(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.UInt32)">
+  RemoveItemPreview(UGCUpdateHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveItemPreview(UGCUpdateHandle handle, uint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_RequestUGCDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RequestUGCDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_RequestUGCDetails_MarymoorStudios_Core_Steamworks_PublishedFileId_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.RequestUGCDetails(MarymoorStudios.Core.Steamworks.PublishedFileId,System.UInt32)">
+  RequestUGCDetails(PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SteamUGCRequestUGCDetailsResult&gt; RequestUGCDetails(PublishedFileId publishedFileID, uint maxAgeSeconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>maxAgeSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamUGCRequestUGCDetailsResult.html">SteamUGCRequestUGCDetailsResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SendQueryUGCRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SendQueryUGCRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SendQueryUGCRequest_MarymoorStudios_Core_Steamworks_UGCQueryHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SendQueryUGCRequest(MarymoorStudios.Core.Steamworks.UGCQueryHandle)">
+  SendQueryUGCRequest(UGCQueryHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SteamUGCQueryCompleted&gt; SendQueryUGCRequest(UGCQueryHandle handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamUGCQueryCompleted.html">SteamUGCQueryCompleted</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAdminQuery_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAdminQuery*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAdminQuery_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAdminQuery(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.Boolean)">
+  SetAdminQuery(UGCUpdateHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAdminQuery(UGCUpdateHandle handle, bool adminQuery)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>adminQuery</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAllowCachedResponse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAllowCachedResponse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAllowCachedResponse_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAllowCachedResponse(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  SetAllowCachedResponse(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAllowCachedResponse(UGCQueryHandle handle, uint maxAgeSeconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>maxAgeSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAllowLegacyUpload_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAllowLegacyUpload*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetAllowLegacyUpload_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetAllowLegacyUpload(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.Boolean)">
+  SetAllowLegacyUpload(UGCUpdateHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAllowLegacyUpload(UGCUpdateHandle handle, bool allowLegacyUpload)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>allowLegacyUpload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetCloudFileNameFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetCloudFileNameFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetCloudFileNameFilter_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetCloudFileNameFilter(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String)">
+  SetCloudFileNameFilter(UGCQueryHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetCloudFileNameFilter(UGCQueryHandle handle, string matchCloudFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>matchCloudFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemContent_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemContent*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemContent_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemContent(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemContent(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemContent(UGCUpdateHandle handle, string pszContentFolder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>pszContentFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemDescription_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemDescription*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemDescription_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemDescription(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemDescription(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemDescription(UGCUpdateHandle handle, string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemMetadata_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemMetadata*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemMetadata_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemMetadata(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemMetadata(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemMetadata(UGCUpdateHandle handle, string metaData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>metaData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemPreview_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemPreview*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemPreview_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemPreview(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemPreview(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemPreview(UGCUpdateHandle handle, string pszPreviewFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>pszPreviewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemTags_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_MarymoorStudios_Core_Steamworks_SteamParamStringArray__System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemTags(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,MarymoorStudios.Core.Steamworks.SteamParamStringArray@,System.Boolean)">
+  SetItemTags(UGCUpdateHandle, in SteamParamStringArray, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemTags(UGCUpdateHandle updateHandle, in SteamParamStringArray tags, bool allowAdminTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+    <dt><code>allowAdminTags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemTitle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemTitle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemTitle_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemTitle(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemTitle(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemTitle(UGCUpdateHandle handle, string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemUpdateLanguage_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemUpdateLanguage*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemUpdateLanguage_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemUpdateLanguage(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SetItemUpdateLanguage(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemUpdateLanguage(UGCUpdateHandle handle, string language)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemVisibility_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemVisibility*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemVisibility_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_MarymoorStudios_Core_Steamworks_ERemoteStoragePublishedFileVisibility_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemVisibility(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility)">
+  SetItemVisibility(UGCUpdateHandle, ERemoteStoragePublishedFileVisibility)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemVisibility(UGCUpdateHandle handle, ERemoteStoragePublishedFileVisibility visibility)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>visibility</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility.html">ERemoteStoragePublishedFileVisibility</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemsDisabledLocally_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemsDisabledLocally*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetItemsDisabledLocally_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetItemsDisabledLocally(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32,System.Boolean)">
+  SetItemsDisabledLocally(out PublishedFileId, uint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetItemsDisabledLocally(out PublishedFileId publishedFileIDs, uint numPublishedFileIDs, bool disabledLocally)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileIDs</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>numPublishedFileIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>disabledLocally</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetLanguage_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetLanguage*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetLanguage_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetLanguage(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String)">
+  SetLanguage(UGCQueryHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLanguage(UGCQueryHandle handle, string language)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetMatchAnyTag_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetMatchAnyTag*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetMatchAnyTag_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetMatchAnyTag(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetMatchAnyTag(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetMatchAnyTag(UGCQueryHandle handle, bool matchAnyTag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>matchAnyTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetRankedByTrendDays_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetRankedByTrendDays*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetRankedByTrendDays_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetRankedByTrendDays(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  SetRankedByTrendDays(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetRankedByTrendDays(UGCQueryHandle handle, uint days)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetRequiredGameVersions_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetRequiredGameVersions*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetRequiredGameVersions_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetRequiredGameVersions(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String,System.String)">
+  SetRequiredGameVersions(UGCUpdateHandle, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetRequiredGameVersions(UGCUpdateHandle handle, string pszGameBranchMin, string pszGameBranchMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>pszGameBranchMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pszGameBranchMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnAdditionalPreviews_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnAdditionalPreviews*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnAdditionalPreviews_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnAdditionalPreviews(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnAdditionalPreviews(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnAdditionalPreviews(UGCQueryHandle handle, bool returnAdditionalPreviews)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnAdditionalPreviews</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnChildren_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnChildren*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnChildren_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnChildren(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnChildren(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnChildren(UGCQueryHandle handle, bool returnChildren)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnChildren</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnKeyValueTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnKeyValueTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnKeyValueTags_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnKeyValueTags(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnKeyValueTags(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnKeyValueTags(UGCQueryHandle handle, bool returnKeyValueTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnKeyValueTags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnLongDescription_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnLongDescription*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnLongDescription_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnLongDescription(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnLongDescription(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnLongDescription(UGCQueryHandle handle, bool returnLongDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnLongDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnMetadata_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnMetadata*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnMetadata_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnMetadata(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnMetadata(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnMetadata(UGCQueryHandle handle, bool returnMetadata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnMetadata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnOnlyIDs_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnOnlyIDs*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnOnlyIDs_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnOnlyIDs(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnOnlyIDs(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnOnlyIDs(UGCQueryHandle handle, bool returnOnlyIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnOnlyIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnPlaytimeStats_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnPlaytimeStats*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnPlaytimeStats_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnPlaytimeStats(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.UInt32)">
+  SetReturnPlaytimeStats(UGCQueryHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnPlaytimeStats(UGCQueryHandle handle, uint days)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnTotalOnly_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnTotalOnly*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetReturnTotalOnly_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetReturnTotalOnly(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.Boolean)">
+  SetReturnTotalOnly(UGCQueryHandle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetReturnTotalOnly(UGCQueryHandle handle, bool returnTotalOnly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>returnTotalOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetSearchText_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetSearchText*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetSearchText_MarymoorStudios_Core_Steamworks_UGCQueryHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetSearchText(MarymoorStudios.Core.Steamworks.UGCQueryHandle,System.String)">
+  SetSearchText(UGCQueryHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSearchText(UGCQueryHandle handle, string searchText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>searchText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetSubscriptionsLoadOrder_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetSubscriptionsLoadOrder*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetSubscriptionsLoadOrder_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetSubscriptionsLoadOrder(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32)">
+  SetSubscriptionsLoadOrder(out PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSubscriptionsLoadOrder(out PublishedFileId publishedFileIDs, uint numPublishedFileIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileIDs</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>numPublishedFileIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetTimeCreatedDateRange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetTimeCreatedDateRange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetTimeCreatedDateRange_MarymoorStudios_Core_Steamworks_UGCQueryHandle_MarymoorStudios_Core_Steamworks_RTime32_MarymoorStudios_Core_Steamworks_RTime32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetTimeCreatedDateRange(MarymoorStudios.Core.Steamworks.UGCQueryHandle,MarymoorStudios.Core.Steamworks.RTime32,MarymoorStudios.Core.Steamworks.RTime32)">
+  SetTimeCreatedDateRange(UGCQueryHandle, RTime32, RTime32)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetTimeCreatedDateRange(UGCQueryHandle handle, RTime32 start, RTime32 end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.RTime32.html">RTime32</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.RTime32.html">RTime32</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetTimeUpdatedDateRange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetTimeUpdatedDateRange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetTimeUpdatedDateRange_MarymoorStudios_Core_Steamworks_UGCQueryHandle_MarymoorStudios_Core_Steamworks_RTime32_MarymoorStudios_Core_Steamworks_RTime32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetTimeUpdatedDateRange(MarymoorStudios.Core.Steamworks.UGCQueryHandle,MarymoorStudios.Core.Steamworks.RTime32,MarymoorStudios.Core.Steamworks.RTime32)">
+  SetTimeUpdatedDateRange(UGCQueryHandle, RTime32, RTime32)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetTimeUpdatedDateRange(UGCQueryHandle handle, RTime32 start, RTime32 end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCQueryHandle.html">UGCQueryHandle</a></dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.RTime32.html">RTime32</a></dt>
+    <dd></dd>
+    <dt><code>end</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.RTime32.html">RTime32</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetUserItemVote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetUserItemVote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SetUserItemVote_MarymoorStudios_Core_Steamworks_PublishedFileId_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SetUserItemVote(MarymoorStudios.Core.Steamworks.PublishedFileId,System.Boolean)">
+  SetUserItemVote(PublishedFileId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SetUserItemVoteResult&gt; SetUserItemVote(PublishedFileId publishedFileID, bool voteUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>voteUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SetUserItemVoteResult.html">SetUserItemVoteResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_ShowWorkshopEULA_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.ShowWorkshopEULA*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_ShowWorkshopEULA" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.ShowWorkshopEULA">
+  ShowWorkshopEULA()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowWorkshopEULA()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_StartItemUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StartItemUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_StartItemUpdate_MarymoorStudios_Core_Steamworks_AppId_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StartItemUpdate(MarymoorStudios.Core.Steamworks.AppId,MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  StartItemUpdate(AppId, PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCUpdateHandle StartItemUpdate(AppId consumerAppId, PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>consumerAppId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_StartPlaytimeTracking_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StartPlaytimeTracking*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_StartPlaytimeTracking_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StartPlaytimeTracking(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32)">
+  StartPlaytimeTracking(out PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;StartPlaytimeTrackingResult&gt; StartPlaytimeTracking(out PublishedFileId publishedFileID, uint numPublishedFileIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>numPublishedFileIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.StartPlaytimeTrackingResult.html">StartPlaytimeTrackingResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_StopPlaytimeTracking_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StopPlaytimeTracking*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_StopPlaytimeTracking_MarymoorStudios_Core_Steamworks_PublishedFileId__System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StopPlaytimeTracking(MarymoorStudios.Core.Steamworks.PublishedFileId@,System.UInt32)">
+  StopPlaytimeTracking(out PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;StopPlaytimeTrackingResult&gt; StopPlaytimeTracking(out PublishedFileId publishedFileID, uint numPublishedFileIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>numPublishedFileIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.StopPlaytimeTrackingResult.html">StopPlaytimeTrackingResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_StopPlaytimeTrackingForAllItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StopPlaytimeTrackingForAllItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_StopPlaytimeTrackingForAllItems" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.StopPlaytimeTrackingForAllItems">
+  StopPlaytimeTrackingForAllItems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;StopPlaytimeTrackingResult&gt; StopPlaytimeTrackingForAllItems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.StopPlaytimeTrackingResult.html">StopPlaytimeTrackingResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SubmitItemUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SubmitItemUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SubmitItemUpdate_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SubmitItemUpdate(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.String)">
+  SubmitItemUpdate(UGCUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SubmitItemUpdateResult&gt; SubmitItemUpdate(UGCUpdateHandle handle, string changeNote)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>changeNote</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SubmitItemUpdateResult.html">SubmitItemUpdateResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SubscribeItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SubscribeItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SubscribeItem_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SubscribeItem(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  SubscribeItem(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageSubscribePublishedFileResult&gt; SubscribeItem(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageSubscribePublishedFileResult.html">RemoteStorageSubscribePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_SuspendDownloads_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SuspendDownloads*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_SuspendDownloads_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.SuspendDownloads(System.Boolean)">
+  SuspendDownloads(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SuspendDownloads(bool suspend)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>suspend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_UnsubscribeItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UnsubscribeItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_UnsubscribeItem_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UnsubscribeItem(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  UnsubscribeItem(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageUnsubscribePublishedFileResult&gt; UnsubscribeItem(PublishedFileId publishedFileID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageUnsubscribePublishedFileResult.html">RemoteStorageUnsubscribePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_UpdateItemPreviewFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UpdateItemPreviewFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_UpdateItemPreviewFile_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_UInt32_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UpdateItemPreviewFile(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.UInt32,System.String)">
+  UpdateItemPreviewFile(UGCUpdateHandle, uint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateItemPreviewFile(UGCUpdateHandle handle, uint index, string pszPreviewFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>pszPreviewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUGC_UpdateItemPreviewVideo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UpdateItemPreviewVideo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUGC_UpdateItemPreviewVideo_MarymoorStudios_Core_Steamworks_UGCUpdateHandle_System_UInt32_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUGC.UpdateItemPreviewVideo(MarymoorStudios.Core.Steamworks.UGCUpdateHandle,System.UInt32,System.String)">
+  UpdateItemPreviewVideo(UGCUpdateHandle, uint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateItemPreviewVideo(UGCUpdateHandle handle, uint index, string pszVideoID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCUpdateHandle.html">UGCUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>pszVideoID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

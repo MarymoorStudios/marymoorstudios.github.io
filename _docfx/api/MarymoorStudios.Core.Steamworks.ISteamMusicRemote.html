@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamMusicRemote </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamMusicRemote ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote" class="text-break">
+Class ISteamMusicRemote  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamMusicRemote : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamMusicRemote</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMMUSICREMOTE_INTERFACE_VERSION001&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_BActivationSuccess_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.BActivationSuccess*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_BActivationSuccess_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.BActivationSuccess(System.Boolean)">
+  BActivationSuccess(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BActivationSuccess(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_BIsCurrentMusicRemote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.BIsCurrentMusicRemote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_BIsCurrentMusicRemote" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.BIsCurrentMusicRemote">
+  BIsCurrentMusicRemote()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BIsCurrentMusicRemote()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryDidChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryDidChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryDidChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryDidChange">
+  CurrentEntryDidChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentEntryDidChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryIsAvailable_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryIsAvailable*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryIsAvailable_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryIsAvailable(System.Boolean)">
+  CurrentEntryIsAvailable(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentEntryIsAvailable(bool available)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>available</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryWillChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryWillChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_CurrentEntryWillChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.CurrentEntryWillChange">
+  CurrentEntryWillChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentEntryWillChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_DeregisterSteamMusicRemote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.DeregisterSteamMusicRemote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_DeregisterSteamMusicRemote" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.DeregisterSteamMusicRemote">
+  DeregisterSteamMusicRemote()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeregisterSteamMusicRemote()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableLooped_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableLooped*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableLooped_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableLooped(System.Boolean)">
+  EnableLooped(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableLooped(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlayNext_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlayNext*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlayNext_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlayNext(System.Boolean)">
+  EnablePlayNext(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnablePlayNext(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlayPrevious_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlayPrevious*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlayPrevious_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlayPrevious(System.Boolean)">
+  EnablePlayPrevious(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnablePlayPrevious(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlaylists_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlaylists*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnablePlaylists_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnablePlaylists(System.Boolean)">
+  EnablePlaylists(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnablePlaylists(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableQueue_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableQueue*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableQueue_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableQueue(System.Boolean)">
+  EnableQueue(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableQueue(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableShuffled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableShuffled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_EnableShuffled_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.EnableShuffled(System.Boolean)">
+  EnableShuffled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableShuffled(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteToFront_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteToFront*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteToFront_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerRemoteToFront__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteToFront(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerRemoteToFront})">
+  OnMusicPlayerRemoteToFront(CallbackAction&lt;MusicPlayerRemoteToFront&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerRemoteToFront(CallbackAction&lt;MusicPlayerRemoteToFront&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerRemoteToFront.html">MusicPlayerRemoteToFront</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteWillActivate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteWillActivate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteWillActivate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerRemoteWillActivate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteWillActivate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerRemoteWillActivate})">
+  OnMusicPlayerRemoteWillActivate(CallbackAction&lt;MusicPlayerRemoteWillActivate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerRemoteWillActivate(CallbackAction&lt;MusicPlayerRemoteWillActivate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerRemoteWillActivate.html">MusicPlayerRemoteWillActivate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteWillDeactivate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteWillDeactivate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerRemoteWillDeactivate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerRemoteWillDeactivate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerRemoteWillDeactivate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerRemoteWillDeactivate})">
+  OnMusicPlayerRemoteWillDeactivate(CallbackAction&lt;MusicPlayerRemoteWillDeactivate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerRemoteWillDeactivate(CallbackAction&lt;MusicPlayerRemoteWillDeactivate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerRemoteWillDeactivate.html">MusicPlayerRemoteWillDeactivate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsLooped_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsLooped*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsLooped_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsLooped__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsLooped(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsLooped})">
+  OnMusicPlayerWantsLooped(CallbackAction&lt;MusicPlayerWantsLooped&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsLooped(CallbackAction&lt;MusicPlayerWantsLooped&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsLooped.html">MusicPlayerWantsLooped</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPause_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPause*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPause_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsPause__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPause(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsPause})">
+  OnMusicPlayerWantsPause(CallbackAction&lt;MusicPlayerWantsPause&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsPause(CallbackAction&lt;MusicPlayerWantsPause&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsPause.html">MusicPlayerWantsPause</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlay_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlay*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlay_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsPlay__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlay(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlay})">
+  OnMusicPlayerWantsPlay(CallbackAction&lt;MusicPlayerWantsPlay&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsPlay(CallbackAction&lt;MusicPlayerWantsPlay&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlay.html">MusicPlayerWantsPlay</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayNext_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayNext*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayNext_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsPlayNext__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayNext(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayNext})">
+  OnMusicPlayerWantsPlayNext(CallbackAction&lt;MusicPlayerWantsPlayNext&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsPlayNext(CallbackAction&lt;MusicPlayerWantsPlayNext&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayNext.html">MusicPlayerWantsPlayNext</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayPrevious_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayPrevious*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayPrevious_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsPlayPrevious__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayPrevious(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayPrevious})">
+  OnMusicPlayerWantsPlayPrevious(CallbackAction&lt;MusicPlayerWantsPlayPrevious&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsPlayPrevious(CallbackAction&lt;MusicPlayerWantsPlayPrevious&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayPrevious.html">MusicPlayerWantsPlayPrevious</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayingRepeatStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayingRepeatStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsPlayingRepeatStatus_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsPlayingRepeatStatus__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsPlayingRepeatStatus(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayingRepeatStatus})">
+  OnMusicPlayerWantsPlayingRepeatStatus(CallbackAction&lt;MusicPlayerWantsPlayingRepeatStatus&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsPlayingRepeatStatus(CallbackAction&lt;MusicPlayerWantsPlayingRepeatStatus&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsPlayingRepeatStatus.html">MusicPlayerWantsPlayingRepeatStatus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsShuffled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsShuffled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWantsShuffled_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWantsShuffled__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWantsShuffled(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWantsShuffled})">
+  OnMusicPlayerWantsShuffled(CallbackAction&lt;MusicPlayerWantsShuffled&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWantsShuffled(CallbackAction&lt;MusicPlayerWantsShuffled&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWantsShuffled.html">MusicPlayerWantsShuffled</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWillQuit_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWillQuit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_OnMusicPlayerWillQuit_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_MusicPlayerWillQuit__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.OnMusicPlayerWillQuit(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.MusicPlayerWillQuit})">
+  OnMusicPlayerWillQuit(CallbackAction&lt;MusicPlayerWillQuit&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnMusicPlayerWillQuit(CallbackAction&lt;MusicPlayerWillQuit&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.MusicPlayerWillQuit.html">MusicPlayerWillQuit</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_PlaylistDidChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.PlaylistDidChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_PlaylistDidChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.PlaylistDidChange">
+  PlaylistDidChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlaylistDidChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_PlaylistWillChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.PlaylistWillChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_PlaylistWillChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.PlaylistWillChange">
+  PlaylistWillChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlaylistWillChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_QueueDidChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.QueueDidChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_QueueDidChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.QueueDidChange">
+  QueueDidChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool QueueDidChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_QueueWillChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.QueueWillChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_QueueWillChange" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.QueueWillChange">
+  QueueWillChange()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool QueueWillChange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_RegisterSteamMusicRemote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.RegisterSteamMusicRemote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_RegisterSteamMusicRemote_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.RegisterSteamMusicRemote(System.String)">
+  RegisterSteamMusicRemote(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterSteamMusicRemote(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_ResetPlaylistEntries_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.ResetPlaylistEntries*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_ResetPlaylistEntries" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.ResetPlaylistEntries">
+  ResetPlaylistEntries()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetPlaylistEntries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_ResetQueueEntries_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.ResetQueueEntries*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_ResetQueueEntries" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.ResetQueueEntries">
+  ResetQueueEntries()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetQueueEntries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetCurrentPlaylistEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetCurrentPlaylistEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetCurrentPlaylistEntry_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetCurrentPlaylistEntry(System.Int32)">
+  SetCurrentPlaylistEntry(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetCurrentPlaylistEntry(int iD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetCurrentQueueEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetCurrentQueueEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetCurrentQueueEntry_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetCurrentQueueEntry(System.Int32)">
+  SetCurrentQueueEntry(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetCurrentQueueEntry(int iD)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetDisplayName_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetDisplayName*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetDisplayName_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetDisplayName(System.String)">
+  SetDisplayName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetDisplayName(string displayName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetPNGIcon_64x64_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetPNGIcon_64x64*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetPNGIcon_64x64_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetPNGIcon_64x64(System.Span{System.Byte})">
+  SetPNGIcon_64x64(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPNGIcon_64x64(Span&lt;byte&gt; buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetPlaylistEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetPlaylistEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetPlaylistEntry_System_Int32_System_Int32_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetPlaylistEntry(System.Int32,System.Int32,System.String)">
+  SetPlaylistEntry(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPlaylistEntry(int iD, int position, string entryText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>entryText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetQueueEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetQueueEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_SetQueueEntry_System_Int32_System_Int32_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.SetQueueEntry(System.Int32,System.Int32,System.String)">
+  SetQueueEntry(int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetQueueEntry(int iD, int position, string entryText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iD</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>entryText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryCoverArt_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryCoverArt*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryCoverArt_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryCoverArt(System.Span{System.Byte})">
+  UpdateCurrentEntryCoverArt(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateCurrentEntryCoverArt(Span&lt;byte&gt; buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryElapsedSeconds_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryElapsedSeconds*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryElapsedSeconds_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryElapsedSeconds(System.Int32)">
+  UpdateCurrentEntryElapsedSeconds(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateCurrentEntryElapsedSeconds(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryText_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryText*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateCurrentEntryText_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateCurrentEntryText(System.String)">
+  UpdateCurrentEntryText(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateCurrentEntryText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateLooped_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateLooped*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateLooped_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateLooped(System.Boolean)">
+  UpdateLooped(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateLooped(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdatePlaybackStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdatePlaybackStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdatePlaybackStatus_MarymoorStudios_Core_Steamworks_AudioPlayback_Status_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdatePlaybackStatus(MarymoorStudios.Core.Steamworks.AudioPlayback_Status)">
+  UpdatePlaybackStatus(AudioPlayback_Status)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePlaybackStatus(AudioPlayback_Status status)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>status</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AudioPlayback_Status.html">AudioPlayback_Status</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateShuffled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateShuffled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateShuffled_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateShuffled(System.Boolean)">
+  UpdateShuffled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateShuffled(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateVolume_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateVolume*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMusicRemote_UpdateVolume_System_Single_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.UpdateVolume(System.Single)">
+  UpdateVolume(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateVolume(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

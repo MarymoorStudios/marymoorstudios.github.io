@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamInventory </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamInventory ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamInventory" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory" class="text-break">
+Class ISteamInventory  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamInventory : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamInventory</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMINVENTORY_INTERFACE_V003&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_AddPromoItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.AddPromoItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_AddPromoItem_MarymoorStudios_Core_Steamworks_SteamInventoryResult__MarymoorStudios_Core_Steamworks_SteamItemDef_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.AddPromoItem(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,MarymoorStudios.Core.Steamworks.SteamItemDef)">
+  AddPromoItem(out SteamInventoryResult, SteamItemDef)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddPromoItem(out SteamInventoryResult resultHandle, SteamItemDef itemDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>itemDef</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_AddPromoItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.AddPromoItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_AddPromoItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemDef__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.AddPromoItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemDef})">
+  AddPromoItems(out SteamInventoryResult, ReadOnlySpan&lt;SteamItemDef&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddPromoItems(out SteamInventoryResult resultHandle, ReadOnlySpan&lt;SteamItemDef&gt; arrayItemDefs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>arrayItemDefs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_CheckResultSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.CheckResultSteamID*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_CheckResultSteamID_MarymoorStudios_Core_Steamworks_SteamInventoryResult_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.CheckResultSteamID(MarymoorStudios.Core.Steamworks.SteamInventoryResult,MarymoorStudios.Core.Steamworks.CSteamID)">
+  CheckResultSteamID(SteamInventoryResult, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckResultSteamID(SteamInventoryResult resultHandle, CSteamID steamIDExpected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>steamIDExpected</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_ConsumeItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.ConsumeItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_ConsumeItem_MarymoorStudios_Core_Steamworks_SteamInventoryResult__MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.ConsumeItem(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.UInt32)">
+  ConsumeItem(out SteamInventoryResult, SteamItemInstanceID, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsumeItem(out SteamInventoryResult resultHandle, SteamItemInstanceID itemConsume, uint quantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>itemConsume</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_DeserializeResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.DeserializeResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_DeserializeResult_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.DeserializeResult(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.ReadOnlySpan{System.Byte},System.Boolean)">
+  DeserializeResult(out SteamInventoryResult, ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeserializeResult(out SteamInventoryResult outResultHandle, ReadOnlySpan&lt;byte&gt; buffer, bool rESERVED_MUST_BE_FALSE)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outResultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>rESERVED_MUST_BE_FALSE</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_DestroyResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.DestroyResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_DestroyResult_MarymoorStudios_Core_Steamworks_SteamInventoryResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.DestroyResult(MarymoorStudios.Core.Steamworks.SteamInventoryResult)">
+  DestroyResult(SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyResult(SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_ExchangeItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.ExchangeItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_ExchangeItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemDef__System_ReadOnlySpan_System_UInt32__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemInstanceID__System_ReadOnlySpan_System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.ExchangeItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemDef},System.ReadOnlySpan{System.UInt32},System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemInstanceID},System.ReadOnlySpan{System.UInt32})">
+  ExchangeItems(out SteamInventoryResult, ReadOnlySpan&lt;SteamItemDef&gt;, ReadOnlySpan&lt;uint&gt;, ReadOnlySpan&lt;SteamItemInstanceID&gt;, ReadOnlySpan&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExchangeItems(out SteamInventoryResult resultHandle, ReadOnlySpan&lt;SteamItemDef&gt; arrayGenerate, ReadOnlySpan&lt;uint&gt; arrayGenerateQuantity, ReadOnlySpan&lt;SteamItemInstanceID&gt; arrayDestroy, ReadOnlySpan&lt;uint&gt; arrayDestroyQuantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>arrayGenerate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayGenerateQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayDestroy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayDestroyQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GenerateItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GenerateItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GenerateItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemDef__System_ReadOnlySpan_System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GenerateItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemDef},System.ReadOnlySpan{System.UInt32})">
+  GenerateItems(out SteamInventoryResult, ReadOnlySpan&lt;SteamItemDef&gt;, ReadOnlySpan&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GenerateItems(out SteamInventoryResult resultHandle, ReadOnlySpan&lt;SteamItemDef&gt; arrayItemDefs, ReadOnlySpan&lt;uint&gt; arrayQuantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>arrayItemDefs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetAllItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetAllItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetAllItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetAllItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@)">
+  GetAllItems(out SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAllItems(out SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetEligiblePromoItemDefinitionIDs_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetEligiblePromoItemDefinitionIDs*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetEligiblePromoItemDefinitionIDs_MarymoorStudios_Core_Steamworks_CSteamID_System_Span_MarymoorStudios_Core_Steamworks_SteamItemDef__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetEligiblePromoItemDefinitionIDs(MarymoorStudios.Core.Steamworks.CSteamID,System.Span{MarymoorStudios.Core.Steamworks.SteamItemDef},System.UInt32@)">
+  GetEligiblePromoItemDefinitionIDs(CSteamID, Span&lt;SteamItemDef&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEligiblePromoItemDefinitionIDs(CSteamID steamID, Span&lt;SteamItemDef&gt; itemDefIDs, out uint itemDefIDsArraySize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>itemDefIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>itemDefIDsArraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemDefinitionIDs_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemDefinitionIDs*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemDefinitionIDs_System_Span_MarymoorStudios_Core_Steamworks_SteamItemDef__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemDefinitionIDs(System.Span{MarymoorStudios.Core.Steamworks.SteamItemDef},System.UInt32@)">
+  GetItemDefinitionIDs(Span&lt;SteamItemDef&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemDefinitionIDs(Span&lt;SteamItemDef&gt; itemDefIDs, out uint itemDefIDsArraySize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemDefIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>itemDefIDsArraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemDefinitionProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemDefinitionProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemDefinitionProperty_MarymoorStudios_Core_Steamworks_SteamItemDef_System_String_System_Span_System_Byte__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemDefinitionProperty(MarymoorStudios.Core.Steamworks.SteamItemDef,System.String,System.Span{System.Byte},System.UInt32@)">
+  GetItemDefinitionProperty(SteamItemDef, string, Span&lt;byte&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemDefinitionProperty(SteamItemDef definition, string propertyName, Span&lt;byte&gt; valueBuffer, out uint valueBufferSizeOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>definition</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valueBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>valueBufferSizeOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemPrice_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemPrice*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemPrice_MarymoorStudios_Core_Steamworks_SteamItemDef_System_UInt64__System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemPrice(MarymoorStudios.Core.Steamworks.SteamItemDef,System.UInt64@,System.UInt64@)">
+  GetItemPrice(SteamItemDef, out ulong, out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemPrice(SteamItemDef definition, out ulong currentPrice, out ulong basePrice)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>definition</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a></dt>
+    <dd></dd>
+    <dt><code>currentPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>basePrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemsByID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemsByID*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemsByID_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemInstanceID__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemsByID(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemInstanceID})">
+  GetItemsByID(out SteamInventoryResult, ReadOnlySpan&lt;SteamItemInstanceID&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemsByID(out SteamInventoryResult resultHandle, ReadOnlySpan&lt;SteamItemInstanceID&gt; instanceIDs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>instanceIDs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemsWithPrices_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemsWithPrices*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetItemsWithPrices_System_Span_MarymoorStudios_Core_Steamworks_SteamItemDef__System_Span_System_UInt64__System_Span_System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetItemsWithPrices(System.Span{MarymoorStudios.Core.Steamworks.SteamItemDef},System.Span{System.UInt64},System.Span{System.UInt64})">
+  GetItemsWithPrices(Span&lt;SteamItemDef&gt;, Span&lt;ulong&gt;, Span&lt;ulong&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetItemsWithPrices(Span&lt;SteamItemDef&gt; arrayItemDefs, Span&lt;ulong&gt; currentPrices, Span&lt;ulong&gt; basePrices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arrayItemDefs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>currentPrices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>basePrices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetNumItemsWithPrices_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetNumItemsWithPrices*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetNumItemsWithPrices" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetNumItemsWithPrices">
+  GetNumItemsWithPrices()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetNumItemsWithPrices()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultItemProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultItemProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultItemProperty_MarymoorStudios_Core_Steamworks_SteamInventoryResult_System_UInt32_System_String_System_Span_System_Byte__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultItemProperty(MarymoorStudios.Core.Steamworks.SteamInventoryResult,System.UInt32,System.String,System.Span{System.Byte},System.UInt32@)">
+  GetResultItemProperty(SteamInventoryResult, uint, string, Span&lt;byte&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetResultItemProperty(SteamInventoryResult resultHandle, uint itemIndex, string propertyName, Span&lt;byte&gt; valueBuffer, out uint valueBufferSizeOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valueBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>valueBufferSizeOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult_System_Span_MarymoorStudios_Core_Steamworks_SteamItemDetails__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult,System.Span{MarymoorStudios.Core.Steamworks.SteamItemDetails},System.UInt32@)">
+  GetResultItems(SteamInventoryResult, Span&lt;SteamItemDetails&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetResultItems(SteamInventoryResult resultHandle, Span&lt;SteamItemDetails&gt; outItemsArray, out uint outItemsArraySize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>outItemsArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDetails.html">SteamItemDetails</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>outItemsArraySize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultStatus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultStatus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultStatus_MarymoorStudios_Core_Steamworks_SteamInventoryResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultStatus(MarymoorStudios.Core.Steamworks.SteamInventoryResult)">
+  GetResultStatus(SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EResult GetResultStatus(SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EResult.html">EResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultTimestamp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultTimestamp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GetResultTimestamp_MarymoorStudios_Core_Steamworks_SteamInventoryResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GetResultTimestamp(MarymoorStudios.Core.Steamworks.SteamInventoryResult)">
+  GetResultTimestamp(SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetResultTimestamp(SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_GrantPromoItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GrantPromoItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_GrantPromoItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.GrantPromoItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@)">
+  GrantPromoItems(out SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GrantPromoItems(out SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_InspectItem_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.InspectItem*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_InspectItem_MarymoorStudios_Core_Steamworks_SteamInventoryResult__System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.InspectItem(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,System.String)">
+  InspectItem(out SteamInventoryResult, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InspectItem(out SteamInventoryResult resultHandle, string itemToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>itemToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_LoadItemDefinitions_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.LoadItemDefinitions*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_LoadItemDefinitions" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.LoadItemDefinitions">
+  LoadItemDefinitions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadItemDefinitions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryDefinitionUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryDefinitionUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryDefinitionUpdate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInventoryDefinitionUpdate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryDefinitionUpdate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInventoryDefinitionUpdate})">
+  OnSteamInventoryDefinitionUpdate(CallbackAction&lt;SteamInventoryDefinitionUpdate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInventoryDefinitionUpdate(CallbackAction&lt;SteamInventoryDefinitionUpdate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryDefinitionUpdate.html">SteamInventoryDefinitionUpdate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryFullUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryFullUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryFullUpdate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInventoryFullUpdate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryFullUpdate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInventoryFullUpdate})">
+  OnSteamInventoryFullUpdate(CallbackAction&lt;SteamInventoryFullUpdate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInventoryFullUpdate(CallbackAction&lt;SteamInventoryFullUpdate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryFullUpdate.html">SteamInventoryFullUpdate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryResultReady_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryResultReady*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_OnSteamInventoryResultReady_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInventoryResultReady__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.OnSteamInventoryResultReady(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInventoryResultReady})">
+  OnSteamInventoryResultReady(CallbackAction&lt;SteamInventoryResultReady&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInventoryResultReady(CallbackAction&lt;SteamInventoryResultReady&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResultReady.html">SteamInventoryResultReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_RemoveProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RemoveProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_RemoveProperty_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RemoveProperty(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.String)">
+  RemoveProperty(SteamInventoryUpdateHandle, SteamItemInstanceID, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveProperty(SteamInventoryUpdateHandle handle, SteamItemInstanceID itemID, string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>itemID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_RequestEligiblePromoItemDefinitionsIDs_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RequestEligiblePromoItemDefinitionsIDs*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_RequestEligiblePromoItemDefinitionsIDs_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RequestEligiblePromoItemDefinitionsIDs(MarymoorStudios.Core.Steamworks.CSteamID)">
+  RequestEligiblePromoItemDefinitionsIDs(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SteamInventoryEligiblePromoItemDefIDs&gt; RequestEligiblePromoItemDefinitionsIDs(CSteamID steamID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryEligiblePromoItemDefIDs.html">SteamInventoryEligiblePromoItemDefIDs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_RequestPrices_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RequestPrices*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_RequestPrices" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.RequestPrices">
+  RequestPrices()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SteamInventoryRequestPricesResult&gt; RequestPrices()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryRequestPricesResult.html">SteamInventoryRequestPricesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SendItemDropHeartbeat_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SendItemDropHeartbeat*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SendItemDropHeartbeat" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SendItemDropHeartbeat">
+  SendItemDropHeartbeat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendItemDropHeartbeat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SerializeResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SerializeResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SerializeResult_MarymoorStudios_Core_Steamworks_SteamInventoryResult_System_Span_System_Byte__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SerializeResult(MarymoorStudios.Core.Steamworks.SteamInventoryResult,System.Span{System.Byte},System.UInt32@)">
+  SerializeResult(SteamInventoryResult, Span&lt;byte&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SerializeResult(SteamInventoryResult resultHandle, Span&lt;byte&gt; outBuffer, out uint outBufferSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>outBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>outBufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_String_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.String,System.Boolean)">
+  SetProperty(SteamInventoryUpdateHandle, SteamItemInstanceID, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetProperty(SteamInventoryUpdateHandle handle, SteamItemInstanceID itemID, string propertyName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>itemID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_String_System_Int64_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.String,System.Int64)">
+  SetProperty(SteamInventoryUpdateHandle, SteamItemInstanceID, string, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetProperty(SteamInventoryUpdateHandle handle, SteamItemInstanceID itemID, string propertyName, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>itemID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_String_System_Single_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.String,System.Single)">
+  SetProperty(SteamInventoryUpdateHandle, SteamItemInstanceID, string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetProperty(SteamInventoryUpdateHandle handle, SteamItemInstanceID itemID, string propertyName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>itemID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SetProperty_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SetProperty(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.String,System.String)">
+  SetProperty(SteamInventoryUpdateHandle, SteamItemInstanceID, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetProperty(SteamInventoryUpdateHandle handle, SteamItemInstanceID itemID, string propertyName, string propertyValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>itemID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>propertyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_StartPurchase_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.StartPurchase*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_StartPurchase_System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemDef__System_ReadOnlySpan_System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.StartPurchase(System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemDef},System.ReadOnlySpan{System.UInt32})">
+  StartPurchase(ReadOnlySpan&lt;SteamItemDef&gt;, ReadOnlySpan&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;SteamInventoryStartPurchaseResult&gt; StartPurchase(ReadOnlySpan&lt;SteamItemDef&gt; arrayItemDefs, ReadOnlySpan&lt;uint&gt; arrayQuantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arrayItemDefs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryStartPurchaseResult.html">SteamInventoryStartPurchaseResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_StartUpdateProperties_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.StartUpdateProperties*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_StartUpdateProperties" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.StartUpdateProperties">
+  StartUpdateProperties()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SteamInventoryUpdateHandle StartUpdateProperties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_SubmitUpdateProperties_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SubmitUpdateProperties*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_SubmitUpdateProperties_MarymoorStudios_Core_Steamworks_SteamInventoryUpdateHandle_MarymoorStudios_Core_Steamworks_SteamInventoryResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.SubmitUpdateProperties(MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle,MarymoorStudios.Core.Steamworks.SteamInventoryResult@)">
+  SubmitUpdateProperties(SteamInventoryUpdateHandle, out SteamInventoryResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SubmitUpdateProperties(SteamInventoryUpdateHandle handle, out SteamInventoryResult resultHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryUpdateHandle.html">SteamInventoryUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_TradeItems_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TradeItems*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_TradeItems_MarymoorStudios_Core_Steamworks_SteamInventoryResult__MarymoorStudios_Core_Steamworks_CSteamID_System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemInstanceID__System_ReadOnlySpan_System_UInt32__System_ReadOnlySpan_MarymoorStudios_Core_Steamworks_SteamItemInstanceID__System_ReadOnlySpan_System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TradeItems(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,MarymoorStudios.Core.Steamworks.CSteamID,System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemInstanceID},System.ReadOnlySpan{System.UInt32},System.ReadOnlySpan{MarymoorStudios.Core.Steamworks.SteamItemInstanceID},System.ReadOnlySpan{System.UInt32})">
+  TradeItems(out SteamInventoryResult, CSteamID, ReadOnlySpan&lt;SteamItemInstanceID&gt;, ReadOnlySpan&lt;uint&gt;, ReadOnlySpan&lt;SteamItemInstanceID&gt;, ReadOnlySpan&lt;uint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TradeItems(out SteamInventoryResult resultHandle, CSteamID steamIDTradePartner, ReadOnlySpan&lt;SteamItemInstanceID&gt; arrayGive, ReadOnlySpan&lt;uint&gt; arrayGiveQuantity, ReadOnlySpan&lt;SteamItemInstanceID&gt; arrayGet, ReadOnlySpan&lt;uint&gt; arrayGetQuantity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>steamIDTradePartner</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>arrayGive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayGiveQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayGet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arrayGetQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_TransferItemQuantity_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TransferItemQuantity*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_TransferItemQuantity_MarymoorStudios_Core_Steamworks_SteamInventoryResult__MarymoorStudios_Core_Steamworks_SteamItemInstanceID_System_UInt32_MarymoorStudios_Core_Steamworks_SteamItemInstanceID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TransferItemQuantity(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,MarymoorStudios.Core.Steamworks.SteamItemInstanceID,System.UInt32,MarymoorStudios.Core.Steamworks.SteamItemInstanceID)">
+  TransferItemQuantity(out SteamInventoryResult, SteamItemInstanceID, uint, SteamItemInstanceID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TransferItemQuantity(out SteamInventoryResult resultHandle, SteamItemInstanceID itemIdSource, uint quantity, SteamItemInstanceID itemIdDest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>itemIdSource</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>itemIdDest</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemInstanceID.html">SteamItemInstanceID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamInventory_TriggerItemDrop_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TriggerItemDrop*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamInventory_TriggerItemDrop_MarymoorStudios_Core_Steamworks_SteamInventoryResult__MarymoorStudios_Core_Steamworks_SteamItemDef_" data-uid="MarymoorStudios.Core.Steamworks.ISteamInventory.TriggerItemDrop(MarymoorStudios.Core.Steamworks.SteamInventoryResult@,MarymoorStudios.Core.Steamworks.SteamItemDef)">
+  TriggerItemDrop(out SteamInventoryResult, SteamItemDef)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerItemDrop(out SteamInventoryResult resultHandle, SteamItemDef dropListDefinition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInventoryResult.html">SteamInventoryResult</a></dt>
+    <dd></dd>
+    <dt><code>dropListDefinition</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamItemDef.html">SteamItemDef</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class TcpTransport </title>
+      <title>Class SteamTransport </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class TcpTransport ">
+      <meta name="title" content="Class SteamTransport ">
       
       <meta name="description" content="Transport that acts as an adapter between a  and a .">
       <link rel="icon" href="../logo.svg">
@@ -84,25 +84,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport">
+        <article data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport">
 
 
 
-  <h1 id="MarymoorStudios_Core_Rpc_Net_TcpTransport" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport" class="text-break">
-Class TcpTransport  
+  <h1 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport" class="text-break">
+Class SteamTransport  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.html">Rpc</a>.<a class="xref" href="MarymoorStudios.Core.Rpc.Net.html">Net</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Rpc.Net.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.Rpc.html">Rpc</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.Rpc.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Transport that acts as an adapter between a <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.sockets.socket">Socket</a>.</p>
+  <div class="markdown summary"><p>Transport that acts as an adapter between a <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> and a
+<span class="xref">MarymoorStudios.Core.Steamworks.Rpc.SteamPollGroup</span>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class TcpTransport : Transport&lt;OwnedMem&lt;byte&gt;&gt;, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class SteamTransport : Transport&lt;OwnedMem&lt;byte&gt;&gt;, IAsyncDisposable</code></pre>
   </div>
 
 
@@ -112,15 +113,15 @@ Class TcpTransport
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=86f2a40680a7b9c2bfd463c0395f6f262800fd69&amp;path=/Core/MarymoorStudios.Core.Promises/Transport.cs">Transport</a>&lt;<a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=86f2a40680a7b9c2bfd463c0395f6f262800fd69&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;&gt;</div>
-      <div><span class="xref">TcpTransport</span></div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/Transport.cs">Transport</a>&lt;<a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;&gt;</div>
+      <div><span class="xref">SteamTransport</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     </dd>
   </dl>
 
@@ -129,7 +130,7 @@ Class TcpTransport
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Dispose">Transport&lt;OwnedMem&lt;byte&gt;&gt;.Dispose()</a>
+      <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_DisposeAsync">Transport&lt;OwnedMem&lt;byte&gt;&gt;.DisposeAsync()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -160,9 +161,9 @@ Class TcpTransport
 </h2>
 
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ConsumerEvent_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.ConsumerEvent*"></a>
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ConsumerEvent_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.ConsumerEvent*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ConsumerEvent" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.ConsumerEvent">
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ConsumerEvent" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.ConsumerEvent">
   ConsumerEvent
   
   </h3>
@@ -188,7 +189,7 @@ Class TcpTransport
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ConsumerEvent_remarks">Remarks</h4>
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ConsumerEvent_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>This event only signals on the transition between an empty queue and having at least one item, so
 the caller should read the queue to completion before waiting on this event.</p>
 </div>
@@ -196,9 +197,73 @@ the caller should read the queue to completion before waiting on this event.</p>
 
 
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ProducerEvent_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.ProducerEvent*"></a>
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_Identity_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.Identity*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ProducerEvent" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.ProducerEvent">
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_Identity" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.Identity">
+  Identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identity of the local peer (if known).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SteamNetworkingIdentity Identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNetworkingIdentity.html">SteamNetworkingIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_IdentityRemote_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.IdentityRemote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_IdentityRemote" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.IdentityRemote">
+  IdentityRemote
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identity of the remote peer (if known).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ref readonly SteamNetworkingIdentity IdentityRemote { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNetworkingIdentity.html">SteamNetworkingIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ProducerEvent_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.ProducerEvent*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ProducerEvent" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.ProducerEvent">
   ProducerEvent
   
   </h3>
@@ -224,7 +289,7 @@ the caller should read the queue to completion before waiting on this event.</p>
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpTransport_ProducerEvent_remarks">Remarks</h4>
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_ProducerEvent_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>This event only signals on the transition between a full queue and having at least <code>threshold</code>
 items, so the caller should write to the queue until full before waiting on this event.</p>
 </div>
@@ -236,9 +301,9 @@ items, so the caller should write to the queue until full before waiting on this
 </h2>
 
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_Close_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.Close*"></a>
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_Close_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.Close*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_Close_MarymoorStudios_Core_Promises_TransportFlags_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.Close(MarymoorStudios.Core.Promises.TransportFlags)">
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_Close_MarymoorStudios_Core_Promises_TransportFlags_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.Close(MarymoorStudios.Core.Promises.TransportFlags)">
   Close(TransportFlags)
   
   </h3>
@@ -271,7 +336,7 @@ items, so the caller should write to the queue until full before waiting on this
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpTransport_Close_MarymoorStudios_Core_Promises_TransportFlags__remarks">Remarks</h4>
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_Close_MarymoorStudios_Core_Promises_TransportFlags__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>No more items can be inserted after this call returns.</p>
 <p>Either side (producer or consumer) can close the buffer.</p>
 <p>
@@ -285,10 +350,10 @@ closed first.
 
 
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_Dispose_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.Dispose*"></a>
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_DisposeAsync_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.DisposeAsync*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_Dispose_System_Boolean_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.Dispose(System.Boolean)">
-  Dispose(bool)
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_DisposeAsync_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.DisposeAsync(System.Boolean)">
+  DisposeAsync(bool)
   
   </h3>
 
@@ -297,15 +362,21 @@ closed first.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override ValueTask DisposeAsync(bool disposing)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if both native and managed resources are being disposed.  False if only native
-resources (i.e. in finalizer).</p>
+resources (i.e. in finalizer).  When native only then MUST be prompt.</p>
 </dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -318,10 +389,9 @@ resources (i.e. in finalizer).</p>
 
 
 
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryDequeue_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.TryDequeue*"></a>
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryDequeue_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.TryDequeue*"></a>
-
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryDequeue_MarymoorStudios_Core_OwnedMem_System_Byte___" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.TryDequeue(MarymoorStudios.Core.OwnedMem{System.Byte}@)">
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryDequeue_MarymoorStudios_Core_OwnedMem_System_Byte___" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.TryDequeue(MarymoorStudios.Core.OwnedMem{System.Byte}@)">
   TryDequeue(out OwnedMem&lt;byte&gt;)
   
   </h3>
@@ -336,7 +406,7 @@ resources (i.e. in finalizer).</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>item</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=86f2a40680a7b9c2bfd463c0395f6f262800fd69&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dt><code>item</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
     <dd><p>If successful, the item removed from the buffer, <code>default</code> otherwise.</p>
 </dd>
   </dl>
@@ -354,7 +424,7 @@ resources (i.e. in finalizer).</p>
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryDequeue_MarymoorStudios_Core_OwnedMem_System_Byte____remarks">Remarks</h4>
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryDequeue_MarymoorStudios_Core_OwnedMem_System_Byte____remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>If <code class="paramref">item</code> is successfully removed the caller takes ownership of it and is
 responsible for releasing its resources.  If the attempt to dequeue fails then <code class="paramref">item</code> is
 <code>default</code>.</p>
@@ -369,9 +439,9 @@ responsible for releasing its resources.  If the attempt to dequeue fails then <
 
 
 
-  <a id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryEnqueue_" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.TryEnqueue*"></a>
+  <a id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryEnqueue_" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.TryEnqueue*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryEnqueue_MarymoorStudios_Core_OwnedMem_System_Byte___" data-uid="MarymoorStudios.Core.Rpc.Net.TcpTransport.TryEnqueue(MarymoorStudios.Core.OwnedMem{System.Byte}@)">
+  <h3 id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryEnqueue_MarymoorStudios_Core_OwnedMem_System_Byte___" data-uid="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.TryEnqueue(MarymoorStudios.Core.OwnedMem{System.Byte}@)">
   TryEnqueue(ref OwnedMem&lt;byte&gt;)
   
   </h3>
@@ -386,7 +456,7 @@ responsible for releasing its resources.  If the attempt to dequeue fails then <
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>item</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=86f2a40680a7b9c2bfd463c0395f6f262800fd69&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dt><code>item</code> <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core/OwnedMem.cs">OwnedMem</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
     <dd><p>The item to be inserted.</p>
 </dd>
   </dl>
@@ -404,7 +474,7 @@ responsible for releasing its resources.  If the attempt to dequeue fails then <
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpTransport_TryEnqueue_MarymoorStudios_Core_OwnedMem_System_Byte____remarks">Remarks</h4>
+  <h4 class="section" id="MarymoorStudios_Core_Steamworks_Rpc_SteamTransport_TryEnqueue_MarymoorStudios_Core_OwnedMem_System_Byte____remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>On a successful insert the buffer takes ownership of <code class="paramref">item</code> and its value is set to
 <code>default</code>.  If <code class="paramref">item</code> cannot be inserted (either because 'full' or 'closed') then false
 is returned and <code class="paramref">item</code> is unmodified (still owned by the caller); the caller is then

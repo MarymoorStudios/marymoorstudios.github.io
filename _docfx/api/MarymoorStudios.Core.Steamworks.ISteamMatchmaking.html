@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamMatchmaking </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamMatchmaking ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking" class="text-break">
+Class ISteamMatchmaking  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamMatchmaking : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamMatchmaking</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamMatchMaking009&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddFavoriteGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddFavoriteGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddFavoriteGame_MarymoorStudios_Core_Steamworks_AppId_System_UInt32_System_UInt16_System_UInt16_System_UInt32_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddFavoriteGame(MarymoorStudios.Core.Steamworks.AppId,System.UInt32,System.UInt16,System.UInt16,System.UInt32,System.UInt32)">
+  AddFavoriteGame(AppId, uint, ushort, ushort, uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFavoriteGame(AppId appId, uint ip, ushort connPort, ushort queryPort, uint flags, uint rTime32LastPlayedOnServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>ip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>connPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>queryPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>rTime32LastPlayedOnServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListCompatibleMembersFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListCompatibleMembersFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListCompatibleMembersFilter_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListCompatibleMembersFilter(MarymoorStudios.Core.Steamworks.CSteamID)">
+  AddRequestLobbyListCompatibleMembersFilter(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListCompatibleMembersFilter(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListDistanceFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListDistanceFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListDistanceFilter_MarymoorStudios_Core_Steamworks_ELobbyDistanceFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListDistanceFilter(MarymoorStudios.Core.Steamworks.ELobbyDistanceFilter)">
+  AddRequestLobbyListDistanceFilter(ELobbyDistanceFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListDistanceFilter(ELobbyDistanceFilter lobbyDistanceFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lobbyDistanceFilter</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ELobbyDistanceFilter.html">ELobbyDistanceFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListFilterSlotsAvailable_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListFilterSlotsAvailable*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListFilterSlotsAvailable_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListFilterSlotsAvailable(System.Int32)">
+  AddRequestLobbyListFilterSlotsAvailable(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListFilterSlotsAvailable(int slotsAvailable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotsAvailable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListNearValueFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListNearValueFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListNearValueFilter_System_String_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListNearValueFilter(System.String,System.Int32)">
+  AddRequestLobbyListNearValueFilter(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListNearValueFilter(string keyToMatch, int valueToBeCloseTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyToMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valueToBeCloseTo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListNumericalFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListNumericalFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListNumericalFilter_System_String_System_Int32_MarymoorStudios_Core_Steamworks_ELobbyComparison_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListNumericalFilter(System.String,System.Int32,MarymoorStudios.Core.Steamworks.ELobbyComparison)">
+  AddRequestLobbyListNumericalFilter(string, int, ELobbyComparison)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListNumericalFilter(string keyToMatch, int valueToMatch, ELobbyComparison comparisonType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyToMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valueToMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>comparisonType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ELobbyComparison.html">ELobbyComparison</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListResultCountFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListResultCountFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListResultCountFilter_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListResultCountFilter(System.Int32)">
+  AddRequestLobbyListResultCountFilter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListResultCountFilter(int maxResults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxResults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListStringFilter_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListStringFilter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_AddRequestLobbyListStringFilter_System_String_System_String_MarymoorStudios_Core_Steamworks_ELobbyComparison_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.AddRequestLobbyListStringFilter(System.String,System.String,MarymoorStudios.Core.Steamworks.ELobbyComparison)">
+  AddRequestLobbyListStringFilter(string, string, ELobbyComparison)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRequestLobbyListStringFilter(string keyToMatch, string valueToMatch, ELobbyComparison comparisonType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyToMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valueToMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>comparisonType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ELobbyComparison.html">ELobbyComparison</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_CreateLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.CreateLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_CreateLobby_MarymoorStudios_Core_Steamworks_ELobbyType_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.CreateLobby(MarymoorStudios.Core.Steamworks.ELobbyType,System.Int32)">
+  CreateLobby(ELobbyType, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;LobbyCreated&gt; CreateLobby(ELobbyType lobbyType, int maxMembers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lobbyType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ELobbyType.html">ELobbyType</a></dt>
+    <dd></dd>
+    <dt><code>maxMembers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyCreated.html">LobbyCreated</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_DeleteLobbyData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.DeleteLobbyData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_DeleteLobbyData_MarymoorStudios_Core_Steamworks_CSteamID_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.DeleteLobbyData(MarymoorStudios.Core.Steamworks.CSteamID,System.String)">
+  DeleteLobbyData(CSteamID, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteLobbyData(CSteamID steamIDLobby, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetFavoriteGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetFavoriteGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetFavoriteGame_System_Int32_MarymoorStudios_Core_Steamworks_AppId__System_UInt32__System_UInt16__System_UInt16__System_UInt32__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetFavoriteGame(System.Int32,MarymoorStudios.Core.Steamworks.AppId@,System.UInt32@,System.UInt16@,System.UInt16@,System.UInt32@,System.UInt32@)">
+  GetFavoriteGame(int, out AppId, out uint, out ushort, out ushort, out uint, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFavoriteGame(int game, out AppId appId, out uint ip, out ushort connPort, out ushort queryPort, out uint flags, out uint rTime32LastPlayedOnServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>game</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>ip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>connPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>queryPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>rTime32LastPlayedOnServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetFavoriteGameCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetFavoriteGameCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetFavoriteGameCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetFavoriteGameCount">
+  GetFavoriteGameCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFavoriteGameCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyByIndex_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyByIndex*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyByIndex_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyByIndex(System.Int32)">
+  GetLobbyByIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSteamID GetLobbyByIndex(int lobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lobby</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyChatEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyChatEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyChatEntry_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_MarymoorStudios_Core_Steamworks_CSteamID__System_Span_System_Byte__MarymoorStudios_Core_Steamworks_EChatEntryType__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyChatEntry(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32,MarymoorStudios.Core.Steamworks.CSteamID@,System.Span{System.Byte},MarymoorStudios.Core.Steamworks.EChatEntryType@)">
+  GetLobbyChatEntry(CSteamID, int, out CSteamID, Span&lt;byte&gt;, out EChatEntryType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLobbyChatEntry(CSteamID steamIDLobby, int chatID, out CSteamID steamIDUser, Span&lt;byte&gt; data, out EChatEntryType chatEntryType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>chatID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>chatEntryType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EChatEntryType.html">EChatEntryType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyChatEntry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyChatEntry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyChatEntry_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_MarymoorStudios_Core_Steamworks_CSteamID__System_String__MarymoorStudios_Core_Steamworks_EChatEntryType__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyChatEntry(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32,MarymoorStudios.Core.Steamworks.CSteamID@,System.String@,MarymoorStudios.Core.Steamworks.EChatEntryType@)">
+  GetLobbyChatEntry(CSteamID, int, out CSteamID, out string, out EChatEntryType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLobbyChatEntry(CSteamID steamIDLobby, int iChatID, out CSteamID pSteamIDUser, out string pvData, out EChatEntryType peChatEntryType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>iChatID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pSteamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>pvData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>peChatEntryType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EChatEntryType.html">EChatEntryType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyData_MarymoorStudios_Core_Steamworks_CSteamID_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyData(MarymoorStudios.Core.Steamworks.CSteamID,System.String)">
+  GetLobbyData(CSteamID, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLobbyData(CSteamID steamIDLobby, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyDataByIndex_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyDataByIndex*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyDataByIndex_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_System_Span_System_Byte__System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyDataByIndex(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32,System.Span{System.Byte},System.Span{System.Byte})">
+  GetLobbyDataByIndex(CSteamID, int, Span&lt;byte&gt;, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLobbyDataByIndex(CSteamID steamIDLobby, int lobbyData, Span&lt;byte&gt; key, Span&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>lobbyData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyDataCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyDataCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyDataCount_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyDataCount(MarymoorStudios.Core.Steamworks.CSteamID)">
+  GetLobbyDataCount(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLobbyDataCount(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyGameServer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyGameServer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyGameServer_MarymoorStudios_Core_Steamworks_CSteamID_System_UInt32__System_UInt16__MarymoorStudios_Core_Steamworks_CSteamID__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyGameServer(MarymoorStudios.Core.Steamworks.CSteamID,System.UInt32@,System.UInt16@,MarymoorStudios.Core.Steamworks.CSteamID@)">
+  GetLobbyGameServer(CSteamID, out uint, out ushort, out CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLobbyGameServer(CSteamID steamIDLobby, out uint gameServerIP, out ushort gameServerPort, out CSteamID psteamIDGameServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>gameServerIP</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>gameServerPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>psteamIDGameServer</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberByIndex_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberByIndex*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberByIndex_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberByIndex(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32)">
+  GetLobbyMemberByIndex(CSteamID, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSteamID GetLobbyMemberByIndex(CSteamID steamIDLobby, int member)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberData_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_CSteamID_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberData(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.CSteamID,System.String)">
+  GetLobbyMemberData(CSteamID, CSteamID, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetLobbyMemberData(CSteamID steamIDLobby, CSteamID steamIDUser, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>steamIDUser</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberLimit_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberLimit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyMemberLimit_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyMemberLimit(MarymoorStudios.Core.Steamworks.CSteamID)">
+  GetLobbyMemberLimit(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLobbyMemberLimit(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyOwner_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyOwner*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetLobbyOwner_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetLobbyOwner(MarymoorStudios.Core.Steamworks.CSteamID)">
+  GetLobbyOwner(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSteamID GetLobbyOwner(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetNumLobbyMembers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetNumLobbyMembers*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_GetNumLobbyMembers_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.GetNumLobbyMembers(MarymoorStudios.Core.Steamworks.CSteamID)">
+  GetNumLobbyMembers(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumLobbyMembers(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_InviteUserToLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.InviteUserToLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_InviteUserToLobby_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.InviteUserToLobby(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.CSteamID)">
+  InviteUserToLobby(CSteamID, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InviteUserToLobby(CSteamID steamIDLobby, CSteamID steamIDInvitee)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>steamIDInvitee</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_JoinLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.JoinLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_JoinLobby_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.JoinLobby(MarymoorStudios.Core.Steamworks.CSteamID)">
+  JoinLobby(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;LobbyEnter&gt; JoinLobby(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyEnter.html">LobbyEnter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_LeaveLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.LeaveLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_LeaveLobby_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.LeaveLobby(MarymoorStudios.Core.Steamworks.CSteamID)">
+  LeaveLobby(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LeaveLobby(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnFavoritesListAccountsUpdated_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnFavoritesListAccountsUpdated*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnFavoritesListAccountsUpdated_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_FavoritesListAccountsUpdated__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnFavoritesListAccountsUpdated(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.FavoritesListAccountsUpdated})">
+  OnFavoritesListAccountsUpdated(CallbackAction&lt;FavoritesListAccountsUpdated&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnFavoritesListAccountsUpdated(CallbackAction&lt;FavoritesListAccountsUpdated&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.FavoritesListAccountsUpdated.html">FavoritesListAccountsUpdated</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnFavoritesListChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnFavoritesListChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnFavoritesListChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_FavoritesListChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnFavoritesListChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.FavoritesListChanged})">
+  OnFavoritesListChanged(CallbackAction&lt;FavoritesListChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnFavoritesListChanged(CallbackAction&lt;FavoritesListChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.FavoritesListChanged.html">FavoritesListChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyChatMsg_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyChatMsg*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyChatMsg_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyChatMsg__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyChatMsg(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyChatMsg})">
+  OnLobbyChatMsg(CallbackAction&lt;LobbyChatMsg&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyChatMsg(CallbackAction&lt;LobbyChatMsg&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyChatMsg.html">LobbyChatMsg</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyChatUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyChatUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyChatUpdate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyChatUpdate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyChatUpdate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyChatUpdate})">
+  OnLobbyChatUpdate(CallbackAction&lt;LobbyChatUpdate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyChatUpdate(CallbackAction&lt;LobbyChatUpdate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyChatUpdate.html">LobbyChatUpdate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyDataUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyDataUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyDataUpdate_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyDataUpdate__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyDataUpdate(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyDataUpdate})">
+  OnLobbyDataUpdate(CallbackAction&lt;LobbyDataUpdate&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyDataUpdate(CallbackAction&lt;LobbyDataUpdate&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyDataUpdate.html">LobbyDataUpdate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyGameCreated_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyGameCreated*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyGameCreated_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyGameCreated__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyGameCreated(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyGameCreated})">
+  OnLobbyGameCreated(CallbackAction&lt;LobbyGameCreated&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyGameCreated(CallbackAction&lt;LobbyGameCreated&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyGameCreated.html">LobbyGameCreated</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyInvite_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyInvite*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyInvite_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyInvite__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyInvite(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyInvite})">
+  OnLobbyInvite(CallbackAction&lt;LobbyInvite&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyInvite(CallbackAction&lt;LobbyInvite&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyInvite.html">LobbyInvite</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyKicked_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyKicked*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_OnLobbyKicked_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LobbyKicked__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.OnLobbyKicked(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LobbyKicked})">
+  OnLobbyKicked(CallbackAction&lt;LobbyKicked&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLobbyKicked(CallbackAction&lt;LobbyKicked&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyKicked.html">LobbyKicked</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RemoveFavoriteGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RemoveFavoriteGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RemoveFavoriteGame_MarymoorStudios_Core_Steamworks_AppId_System_UInt32_System_UInt16_System_UInt16_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RemoveFavoriteGame(MarymoorStudios.Core.Steamworks.AppId,System.UInt32,System.UInt16,System.UInt16,System.UInt32)">
+  RemoveFavoriteGame(AppId, uint, ushort, ushort, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveFavoriteGame(AppId appId, uint ip, ushort connPort, ushort queryPort, uint flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>ip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>connPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>queryPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RequestLobbyData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RequestLobbyData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RequestLobbyData_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RequestLobbyData(MarymoorStudios.Core.Steamworks.CSteamID)">
+  RequestLobbyData(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestLobbyData(CSteamID steamIDLobby)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RequestLobbyList_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RequestLobbyList*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_RequestLobbyList" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.RequestLobbyList">
+  RequestLobbyList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;LobbyMatchList&gt; RequestLobbyList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LobbyMatchList.html">LobbyMatchList</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SendLobbyChatMsg_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SendLobbyChatMsg*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SendLobbyChatMsg_MarymoorStudios_Core_Steamworks_CSteamID_System_ReadOnlySpan_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SendLobbyChatMsg(MarymoorStudios.Core.Steamworks.CSteamID,System.ReadOnlySpan{System.Byte})">
+  SendLobbyChatMsg(CSteamID, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendLobbyChatMsg(CSteamID steamIDLobby, ReadOnlySpan&lt;byte&gt; msgBody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>msgBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SendLobbyChatMsg_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SendLobbyChatMsg*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SendLobbyChatMsg_MarymoorStudios_Core_Steamworks_CSteamID_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SendLobbyChatMsg(MarymoorStudios.Core.Steamworks.CSteamID,System.String)">
+  SendLobbyChatMsg(CSteamID, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendLobbyChatMsg(CSteamID steamIDLobby, string pvMsgBody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>pvMsgBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLinkedLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLinkedLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLinkedLobby_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLinkedLobby(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.CSteamID)">
+  SetLinkedLobby(CSteamID, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLinkedLobby(CSteamID steamIDLobby, CSteamID steamIDLobbyDependent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>steamIDLobbyDependent</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyData_MarymoorStudios_Core_Steamworks_CSteamID_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyData(MarymoorStudios.Core.Steamworks.CSteamID,System.String,System.String)">
+  SetLobbyData(CSteamID, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLobbyData(CSteamID steamIDLobby, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyGameServer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyGameServer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyGameServer_MarymoorStudios_Core_Steamworks_CSteamID_System_UInt32_System_UInt16_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyGameServer(MarymoorStudios.Core.Steamworks.CSteamID,System.UInt32,System.UInt16,MarymoorStudios.Core.Steamworks.CSteamID)">
+  SetLobbyGameServer(CSteamID, uint, ushort, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLobbyGameServer(CSteamID steamIDLobby, uint gameServerIP, ushort gameServerPort, CSteamID steamIDGameServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>gameServerIP</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>gameServerPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>steamIDGameServer</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyJoinable_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyJoinable*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyJoinable_MarymoorStudios_Core_Steamworks_CSteamID_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyJoinable(MarymoorStudios.Core.Steamworks.CSteamID,System.Boolean)">
+  SetLobbyJoinable(CSteamID, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLobbyJoinable(CSteamID steamIDLobby, bool lobbyJoinable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>lobbyJoinable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyMemberData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyMemberData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyMemberData_MarymoorStudios_Core_Steamworks_CSteamID_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyMemberData(MarymoorStudios.Core.Steamworks.CSteamID,System.String,System.String)">
+  SetLobbyMemberData(CSteamID, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLobbyMemberData(CSteamID steamIDLobby, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyMemberLimit_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyMemberLimit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyMemberLimit_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyMemberLimit(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32)">
+  SetLobbyMemberLimit(CSteamID, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLobbyMemberLimit(CSteamID steamIDLobby, int maxMembers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>maxMembers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyOwner_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyOwner*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyOwner_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyOwner(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.CSteamID)">
+  SetLobbyOwner(CSteamID, CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLobbyOwner(CSteamID steamIDLobby, CSteamID steamIDNewOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>steamIDNewOwner</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyType*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamMatchmaking_SetLobbyType_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_ELobbyType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.SetLobbyType(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.ELobbyType)">
+  SetLobbyType(CSteamID, ELobbyType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetLobbyType(CSteamID steamIDLobby, ELobbyType lobbyType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>lobbyType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ELobbyType.html">ELobbyType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

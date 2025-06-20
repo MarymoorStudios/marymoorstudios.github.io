@@ -102,7 +102,7 @@ Class RingBuffer&lt;T&gt;
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RingBuffer&lt;T&gt; : Transport&lt;T&gt;, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class RingBuffer&lt;T&gt; : Transport&lt;T&gt;, IAsyncDisposable</code></pre>
   </div>
 
 
@@ -126,7 +126,7 @@ Class RingBuffer&lt;T&gt;
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     </dd>
   </dl>
 
@@ -135,7 +135,7 @@ Class RingBuffer&lt;T&gt;
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Dispose">Transport&lt;T&gt;.Dispose()</a>
+      <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_DisposeAsync">Transport&lt;T&gt;.DisposeAsync()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -345,10 +345,10 @@ closed first.
 
 
 
-  <a id="MarymoorStudios_Core_Promises_RingBuffer_1_Dispose_" data-uid="MarymoorStudios.Core.Promises.RingBuffer`1.Dispose*"></a>
+  <a id="MarymoorStudios_Core_Promises_RingBuffer_1_DisposeAsync_" data-uid="MarymoorStudios.Core.Promises.RingBuffer`1.DisposeAsync*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_RingBuffer_1_Dispose_System_Boolean_" data-uid="MarymoorStudios.Core.Promises.RingBuffer`1.Dispose(System.Boolean)">
-  Dispose(bool)
+  <h3 id="MarymoorStudios_Core_Promises_RingBuffer_1_DisposeAsync_System_Boolean_" data-uid="MarymoorStudios.Core.Promises.RingBuffer`1.DisposeAsync(System.Boolean)">
+  DisposeAsync(bool)
   
   </h3>
 
@@ -357,17 +357,22 @@ closed first.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override sealed void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override sealed ValueTask DisposeAsync(bool disposing)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if both native and managed resources are being disposed.  False if only native
-resources (i.e. in finalizer).</p>
+resources (i.e. in finalizer).  When native only then MUST be prompt.</p>
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

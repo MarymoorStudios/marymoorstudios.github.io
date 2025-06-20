@@ -549,6 +549,42 @@ nothing.</p>
 
 
 
+  <a id="MarymoorStudios_Core_Promises_Scheduler_Register_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Register*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Scheduler_Register_MarymoorStudios_Core_Promises_Runner_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Register(MarymoorStudios.Core.Promises.Runner)">
+  Register(Runner)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> with this scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register(Runner runner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runner</code> <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a></dt>
+    <dd><p>The runner to register.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Promises_Scheduler_Register_MarymoorStudios_Core_Promises_Runner__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The scheduler takes &quot;ownership&quot; of the runner and will dispose its resources.</p>
+</div>
+
+
+
+
   <a id="MarymoorStudios_Core_Promises_Scheduler_Run_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Run*"></a>
 
   <h3 id="MarymoorStudios_Core_Promises_Scheduler_Run_MarymoorStudios_Core_Promises_Turn_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Run(MarymoorStudios.Core.Promises.Turn)">
@@ -698,6 +734,49 @@ nothing.</p>
 
 
 
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_Scheduler_Unregister_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Unregister*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Scheduler_Unregister_MarymoorStudios_Core_Promises_Runner_" data-uid="MarymoorStudios.Core.Promises.Scheduler.Unregister(MarymoorStudios.Core.Promises.Runner)">
+  Unregister(Runner)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> from this scheduler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister(Runner runner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runner</code> <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a></dt>
+    <dd><p>The runner to unregister.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Promises_Scheduler_Unregister_MarymoorStudios_Core_Promises_Runner__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+The runner is removed atomically.  No further calls to <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a> will be made after this
+call returns.  It is safe to call this method from within a call to <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a>.
+</p>
+<p>
+The scheduler releases "ownership" of the runner to the caller who is now responsible for calling
+dispose to release its resources.
+</p>
+</div>
 
 
 

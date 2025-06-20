@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Trie&lt;TSymbol, TValue&gt; </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Trie&lt;TSymbol, TValue&gt; ">
+      
+      <meta name="description" content="A trie, otherwise known as a prefix tree.">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Collections.Trie`2">
+
+
+
+  <h1 id="MarymoorStudios_Core_Collections_Trie_2" data-uid="MarymoorStudios.Core.Collections.Trie`2" class="text-break">
+Class Trie&lt;TSymbol, TValue&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Collections.html">Collections</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A trie, otherwise known as a prefix tree.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Trie&lt;TSymbol, TValue&gt; where TSymbol : unmanaged</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TSymbol</code></dt>
+    <dd><p>The type of the individual elements that form a key.</p>
+</dd>
+    <dt><code>TValue</code></dt>
+    <dd><p>The type of the value.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Trie&lt;TSymbol, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="MarymoorStudios_Core_Collections_Trie_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A trie is a map from key to value. Keys are formed by a sequence of symbols in some alphabet. Values are
+merely round-tripped by the data structure and are not otherwise interpreted.</p>
+<p>
+Keys and symbols are compared using the binary collation (i.e. memcmp). Symbols must therefore be an
+unmanaged type (i.e. convertible to byte).
+</p>
+<p>See https://en.wikipedia.org/wiki/Trie for a detailed description of the Trie data structure.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Collections_Trie_2__ctor_" data-uid="MarymoorStudios.Core.Collections.Trie`2.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Collections_Trie_2__ctor_System_Int32_" data-uid="MarymoorStudios.Core.Collections.Trie`2.#ctor(System.Int32)">
+  Trie(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MarymoorStudios.Core.Collections.Trie-2.html">Trie&lt;TSymbol, TValue&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Trie(int initialCapacity = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The (optional) initial capacity.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Collections_Trie_2_AddOrUpdate_" data-uid="MarymoorStudios.Core.Collections.Trie`2.AddOrUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Collections_Trie_2_AddOrUpdate_System_ReadOnlySpan__0___1_" data-uid="MarymoorStudios.Core.Collections.Trie`2.AddOrUpdate(System.ReadOnlySpan{`0},`1)">
+  AddOrUpdate(ReadOnlySpan&lt;TSymbol&gt;, TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an item to the trie. if the key exists, replace the existing item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrUpdate(ReadOnlySpan&lt;TSymbol&gt; key, TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TSymbol&gt;</dt>
+    <dd><p>The key to be added.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to be associated with the key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Collections_Trie_2_TryAdd_" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryAdd*"></a>
+
+  <h3 id="MarymoorStudios_Core_Collections_Trie_2_TryAdd_System_ReadOnlySpan__0___1_" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryAdd(System.ReadOnlySpan{`0},`1)">
+  TryAdd(ReadOnlySpan&lt;TSymbol&gt;, TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add an item to the trie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAdd(ReadOnlySpan&lt;TSymbol&gt; key, TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TSymbol&gt;</dt>
+    <dd><p>The key to be added.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to be associated with the key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the item was added, false if the key already exists in the trie.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Collections_Trie_2_TryGetLongestPrefix_" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryGetLongestPrefix*"></a>
+
+  <h3 id="MarymoorStudios_Core_Collections_Trie_2_TryGetLongestPrefix_System_ReadOnlySpan__0__System_ReadOnlySpan__0____1__" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryGetLongestPrefix(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0}@,`1@)">
+  TryGetLongestPrefix(ReadOnlySpan&lt;TSymbol&gt;, out ReadOnlySpan&lt;TSymbol&gt;, out TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find an item within a trie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetLongestPrefix(ReadOnlySpan&lt;TSymbol&gt; key, out ReadOnlySpan&lt;TSymbol&gt; prefix, out TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TSymbol&gt;</dt>
+    <dd><p>The key to be added.</p>
+</dd>
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TSymbol&gt;</dt>
+    <dd><p>The matched prefix.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>If <code class="paramref">key</code> was found then the value to be associated with the key,
+otherwise default.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the item was found, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Collections_Trie_2_TryGetValue_" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryGetValue*"></a>
+
+  <h3 id="MarymoorStudios_Core_Collections_Trie_2_TryGetValue_System_ReadOnlySpan__0___1__" data-uid="MarymoorStudios.Core.Collections.Trie`2.TryGetValue(System.ReadOnlySpan{`0},`1@)">
+  TryGetValue(ReadOnlySpan&lt;TSymbol&gt;, out TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Find an item within a trie.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(ReadOnlySpan&lt;TSymbol&gt; key, out TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TSymbol&gt;</dt>
+    <dd><p>The key to be added.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>If <code class="paramref">key</code> was found then the value to be associated with the key,
+otherwise default.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the item was found, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

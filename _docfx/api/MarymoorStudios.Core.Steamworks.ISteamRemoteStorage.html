@@ -1,0 +1,2697 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamRemoteStorage </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamRemoteStorage ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage" class="text-break">
+Class ISteamRemoteStorage  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamRemoteStorage : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamRemoteStorage</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMREMOTESTORAGE_INTERFACE_VERSION016&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_BeginFileWriteBatch_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.BeginFileWriteBatch*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_BeginFileWriteBatch" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.BeginFileWriteBatch">
+  BeginFileWriteBatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeginFileWriteBatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_CommitPublishedFileUpdate_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.CommitPublishedFileUpdate*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_CommitPublishedFileUpdate_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.CommitPublishedFileUpdate(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle)">
+  CommitPublishedFileUpdate(PublishedFileUpdateHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageUpdatePublishedFileResult&gt; CommitPublishedFileUpdate(PublishedFileUpdateHandle updateHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageUpdatePublishedFileResult.html">RemoteStorageUpdatePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_CreatePublishedFileUpdateRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.CreatePublishedFileUpdateRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_CreatePublishedFileUpdateRequest_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.CreatePublishedFileUpdateRequest(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  CreatePublishedFileUpdateRequest(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PublishedFileUpdateHandle CreatePublishedFileUpdateRequest(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_DeletePublishedFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.DeletePublishedFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_DeletePublishedFile_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.DeletePublishedFile(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  DeletePublishedFile(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageDeletePublishedFileResult&gt; DeletePublishedFile(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageDeletePublishedFileResult.html">RemoteStorageDeletePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EndFileWriteBatch_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EndFileWriteBatch*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EndFileWriteBatch" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EndFileWriteBatch">
+  EndFileWriteBatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EndFileWriteBatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumeratePublishedFilesByUserAction_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumeratePublishedFilesByUserAction*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumeratePublishedFilesByUserAction_MarymoorStudios_Core_Steamworks_EWorkshopFileAction_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumeratePublishedFilesByUserAction(MarymoorStudios.Core.Steamworks.EWorkshopFileAction,System.UInt32)">
+  EnumeratePublishedFilesByUserAction(EWorkshopFileAction, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageEnumeratePublishedFilesByUserActionResult&gt; EnumeratePublishedFilesByUserAction(EWorkshopFileAction action, uint startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopFileAction.html">EWorkshopFileAction</a></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumeratePublishedFilesByUserActionResult.html">RemoteStorageEnumeratePublishedFilesByUserActionResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumeratePublishedWorkshopFiles_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumeratePublishedWorkshopFiles*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumeratePublishedWorkshopFiles_MarymoorStudios_Core_Steamworks_EWorkshopEnumerationType_System_UInt32_System_UInt32_System_UInt32_MarymoorStudios_Core_Steamworks_SteamParamStringArray__MarymoorStudios_Core_Steamworks_SteamParamStringArray__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumeratePublishedWorkshopFiles(MarymoorStudios.Core.Steamworks.EWorkshopEnumerationType,System.UInt32,System.UInt32,System.UInt32,MarymoorStudios.Core.Steamworks.SteamParamStringArray@,MarymoorStudios.Core.Steamworks.SteamParamStringArray@)">
+  EnumeratePublishedWorkshopFiles(EWorkshopEnumerationType, uint, uint, uint, in SteamParamStringArray, in SteamParamStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageEnumerateWorkshopFilesResult&gt; EnumeratePublishedWorkshopFiles(EWorkshopEnumerationType enumerationType, uint startIndex, uint count, uint days, in SteamParamStringArray tags, in SteamParamStringArray userTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enumerationType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopEnumerationType.html">EWorkshopEnumerationType</a></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>days</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+    <dt><code>userTags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateWorkshopFilesResult.html">RemoteStorageEnumerateWorkshopFilesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserPublishedFiles_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserPublishedFiles*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserPublishedFiles_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserPublishedFiles(System.UInt32)">
+  EnumerateUserPublishedFiles(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageEnumerateUserPublishedFilesResult&gt; EnumerateUserPublishedFiles(uint startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateUserPublishedFilesResult.html">RemoteStorageEnumerateUserPublishedFilesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserSharedWorkshopFiles_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserSharedWorkshopFiles*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserSharedWorkshopFiles_MarymoorStudios_Core_Steamworks_CSteamID_System_UInt32_MarymoorStudios_Core_Steamworks_SteamParamStringArray__MarymoorStudios_Core_Steamworks_SteamParamStringArray__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserSharedWorkshopFiles(MarymoorStudios.Core.Steamworks.CSteamID,System.UInt32,MarymoorStudios.Core.Steamworks.SteamParamStringArray@,MarymoorStudios.Core.Steamworks.SteamParamStringArray@)">
+  EnumerateUserSharedWorkshopFiles(CSteamID, uint, in SteamParamStringArray, in SteamParamStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageEnumerateUserPublishedFilesResult&gt; EnumerateUserSharedWorkshopFiles(CSteamID steamId, uint startIndex, in SteamParamStringArray requiredTags, in SteamParamStringArray excludedTags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>requiredTags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+    <dt><code>excludedTags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateUserPublishedFilesResult.html">RemoteStorageEnumerateUserPublishedFilesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserSubscribedFiles_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserSubscribedFiles*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_EnumerateUserSubscribedFiles_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.EnumerateUserSubscribedFiles(System.UInt32)">
+  EnumerateUserSubscribedFiles(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageEnumerateUserSubscribedFilesResult&gt; EnumerateUserSubscribedFiles(uint startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateUserSubscribedFilesResult.html">RemoteStorageEnumerateUserSubscribedFilesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileDelete_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileDelete*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileDelete_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileDelete(System.String)">
+  FileDelete(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileDelete(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileExists_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileExists*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileExists_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileExists(System.String)">
+  FileExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileExists(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileForget_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileForget*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileForget_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileForget(System.String)">
+  FileForget(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileForget(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FilePersisted_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FilePersisted*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FilePersisted_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FilePersisted(System.String)">
+  FilePersisted(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FilePersisted(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileRead_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileRead*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileRead_System_String_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileRead(System.String,System.Span{System.Byte})">
+  FileRead(string, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FileRead(string file, Span&lt;byte&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileReadAsync_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileReadAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileReadAsync_System_String_System_UInt32_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileReadAsync(System.String,System.UInt32,System.UInt32)">
+  FileReadAsync(string, uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageFileReadAsyncComplete&gt; FileReadAsync(string file, uint offset, uint toReadCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>toReadCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageFileReadAsyncComplete.html">RemoteStorageFileReadAsyncComplete</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileReadAsyncComplete_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileReadAsyncComplete*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileReadAsyncComplete_MarymoorStudios_Core_Steamworks_SteamAPICall_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileReadAsyncComplete(MarymoorStudios.Core.Steamworks.SteamAPICall,System.Span{System.Byte})">
+  FileReadAsyncComplete(SteamAPICall, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileReadAsyncComplete(SteamAPICall readCall, Span&lt;byte&gt; buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>readCall</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamAPICall.html">SteamAPICall</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileShare_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileShare*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileShare_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileShare(System.String)">
+  FileShare(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageFileShareResult&gt; FileShare(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageFileShareResult.html">RemoteStorageFileShareResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWrite_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWrite*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWrite_System_String_System_ReadOnlySpan_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWrite(System.String,System.ReadOnlySpan{System.Byte})">
+  FileWrite(string, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileWrite(string file, ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteAsync_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteAsync_System_String_System_ReadOnlySpan_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteAsync(System.String,System.ReadOnlySpan{System.Byte})">
+  FileWriteAsync(string, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageFileWriteAsyncComplete&gt; FileWriteAsync(string file, ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageFileWriteAsyncComplete.html">RemoteStorageFileWriteAsyncComplete</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamCancel_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamCancel*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamCancel_MarymoorStudios_Core_Steamworks_UGCFileWriteStreamHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamCancel(MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle)">
+  FileWriteStreamCancel(UGCFileWriteStreamHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileWriteStreamCancel(UGCFileWriteStreamHandle writeHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writeHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle.html">UGCFileWriteStreamHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamClose_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamClose*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamClose_MarymoorStudios_Core_Steamworks_UGCFileWriteStreamHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamClose(MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle)">
+  FileWriteStreamClose(UGCFileWriteStreamHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileWriteStreamClose(UGCFileWriteStreamHandle writeHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writeHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle.html">UGCFileWriteStreamHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamOpen_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamOpen*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamOpen_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamOpen(System.String)">
+  FileWriteStreamOpen(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCFileWriteStreamHandle FileWriteStreamOpen(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle.html">UGCFileWriteStreamHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamWriteChunk_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamWriteChunk*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_FileWriteStreamWriteChunk_MarymoorStudios_Core_Steamworks_UGCFileWriteStreamHandle_System_ReadOnlySpan_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.FileWriteStreamWriteChunk(MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle,System.ReadOnlySpan{System.Byte})">
+  FileWriteStreamWriteChunk(UGCFileWriteStreamHandle, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileWriteStreamWriteChunk(UGCFileWriteStreamHandle writeHandle, ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writeHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCFileWriteStreamHandle.html">UGCFileWriteStreamHandle</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetCachedUGCCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetCachedUGCCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetCachedUGCCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetCachedUGCCount">
+  GetCachedUGCCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCachedUGCCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetCachedUGCHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetCachedUGCHandle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetCachedUGCHandle_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetCachedUGCHandle(System.Int32)">
+  GetCachedUGCHandle(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCHandle GetCachedUGCHandle(int cachedContent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cachedContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileCount">
+  GetFileCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFileCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileNameAndSize_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileNameAndSize*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileNameAndSize_System_Int32_System_Int32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileNameAndSize(System.Int32,System.Int32@)">
+  GetFileNameAndSize(int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFileNameAndSize(int file, out int fileSizeInBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fileSizeInBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileSize_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileSize*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileSize_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileSize(System.String)">
+  GetFileSize(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFileSize(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileTimestamp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileTimestamp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetFileTimestamp_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetFileTimestamp(System.String)">
+  GetFileTimestamp(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetFileTimestamp(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetLocalFileChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetLocalFileChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetLocalFileChange_System_Int32_MarymoorStudios_Core_Steamworks_ERemoteStorageLocalFileChange__MarymoorStudios_Core_Steamworks_ERemoteStorageFilePathType__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetLocalFileChange(System.Int32,MarymoorStudios.Core.Steamworks.ERemoteStorageLocalFileChange@,MarymoorStudios.Core.Steamworks.ERemoteStorageFilePathType@)">
+  GetLocalFileChange(int, out ERemoteStorageLocalFileChange, out ERemoteStorageFilePathType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocalFileChange(int file, out ERemoteStorageLocalFileChange eChangeType, out ERemoteStorageFilePathType eFilePathType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>eChangeType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStorageLocalFileChange.html">ERemoteStorageLocalFileChange</a></dt>
+    <dd></dd>
+    <dt><code>eFilePathType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStorageFilePathType.html">ERemoteStorageFilePathType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetLocalFileChangeCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetLocalFileChangeCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetLocalFileChangeCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetLocalFileChangeCount">
+  GetLocalFileChangeCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLocalFileChangeCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetPublishedFileDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetPublishedFileDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetPublishedFileDetails_MarymoorStudios_Core_Steamworks_PublishedFileId_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetPublishedFileDetails(MarymoorStudios.Core.Steamworks.PublishedFileId,System.UInt32)">
+  GetPublishedFileDetails(PublishedFileId, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageGetPublishedFileDetailsResult&gt; GetPublishedFileDetails(PublishedFileId publishedFileId, uint maxSecondsOld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>maxSecondsOld</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageGetPublishedFileDetailsResult.html">RemoteStorageGetPublishedFileDetailsResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetPublishedItemVoteDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetPublishedItemVoteDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetPublishedItemVoteDetails_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetPublishedItemVoteDetails(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  GetPublishedItemVoteDetails(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageGetPublishedItemVoteDetailsResult&gt; GetPublishedItemVoteDetails(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageGetPublishedItemVoteDetailsResult.html">RemoteStorageGetPublishedItemVoteDetailsResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetQuota_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetQuota*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetQuota_System_UInt64__System_UInt64__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetQuota(System.UInt64@,System.UInt64@)">
+  GetQuota(out ulong, out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetQuota(out ulong totalBytes, out ulong puAvailableBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>totalBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>puAvailableBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetSyncPlatforms_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetSyncPlatforms*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetSyncPlatforms_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetSyncPlatforms(System.String)">
+  GetSyncPlatforms(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ERemoteStoragePlatform GetSyncPlatforms(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePlatform.html">ERemoteStoragePlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUGCDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUGCDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUGCDetails_MarymoorStudios_Core_Steamworks_UGCHandle_MarymoorStudios_Core_Steamworks_AppId__System_String__System_Int32__MarymoorStudios_Core_Steamworks_CSteamID__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUGCDetails(MarymoorStudios.Core.Steamworks.UGCHandle,MarymoorStudios.Core.Steamworks.AppId@,System.String@,System.Int32@,MarymoorStudios.Core.Steamworks.CSteamID@)">
+  GetUGCDetails(UGCHandle, out AppId, out string, out int, out CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUGCDetails(UGCHandle content, out AppId appId, out string ppchName, out int fileSizeInBytes, out CSteamID steamIDOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+    <dt><code>appId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>ppchName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fileSizeInBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>steamIDOwner</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUGCDownloadProgress_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUGCDownloadProgress*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUGCDownloadProgress_MarymoorStudios_Core_Steamworks_UGCHandle_System_Int32__System_Int32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUGCDownloadProgress(MarymoorStudios.Core.Steamworks.UGCHandle,System.Int32@,System.Int32@)">
+  GetUGCDownloadProgress(UGCHandle, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUGCDownloadProgress(UGCHandle content, out int bytesDownloaded, out int bytesExpected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+    <dt><code>bytesDownloaded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>bytesExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUserPublishedItemVoteDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUserPublishedItemVoteDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_GetUserPublishedItemVoteDetails_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.GetUserPublishedItemVoteDetails(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  GetUserPublishedItemVoteDetails(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageGetPublishedItemVoteDetailsResult&gt; GetUserPublishedItemVoteDetails(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageGetPublishedItemVoteDetailsResult.html">RemoteStorageGetPublishedItemVoteDetailsResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_IsCloudEnabledForAccount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.IsCloudEnabledForAccount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_IsCloudEnabledForAccount" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.IsCloudEnabledForAccount">
+  IsCloudEnabledForAccount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCloudEnabledForAccount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_IsCloudEnabledForApp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.IsCloudEnabledForApp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_IsCloudEnabledForApp" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.IsCloudEnabledForApp">
+  IsCloudEnabledForApp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCloudEnabledForApp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageEnumerateUserSharedWorkshopFilesResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageEnumerateUserSharedWorkshopFilesResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageEnumerateUserSharedWorkshopFilesResult_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStorageEnumerateUserSharedWorkshopFilesResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageEnumerateUserSharedWorkshopFilesResult(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateUserSharedWorkshopFilesResult})">
+  OnRemoteStorageEnumerateUserSharedWorkshopFilesResult(CallbackAction&lt;RemoteStorageEnumerateUserSharedWorkshopFilesResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStorageEnumerateUserSharedWorkshopFilesResult(CallbackAction&lt;RemoteStorageEnumerateUserSharedWorkshopFilesResult&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageEnumerateUserSharedWorkshopFilesResult.html">RemoteStorageEnumerateUserSharedWorkshopFilesResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageLocalFileChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageLocalFileChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageLocalFileChange_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStorageLocalFileChange__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageLocalFileChange(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStorageLocalFileChange})">
+  OnRemoteStorageLocalFileChange(CallbackAction&lt;RemoteStorageLocalFileChange&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStorageLocalFileChange(CallbackAction&lt;RemoteStorageLocalFileChange&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageLocalFileChange.html">RemoteStorageLocalFileChange</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishFileResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishFileResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishFileResult_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStoragePublishFileResult__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishFileResult(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStoragePublishFileResult})">
+  OnRemoteStoragePublishFileResult(CallbackAction&lt;RemoteStoragePublishFileResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStoragePublishFileResult(CallbackAction&lt;RemoteStoragePublishFileResult&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishFileResult.html">RemoteStoragePublishFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileDeleted_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileDeleted*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileDeleted_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStoragePublishedFileDeleted__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileDeleted(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileDeleted})">
+  OnRemoteStoragePublishedFileDeleted(CallbackAction&lt;RemoteStoragePublishedFileDeleted&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStoragePublishedFileDeleted(CallbackAction&lt;RemoteStoragePublishedFileDeleted&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileDeleted.html">RemoteStoragePublishedFileDeleted</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileSubscribed_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileSubscribed*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileSubscribed_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStoragePublishedFileSubscribed__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileSubscribed(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileSubscribed})">
+  OnRemoteStoragePublishedFileSubscribed(CallbackAction&lt;RemoteStoragePublishedFileSubscribed&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStoragePublishedFileSubscribed(CallbackAction&lt;RemoteStoragePublishedFileSubscribed&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileSubscribed.html">RemoteStoragePublishedFileSubscribed</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileUnsubscribed_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileUnsubscribed*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileUnsubscribed_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStoragePublishedFileUnsubscribed__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileUnsubscribed(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileUnsubscribed})">
+  OnRemoteStoragePublishedFileUnsubscribed(CallbackAction&lt;RemoteStoragePublishedFileUnsubscribed&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStoragePublishedFileUnsubscribed(CallbackAction&lt;RemoteStoragePublishedFileUnsubscribed&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileUnsubscribed.html">RemoteStoragePublishedFileUnsubscribed</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileUpdated_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileUpdated*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStoragePublishedFileUpdated_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStoragePublishedFileUpdated__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStoragePublishedFileUpdated(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileUpdated})">
+  OnRemoteStoragePublishedFileUpdated(CallbackAction&lt;RemoteStoragePublishedFileUpdated&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStoragePublishedFileUpdated(CallbackAction&lt;RemoteStoragePublishedFileUpdated&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishedFileUpdated.html">RemoteStoragePublishedFileUpdated</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageUserVoteDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageUserVoteDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_OnRemoteStorageUserVoteDetails_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RemoteStorageUserVoteDetails__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.OnRemoteStorageUserVoteDetails(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RemoteStorageUserVoteDetails})">
+  OnRemoteStorageUserVoteDetails(CallbackAction&lt;RemoteStorageUserVoteDetails&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRemoteStorageUserVoteDetails(CallbackAction&lt;RemoteStorageUserVoteDetails&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageUserVoteDetails.html">RemoteStorageUserVoteDetails</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_PublishVideo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.PublishVideo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_PublishVideo_MarymoorStudios_Core_Steamworks_EWorkshopVideoProvider_System_String_System_String_System_String_MarymoorStudios_Core_Steamworks_AppId_System_String_System_String_MarymoorStudios_Core_Steamworks_ERemoteStoragePublishedFileVisibility_MarymoorStudios_Core_Steamworks_SteamParamStringArray__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.PublishVideo(MarymoorStudios.Core.Steamworks.EWorkshopVideoProvider,System.String,System.String,System.String,MarymoorStudios.Core.Steamworks.AppId,System.String,System.String,MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility,MarymoorStudios.Core.Steamworks.SteamParamStringArray@)">
+  PublishVideo(EWorkshopVideoProvider, string, string, string, AppId, string, string, ERemoteStoragePublishedFileVisibility, in SteamParamStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStoragePublishFileProgress&gt; PublishVideo(EWorkshopVideoProvider videoProvider, string videoAccount, string videoIdentifier, string previewFile, AppId consumerAppId, string title, string description, ERemoteStoragePublishedFileVisibility visibility, in SteamParamStringArray tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>videoProvider</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopVideoProvider.html">EWorkshopVideoProvider</a></dt>
+    <dd></dd>
+    <dt><code>videoAccount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>videoIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>previewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>consumerAppId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>visibility</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility.html">ERemoteStoragePublishedFileVisibility</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishFileProgress.html">RemoteStoragePublishFileProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_PublishWorkshopFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.PublishWorkshopFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_PublishWorkshopFile_System_String_System_String_MarymoorStudios_Core_Steamworks_AppId_System_String_System_String_MarymoorStudios_Core_Steamworks_ERemoteStoragePublishedFileVisibility_MarymoorStudios_Core_Steamworks_SteamParamStringArray__MarymoorStudios_Core_Steamworks_EWorkshopFileType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.PublishWorkshopFile(System.String,System.String,MarymoorStudios.Core.Steamworks.AppId,System.String,System.String,MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility,MarymoorStudios.Core.Steamworks.SteamParamStringArray@,MarymoorStudios.Core.Steamworks.EWorkshopFileType)">
+  PublishWorkshopFile(string, string, AppId, string, string, ERemoteStoragePublishedFileVisibility, in SteamParamStringArray, EWorkshopFileType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStoragePublishFileProgress&gt; PublishWorkshopFile(string file, string previewFile, AppId consumerAppId, string title, string description, ERemoteStoragePublishedFileVisibility visibility, in SteamParamStringArray tags, EWorkshopFileType workshopFileType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>previewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>consumerAppId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.AppId.html">AppId</a></dt>
+    <dd></dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>visibility</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility.html">ERemoteStoragePublishedFileVisibility</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+    <dt><code>workshopFileType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopFileType.html">EWorkshopFileType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStoragePublishFileProgress.html">RemoteStoragePublishFileProgress</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetCloudEnabledForApp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetCloudEnabledForApp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetCloudEnabledForApp_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetCloudEnabledForApp(System.Boolean)">
+  SetCloudEnabledForApp(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCloudEnabledForApp(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetSyncPlatforms_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetSyncPlatforms*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetSyncPlatforms_System_String_MarymoorStudios_Core_Steamworks_ERemoteStoragePlatform_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetSyncPlatforms(System.String,MarymoorStudios.Core.Steamworks.ERemoteStoragePlatform)">
+  SetSyncPlatforms(string, ERemoteStoragePlatform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSyncPlatforms(string file, ERemoteStoragePlatform remoteStoragePlatform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>remoteStoragePlatform</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePlatform.html">ERemoteStoragePlatform</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetUserPublishedFileAction_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetUserPublishedFileAction*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SetUserPublishedFileAction_MarymoorStudios_Core_Steamworks_PublishedFileId_MarymoorStudios_Core_Steamworks_EWorkshopFileAction_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SetUserPublishedFileAction(MarymoorStudios.Core.Steamworks.PublishedFileId,MarymoorStudios.Core.Steamworks.EWorkshopFileAction)">
+  SetUserPublishedFileAction(PublishedFileId, EWorkshopFileAction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageSetUserPublishedFileActionResult&gt; SetUserPublishedFileAction(PublishedFileId publishedFileId, EWorkshopFileAction action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EWorkshopFileAction.html">EWorkshopFileAction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageSetUserPublishedFileActionResult.html">RemoteStorageSetUserPublishedFileActionResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SubscribePublishedFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SubscribePublishedFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_SubscribePublishedFile_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.SubscribePublishedFile(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  SubscribePublishedFile(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageSubscribePublishedFileResult&gt; SubscribePublishedFile(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageSubscribePublishedFileResult.html">RemoteStorageSubscribePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCDownload_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCDownload*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCDownload_MarymoorStudios_Core_Steamworks_UGCHandle_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCDownload(MarymoorStudios.Core.Steamworks.UGCHandle,System.UInt32)">
+  UGCDownload(UGCHandle, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageDownloadUGCResult&gt; UGCDownload(UGCHandle content, uint priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageDownloadUGCResult.html">RemoteStorageDownloadUGCResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCDownloadToLocation_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCDownloadToLocation*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCDownloadToLocation_MarymoorStudios_Core_Steamworks_UGCHandle_System_String_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCDownloadToLocation(MarymoorStudios.Core.Steamworks.UGCHandle,System.String,System.UInt32)">
+  UGCDownloadToLocation(UGCHandle, string, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageDownloadUGCResult&gt; UGCDownloadToLocation(UGCHandle content, string location, uint priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageDownloadUGCResult.html">RemoteStorageDownloadUGCResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCRead_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCRead*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UGCRead_MarymoorStudios_Core_Steamworks_UGCHandle_System_Span_System_Byte__System_UInt32_MarymoorStudios_Core_Steamworks_EUGCReadAction_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UGCRead(MarymoorStudios.Core.Steamworks.UGCHandle,System.Span{System.Byte},System.UInt32,MarymoorStudios.Core.Steamworks.EUGCReadAction)">
+  UGCRead(UGCHandle, Span&lt;byte&gt;, uint, EUGCReadAction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UGCRead(UGCHandle content, Span&lt;byte&gt; data, uint offset, EUGCReadAction action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.UGCHandle.html">UGCHandle</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EUGCReadAction.html">EUGCReadAction</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UnsubscribePublishedFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UnsubscribePublishedFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UnsubscribePublishedFile_MarymoorStudios_Core_Steamworks_PublishedFileId_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UnsubscribePublishedFile(MarymoorStudios.Core.Steamworks.PublishedFileId)">
+  UnsubscribePublishedFile(PublishedFileId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageUnsubscribePublishedFileResult&gt; UnsubscribePublishedFile(PublishedFileId publishedFileId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageUnsubscribePublishedFileResult.html">RemoteStorageUnsubscribePublishedFileResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileDescription_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileDescription*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileDescription_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileDescription(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,System.String)">
+  UpdatePublishedFileDescription(PublishedFileUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileDescription(PublishedFileUpdateHandle updateHandle, string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileFile_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileFile(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,System.String)">
+  UpdatePublishedFileFile(PublishedFileUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileFile(PublishedFileUpdateHandle updateHandle, string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFilePreviewFile_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFilePreviewFile*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFilePreviewFile_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFilePreviewFile(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,System.String)">
+  UpdatePublishedFilePreviewFile(PublishedFileUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFilePreviewFile(PublishedFileUpdateHandle updateHandle, string previewFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>previewFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileSetChangeDescription_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileSetChangeDescription*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileSetChangeDescription_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileSetChangeDescription(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,System.String)">
+  UpdatePublishedFileSetChangeDescription(PublishedFileUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileSetChangeDescription(PublishedFileUpdateHandle updateHandle, string changeDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>changeDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileTags_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileTags*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileTags_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_MarymoorStudios_Core_Steamworks_SteamParamStringArray__" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileTags(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,MarymoorStudios.Core.Steamworks.SteamParamStringArray@)">
+  UpdatePublishedFileTags(PublishedFileUpdateHandle, in SteamParamStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileTags(PublishedFileUpdateHandle updateHandle, in SteamParamStringArray tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamParamStringArray.html">SteamParamStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileTitle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileTitle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileTitle_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileTitle(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,System.String)">
+  UpdatePublishedFileTitle(PublishedFileUpdateHandle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileTitle(PublishedFileUpdateHandle updateHandle, string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileVisibility_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileVisibility*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdatePublishedFileVisibility_MarymoorStudios_Core_Steamworks_PublishedFileUpdateHandle_MarymoorStudios_Core_Steamworks_ERemoteStoragePublishedFileVisibility_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdatePublishedFileVisibility(MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle,MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility)">
+  UpdatePublishedFileVisibility(PublishedFileUpdateHandle, ERemoteStoragePublishedFileVisibility)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePublishedFileVisibility(PublishedFileUpdateHandle updateHandle, ERemoteStoragePublishedFileVisibility visibility)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileUpdateHandle.html">PublishedFileUpdateHandle</a></dt>
+    <dd></dd>
+    <dt><code>visibility</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ERemoteStoragePublishedFileVisibility.html">ERemoteStoragePublishedFileVisibility</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdateUserPublishedItemVote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdateUserPublishedItemVote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamRemoteStorage_UpdateUserPublishedItemVote_MarymoorStudios_Core_Steamworks_PublishedFileId_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.UpdateUserPublishedItemVote(MarymoorStudios.Core.Steamworks.PublishedFileId,System.Boolean)">
+  UpdateUserPublishedItemVote(PublishedFileId, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;RemoteStorageUpdateUserPublishedItemVoteResult&gt; UpdateUserPublishedItemVote(PublishedFileId publishedFileId, bool voteUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>publishedFileId</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.PublishedFileId.html">PublishedFileId</a></dt>
+    <dd></dd>
+    <dt><code>voteUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RemoteStorageUpdateUserPublishedItemVoteResult.html">RemoteStorageUpdateUserPublishedItemVoteResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

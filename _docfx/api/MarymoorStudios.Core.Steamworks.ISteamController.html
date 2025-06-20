@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamController </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamController ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamController">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamController" data-uid="MarymoorStudios.Core.Steamworks.ISteamController" class="text-break">
+Class ISteamController  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamController : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamController</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamController008&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_ActivateActionSet_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ActivateActionSet*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_ActivateActionSet_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ActivateActionSet(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerActionSetHandle)">
+  ActivateActionSet(ControllerHandle, ControllerActionSetHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateActionSet(ControllerHandle controllerHandle, ControllerActionSetHandle actionSetHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>actionSetHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_ActivateActionSetLayer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ActivateActionSetLayer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_ActivateActionSetLayer_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ActivateActionSetLayer(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerActionSetHandle)">
+  ActivateActionSetLayer(ControllerHandle, ControllerActionSetHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateActionSetLayer(ControllerHandle controllerHandle, ControllerActionSetHandle actionSetLayerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>actionSetLayerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_DeactivateActionSetLayer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.DeactivateActionSetLayer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_DeactivateActionSetLayer_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.DeactivateActionSetLayer(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerActionSetHandle)">
+  DeactivateActionSetLayer(ControllerHandle, ControllerActionSetHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeactivateActionSetLayer(ControllerHandle controllerHandle, ControllerActionSetHandle actionSetLayerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>actionSetLayerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_DeactivateAllActionSetLayers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.DeactivateAllActionSetLayers*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_DeactivateAllActionSetLayers_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.DeactivateAllActionSetLayers(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  DeactivateAllActionSetLayers(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeactivateAllActionSetLayers(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetActionOriginFromXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActionOriginFromXboxOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetActionOriginFromXboxOrigin_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_EXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActionOriginFromXboxOrigin(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.EXboxOrigin)">
+  GetActionOriginFromXboxOrigin(ControllerHandle, EXboxOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EControllerActionOrigin GetActionOriginFromXboxOrigin(ControllerHandle controllerHandle, EXboxOrigin origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>origin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EXboxOrigin.html">EXboxOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetActionSetHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActionSetHandle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetActionSetHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActionSetHandle(System.String)">
+  GetActionSetHandle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerActionSetHandle GetActionSetHandle(string pszActionSetName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszActionSetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetActiveActionSetLayers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActiveActionSetLayers*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetActiveActionSetLayers_MarymoorStudios_Core_Steamworks_ControllerHandle_System_Span_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetActiveActionSetLayers(MarymoorStudios.Core.Steamworks.ControllerHandle,System.Span{MarymoorStudios.Core.Steamworks.ControllerActionSetHandle})">
+  GetActiveActionSetLayers(ControllerHandle, Span&lt;ControllerActionSetHandle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetActiveActionSetLayers(ControllerHandle controllerHandle, Span&lt;ControllerActionSetHandle&gt; handlesOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>handlesOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionData_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerAnalogActionHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionData(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle)">
+  GetAnalogActionData(ControllerHandle, ControllerAnalogActionHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputAnalogActionData GetAnalogActionData(ControllerHandle controllerHandle, ControllerAnalogActionHandle analogActionHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>analogActionHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle.html">ControllerAnalogActionHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.InputAnalogActionData.html">InputAnalogActionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionHandle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionHandle(System.String)">
+  GetAnalogActionHandle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerAnalogActionHandle GetAnalogActionHandle(string pszActionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszActionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle.html">ControllerAnalogActionHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionOrigins_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionOrigins*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetAnalogActionOrigins_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle_MarymoorStudios_Core_Steamworks_ControllerAnalogActionHandle_System_Span_MarymoorStudios_Core_Steamworks_EControllerActionOrigin__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetAnalogActionOrigins(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerActionSetHandle,MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle,System.Span{MarymoorStudios.Core.Steamworks.EControllerActionOrigin})">
+  GetAnalogActionOrigins(ControllerHandle, ControllerActionSetHandle, ControllerAnalogActionHandle, Span&lt;EControllerActionOrigin&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAnalogActionOrigins(ControllerHandle controllerHandle, ControllerActionSetHandle actionSetHandle, ControllerAnalogActionHandle analogActionHandle, Span&lt;EControllerActionOrigin&gt; originsOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>actionSetHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+    <dt><code>analogActionHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle.html">ControllerAnalogActionHandle</a></dt>
+    <dd></dd>
+    <dt><code>originsOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetConnectedControllers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetConnectedControllers*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetConnectedControllers_System_Span_MarymoorStudios_Core_Steamworks_ControllerHandle__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetConnectedControllers(System.Span{MarymoorStudios.Core.Steamworks.ControllerHandle})">
+  GetConnectedControllers(Span&lt;ControllerHandle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetConnectedControllers(Span&lt;ControllerHandle&gt; handlesOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handlesOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetControllerBindingRevision_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetControllerBindingRevision*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetControllerBindingRevision_MarymoorStudios_Core_Steamworks_ControllerHandle_System_Int32__System_Int32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetControllerBindingRevision(MarymoorStudios.Core.Steamworks.ControllerHandle,System.Int32@,System.Int32@)">
+  GetControllerBindingRevision(ControllerHandle, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetControllerBindingRevision(ControllerHandle controllerHandle, out int major, out int minor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>major</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>minor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetControllerForGamepadIndex_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetControllerForGamepadIndex*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetControllerForGamepadIndex_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetControllerForGamepadIndex(System.Int32)">
+  GetControllerForGamepadIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerHandle GetControllerForGamepadIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetCurrentActionSet_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetCurrentActionSet*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetCurrentActionSet_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetCurrentActionSet(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  GetCurrentActionSet(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerActionSetHandle GetCurrentActionSet(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionData_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerDigitalActionHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionData(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerDigitalActionHandle)">
+  GetDigitalActionData(ControllerHandle, ControllerDigitalActionHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputDigitalActionData GetDigitalActionData(ControllerHandle controllerHandle, ControllerDigitalActionHandle digitalActionHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>digitalActionHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerDigitalActionHandle.html">ControllerDigitalActionHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.InputDigitalActionData.html">InputDigitalActionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionHandle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionHandle_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionHandle(System.String)">
+  GetDigitalActionHandle(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerDigitalActionHandle GetDigitalActionHandle(string pszActionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pszActionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerDigitalActionHandle.html">ControllerDigitalActionHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionOrigins_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionOrigins*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetDigitalActionOrigins_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerActionSetHandle_MarymoorStudios_Core_Steamworks_ControllerDigitalActionHandle_System_Span_MarymoorStudios_Core_Steamworks_EControllerActionOrigin__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetDigitalActionOrigins(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerActionSetHandle,MarymoorStudios.Core.Steamworks.ControllerDigitalActionHandle,System.Span{MarymoorStudios.Core.Steamworks.EControllerActionOrigin})">
+  GetDigitalActionOrigins(ControllerHandle, ControllerActionSetHandle, ControllerDigitalActionHandle, Span&lt;EControllerActionOrigin&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDigitalActionOrigins(ControllerHandle controllerHandle, ControllerActionSetHandle actionSetHandle, ControllerDigitalActionHandle digitalActionHandle, Span&lt;EControllerActionOrigin&gt; originsOut)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>actionSetHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerActionSetHandle.html">ControllerActionSetHandle</a></dt>
+    <dd></dd>
+    <dt><code>digitalActionHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerDigitalActionHandle.html">ControllerDigitalActionHandle</a></dt>
+    <dd></dd>
+    <dt><code>originsOut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetGamepadIndexForController_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGamepadIndexForController*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetGamepadIndexForController_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGamepadIndexForController(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  GetGamepadIndexForController(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGamepadIndexForController(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetGlyphForActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGlyphForActionOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetGlyphForActionOrigin_MarymoorStudios_Core_Steamworks_EControllerActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGlyphForActionOrigin(MarymoorStudios.Core.Steamworks.EControllerActionOrigin)">
+  GetGlyphForActionOrigin(EControllerActionOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGlyphForActionOrigin(EControllerActionOrigin origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetGlyphForXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGlyphForXboxOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetGlyphForXboxOrigin_MarymoorStudios_Core_Steamworks_EXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetGlyphForXboxOrigin(MarymoorStudios.Core.Steamworks.EXboxOrigin)">
+  GetGlyphForXboxOrigin(EXboxOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetGlyphForXboxOrigin(EXboxOrigin origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EXboxOrigin.html">EXboxOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetInputTypeForHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetInputTypeForHandle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetInputTypeForHandle_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetInputTypeForHandle(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  GetInputTypeForHandle(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ESteamInputType GetInputTypeForHandle(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamInputType.html">ESteamInputType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetMotionData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetMotionData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetMotionData_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetMotionData(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  GetMotionData(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputMotionData GetMotionData(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.InputMotionData.html">InputMotionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetStringForActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetStringForActionOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetStringForActionOrigin_MarymoorStudios_Core_Steamworks_EControllerActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetStringForActionOrigin(MarymoorStudios.Core.Steamworks.EControllerActionOrigin)">
+  GetStringForActionOrigin(EControllerActionOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStringForActionOrigin(EControllerActionOrigin origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_GetStringForXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetStringForXboxOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_GetStringForXboxOrigin_MarymoorStudios_Core_Steamworks_EXboxOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.GetStringForXboxOrigin(MarymoorStudios.Core.Steamworks.EXboxOrigin)">
+  GetStringForXboxOrigin(EXboxOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStringForXboxOrigin(EXboxOrigin origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EXboxOrigin.html">EXboxOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_Init_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.Init*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_Init" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Init()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputConfigurationLoaded_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputConfigurationLoaded*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputConfigurationLoaded_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInputConfigurationLoaded__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputConfigurationLoaded(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInputConfigurationLoaded})">
+  OnSteamInputConfigurationLoaded(CallbackAction&lt;SteamInputConfigurationLoaded&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInputConfigurationLoaded(CallbackAction&lt;SteamInputConfigurationLoaded&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInputConfigurationLoaded.html">SteamInputConfigurationLoaded</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputDeviceConnected_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputDeviceConnected*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputDeviceConnected_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInputDeviceConnected__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputDeviceConnected(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInputDeviceConnected})">
+  OnSteamInputDeviceConnected(CallbackAction&lt;SteamInputDeviceConnected&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInputDeviceConnected(CallbackAction&lt;SteamInputDeviceConnected&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInputDeviceConnected.html">SteamInputDeviceConnected</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputDeviceDisconnected_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputDeviceDisconnected*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputDeviceDisconnected_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInputDeviceDisconnected__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputDeviceDisconnected(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInputDeviceDisconnected})">
+  OnSteamInputDeviceDisconnected(CallbackAction&lt;SteamInputDeviceDisconnected&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInputDeviceDisconnected(CallbackAction&lt;SteamInputDeviceDisconnected&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInputDeviceDisconnected.html">SteamInputDeviceDisconnected</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputGamepadSlotChange_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputGamepadSlotChange*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_OnSteamInputGamepadSlotChange_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamInputGamepadSlotChange__" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.OnSteamInputGamepadSlotChange(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamInputGamepadSlotChange})">
+  OnSteamInputGamepadSlotChange(CallbackAction&lt;SteamInputGamepadSlotChange&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamInputGamepadSlotChange(CallbackAction&lt;SteamInputGamepadSlotChange&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInputGamepadSlotChange.html">SteamInputGamepadSlotChange</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_RunFrame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.RunFrame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_RunFrame" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.RunFrame">
+  RunFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunFrame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_SetLEDColor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.SetLEDColor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_SetLEDColor_MarymoorStudios_Core_Steamworks_ControllerHandle_System_Byte_System_Byte_System_Byte_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.SetLEDColor(MarymoorStudios.Core.Steamworks.ControllerHandle,System.Byte,System.Byte,System.Byte,System.UInt32)">
+  SetLEDColor(ControllerHandle, byte, byte, byte, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLEDColor(ControllerHandle controllerHandle, byte colorR, byte colorG, byte colorB, uint flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>colorR</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>colorG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>colorB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_ShowBindingPanel_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ShowBindingPanel*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_ShowBindingPanel_MarymoorStudios_Core_Steamworks_ControllerHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.ShowBindingPanel(MarymoorStudios.Core.Steamworks.ControllerHandle)">
+  ShowBindingPanel(ControllerHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowBindingPanel(ControllerHandle controllerHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_Shutdown_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.Shutdown*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_Shutdown" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.Shutdown">
+  Shutdown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Shutdown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_StopAnalogActionMomentum_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.StopAnalogActionMomentum*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_StopAnalogActionMomentum_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ControllerAnalogActionHandle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.StopAnalogActionMomentum(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle)">
+  StopAnalogActionMomentum(ControllerHandle, ControllerAnalogActionHandle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAnalogActionMomentum(ControllerHandle controllerHandle, ControllerAnalogActionHandle action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerAnalogActionHandle.html">ControllerAnalogActionHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_TranslateActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TranslateActionOrigin*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_TranslateActionOrigin_MarymoorStudios_Core_Steamworks_ESteamInputType_MarymoorStudios_Core_Steamworks_EControllerActionOrigin_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TranslateActionOrigin(MarymoorStudios.Core.Steamworks.ESteamInputType,MarymoorStudios.Core.Steamworks.EControllerActionOrigin)">
+  TranslateActionOrigin(ESteamInputType, EControllerActionOrigin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EControllerActionOrigin TranslateActionOrigin(ESteamInputType destinationInputType, EControllerActionOrigin sourceOrigin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destinationInputType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamInputType.html">ESteamInputType</a></dt>
+    <dd></dd>
+    <dt><code>sourceOrigin</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EControllerActionOrigin.html">EControllerActionOrigin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerHapticPulse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerHapticPulse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerHapticPulse_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ESteamControllerPad_System_UInt16_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerHapticPulse(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ESteamControllerPad,System.UInt16)">
+  TriggerHapticPulse(ControllerHandle, ESteamControllerPad, ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerHapticPulse(ControllerHandle controllerHandle, ESteamControllerPad targetPad, ushort durationMicroSec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>targetPad</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamControllerPad.html">ESteamControllerPad</a></dt>
+    <dd></dd>
+    <dt><code>durationMicroSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerRepeatedHapticPulse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerRepeatedHapticPulse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerRepeatedHapticPulse_MarymoorStudios_Core_Steamworks_ControllerHandle_MarymoorStudios_Core_Steamworks_ESteamControllerPad_System_UInt16_System_UInt16_System_UInt16_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerRepeatedHapticPulse(MarymoorStudios.Core.Steamworks.ControllerHandle,MarymoorStudios.Core.Steamworks.ESteamControllerPad,System.UInt16,System.UInt16,System.UInt16,System.UInt32)">
+  TriggerRepeatedHapticPulse(ControllerHandle, ESteamControllerPad, ushort, ushort, ushort, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerRepeatedHapticPulse(ControllerHandle controllerHandle, ESteamControllerPad targetPad, ushort durationMicroSec, ushort offMicroSec, ushort repeat, uint flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>targetPad</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamControllerPad.html">ESteamControllerPad</a></dt>
+    <dd></dd>
+    <dt><code>durationMicroSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>offMicroSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>repeat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerVibration_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerVibration*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamController_TriggerVibration_MarymoorStudios_Core_Steamworks_ControllerHandle_System_UInt16_System_UInt16_" data-uid="MarymoorStudios.Core.Steamworks.ISteamController.TriggerVibration(MarymoorStudios.Core.Steamworks.ControllerHandle,System.UInt16,System.UInt16)">
+  TriggerVibration(ControllerHandle, ushort, ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerVibration(ControllerHandle controllerHandle, ushort leftSpeed, ushort rightSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ControllerHandle.html">ControllerHandle</a></dt>
+    <dd></dd>
+    <dt><code>leftSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>rightSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
