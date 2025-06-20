@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamNetworking </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamNetworking ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamNetworking" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking" class="text-break">
+Class ISteamNetworking  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamNetworking : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamNetworking</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamNetworking006&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_AcceptP2PSessionWithUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.AcceptP2PSessionWithUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_AcceptP2PSessionWithUser_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.AcceptP2PSessionWithUser(MarymoorStudios.Core.Steamworks.CSteamID)">
+  AcceptP2PSessionWithUser(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AcceptP2PSessionWithUser(CSteamID steamIDRemote)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_AllowP2PPacketRelay_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.AllowP2PPacketRelay*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_AllowP2PPacketRelay_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.AllowP2PPacketRelay(System.Boolean)">
+  AllowP2PPacketRelay(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowP2PPacketRelay(bool allow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>allow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CloseP2PChannelWithUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CloseP2PChannelWithUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CloseP2PChannelWithUser_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CloseP2PChannelWithUser(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32)">
+  CloseP2PChannelWithUser(CSteamID, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseP2PChannelWithUser(CSteamID steamIDRemote, int channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>channel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CloseP2PSessionWithUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CloseP2PSessionWithUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CloseP2PSessionWithUser_MarymoorStudios_Core_Steamworks_CSteamID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CloseP2PSessionWithUser(MarymoorStudios.Core.Steamworks.CSteamID)">
+  CloseP2PSessionWithUser(CSteamID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseP2PSessionWithUser(CSteamID steamIDRemote)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateConnectionSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateConnectionSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateConnectionSocket_MarymoorStudios_Core_Steamworks_SteamIPAddress_System_UInt16_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateConnectionSocket(MarymoorStudios.Core.Steamworks.SteamIPAddress,System.UInt16,System.Int32)">
+  CreateConnectionSocket(SteamIPAddress, ushort, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SNetSocket CreateConnectionSocket(SteamIPAddress ip, ushort port, int timeoutSec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ip</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamIPAddress.html">SteamIPAddress</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>timeoutSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateListenSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateListenSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateListenSocket_System_Int32_MarymoorStudios_Core_Steamworks_SteamIPAddress_System_UInt16_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateListenSocket(System.Int32,MarymoorStudios.Core.Steamworks.SteamIPAddress,System.UInt16,System.Boolean)">
+  CreateListenSocket(int, SteamIPAddress, ushort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SNetListenSocket CreateListenSocket(int virtualP2PPort, SteamIPAddress ip, ushort port, bool allowUseOfPacketRelay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>virtualP2PPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ip</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamIPAddress.html">SteamIPAddress</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>allowUseOfPacketRelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SNetListenSocket.html">SNetListenSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateP2PConnectionSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateP2PConnectionSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_CreateP2PConnectionSocket_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_System_Int32_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.CreateP2PConnectionSocket(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32,System.Int32,System.Boolean)">
+  CreateP2PConnectionSocket(CSteamID, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SNetSocket CreateP2PConnectionSocket(CSteamID steamIDTarget, int virtualPort, int timeoutSec, bool allowUseOfPacketRelay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDTarget</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>virtualPort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeoutSec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>allowUseOfPacketRelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_DestroyListenSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.DestroyListenSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_DestroyListenSocket_MarymoorStudios_Core_Steamworks_SNetListenSocket_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.DestroyListenSocket(MarymoorStudios.Core.Steamworks.SNetListenSocket,System.Boolean)">
+  DestroyListenSocket(SNetListenSocket, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroyListenSocket(SNetListenSocket socket, bool notifyRemoteEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetListenSocket.html">SNetListenSocket</a></dt>
+    <dd></dd>
+    <dt><code>notifyRemoteEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_DestroySocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.DestroySocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_DestroySocket_MarymoorStudios_Core_Steamworks_SNetSocket_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.DestroySocket(MarymoorStudios.Core.Steamworks.SNetSocket,System.Boolean)">
+  DestroySocket(SNetSocket, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestroySocket(SNetSocket socket, bool notifyRemoteEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+    <dt><code>notifyRemoteEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetListenSocketInfo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetListenSocketInfo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetListenSocketInfo_MarymoorStudios_Core_Steamworks_SNetListenSocket_MarymoorStudios_Core_Steamworks_SteamIPAddress__System_UInt16__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetListenSocketInfo(MarymoorStudios.Core.Steamworks.SNetListenSocket,MarymoorStudios.Core.Steamworks.SteamIPAddress@,System.UInt16@)">
+  GetListenSocketInfo(SNetListenSocket, out SteamIPAddress, out ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetListenSocketInfo(SNetListenSocket listenSocket, out SteamIPAddress ip, out ushort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenSocket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetListenSocket.html">SNetListenSocket</a></dt>
+    <dd></dd>
+    <dt><code>ip</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamIPAddress.html">SteamIPAddress</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetMaxPacketSize_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetMaxPacketSize*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetMaxPacketSize_MarymoorStudios_Core_Steamworks_SNetSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetMaxPacketSize(MarymoorStudios.Core.Steamworks.SNetSocket)">
+  GetMaxPacketSize(SNetSocket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxPacketSize(SNetSocket socket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetP2PSessionState_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetP2PSessionState*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetP2PSessionState_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_P2PSessionState__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetP2PSessionState(MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.P2PSessionState@)">
+  GetP2PSessionState(CSteamID, out P2PSessionState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetP2PSessionState(CSteamID steamIDRemote, out P2PSessionState connectionState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>connectionState</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.P2PSessionState.html">P2PSessionState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetSocketConnectionType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetSocketConnectionType*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetSocketConnectionType_MarymoorStudios_Core_Steamworks_SNetSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetSocketConnectionType(MarymoorStudios.Core.Steamworks.SNetSocket)">
+  GetSocketConnectionType(SNetSocket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ESNetSocketConnectionType GetSocketConnectionType(SNetSocket socket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ESNetSocketConnectionType.html">ESNetSocketConnectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetSocketInfo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetSocketInfo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_GetSocketInfo_MarymoorStudios_Core_Steamworks_SNetSocket_MarymoorStudios_Core_Steamworks_CSteamID__System_Int32__MarymoorStudios_Core_Steamworks_SteamIPAddress__System_UInt16__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.GetSocketInfo(MarymoorStudios.Core.Steamworks.SNetSocket,MarymoorStudios.Core.Steamworks.CSteamID@,System.Int32@,MarymoorStudios.Core.Steamworks.SteamIPAddress@,System.UInt16@)">
+  GetSocketInfo(SNetSocket, out CSteamID, out int, out SteamIPAddress, out ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSocketInfo(SNetSocket socket, out CSteamID steamIDRemote, out int socketStatus, out SteamIPAddress ipRemote, out ushort portRemote)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>socketStatus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ipRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamIPAddress.html">SteamIPAddress</a></dt>
+    <dd></dd>
+    <dt><code>portRemote</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsDataAvailable_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsDataAvailable*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsDataAvailable_MarymoorStudios_Core_Steamworks_SNetListenSocket_System_UInt32__MarymoorStudios_Core_Steamworks_SNetSocket__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsDataAvailable(MarymoorStudios.Core.Steamworks.SNetListenSocket,System.UInt32@,MarymoorStudios.Core.Steamworks.SNetSocket@)">
+  IsDataAvailable(SNetListenSocket, out uint, out SNetSocket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDataAvailable(SNetListenSocket listenSocket, out uint msgSize, out SNetSocket hSocket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenSocket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetListenSocket.html">SNetListenSocket</a></dt>
+    <dd></dd>
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>hSocket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsDataAvailableOnSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsDataAvailableOnSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsDataAvailableOnSocket_MarymoorStudios_Core_Steamworks_SNetSocket_System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsDataAvailableOnSocket(MarymoorStudios.Core.Steamworks.SNetSocket,System.UInt32@)">
+  IsDataAvailableOnSocket(SNetSocket, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDataAvailableOnSocket(SNetSocket socket, out uint msgSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsP2PPacketAvailable_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsP2PPacketAvailable*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_IsP2PPacketAvailable_System_UInt32__System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.IsP2PPacketAvailable(System.UInt32@,System.Int32)">
+  IsP2PPacketAvailable(out uint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsP2PPacketAvailable(out uint msgSize, int channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>channel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnP2PSessionConnectFail_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnP2PSessionConnectFail*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnP2PSessionConnectFail_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_P2PSessionConnectFail__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnP2PSessionConnectFail(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.P2PSessionConnectFail})">
+  OnP2PSessionConnectFail(CallbackAction&lt;P2PSessionConnectFail&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnP2PSessionConnectFail(CallbackAction&lt;P2PSessionConnectFail&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.P2PSessionConnectFail.html">P2PSessionConnectFail</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnP2PSessionRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnP2PSessionRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnP2PSessionRequest_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_P2PSessionRequest__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnP2PSessionRequest(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.P2PSessionRequest})">
+  OnP2PSessionRequest(CallbackAction&lt;P2PSessionRequest&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnP2PSessionRequest(CallbackAction&lt;P2PSessionRequest&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.P2PSessionRequest.html">P2PSessionRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnSocketStatusCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnSocketStatusCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_OnSocketStatusCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SocketStatusCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.OnSocketStatusCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SocketStatusCallback})">
+  OnSocketStatusCallback(CallbackAction&lt;SocketStatusCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSocketStatusCallback(CallbackAction&lt;SocketStatusCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SocketStatusCallback.html">SocketStatusCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_ReadP2PPacket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.ReadP2PPacket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_ReadP2PPacket_System_Span_System_Byte__System_UInt32__MarymoorStudios_Core_Steamworks_CSteamID__System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.ReadP2PPacket(System.Span{System.Byte},System.UInt32@,MarymoorStudios.Core.Steamworks.CSteamID@,System.Int32)">
+  ReadP2PPacket(Span&lt;byte&gt;, out uint, out CSteamID, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadP2PPacket(Span&lt;byte&gt; dest, out uint msgSize, out CSteamID psteamIDRemote, int channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>psteamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>channel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_RetrieveData_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.RetrieveData*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_RetrieveData_MarymoorStudios_Core_Steamworks_SNetListenSocket_System_Span_System_Byte__System_UInt32__MarymoorStudios_Core_Steamworks_SNetSocket__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.RetrieveData(MarymoorStudios.Core.Steamworks.SNetListenSocket,System.Span{System.Byte},System.UInt32@,MarymoorStudios.Core.Steamworks.SNetSocket@)">
+  RetrieveData(SNetListenSocket, Span&lt;byte&gt;, out uint, out SNetSocket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RetrieveData(SNetListenSocket listenSocket, Span&lt;byte&gt; dest, out uint msgSize, out SNetSocket hSocket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listenSocket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetListenSocket.html">SNetListenSocket</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>hSocket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_RetrieveDataFromSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.RetrieveDataFromSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_RetrieveDataFromSocket_MarymoorStudios_Core_Steamworks_SNetSocket_System_Span_System_Byte__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.RetrieveDataFromSocket(MarymoorStudios.Core.Steamworks.SNetSocket,System.Span{System.Byte},System.UInt32@)">
+  RetrieveDataFromSocket(SNetSocket, Span&lt;byte&gt;, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RetrieveDataFromSocket(SNetSocket socket, Span&lt;byte&gt; dest, out uint msgSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>msgSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_SendDataOnSocket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.SendDataOnSocket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_SendDataOnSocket_MarymoorStudios_Core_Steamworks_SNetSocket_System_Span_System_Byte__System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.SendDataOnSocket(MarymoorStudios.Core.Steamworks.SNetSocket,System.Span{System.Byte},System.Boolean)">
+  SendDataOnSocket(SNetSocket, Span&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendDataOnSocket(SNetSocket socket, Span&lt;byte&gt; data, bool reliable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>socket</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SNetSocket.html">SNetSocket</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>reliable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamNetworking_SendP2PPacket_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.SendP2PPacket*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamNetworking_SendP2PPacket_MarymoorStudios_Core_Steamworks_CSteamID_System_ReadOnlySpan_System_Byte__MarymoorStudios_Core_Steamworks_EP2PSend_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamNetworking.SendP2PPacket(MarymoorStudios.Core.Steamworks.CSteamID,System.ReadOnlySpan{System.Byte},MarymoorStudios.Core.Steamworks.EP2PSend,System.Int32)">
+  SendP2PPacket(CSteamID, ReadOnlySpan&lt;byte&gt;, EP2PSend, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendP2PPacket(CSteamID steamIDRemote, ReadOnlySpan&lt;byte&gt; data, EP2PSend p2pSendType, int channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDRemote</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>p2pSendType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EP2PSend.html">EP2PSend</a></dt>
+    <dd></dd>
+    <dt><code>channel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamUtils </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamUtils ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamUtils" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils" class="text-break">
+Class ISteamUtils  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamUtils : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamUtils010&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_BOverlayNeedsPresent_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.BOverlayNeedsPresent*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_BOverlayNeedsPresent" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.BOverlayNeedsPresent">
+  BOverlayNeedsPresent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BOverlayNeedsPresent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_CheckFileSignature_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.CheckFileSignature*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_CheckFileSignature_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.CheckFileSignature(System.String)">
+  CheckFileSignature(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;CheckFileSignature&gt; CheckFileSignature(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.CheckFileSignature.html">CheckFileSignature</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_DismissFloatingGamepadTextInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.DismissFloatingGamepadTextInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_DismissFloatingGamepadTextInput" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.DismissFloatingGamepadTextInput">
+  DismissFloatingGamepadTextInput()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DismissFloatingGamepadTextInput()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_DismissGamepadTextInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.DismissGamepadTextInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_DismissGamepadTextInput" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.DismissGamepadTextInput">
+  DismissGamepadTextInput()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DismissGamepadTextInput()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_FilterText_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.FilterText*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_FilterText_MarymoorStudios_Core_Steamworks_ETextFilteringContext_MarymoorStudios_Core_Steamworks_CSteamID_System_String_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.FilterText(MarymoorStudios.Core.Steamworks.ETextFilteringContext,MarymoorStudios.Core.Steamworks.CSteamID,System.String,System.Span{System.Byte})">
+  FilterText(ETextFilteringContext, CSteamID, string, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FilterText(ETextFilteringContext context, CSteamID sourceSteamID, string inputMessage, Span&lt;byte&gt; outFilteredText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ETextFilteringContext.html">ETextFilteringContext</a></dt>
+    <dd></dd>
+    <dt><code>sourceSteamID</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>inputMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>outFilteredText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAPICallFailureReason_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAPICallFailureReason*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAPICallFailureReason_MarymoorStudios_Core_Steamworks_SteamAPICall_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAPICallFailureReason(MarymoorStudios.Core.Steamworks.SteamAPICall)">
+  GetAPICallFailureReason(SteamAPICall)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ESteamAPICallFailure GetAPICallFailureReason(SteamAPICall steamAPICall)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamAPICall</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamAPICall.html">SteamAPICall</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamAPICallFailure.html">ESteamAPICallFailure</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAPICallResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAPICallResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAPICallResult_MarymoorStudios_Core_Steamworks_SteamAPICall_System_Span_System_Byte__System_Int32_System_Boolean__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAPICallResult(MarymoorStudios.Core.Steamworks.SteamAPICall,System.Span{System.Byte},System.Int32,System.Boolean@)">
+  GetAPICallResult(SteamAPICall, Span&lt;byte&gt;, int, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAPICallResult(SteamAPICall steamAPICall, Span&lt;byte&gt; callback, int callbackExpected, out bool failed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamAPICall</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamAPICall.html">SteamAPICall</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>callbackExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>failed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAppID_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAppID*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetAppID" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetAppID">
+  GetAppID()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetAppID()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetConnectedUniverse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetConnectedUniverse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetConnectedUniverse" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetConnectedUniverse">
+  GetConnectedUniverse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EUniverse GetConnectedUniverse()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EUniverse.html">EUniverse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetCurrentBatteryPower_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetCurrentBatteryPower*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetCurrentBatteryPower" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetCurrentBatteryPower">
+  GetCurrentBatteryPower()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetCurrentBatteryPower()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetEnteredGamepadTextInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetEnteredGamepadTextInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetEnteredGamepadTextInput_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetEnteredGamepadTextInput(System.Span{System.Byte})">
+  GetEnteredGamepadTextInput(Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEnteredGamepadTextInput(Span&lt;byte&gt; text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetEnteredGamepadTextLength_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetEnteredGamepadTextLength*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetEnteredGamepadTextLength" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetEnteredGamepadTextLength">
+  GetEnteredGamepadTextLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetEnteredGamepadTextLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPCCallCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPCCallCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPCCallCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPCCallCount">
+  GetIPCCallCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetIPCCallCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPCountry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPCountry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPCountry" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPCountry">
+  GetIPCountry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetIPCountry()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPv6ConnectivityState_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPv6ConnectivityState*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetIPv6ConnectivityState_MarymoorStudios_Core_Steamworks_ESteamIPv6ConnectivityProtocol_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetIPv6ConnectivityState(MarymoorStudios.Core.Steamworks.ESteamIPv6ConnectivityProtocol)">
+  GetIPv6ConnectivityState(ESteamIPv6ConnectivityProtocol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ESteamIPv6ConnectivityState GetIPv6ConnectivityState(ESteamIPv6ConnectivityProtocol protocol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>protocol</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamIPv6ConnectivityProtocol.html">ESteamIPv6ConnectivityProtocol</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ESteamIPv6ConnectivityState.html">ESteamIPv6ConnectivityState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetImageRGBA_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetImageRGBA*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetImageRGBA_System_Int32_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetImageRGBA(System.Int32,System.Span{System.Byte})">
+  GetImageRGBA(int, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetImageRGBA(int image, Span&lt;byte&gt; dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetImageSize_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetImageSize*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetImageSize_System_Int32_System_UInt32__System_UInt32__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetImageSize(System.Int32,System.UInt32@,System.UInt32@)">
+  GetImageSize(int, out uint, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetImageSize(int image, out uint width, out uint height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSecondsSinceAppActive_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSecondsSinceAppActive*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSecondsSinceAppActive" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSecondsSinceAppActive">
+  GetSecondsSinceAppActive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetSecondsSinceAppActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSecondsSinceComputerActive_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSecondsSinceComputerActive*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSecondsSinceComputerActive" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSecondsSinceComputerActive">
+  GetSecondsSinceComputerActive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetSecondsSinceComputerActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetServerRealTime_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetServerRealTime*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetServerRealTime" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetServerRealTime">
+  GetServerRealTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetServerRealTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSteamUILanguage_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSteamUILanguage*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_GetSteamUILanguage" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.GetSteamUILanguage">
+  GetSteamUILanguage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSteamUILanguage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_InitFilterText_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.InitFilterText*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_InitFilterText_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.InitFilterText(System.UInt32)">
+  InitFilterText(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitFilterText(uint filterOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsAPICallCompleted_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsAPICallCompleted*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsAPICallCompleted_MarymoorStudios_Core_Steamworks_SteamAPICall_System_Boolean__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsAPICallCompleted(MarymoorStudios.Core.Steamworks.SteamAPICall,System.Boolean@)">
+  IsAPICallCompleted(SteamAPICall, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAPICallCompleted(SteamAPICall steamAPICall, out bool failed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamAPICall</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.SteamAPICall.html">SteamAPICall</a></dt>
+    <dd></dd>
+    <dt><code>failed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsOverlayEnabled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsOverlayEnabled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsOverlayEnabled" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsOverlayEnabled">
+  IsOverlayEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOverlayEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamChinaLauncher_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamChinaLauncher*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamChinaLauncher" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamChinaLauncher">
+  IsSteamChinaLauncher()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSteamChinaLauncher()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamInBigPictureMode_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamInBigPictureMode*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamInBigPictureMode" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamInBigPictureMode">
+  IsSteamInBigPictureMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSteamInBigPictureMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamRunningInVR_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamRunningInVR*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamRunningInVR" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamRunningInVR">
+  IsSteamRunningInVR()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSteamRunningInVR()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamRunningOnSteamDeck_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamRunningOnSteamDeck*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsSteamRunningOnSteamDeck" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsSteamRunningOnSteamDeck">
+  IsSteamRunningOnSteamDeck()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSteamRunningOnSteamDeck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsVRHeadsetStreamingEnabled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsVRHeadsetStreamingEnabled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_IsVRHeadsetStreamingEnabled" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.IsVRHeadsetStreamingEnabled">
+  IsVRHeadsetStreamingEnabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVRHeadsetStreamingEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnAppResumingFromSuspend_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnAppResumingFromSuspend*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnAppResumingFromSuspend_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_AppResumingFromSuspend__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnAppResumingFromSuspend(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.AppResumingFromSuspend})">
+  OnAppResumingFromSuspend(CallbackAction&lt;AppResumingFromSuspend&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnAppResumingFromSuspend(CallbackAction&lt;AppResumingFromSuspend&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.AppResumingFromSuspend.html">AppResumingFromSuspend</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnFilterTextDictionaryChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnFilterTextDictionaryChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnFilterTextDictionaryChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_FilterTextDictionaryChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnFilterTextDictionaryChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.FilterTextDictionaryChanged})">
+  OnFilterTextDictionaryChanged(CallbackAction&lt;FilterTextDictionaryChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnFilterTextDictionaryChanged(CallbackAction&lt;FilterTextDictionaryChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.FilterTextDictionaryChanged.html">FilterTextDictionaryChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnFloatingGamepadTextInputDismissed_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnFloatingGamepadTextInputDismissed*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnFloatingGamepadTextInputDismissed_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_FloatingGamepadTextInputDismissed__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnFloatingGamepadTextInputDismissed(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.FloatingGamepadTextInputDismissed})">
+  OnFloatingGamepadTextInputDismissed(CallbackAction&lt;FloatingGamepadTextInputDismissed&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnFloatingGamepadTextInputDismissed(CallbackAction&lt;FloatingGamepadTextInputDismissed&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.FloatingGamepadTextInputDismissed.html">FloatingGamepadTextInputDismissed</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnGamepadTextInputDismissed_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnGamepadTextInputDismissed*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnGamepadTextInputDismissed_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_GamepadTextInputDismissed__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnGamepadTextInputDismissed(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.GamepadTextInputDismissed})">
+  OnGamepadTextInputDismissed(CallbackAction&lt;GamepadTextInputDismissed&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnGamepadTextInputDismissed(CallbackAction&lt;GamepadTextInputDismissed&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.GamepadTextInputDismissed.html">GamepadTextInputDismissed</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnIPCountry_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnIPCountry*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnIPCountry_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_IPCountry__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnIPCountry(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.IPCountry})">
+  OnIPCountry(CallbackAction&lt;IPCountry&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnIPCountry(CallbackAction&lt;IPCountry&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.IPCountry.html">IPCountry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnLowBatteryPower_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnLowBatteryPower*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnLowBatteryPower_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_LowBatteryPower__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnLowBatteryPower(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.LowBatteryPower})">
+  OnLowBatteryPower(CallbackAction&lt;LowBatteryPower&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnLowBatteryPower(CallbackAction&lt;LowBatteryPower&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.LowBatteryPower.html">LowBatteryPower</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnSteamAPICallCompleted_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnSteamAPICallCompleted*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnSteamAPICallCompleted_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamAPICallCompleted__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnSteamAPICallCompleted(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamAPICallCompleted})">
+  OnSteamAPICallCompleted(CallbackAction&lt;SteamAPICallCompleted&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamAPICallCompleted(CallbackAction&lt;SteamAPICallCompleted&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamAPICallCompleted.html">SteamAPICallCompleted</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnSteamShutdown_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnSteamShutdown*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_OnSteamShutdown_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SteamShutdown__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.OnSteamShutdown(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SteamShutdown})">
+  OnSteamShutdown(CallbackAction&lt;SteamShutdown&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSteamShutdown(CallbackAction&lt;SteamShutdown&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SteamShutdown.html">SteamShutdown</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetGameLauncherMode_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetGameLauncherMode*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetGameLauncherMode_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetGameLauncherMode(System.Boolean)">
+  SetGameLauncherMode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameLauncherMode(bool launcherMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>launcherMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetOverlayNotificationInset_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetOverlayNotificationInset*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetOverlayNotificationInset_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetOverlayNotificationInset(System.Int32,System.Int32)">
+  SetOverlayNotificationInset(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOverlayNotificationInset(int horizontalInset, int verticalInset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>horizontalInset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>verticalInset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetOverlayNotificationPosition_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetOverlayNotificationPosition*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetOverlayNotificationPosition_MarymoorStudios_Core_Steamworks_ENotificationPosition_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetOverlayNotificationPosition(MarymoorStudios.Core.Steamworks.ENotificationPosition)">
+  SetOverlayNotificationPosition(ENotificationPosition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOverlayNotificationPosition(ENotificationPosition notificationPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationPosition</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ENotificationPosition.html">ENotificationPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetVRHeadsetStreamingEnabled_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetVRHeadsetStreamingEnabled*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetVRHeadsetStreamingEnabled_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetVRHeadsetStreamingEnabled(System.Boolean)">
+  SetVRHeadsetStreamingEnabled(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVRHeadsetStreamingEnabled(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetWarningMessageHook_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetWarningMessageHook*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_SetWarningMessageHook_System_Action_System_Int32_System_String__" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.SetWarningMessageHook(System.Action{System.Int32,System.String})">
+  SetWarningMessageHook(Action&lt;int, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable SetWarningMessageHook(Action&lt;int, string&gt; function)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>function</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_ShowFloatingGamepadTextInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.ShowFloatingGamepadTextInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_ShowFloatingGamepadTextInput_MarymoorStudios_Core_Steamworks_EFloatingGamepadTextInputMode_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.ShowFloatingGamepadTextInput(MarymoorStudios.Core.Steamworks.EFloatingGamepadTextInputMode,System.Int32,System.Int32,System.Int32,System.Int32)">
+  ShowFloatingGamepadTextInput(EFloatingGamepadTextInputMode, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowFloatingGamepadTextInput(EFloatingGamepadTextInputMode keyboardMode, int textFieldXPosition, int textFieldYPosition, int textFieldWidth, int textFieldHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyboardMode</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EFloatingGamepadTextInputMode.html">EFloatingGamepadTextInputMode</a></dt>
+    <dd></dd>
+    <dt><code>textFieldXPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textFieldYPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textFieldWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textFieldHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_ShowGamepadTextInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.ShowGamepadTextInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_ShowGamepadTextInput_MarymoorStudios_Core_Steamworks_EGamepadTextInputMode_MarymoorStudios_Core_Steamworks_EGamepadTextInputLineMode_System_String_System_UInt32_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.ShowGamepadTextInput(MarymoorStudios.Core.Steamworks.EGamepadTextInputMode,MarymoorStudios.Core.Steamworks.EGamepadTextInputLineMode,System.String,System.UInt32,System.String)">
+  ShowGamepadTextInput(EGamepadTextInputMode, EGamepadTextInputLineMode, string, uint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowGamepadTextInput(EGamepadTextInputMode inputMode, EGamepadTextInputLineMode lineInputMode, string description, uint charMax, string existingText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputMode</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EGamepadTextInputMode.html">EGamepadTextInputMode</a></dt>
+    <dd></dd>
+    <dt><code>lineInputMode</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EGamepadTextInputLineMode.html">EGamepadTextInputLineMode</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>charMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>existingText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamUtils_StartVRDashboard_" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.StartVRDashboard*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamUtils_StartVRDashboard" data-uid="MarymoorStudios.Core.Steamworks.ISteamUtils.StartVRDashboard">
+  StartVRDashboard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartVRDashboard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

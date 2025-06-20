@@ -102,7 +102,7 @@ Class Transport&lt;T&gt;
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Transport&lt;T&gt; : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Transport&lt;T&gt; : IAsyncDisposable</code></pre>
   </div>
 
 
@@ -125,7 +125,7 @@ Class Transport&lt;T&gt;
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     </dd>
   </dl>
 
@@ -133,7 +133,7 @@ Class Transport&lt;T&gt;
     <dt>Derived</dt>
     <dd>
       <div><a class="xref" href="MarymoorStudios.Core.Promises.RingBuffer-1.html">RingBuffer&lt;T&gt;</a></div>
-      <div><a class="xref" href="MarymoorStudios.Core.Rpc.Net.TcpTransport.html">TcpTransport</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.html">SteamTransport</a></div>
     </dd>
   </dl>
 
@@ -200,11 +200,11 @@ resources safely). Both parties MUST call <a class="xref" href="MarymoorStudios.
 </p>
 <p>
 In general the consumer "owns" the <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html">Transport&lt;T&gt;</a> and is responsible for calling
-<a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Dispose">Dispose()</a> when it is no longer needed.  The consumer MUST ensure that the producer has released
-any references to the <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_ProducerEvent">ProducerEvent</a> which it does so by calling <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Close_MarymoorStudios_Core_Promises_TransportFlags_">Close(TransportFlags)</a> on its side
-and receiving a <code>true</code> response. The producer should NEVER access any part of the
+<a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_DisposeAsync">DisposeAsync()</a> when it is no longer needed.  The consumer MUST ensure that the producer has
+released any references to the <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_ProducerEvent">ProducerEvent</a> which it does so by calling <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Close_MarymoorStudios_Core_Promises_TransportFlags_">Close(TransportFlags)</a> on
+its side and receiving a <code>true</code> response. The producer should NEVER access any part of the
 <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html">Transport&lt;T&gt;</a> or its handles AFTER calling <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Close_MarymoorStudios_Core_Promises_TransportFlags_">Close(TransportFlags)</a> for its side.  The consumer MUST
-release any references to the <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_ConsumerEvent">ConsumerEvent</a> BEFORE calling <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_Dispose">Dispose()</a>. If the
+release any references to the <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_ConsumerEvent">ConsumerEvent</a> BEFORE calling <a class="xref" href="MarymoorStudios.Core.Promises.Transport-1.html#MarymoorStudios_Core_Promises_Transport_1_DisposeAsync">DisposeAsync()</a>. If the
 consumer initiates closure it should:
 </p>
 <p>
@@ -382,10 +382,10 @@ closed first.
 
 
 
-  <a id="MarymoorStudios_Core_Promises_Transport_1_Dispose_" data-uid="MarymoorStudios.Core.Promises.Transport`1.Dispose*"></a>
+  <a id="MarymoorStudios_Core_Promises_Transport_1_DisposeAsync_" data-uid="MarymoorStudios.Core.Promises.Transport`1.DisposeAsync*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_Transport_1_Dispose" data-uid="MarymoorStudios.Core.Promises.Transport`1.Dispose">
-  Dispose()
+  <h3 id="MarymoorStudios_Core_Promises_Transport_1_DisposeAsync" data-uid="MarymoorStudios.Core.Promises.Transport`1.DisposeAsync">
+  DisposeAsync()
   
   </h3>
 
@@ -393,10 +393,15 @@ closed first.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
   </div>
 
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -408,10 +413,10 @@ closed first.
 
 
 
-  <a id="MarymoorStudios_Core_Promises_Transport_1_Dispose_" data-uid="MarymoorStudios.Core.Promises.Transport`1.Dispose*"></a>
+  <a id="MarymoorStudios_Core_Promises_Transport_1_DisposeAsync_" data-uid="MarymoorStudios.Core.Promises.Transport`1.DisposeAsync*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_Transport_1_Dispose_System_Boolean_" data-uid="MarymoorStudios.Core.Promises.Transport`1.Dispose(System.Boolean)">
-  Dispose(bool)
+  <h3 id="MarymoorStudios_Core_Promises_Transport_1_DisposeAsync_System_Boolean_" data-uid="MarymoorStudios.Core.Promises.Transport`1.DisposeAsync(System.Boolean)">
+  DisposeAsync(bool)
   
   </h3>
 
@@ -420,17 +425,22 @@ closed first.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual ValueTask DisposeAsync(bool disposing)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if both native and managed resources are being disposed.  False if only native
-resources (i.e. in finalizer).</p>
+resources (i.e. in finalizer).  When native only then MUST be prompt.</p>
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

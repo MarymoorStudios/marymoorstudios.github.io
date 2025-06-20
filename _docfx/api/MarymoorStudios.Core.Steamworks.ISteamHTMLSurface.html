@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamHTMLSurface </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamHTMLSurface ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface" class="text-break">
+Class ISteamHTMLSurface  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamHTMLSurface : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamHTMLSurface</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;STEAMHTMLSURFACE_INTERFACE_VERSION_005&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_AddHeader_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.AddHeader*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_AddHeader_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.AddHeader(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.String,System.String)">
+  AddHeader(HHTMLBrowser, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHeader(HHTMLBrowser browserHandle, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_AllowStartRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.AllowStartRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_AllowStartRequest_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.AllowStartRequest(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Boolean)">
+  AllowStartRequest(HHTMLBrowser, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllowStartRequest(HHTMLBrowser browserHandle, bool allowed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>allowed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_CopyToClipboard_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.CopyToClipboard*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_CopyToClipboard_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.CopyToClipboard(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  CopyToClipboard(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToClipboard(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_CreateBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.CreateBrowser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_CreateBrowser_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.CreateBrowser(System.String,System.String)">
+  CreateBrowser(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise&lt;HtmlBrowserReady&gt; CreateBrowser(string userAgent, string userCSS)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userAgent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>userCSS</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=f4cd642ef838c34f06fa803df6f4b1d31fee3e79&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlBrowserReady.html">HtmlBrowserReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_ExecuteJavascript_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.ExecuteJavascript*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_ExecuteJavascript_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.ExecuteJavascript(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.String)">
+  ExecuteJavascript(HHTMLBrowser, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteJavascript(HHTMLBrowser browserHandle, string script)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>script</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_FileLoadDialogResponse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.FileLoadDialogResponse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_FileLoadDialogResponse_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_ReadOnlyMemory_System_String__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.FileLoadDialogResponse(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.ReadOnlyMemory{System.String})">
+  FileLoadDialogResponse(HHTMLBrowser, ReadOnlyMemory&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FileLoadDialogResponse(HHTMLBrowser browserHandle, ReadOnlyMemory&lt;string&gt; selectedFiles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>selectedFiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Find_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Find*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Find_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_String_System_Boolean_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Find(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.String,System.Boolean,System.Boolean)">
+  Find(HHTMLBrowser, string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Find(HHTMLBrowser browserHandle, string searchStr, bool currentlyInFind, bool reverse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>searchStr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>currentlyInFind</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>reverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GetLinkAtPosition_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GetLinkAtPosition*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GetLinkAtPosition_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GetLinkAtPosition(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Int32,System.Int32)">
+  GetLinkAtPosition(HHTMLBrowser, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetLinkAtPosition(HHTMLBrowser browserHandle, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GoBack_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GoBack*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GoBack_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GoBack(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  GoBack(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoBack(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GoForward_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GoForward*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_GoForward_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.GoForward(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  GoForward(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoForward(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Init_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Init*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Init" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Init()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_JSDialogResponse_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.JSDialogResponse*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_JSDialogResponse_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.JSDialogResponse(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Boolean)">
+  JSDialogResponse(HHTMLBrowser, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JSDialogResponse(HHTMLBrowser browserHandle, bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyChar_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyChar*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyChar_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLKeyModifiers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyChar(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers)">
+  KeyChar(HHTMLBrowser, uint, EHTMLKeyModifiers)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KeyChar(HHTMLBrowser browserHandle, uint unicodeChar, ISteamHTMLSurface.EHTMLKeyModifiers htmlKeyModifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>unicodeChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>htmlKeyModifiers</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers.html">EHTMLKeyModifiers</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyDown_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyDown*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyDown_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLKeyModifiers_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyDown(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers,System.Boolean)">
+  KeyDown(HHTMLBrowser, uint, EHTMLKeyModifiers, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KeyDown(HHTMLBrowser browserHandle, uint nativeKeyCode, ISteamHTMLSurface.EHTMLKeyModifiers htmlKeyModifiers, bool isSystemKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>nativeKeyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>htmlKeyModifiers</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers.html">EHTMLKeyModifiers</a></dt>
+    <dd></dd>
+    <dt><code>isSystemKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyUp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyUp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_KeyUp_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLKeyModifiers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.KeyUp(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers)">
+  KeyUp(HHTMLBrowser, uint, EHTMLKeyModifiers)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KeyUp(HHTMLBrowser browserHandle, uint nativeKeyCode, ISteamHTMLSurface.EHTMLKeyModifiers htmlKeyModifiers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>nativeKeyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>htmlKeyModifiers</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLKeyModifiers.html">EHTMLKeyModifiers</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_LoadURL_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.LoadURL*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_LoadURL_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.LoadURL(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.String,System.String)">
+  LoadURL(HHTMLBrowser, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadURL(HHTMLBrowser browserHandle, string url, string postData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>postData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseDoubleClick_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseDoubleClick*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseDoubleClick_MarymoorStudios_Core_Steamworks_HHTMLBrowser_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLMouseButton_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseDoubleClick(MarymoorStudios.Core.Steamworks.HHTMLBrowser,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton)">
+  MouseDoubleClick(HHTMLBrowser, EHTMLMouseButton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDoubleClick(HHTMLBrowser browserHandle, ISteamHTMLSurface.EHTMLMouseButton mouseButton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>mouseButton</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton.html">EHTMLMouseButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseDown_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseDown*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseDown_MarymoorStudios_Core_Steamworks_HHTMLBrowser_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLMouseButton_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseDown(MarymoorStudios.Core.Steamworks.HHTMLBrowser,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton)">
+  MouseDown(HHTMLBrowser, EHTMLMouseButton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDown(HHTMLBrowser browserHandle, ISteamHTMLSurface.EHTMLMouseButton mouseButton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>mouseButton</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton.html">EHTMLMouseButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseMove_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseMove*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseMove_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseMove(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Int32,System.Int32)">
+  MouseMove(HHTMLBrowser, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseMove(HHTMLBrowser browserHandle, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseUp_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseUp*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseUp_MarymoorStudios_Core_Steamworks_HHTMLBrowser_MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_EHTMLMouseButton_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseUp(MarymoorStudios.Core.Steamworks.HHTMLBrowser,MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton)">
+  MouseUp(HHTMLBrowser, EHTMLMouseButton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseUp(HHTMLBrowser browserHandle, ISteamHTMLSurface.EHTMLMouseButton mouseButton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>mouseButton</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.EHTMLMouseButton.html">EHTMLMouseButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseWheel_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseWheel*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_MouseWheel_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.MouseWheel(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Int32)">
+  MouseWheel(HHTMLBrowser, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseWheel(HHTMLBrowser browserHandle, int delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlBrowserRestarted_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlBrowserRestarted*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlBrowserRestarted_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlBrowserRestarted__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlBrowserRestarted(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlBrowserRestarted})">
+  OnHtmlBrowserRestarted(CallbackAction&lt;HtmlBrowserRestarted&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlBrowserRestarted(CallbackAction&lt;HtmlBrowserRestarted&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlBrowserRestarted.html">HtmlBrowserRestarted</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlCanGoBackAndForward_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlCanGoBackAndForward*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlCanGoBackAndForward_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlCanGoBackAndForward__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlCanGoBackAndForward(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlCanGoBackAndForward})">
+  OnHtmlCanGoBackAndForward(CallbackAction&lt;HtmlCanGoBackAndForward&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlCanGoBackAndForward(CallbackAction&lt;HtmlCanGoBackAndForward&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlCanGoBackAndForward.html">HtmlCanGoBackAndForward</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlChangedTitle_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlChangedTitle*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlChangedTitle_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlChangedTitle__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlChangedTitle(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlChangedTitle})">
+  OnHtmlChangedTitle(CallbackAction&lt;HtmlChangedTitle&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlChangedTitle(CallbackAction&lt;HtmlChangedTitle&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlChangedTitle.html">HtmlChangedTitle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlCloseBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlCloseBrowser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlCloseBrowser_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlCloseBrowser__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlCloseBrowser(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlCloseBrowser})">
+  OnHtmlCloseBrowser(CallbackAction&lt;HtmlCloseBrowser&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlCloseBrowser(CallbackAction&lt;HtmlCloseBrowser&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlCloseBrowser.html">HtmlCloseBrowser</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlFileOpenDialog_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlFileOpenDialog*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlFileOpenDialog_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlFileOpenDialog__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlFileOpenDialog(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlFileOpenDialog})">
+  OnHtmlFileOpenDialog(CallbackAction&lt;HtmlFileOpenDialog&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlFileOpenDialog(CallbackAction&lt;HtmlFileOpenDialog&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlFileOpenDialog.html">HtmlFileOpenDialog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlFinishedRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlFinishedRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlFinishedRequest_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlFinishedRequest__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlFinishedRequest(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlFinishedRequest})">
+  OnHtmlFinishedRequest(CallbackAction&lt;HtmlFinishedRequest&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlFinishedRequest(CallbackAction&lt;HtmlFinishedRequest&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlFinishedRequest.html">HtmlFinishedRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlHideToolTip_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlHideToolTip*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlHideToolTip_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlHideToolTip__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlHideToolTip(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlHideToolTip})">
+  OnHtmlHideToolTip(CallbackAction&lt;HtmlHideToolTip&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlHideToolTip(CallbackAction&lt;HtmlHideToolTip&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlHideToolTip.html">HtmlHideToolTip</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlHorizontalScroll_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlHorizontalScroll*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlHorizontalScroll_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlHorizontalScroll__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlHorizontalScroll(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlHorizontalScroll})">
+  OnHtmlHorizontalScroll(CallbackAction&lt;HtmlHorizontalScroll&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlHorizontalScroll(CallbackAction&lt;HtmlHorizontalScroll&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlHorizontalScroll.html">HtmlHorizontalScroll</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlJSAlert_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlJSAlert*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlJSAlert_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlJSAlert__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlJSAlert(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlJSAlert})">
+  OnHtmlJSAlert(CallbackAction&lt;HtmlJSAlert&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlJSAlert(CallbackAction&lt;HtmlJSAlert&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlJSAlert.html">HtmlJSAlert</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlJSConfirm_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlJSConfirm*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlJSConfirm_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlJSConfirm__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlJSConfirm(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlJSConfirm})">
+  OnHtmlJSConfirm(CallbackAction&lt;HtmlJSConfirm&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlJSConfirm(CallbackAction&lt;HtmlJSConfirm&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlJSConfirm.html">HtmlJSConfirm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlLinkAtPosition_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlLinkAtPosition*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlLinkAtPosition_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlLinkAtPosition__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlLinkAtPosition(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlLinkAtPosition})">
+  OnHtmlLinkAtPosition(CallbackAction&lt;HtmlLinkAtPosition&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlLinkAtPosition(CallbackAction&lt;HtmlLinkAtPosition&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlLinkAtPosition.html">HtmlLinkAtPosition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlNeedsPaint_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlNeedsPaint*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlNeedsPaint_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlNeedsPaint__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlNeedsPaint(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlNeedsPaint})">
+  OnHtmlNeedsPaint(CallbackAction&lt;HtmlNeedsPaint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlNeedsPaint(CallbackAction&lt;HtmlNeedsPaint&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlNeedsPaint.html">HtmlNeedsPaint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlNewWindow_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlNewWindow*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlNewWindow_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlNewWindow__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlNewWindow(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlNewWindow})">
+  OnHtmlNewWindow(CallbackAction&lt;HtmlNewWindow&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlNewWindow(CallbackAction&lt;HtmlNewWindow&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlNewWindow.html">HtmlNewWindow</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlOpenLinkInNewTab_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlOpenLinkInNewTab*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlOpenLinkInNewTab_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlOpenLinkInNewTab__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlOpenLinkInNewTab(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlOpenLinkInNewTab})">
+  OnHtmlOpenLinkInNewTab(CallbackAction&lt;HtmlOpenLinkInNewTab&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlOpenLinkInNewTab(CallbackAction&lt;HtmlOpenLinkInNewTab&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlOpenLinkInNewTab.html">HtmlOpenLinkInNewTab</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlSearchResults_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlSearchResults*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlSearchResults_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlSearchResults__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlSearchResults(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlSearchResults})">
+  OnHtmlSearchResults(CallbackAction&lt;HtmlSearchResults&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlSearchResults(CallbackAction&lt;HtmlSearchResults&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlSearchResults.html">HtmlSearchResults</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlSetCursor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlSetCursor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlSetCursor_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlSetCursor__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlSetCursor(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlSetCursor})">
+  OnHtmlSetCursor(CallbackAction&lt;HtmlSetCursor&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlSetCursor(CallbackAction&lt;HtmlSetCursor&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlSetCursor.html">HtmlSetCursor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlShowToolTip_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlShowToolTip*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlShowToolTip_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlShowToolTip__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlShowToolTip(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlShowToolTip})">
+  OnHtmlShowToolTip(CallbackAction&lt;HtmlShowToolTip&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlShowToolTip(CallbackAction&lt;HtmlShowToolTip&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlShowToolTip.html">HtmlShowToolTip</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlStartRequest_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlStartRequest*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlStartRequest_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlStartRequest__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlStartRequest(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlStartRequest})">
+  OnHtmlStartRequest(CallbackAction&lt;HtmlStartRequest&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlStartRequest(CallbackAction&lt;HtmlStartRequest&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlStartRequest.html">HtmlStartRequest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlStatusText_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlStatusText*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlStatusText_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlStatusText__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlStatusText(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlStatusText})">
+  OnHtmlStatusText(CallbackAction&lt;HtmlStatusText&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlStatusText(CallbackAction&lt;HtmlStatusText&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlStatusText.html">HtmlStatusText</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlURLChanged_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlURLChanged*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlURLChanged_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlURLChanged__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlURLChanged(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlURLChanged})">
+  OnHtmlURLChanged(CallbackAction&lt;HtmlURLChanged&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlURLChanged(CallbackAction&lt;HtmlURLChanged&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlURLChanged.html">HtmlURLChanged</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlUpdateToolTip_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlUpdateToolTip*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlUpdateToolTip_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlUpdateToolTip__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlUpdateToolTip(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlUpdateToolTip})">
+  OnHtmlUpdateToolTip(CallbackAction&lt;HtmlUpdateToolTip&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlUpdateToolTip(CallbackAction&lt;HtmlUpdateToolTip&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlUpdateToolTip.html">HtmlUpdateToolTip</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlVerticalScroll_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlVerticalScroll*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OnHtmlVerticalScroll_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_HtmlVerticalScroll__" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OnHtmlVerticalScroll(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.HtmlVerticalScroll})">
+  OnHtmlVerticalScroll(CallbackAction&lt;HtmlVerticalScroll&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnHtmlVerticalScroll(CallbackAction&lt;HtmlVerticalScroll&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.HtmlVerticalScroll.html">HtmlVerticalScroll</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OpenDeveloperTools_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OpenDeveloperTools*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_OpenDeveloperTools_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.OpenDeveloperTools(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  OpenDeveloperTools(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenDeveloperTools(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_PasteFromClipboard_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.PasteFromClipboard*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_PasteFromClipboard_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.PasteFromClipboard(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  PasteFromClipboard(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PasteFromClipboard(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Reload_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Reload*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Reload_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Reload(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  Reload(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reload(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_RemoveBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.RemoveBrowser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_RemoveBrowser_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.RemoveBrowser(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  RemoveBrowser(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBrowser(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetBackgroundMode_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetBackgroundMode*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetBackgroundMode_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetBackgroundMode(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Boolean)">
+  SetBackgroundMode(HHTMLBrowser, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBackgroundMode(HHTMLBrowser browserHandle, bool backgroundMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>backgroundMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetCookie_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetCookie*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetCookie_System_String_System_String_System_String_System_String_MarymoorStudios_Core_Steamworks_RTime32_System_Boolean_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetCookie(System.String,System.String,System.String,System.String,MarymoorStudios.Core.Steamworks.RTime32,System.Boolean,System.Boolean)">
+  SetCookie(string, string, string, string, RTime32, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCookie(string hostname, string key, string value, string path, RTime32 expires, bool secure, bool httpOnly)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hostname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>expires</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.RTime32.html">RTime32</a></dt>
+    <dd></dd>
+    <dt><code>secure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>httpOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetDPIScalingFactor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetDPIScalingFactor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetDPIScalingFactor_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Single_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetDPIScalingFactor(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Single)">
+  SetDPIScalingFactor(HHTMLBrowser, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDPIScalingFactor(HHTMLBrowser browserHandle, float dpiScaling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>dpiScaling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetHorizontalScroll_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetHorizontalScroll*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetHorizontalScroll_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetHorizontalScroll(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32)">
+  SetHorizontalScroll(HHTMLBrowser, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHorizontalScroll(HHTMLBrowser browserHandle, uint absolutePixelScroll)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>absolutePixelScroll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetKeyFocus_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetKeyFocus*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetKeyFocus_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Boolean_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetKeyFocus(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Boolean)">
+  SetKeyFocus(HHTMLBrowser, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyFocus(HHTMLBrowser browserHandle, bool hasKeyFocus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>hasKeyFocus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetPageScaleFactor_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetPageScaleFactor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetPageScaleFactor_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_Single_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetPageScaleFactor(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.Single,System.Int32,System.Int32)">
+  SetPageScaleFactor(HHTMLBrowser, float, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPageScaleFactor(HHTMLBrowser browserHandle, float zoom, int pointX, int pointY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>zoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>pointX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pointY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetSize_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetSize*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetSize_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetSize(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32,System.UInt32)">
+  SetSize(HHTMLBrowser, uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSize(HHTMLBrowser browserHandle, uint width, uint height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetVerticalScroll_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetVerticalScroll*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_SetVerticalScroll_MarymoorStudios_Core_Steamworks_HHTMLBrowser_System_UInt32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.SetVerticalScroll(MarymoorStudios.Core.Steamworks.HHTMLBrowser,System.UInt32)">
+  SetVerticalScroll(HHTMLBrowser, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVerticalScroll(HHTMLBrowser browserHandle, uint absolutePixelScroll)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+    <dt><code>absolutePixelScroll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Shutdown_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Shutdown*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_Shutdown" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.Shutdown">
+  Shutdown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Shutdown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_StopFind_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.StopFind*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_StopFind_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.StopFind(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  StopFind(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopFind(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_StopLoad_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.StopLoad*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_StopLoad_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.StopLoad(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  StopLoad(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopLoad(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_ViewSource_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.ViewSource*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamHTMLSurface_ViewSource_MarymoorStudios_Core_Steamworks_HHTMLBrowser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.ViewSource(MarymoorStudios.Core.Steamworks.HHTMLBrowser)">
+  ViewSource(HHTMLBrowser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ViewSource(HHTMLBrowser browserHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>browserHandle</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HHTMLBrowser.html">HHTMLBrowser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

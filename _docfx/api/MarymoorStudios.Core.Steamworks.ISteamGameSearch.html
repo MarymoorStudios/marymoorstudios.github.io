@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamGameSearch </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamGameSearch ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch" class="text-break">
+Class ISteamGameSearch  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamGameSearch : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamGameSearch</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_INTERFACE_VERSION" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.INTERFACE_VERSION">
+  INTERFACE_VERSION
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string INTERFACE_VERSION = &quot;SteamMatchGameSearch001&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_AcceptGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.AcceptGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_AcceptGame" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.AcceptGame">
+  AcceptGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode AcceptGame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_AddGameSearchParams_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.AddGameSearchParams*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_AddGameSearchParams_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.AddGameSearchParams(System.String,System.String)">
+  AddGameSearchParams(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode AddGameSearchParams(string keyToFind, string valuesToFind)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyToFind</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>valuesToFind</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_CancelRequestPlayersForGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.CancelRequestPlayersForGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_CancelRequestPlayersForGame" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.CancelRequestPlayersForGame">
+  CancelRequestPlayersForGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode CancelRequestPlayersForGame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_DeclineGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.DeclineGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_DeclineGame" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.DeclineGame">
+  DeclineGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode DeclineGame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_EndGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.EndGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_EndGame_System_UInt64_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.EndGame(System.UInt64)">
+  EndGame(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode EndGame(ulong uniqueGameID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uniqueGameID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_EndGameSearch_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.EndGameSearch*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_EndGameSearch" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.EndGameSearch">
+  EndGameSearch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode EndGameSearch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_HostConfirmGameStart_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.HostConfirmGameStart*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_HostConfirmGameStart_System_UInt64_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.HostConfirmGameStart(System.UInt64)">
+  HostConfirmGameStart(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode HostConfirmGameStart(ulong uniqueGameID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uniqueGameID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnEndGameResultCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnEndGameResultCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnEndGameResultCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_EndGameResultCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnEndGameResultCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.EndGameResultCallback})">
+  OnEndGameResultCallback(CallbackAction&lt;EndGameResultCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnEndGameResultCallback(CallbackAction&lt;EndGameResultCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.EndGameResultCallback.html">EndGameResultCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameFinalResultCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameFinalResultCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameFinalResultCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RequestPlayersForGameFinalResultCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameFinalResultCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RequestPlayersForGameFinalResultCallback})">
+  OnRequestPlayersForGameFinalResultCallback(CallbackAction&lt;RequestPlayersForGameFinalResultCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRequestPlayersForGameFinalResultCallback(CallbackAction&lt;RequestPlayersForGameFinalResultCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RequestPlayersForGameFinalResultCallback.html">RequestPlayersForGameFinalResultCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameProgressCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameProgressCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameProgressCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RequestPlayersForGameProgressCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameProgressCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RequestPlayersForGameProgressCallback})">
+  OnRequestPlayersForGameProgressCallback(CallbackAction&lt;RequestPlayersForGameProgressCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRequestPlayersForGameProgressCallback(CallbackAction&lt;RequestPlayersForGameProgressCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RequestPlayersForGameProgressCallback.html">RequestPlayersForGameProgressCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameResultCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameResultCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnRequestPlayersForGameResultCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_RequestPlayersForGameResultCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnRequestPlayersForGameResultCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.RequestPlayersForGameResultCallback})">
+  OnRequestPlayersForGameResultCallback(CallbackAction&lt;RequestPlayersForGameResultCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnRequestPlayersForGameResultCallback(CallbackAction&lt;RequestPlayersForGameResultCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.RequestPlayersForGameResultCallback.html">RequestPlayersForGameResultCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSearchForGameProgressCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSearchForGameProgressCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSearchForGameProgressCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SearchForGameProgressCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSearchForGameProgressCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SearchForGameProgressCallback})">
+  OnSearchForGameProgressCallback(CallbackAction&lt;SearchForGameProgressCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSearchForGameProgressCallback(CallbackAction&lt;SearchForGameProgressCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SearchForGameProgressCallback.html">SearchForGameProgressCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSearchForGameResultCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSearchForGameResultCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSearchForGameResultCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SearchForGameResultCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSearchForGameResultCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SearchForGameResultCallback})">
+  OnSearchForGameResultCallback(CallbackAction&lt;SearchForGameResultCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSearchForGameResultCallback(CallbackAction&lt;SearchForGameResultCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SearchForGameResultCallback.html">SearchForGameResultCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSubmitPlayerResultResultCallback_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSubmitPlayerResultResultCallback*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_OnSubmitPlayerResultResultCallback_MarymoorStudios_Core_Steamworks_CallbackAction_MarymoorStudios_Core_Steamworks_SubmitPlayerResultResultCallback__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.OnSubmitPlayerResultResultCallback(MarymoorStudios.Core.Steamworks.CallbackAction{MarymoorStudios.Core.Steamworks.SubmitPlayerResultResultCallback})">
+  OnSubmitPlayerResultResultCallback(CallbackAction&lt;SubmitPlayerResultResultCallback&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable OnSubmitPlayerResultResultCallback(CallbackAction&lt;SubmitPlayerResultResultCallback&gt; func)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction</a>&lt;<a class="xref" href="MarymoorStudios.Core.Steamworks.SubmitPlayerResultResultCallback.html">SubmitPlayerResultResultCallback</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_RequestPlayersForGame_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.RequestPlayersForGame*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_RequestPlayersForGame_System_Int32_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.RequestPlayersForGame(System.Int32,System.Int32,System.Int32)">
+  RequestPlayersForGame(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode RequestPlayersForGame(int playerMin, int playerMax, int maxTeamSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>playerMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxTeamSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_RetrieveConnectionDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.RetrieveConnectionDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_RetrieveConnectionDetails_MarymoorStudios_Core_Steamworks_CSteamID_System_Span_System_Byte__" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.RetrieveConnectionDetails(MarymoorStudios.Core.Steamworks.CSteamID,System.Span{System.Byte})">
+  RetrieveConnectionDetails(CSteamID, Span&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode RetrieveConnectionDetails(CSteamID steamIDHost, Span&lt;byte&gt; connectionDetails)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDHost</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>connectionDetails</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SearchForGameSolo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SearchForGameSolo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SearchForGameSolo_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SearchForGameSolo(System.Int32,System.Int32)">
+  SearchForGameSolo(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode SearchForGameSolo(int playerMin, int playerMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>playerMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SearchForGameWithLobby_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SearchForGameWithLobby*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SearchForGameWithLobby_MarymoorStudios_Core_Steamworks_CSteamID_System_Int32_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SearchForGameWithLobby(MarymoorStudios.Core.Steamworks.CSteamID,System.Int32,System.Int32)">
+  SearchForGameWithLobby(CSteamID, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode SearchForGameWithLobby(CSteamID steamIDLobby, int playerMin, int playerMax)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamIDLobby</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>playerMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>playerMax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SetConnectionDetails_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SetConnectionDetails*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SetConnectionDetails_System_String_System_Int32_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SetConnectionDetails(System.String,System.Int32)">
+  SetConnectionDetails(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode SetConnectionDetails(string connectionDetails, int connectionDetailsCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionDetails</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>connectionDetailsCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SetGameHostParams_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SetGameHostParams*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SetGameHostParams_System_String_System_String_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SetGameHostParams(System.String,System.String)">
+  SetGameHostParams(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode SetGameHostParams(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SubmitPlayerResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SubmitPlayerResult*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamGameSearch_SubmitPlayerResult_System_UInt64_MarymoorStudios_Core_Steamworks_CSteamID_MarymoorStudios_Core_Steamworks_EPlayerResult_" data-uid="MarymoorStudios.Core.Steamworks.ISteamGameSearch.SubmitPlayerResult(System.UInt64,MarymoorStudios.Core.Steamworks.CSteamID,MarymoorStudios.Core.Steamworks.EPlayerResult)">
+  SubmitPlayerResult(ulong, CSteamID, EPlayerResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGameSearchErrorCode SubmitPlayerResult(ulong uniqueGameID, CSteamID steamIDPlayer, EPlayerResult ePlayerResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uniqueGameID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>steamIDPlayer</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
+    <dd></dd>
+    <dt><code>ePlayerResult</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EPlayerResult.html">EPlayerResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.EGameSearchErrorCode.html">EGameSearchErrorCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

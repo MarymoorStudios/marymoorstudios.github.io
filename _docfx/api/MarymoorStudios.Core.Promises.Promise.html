@@ -138,6 +138,15 @@ Struct Promise
     <dt>Extension Methods</dt>
     <dd>
   <div>
+      <a class="xref" href="MarymoorStudios.Core.Promises.PromiseFinally.html#MarymoorStudios_Core_Promises_PromiseFinally_Finally_MarymoorStudios_Core_Promises_Promise_System_Action_System_Action_System_Exception__">PromiseFinally.Finally(Promise, Action, Action&lt;Exception&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MarymoorStudios.Core.Promises.PromiseFinally.html#MarymoorStudios_Core_Promises_PromiseFinally_Finally_MarymoorStudios_Core_Promises_Promise_System_Func_MarymoorStudios_Core_Promises_Promise__System_Func_System_Exception_MarymoorStudios_Core_Promises_Promise__">PromiseFinally.Finally(Promise, Func&lt;Promise&gt;, Func&lt;Exception, Promise&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MarymoorStudios.Core.Promises.PromiseFinally.html#MarymoorStudios_Core_Promises_PromiseFinally_Finally__1_MarymoorStudios_Core_Promises_Promise_System_Func_MarymoorStudios_Core_Promises_Promise___0___System_Func_System_Exception_MarymoorStudios_Core_Promises_Promise___0___">PromiseFinally.Finally&lt;TResult&gt;(Promise, Func&lt;Promise&lt;TResult&gt;&gt;, Func&lt;Exception, Promise&lt;TResult&gt;&gt;)</a>
+  </div>
+  <div>
       <a class="xref" href="MarymoorStudios.Core.Promises.PromiseJoin.html#MarymoorStudios_Core_Promises_PromiseJoin_Join_MarymoorStudios_Core_Promises_Promise_MarymoorStudios_Core_Promises_Promise_">PromiseJoin.Join(Promise, Promise)</a>
   </div>
   <div>
@@ -154,6 +163,9 @@ Struct Promise
   </div>
   <div>
       <a class="xref" href="MarymoorStudios.Core.Promises.PromiseWhen.html#MarymoorStudios_Core_Promises_PromiseWhen_When__1_MarymoorStudios_Core_Promises_Promise_System_Func_MarymoorStudios_Core_Promises_Promise___0___">PromiseWhen.When&lt;TResult&gt;(Promise, Func&lt;Promise&lt;TResult&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MarymoorStudios.Core.Promises.PromiseWithCancellation.html#MarymoorStudios_Core_Promises_PromiseWithCancellation_WithCancellation_MarymoorStudios_Core_Promises_Promise_System_Threading_CancellationToken_">PromiseWithCancellation.WithCancellation(Promise, CancellationToken)</a>
   </div>
   </dd></dl>
 
@@ -489,6 +501,94 @@ called "resolving" the outcome.
   </dl>
 
 
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_Promise_From_" data-uid="MarymoorStudios.Core.Promises.Promise.From*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Promise_From__1_MarymoorStudios_Core_Promises_Resolver___0__" data-uid="MarymoorStudios.Core.Promises.Promise.From``1(MarymoorStudios.Core.Promises.Resolver{``0})">
+  From&lt;T&gt;(Resolver&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an unresolved promise whose future outcome is defined by <code class="paramref">r</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Promise&lt;T&gt; From&lt;T&gt;(Resolver&lt;T&gt; r)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r</code> <a class="xref" href="MarymoorStudios.Core.Promises.Resolver-1.html">Resolver</a>&lt;T&gt;</dt>
+    <dd><p>The resolver</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise-1.html">Promise</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_Promise_From_" data-uid="MarymoorStudios.Core.Promises.Promise.From*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Promise_From__1_System_Exception_" data-uid="MarymoorStudios.Core.Promises.Promise.From``1(System.Exception)">
+  From&lt;T&gt;(Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a failed promise whose outcome is <code class="paramref">ex</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Promise&lt;T&gt; From&lt;T&gt;(Exception ex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The failure.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise-1.html">Promise</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the value.</p>
+</dd>
+  </dl>
 
 
 

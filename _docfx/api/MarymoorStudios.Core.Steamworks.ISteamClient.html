@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ISteamClient </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ISteamClient ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Steamworks.ISteamClient">
+
+
+
+  <h1 id="MarymoorStudios_Core_Steamworks_ISteamClient" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient" class="text-break">
+Class ISteamClient  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Steamworks.html">Steamworks</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Steamworks.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ISteamClient : SteamNativeObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamNativeObject.html">SteamNativeObject</a></div>
+      <div><span class="xref">ISteamClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_BReleaseSteamPipe_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.BReleaseSteamPipe*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_BReleaseSteamPipe_MarymoorStudios_Core_Steamworks_HSteamPipe_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.BReleaseSteamPipe(MarymoorStudios.Core.Steamworks.HSteamPipe)">
+  BReleaseSteamPipe(HSteamPipe)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BReleaseSteamPipe(HSteamPipe steamPipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamPipe</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamPipe.html">HSteamPipe</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_BShutdownIfAllPipesClosed_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.BShutdownIfAllPipesClosed*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_BShutdownIfAllPipesClosed" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.BShutdownIfAllPipesClosed">
+  BShutdownIfAllPipesClosed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BShutdownIfAllPipesClosed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_ConnectToGlobalUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.ConnectToGlobalUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_ConnectToGlobalUser_MarymoorStudios_Core_Steamworks_HSteamPipe_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.ConnectToGlobalUser(MarymoorStudios.Core.Steamworks.HSteamPipe)">
+  ConnectToGlobalUser(HSteamPipe)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSteamUser ConnectToGlobalUser(HSteamPipe steamPipe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamPipe</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamPipe.html">HSteamPipe</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamUser.html">HSteamUser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_CreateLocalUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.CreateLocalUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_CreateLocalUser_MarymoorStudios_Core_Steamworks_HSteamPipe__MarymoorStudios_Core_Steamworks_EAccountType_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.CreateLocalUser(MarymoorStudios.Core.Steamworks.HSteamPipe@,MarymoorStudios.Core.Steamworks.EAccountType)">
+  CreateLocalUser(out HSteamPipe, EAccountType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSteamUser CreateLocalUser(out HSteamPipe hSteamPipe, EAccountType accountType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hSteamPipe</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamPipe.html">HSteamPipe</a></dt>
+    <dd></dd>
+    <dt><code>accountType</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.EAccountType.html">EAccountType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamUser.html">HSteamUser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_CreateSteamPipe_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.CreateSteamPipe*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_CreateSteamPipe" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.CreateSteamPipe">
+  CreateSteamPipe()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSteamPipe CreateSteamPipe()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamPipe.html">HSteamPipe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetIPCCallCount_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetIPCCallCount*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetIPCCallCount" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetIPCCallCount">
+  GetIPCCallCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetIPCCallCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamApps_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamApps*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamApps" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamApps">
+  GetISteamApps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamApps GetISteamApps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamApps.html">ISteamApps</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamController_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamController*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamController" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamController">
+  GetISteamController()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamController GetISteamController()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamController.html">ISteamController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamFriends_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamFriends*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamFriends" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamFriends">
+  GetISteamFriends()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamFriends GetISteamFriends()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamFriends.html">ISteamFriends</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameSearch_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameSearch*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameSearch" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameSearch">
+  GetISteamGameSearch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamGameSearch GetISteamGameSearch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameSearch.html">ISteamGameSearch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameServer_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameServer*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameServer" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameServer">
+  GetISteamGameServer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamGameServer GetISteamGameServer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameServer.html">ISteamGameServer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameServerStats_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameServerStats*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamGameServerStats" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamGameServerStats">
+  GetISteamGameServerStats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamGameServerStats GetISteamGameServerStats()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameServerStats.html">ISteamGameServerStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamHTMLSurface_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamHTMLSurface*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamHTMLSurface" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamHTMLSurface">
+  GetISteamHTMLSurface()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamHTMLSurface GetISteamHTMLSurface()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTMLSurface.html">ISteamHTMLSurface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamHTTP_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamHTTP*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamHTTP" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamHTTP">
+  GetISteamHTTP()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamHTTP GetISteamHTTP()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamHTTP.html">ISteamHTTP</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamInput_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamInput*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamInput" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamInput">
+  GetISteamInput()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamInput GetISteamInput()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamInput.html">ISteamInput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamInventory_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamInventory*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamInventory" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamInventory">
+  GetISteamInventory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamInventory GetISteamInventory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamInventory.html">ISteamInventory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMatchmaking_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMatchmaking*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMatchmaking" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMatchmaking">
+  GetISteamMatchmaking()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamMatchmaking GetISteamMatchmaking()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamMatchmaking.html">ISteamMatchmaking</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMatchmakingServers_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMatchmakingServers*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMatchmakingServers" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMatchmakingServers">
+  GetISteamMatchmakingServers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamMatchmakingServers GetISteamMatchmakingServers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamMatchmakingServers.html">ISteamMatchmakingServers</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMusic_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMusic*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMusic" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMusic">
+  GetISteamMusic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamMusic GetISteamMusic()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamMusic.html">ISteamMusic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMusicRemote_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMusicRemote*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamMusicRemote" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamMusicRemote">
+  GetISteamMusicRemote()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamMusicRemote GetISteamMusicRemote()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamMusicRemote.html">ISteamMusicRemote</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworking_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworking*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworking" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworking">
+  GetISteamNetworking()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamNetworking GetISteamNetworking()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamNetworking.html">ISteamNetworking</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingMessages_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingMessages*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingMessages" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingMessages">
+  GetISteamNetworkingMessages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamNetworkingMessages GetISteamNetworkingMessages()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamNetworkingMessages.html">ISteamNetworkingMessages</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingSockets_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingSockets*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingSockets" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingSockets">
+  GetISteamNetworkingSockets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamNetworkingSockets GetISteamNetworkingSockets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamNetworkingSockets.html">ISteamNetworkingSockets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingUtils_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingUtils*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamNetworkingUtils" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamNetworkingUtils">
+  GetISteamNetworkingUtils()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamNetworkingUtils GetISteamNetworkingUtils()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamNetworkingUtils.html">ISteamNetworkingUtils</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamParentalSettings_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamParentalSettings*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamParentalSettings" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamParentalSettings">
+  GetISteamParentalSettings()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamParentalSettings GetISteamParentalSettings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamParentalSettings.html">ISteamParentalSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamParties_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamParties*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamParties" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamParties">
+  GetISteamParties()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamParties GetISteamParties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamParties.html">ISteamParties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamRemotePlay_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamRemotePlay*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamRemotePlay" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamRemotePlay">
+  GetISteamRemotePlay()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamRemotePlay GetISteamRemotePlay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamRemotePlay.html">ISteamRemotePlay</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamRemoteStorage_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamRemoteStorage*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamRemoteStorage" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamRemoteStorage">
+  GetISteamRemoteStorage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamRemoteStorage GetISteamRemoteStorage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamRemoteStorage.html">ISteamRemoteStorage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamScreenshots_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamScreenshots*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamScreenshots" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamScreenshots">
+  GetISteamScreenshots()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamScreenshots GetISteamScreenshots()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamScreenshots.html">ISteamScreenshots</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUGC_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUGC*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUGC" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUGC">
+  GetISteamUGC()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamUGC GetISteamUGC()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamUGC.html">ISteamUGC</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUser" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUser">
+  GetISteamUser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamUser GetISteamUser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamUser.html">ISteamUser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUserStats_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUserStats*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUserStats" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUserStats">
+  GetISteamUserStats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamUserStats GetISteamUserStats()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamUserStats.html">ISteamUserStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUtils_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUtils*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamUtils" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamUtils">
+  GetISteamUtils()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamUtils GetISteamUtils()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamUtils.html">ISteamUtils</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamVideo_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamVideo*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_GetISteamVideo" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.GetISteamVideo">
+  GetISteamVideo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISteamVideo GetISteamVideo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamVideo.html">ISteamVideo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_ReleaseUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.ReleaseUser*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_ReleaseUser_MarymoorStudios_Core_Steamworks_HSteamPipe_MarymoorStudios_Core_Steamworks_HSteamUser_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.ReleaseUser(MarymoorStudios.Core.Steamworks.HSteamPipe,MarymoorStudios.Core.Steamworks.HSteamUser)">
+  ReleaseUser(HSteamPipe, HSteamUser)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseUser(HSteamPipe steamPipe, HSteamUser user)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>steamPipe</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamPipe.html">HSteamPipe</a></dt>
+    <dd></dd>
+    <dt><code>user</code> <a class="xref" href="MarymoorStudios.Core.Steamworks.HSteamUser.html">HSteamUser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Steamworks_ISteamClient_SetWarningMessageHook_" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.SetWarningMessageHook*"></a>
+
+  <h3 id="MarymoorStudios_Core_Steamworks_ISteamClient_SetWarningMessageHook_System_Action_System_Int32_System_String__" data-uid="MarymoorStudios.Core.Steamworks.ISteamClient.SetWarningMessageHook(System.Action{System.Int32,System.String})">
+  SetWarningMessageHook(Action&lt;int, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable SetWarningMessageHook(Action&lt;int, string&gt; function)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>function</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
