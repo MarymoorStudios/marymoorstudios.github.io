@@ -3358,6 +3358,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.AccountIDSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.AccountIDSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.AccountIDSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Steamworks.ActiveBeaconsUpdated.yml",
       "output": {
         ".html": {
@@ -3554,6 +3568,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.CGameIDSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.CGameIDSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.CGameIDSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Steamworks.CSteamID.yml",
       "output": {
         ".html": {
@@ -3564,6 +3592,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.CSteamID",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.CSteamIDSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.CSteamIDSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.CSteamIDSerializer",
       "Summary": null
     },
     {
@@ -3592,20 +3634,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.CallbackIds",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.CallbackMsg.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Steamworks.CallbackMsg.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Steamworks.CallbackMsg",
       "Summary": null
     },
     {
@@ -6700,7 +6728,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.ICallResult",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.ICallResult.yml\" sourcestartlinenumber=\"1\">A structure that is used to resolve a pending CallResult promise.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6714,7 +6742,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.ICallback",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.ICallback.yml\" sourcestartlinenumber=\"1\">A structure that is passed as an argument to a SIP-bound <xref href=\"MarymoorStudios.Core.Steamworks.CallbackAction%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.IGlobalCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.IGlobalCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.IGlobalCallback",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.IGlobalCallback.yml\" sourcestartlinenumber=\"1\">Like a <xref href=\"MarymoorStudios.Core.Steamworks.ICallback\" data-throw-if-not-resolved=\"false\"></xref> except that action dispatch is <b>FREE-THREADED</b> instead of\nSIP-bound.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6868,20 +6910,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.ISteamGameServer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.ISteamGameServer2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Steamworks.ISteamGameServer2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Steamworks.ISteamGameServer2",
       "Summary": null
     },
     {
@@ -9028,20 +9056,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Steamworks.Rpc.SteamTransport",
-      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.Rpc.SteamTransport.yml\" sourcestartlinenumber=\"1\">Transport that acts as an adapter between a <xref href=\"MarymoorStudios.Core.Rpc.CommChannel\" data-throw-if-not-resolved=\"false\"></xref> and a\n<xref href=\"MarymoorStudios.Core.Steamworks.Rpc.SteamPollGroup\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.yml",
       "output": {
         ".html": {
@@ -9238,6 +9252,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamApi.NativeDiagnosticsAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.SteamApi.NativeDiagnosticsAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.SteamApi.NativeDiagnosticsAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamApi.yml",
       "output": {
         ".html": {
@@ -9248,7 +9276,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.SteamApi",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.SteamApi.yml\" sourcestartlinenumber=\"1\">Represents a single Steam session.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9406,6 +9434,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamErrorExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.SteamErrorExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.SteamErrorExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamEventAction-1.yml",
       "output": {
         ".html": {
@@ -9430,6 +9472,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.SteamException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.SteamExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.SteamExceptionSerializer",
       "Summary": null
     },
     {
@@ -9472,6 +9528,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.SteamInitException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.SteamInitExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.SteamInitExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.SteamInitExceptionSerializer",
       "Summary": null
     },
     {
