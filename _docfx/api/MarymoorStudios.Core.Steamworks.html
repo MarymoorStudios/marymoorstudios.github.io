@@ -95,6 +95,18 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.AccountIDSerializer.html">AccountIDSerializer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CGameIDSerializer.html">CGameIDSerializer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamIDSerializer.html">CSteamIDSerializer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackIds.html">CallbackIds</a></dt>
       <dd></dd>
     </dl>
@@ -124,10 +136,6 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameServer.html">ISteamGameServer</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ISteamGameServer2.html">ISteamGameServer2</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -252,10 +260,15 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamApi.html">SteamApi</a></dt>
-      <dd></dd>
+      <dd><p>Represents a single Steam session.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamErrorException.html">SteamErrorException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamErrorExceptionSerializer.html">SteamErrorExceptionSerializer</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -263,7 +276,15 @@ Classes
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamExceptionSerializer.html">SteamExceptionSerializer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInitException.html">SteamInitException</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamInitExceptionSerializer.html">SteamInitExceptionSerializer</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -335,10 +356,6 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CSteamID.html">CSteamID</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackMsg.html">CallbackMsg</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -1770,11 +1787,19 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ICallResult.html">ICallResult</a></dt>
-      <dd></dd>
+      <dd><p>A structure that is used to resolve a pending CallResult promise.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.ICallback.html">ICallback</a></dt>
-      <dd></dd>
+      <dd><p>A structure that is passed as an argument to a SIP-bound <a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction&lt;T&gt;</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.IGlobalCallback.html">IGlobalCallback</a></dt>
+      <dd><p>Like a <a class="xref" href="MarymoorStudios.Core.Steamworks.ICallback.html">ICallback</a> except that action dispatch is <b>FREE-THREADED</b> instead of
+SIP-bound.</p>
+</dd>
     </dl>
     <h3 id="enums">
 Enums
@@ -2254,6 +2279,10 @@ Delegates
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.CallbackAction-1.html">CallbackAction&lt;T&gt;</a></dt>
       <dd><p>A callback action.</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamApi.NativeDiagnosticsAction.html">SteamApi.NativeDiagnosticsAction</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MarymoorStudios.Core.Steamworks.SteamEventAction-1.html">SteamEventAction&lt;T&gt;</a></dt>
