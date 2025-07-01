@@ -61,7 +61,10 @@ pre code {
   display: block;
 }
 
-.highlight { margin:20px 5%; }
+.highlight {
+  margin: 20px 5%;
+  background: rgba(0,0,0,1) !important;
+}
 
 
 /* ----- base elements ----- */
