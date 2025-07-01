@@ -42,17 +42,14 @@ html { box-sizing: border-box; }
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* specifically inline code */
-code, pre {
-  background: rgba(255,255,255,0.2);
-  display: inline;
-  word-wrap: break-word;
-}
+code:not(pre code) {
+    background: rgba(255,255,255,0.2);
+    display: inline;
+    word-wrap: break-word;
+  }
 
 /* block code */
-pre code {
-  background: rgba(0,0,0,1);
-  display: block;
-}
+pre code { background: none; display: block; }
 pre {
   display: block;
   margin: 20px 5%;
