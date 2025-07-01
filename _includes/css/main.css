@@ -49,13 +49,16 @@ code:not(pre code) {
   }
 
 /* block code */
-pre code { background: none; display: block; }
 pre {
   display: block;
   margin: 20px 5%;
   padding: 4px 8px;
-  background: rgba(0,0,0,1);
+  background: rgba(0,0,0,1) !important;
   word-wrap: break-word;
+}
+pre code {
+  background: transparent;
+  display: block;
 }
 
 .highlight { margin:20px 5%; }
