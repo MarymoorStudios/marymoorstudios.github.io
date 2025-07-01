@@ -35,7 +35,12 @@ colors:
   turquoise: '#0fbfcf'
 
 kramdown:
+  input: GFM
   auto_ids:  true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 collections:
   front_pages:
