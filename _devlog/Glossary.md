@@ -90,6 +90,17 @@ the same behavior during every execution.
 When you have to think globally about the entire program (or a large portion of it) when deciding if the logic program
 is correct.  Contrast with [Local Reasoning](#local-reasoning).
 
+#### **Happens Before**
+Defines a partial ordering of events across multiple [SIPs](#sip).  An event `A` can be said to _happen-before_ another
+event `B` if:
+  * **Same SIP Rule:** `A` and `B` occur in the same SIP, and `A` occurs before `B`.
+  * **Message Passing Rule:** `A` is the sending of a message, and `B` is the receipt of _that_ message.
+  * **Transitivity Rule:** If `A` _happens-before_ `B` and `B` _happens-before_ `C` then `A` _happens-before_ `C`.
+
+The _happens-before_ relation itself does not imply causality, but it does provide the _possibility of causality_.  In a
+causually consistent system it is generally necessary to _take into account the effects of_ any event `A` that _happened
+before_ a given event `B` unless it can be proven that `A` and `B` are independent.
+
 #### **Interleaving**
 A unique sequence of turns executed by a scheduler.  An interleaving is always a total order of the actual set of turns
 that were executed.  An interleaving only captures the sequence of operations on a single logical vCore.  There can be
@@ -108,6 +119,14 @@ Nondeterministic softwware can be harder to write and test because it exhibits d
 Most software has some sources of nondeterminism, but it is a good practice to limit the sources of nondeterminism and
 to control the points in the software where they can introduce behavior variability.  This practice helps isolate
 variability to well known components making the remaining portions of the software easier to write and test.
+
+#### **Pipelining**
+To issue multiple _ordered_ requests without waiting for the previous ones to complete.  We distinguish pipelined
+requests from parallel requests (both of which represent kinds concurrent requests) in that pipelined requests maintain
+an explicit ordering (a sequence) while parallel requests have no such ordering.  Batching is also a related concepted,
+but batching deals more with the _framing_ around mutiple requests than with their ordering or concurrency semantics;
+depending on the specific API, a single batch may be ordered or unordered, and may execute sequentially, concurrently,
+or even in parallel.
 
 #### **Retirement Order**
 In an RPC system, the order in which responses are sent for a sequence of methods that are resolved at the callee.  In a
@@ -129,6 +148,17 @@ passing, the [Call Order](#call-order) is generally related to (but may not be t
 systems may perform queuing, have parallel send queues, use multiple simultaneous channels (e.g. sockets), or other
 internal design choices that lead the actual send order to be different than the original call order.  See also [Arrival
 Order](#arrival-order).
+
+#### **SIP**
+See [Software Isolated Process](#software-isolated-process).
+
+#### **Software Isolated Process**
+A single-threaded, sequential, logical thread of execution with _exclusive_ access to its own isolated memory.  A
+Software Isolated Process (or SIP) meets the definition of "process" according to Tony Hoare's theory of Communicating
+Sequential Processes (CSP).  A SIP also meets the defintion of "process" in Leslie Lamport's paper "Time, Clocks, and
+the Ordering of Events in a Distributed System".  A SIP may be trivially defined by a straight-line synchronous program,
+but is also satisfied by a system with multiple concurrent activites which are scheduled by a single-threaded
+[Scheduler](#scheduler).
 
 #### **TOCTOU**
 Time of Check, Time of Use.  Refers to issues that arise when an invariant is checked (say, the value of a member
