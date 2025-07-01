@@ -30,11 +30,48 @@ based on their experience with these previously existing abstractions. For examp
 abstraction in the C# Language Runtime.  A "Thread" class can be _one of the ways_ to implement an activity, but it is
 not the _only way_.
 
+#### **Arrival Order**
+In a message passing system, the order in which a sequence of messages arrive at their target.  In an RPC system built
+on message passing, the arrival order is generally related to (but may not be the same as) the [Dispatch
+Order](#dispatch-order).  As with [Send Order](#send-order), some RPC systems may perform queuing, have parallel
+dispatch queues, read multiple simultaneous channels (e.g. sockets), or other internal design choices that lead the
+actual dispatch order to be different than the arrival order.
+
+#### **Call Order**
+The order in which a sequence of methods (usually RPC methods) are called.  This represent the logical or sequential
+order the caller would _normally expect_ their effects to be applied.  Because asynchronous methods, once started, may
+run interleaved with subsequent but concurrent methods, the actual order of the applied effects in practice may not
+match the call order.  The distributed computing notion of _serializability_ describes the relationship between the call
+order and the order of applied effects (commit order).  In a system with true parallelism, multiple calls may be made
+simultaenously, in which case the call order is only a partial order.
+
 #### **Caller (RPC)**
 The sender of a message.
 
 #### **Callee (RPC)**
 The receiver of a message.
+
+#### **Commit Order**
+In a distributed system, the order in which the applied effects of a sequence of operations are externalized (i.e. made
+visible externally).  See also [Retirement Order](#retirement-order).
+
+#### **Completion Order**
+The order in which the results from a sequence of methods (usually RPC methods) is consumed.  This represent the logical
+order the caller observes the outcome of the methods (but not necessary the order in which the methods applied their
+effects).  In the synchronous case (or the asynchronous case where each method is immediately awaited in sequence) the
+completion order matches the [Call Order](#call-order).  But, if async methods are allowed to executed concurrently
+their outcomes may be observed out of order.  In a promise-based system where the outcome is represented as a
+first-class object (e.g. a promise, a future, a task), the caller has the option to observe the outcomes in any order,
+or even to pass the promise to another party for later observation.  In some async systems a pending async operation may
+not be considered truly complete until its outcome has been observed, and failing to observe a completed outcome can
+lead to leaks (or even early termination of the async operation due to garbage collection!).
+
+#### **Dispatch Order**
+In an RPC system, the order in which the handlers for a sequence of messages is _first_ dispatched at the callee.  Not
+all message passing systems guaranteed in-order delivery of messages.  So the send order may NOT be the same as the
+arrival order.  Unless the RPC system ensures or recovers the [Call Order](#call-order), the dispatch order may NOT be
+the same as the original call order.  Some RPC systems perform parallel dispatch, with multiple dispatches occurring
+simultaneously, in which case the dispatch order is only a partial order.
 
 #### **Distributed System**
 A system with multiple independent concurrent activities which communicate with each other by message passing so as to
@@ -52,6 +89,17 @@ the same behavior during every execution.
 #### **Global Reasoning**
 When you have to think globally about the entire program (or a large portion of it) when deciding if the logic program
 is correct.  Contrast with [Local Reasoning](#local-reasoning).
+
+#### **Happens Before**
+Defines a partial ordering of events across multiple [SIPs](#sip).  An event `A` can be said to _happen-before_ another
+event `B` if:
+  * **Same SIP Rule:** `A` and `B` occur in the same SIP, and `A` occurs before `B`.
+  * **Message Passing Rule:** `A` is the sending of a message, and `B` is the receipt of _that_ message.
+  * **Transitivity Rule:** If `A` _happens-before_ `B` and `B` _happens-before_ `C` then `A` _happens-before_ `C`.
+
+The _happens-before_ relation itself does not imply causality, but it does provide the _possibility of causality_.  In a
+causually consistent system it is generally necessary to _take into account the effects of_ any event `A` that _happened
+before_ a given event `B` unless it can be proven that `A` and `B` are independent.
 
 #### **Interleaving**
 A unique sequence of turns executed by a scheduler.  An interleaving is always a total order of the actual set of turns
@@ -72,12 +120,45 @@ Most software has some sources of nondeterminism, but it is a good practice to l
 to control the points in the software where they can introduce behavior variability.  This practice helps isolate
 variability to well known components making the remaining portions of the software easier to write and test.
 
+#### **Pipelining**
+To issue multiple _ordered_ requests without waiting for the previous ones to complete.  We distinguish pipelined
+requests from parallel requests (both of which represent kinds concurrent requests) in that pipelined requests maintain
+an explicit ordering (a sequence) while parallel requests have no such ordering.  Batching is also a related concepted,
+but batching deals more with the _framing_ around mutiple requests than with their ordering or concurrency semantics;
+depending on the specific API, a single batch may be ordered or unordered, and may execute sequentially, concurrently,
+or even in parallel.
+
+#### **Retirement Order**
+In an RPC system, the order in which responses are sent for a sequence of methods that are resolved at the callee.  In a
+distributed system this is closely related to the [Commit Order](#commit-order).  The retirement of a method completes
+the callee's burden for handling the message, and all callee-side resources can be released.  The retirement rate
+(retirements per second for a given dispatch rate) is often a good metric of server efficiency.  In a system with true
+parallelism, multiple handlers may run simultaenously, in which case the retirement order is only a partial order.
+
 #### **Scheduler**
 Something that decides which activity to execute next.  If there is only a single runnable activity then the choice is
 obvious.  When there are multiple runnable activities then the scheduler will use a _scheduling algorithm_ (or
 _scheduling policy_) to determine which actitivity to run next.  The scheduler continues to make activity choices at
 each turn boundary until either: (1) all activities terminate (which ends the computation), or (2) external termination
 signals the scheduler to stop (such as process termination).
+
+#### **Send Order**
+In a message passing system, the order in which a sequence of messages are sent.  In an RPC system built on message
+passing, the [Call Order](#call-order) is generally related to (but may not be the same as) the send order.  Some RPC
+systems may perform queuing, have parallel send queues, use multiple simultaneous channels (e.g. sockets), or other
+internal design choices that lead the actual send order to be different than the original call order.  See also [Arrival
+Order](#arrival-order).
+
+#### **SIP**
+See [Software Isolated Process](#software-isolated-process).
+
+#### **Software Isolated Process**
+A single-threaded, sequential, logical thread of execution with _exclusive_ access to its own isolated memory.  A
+Software Isolated Process (or SIP) meets the definition of "process" according to Tony Hoare's theory of Communicating
+Sequential Processes (CSP).  A SIP also meets the defintion of "process" in Leslie Lamport's paper "Time, Clocks, and
+the Ordering of Events in a Distributed System".  A SIP may be trivially defined by a straight-line synchronous program,
+but is also satisfied by a system with multiple concurrent activites which are scheduled by a single-threaded
+[Scheduler](#scheduler).
 
 #### **TOCTOU**
 Time of Check, Time of Use.  Refers to issues that arise when an invariant is checked (say, the value of a member
