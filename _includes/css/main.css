@@ -54,8 +54,8 @@ pre {
   display: block;
   margin: 20px 5%;
   padding: 4px 8px;
-  background: rgba(0,0,0,0.1);
-  word-wrap: normal;
+  background: rgba(0,0,0,1);
+  word-wrap: break-word;
 }
 
 .highlight { margin:20px 5%; }
