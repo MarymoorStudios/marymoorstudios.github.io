@@ -49,7 +49,10 @@ code, pre {
 }
 
 /* block code */
-pre code { background: none; display: block; }
+pre code {
+  background: rgba(0,0,0,1);
+  display: block;
+}
 pre {
   display: block;
   margin: 20px 5%;
