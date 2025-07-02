@@ -87,8 +87,8 @@ Deterministic software is much easier to write and test because its behavior is 
 the same behavior during every execution.
 
 #### **Global Reasoning**
-When you have to think globally about the entire program (or a large portion of it) when deciding if the logic program
-is correct.  Contrast with [Local Reasoning](#local-reasoning).
+When you have to think globally about the entire program (or a large portion of it) when deciding if the logic in the
+program is correct.  Contrast with [Local Reasoning](#local-reasoning).
 
 #### **Happens Before**
 Defines a partial ordering of events across multiple [SIPs](#sip).  An event `A` can be said to _happen-before_ another
@@ -113,7 +113,7 @@ When you only have to look at a small subset of the program to determine if that
 Contrast with [Global Reasoning](#global-reasoning).
 
 #### **Nondeterministic**
-Something that may produce different outcomes even with the same inputs due to factors beyond than the inputs.
+Something that may produce different outcomes even with the same inputs due to factors other than the inputs.
 
 Nondeterministic softwware can be harder to write and test because it exhibits different behavior during each execution.
 Most software has some sources of nondeterminism, but it is a good practice to limit the sources of nondeterminism and
@@ -161,20 +161,20 @@ but is also satisfied by a system with multiple concurrent activites which are s
 [Scheduler](#scheduler).
 
 #### **TOCTOU**
-Time of Check, Time of Use.  Refers to issues that arise when an invariant is checked (say, the value of a member
-variable has a particular value), the computation is interrupted (e.g. prempted, yields, awaits), the invariant is
-invalided by another computation that runs during the interruption, the computation resumes, the computation makes
-decisions based on the original value checked before the interruption even though the value has now changed.  
+Time of Check, Time of Use.  Refers to issues that arise when an invariant is checked (say, a member variable has a
+particular value), the computation is interrupted (e.g. prempted, yields, awaits), the invariant is invalided by another
+computation that runs during the interruption, the computation resumes, the computation makes decisions based on the
+original value checked before the interruption even though the value has now changed.  
 
 #### **Top of Turn**
-A property of a computation such that no other application logic appears higher on stack than the currently executing
-stack frame.  The first stack frame entered by the Promise scheduler at the beginning of each new turn has this
-property.  A computation with Top-of-Turn is guaranteed that it cannot be reentering another abstraction when calling
-that abstractions methods because no other stack frames are executing above the current frame and so that abstraction
-could **NOT** already have been entered higher up on the stack.  Reentrancy issues are very common when multiple
-abstractions synchronously call between each other such that the callee then calls back into its caller.
+A property of a computation such that no other application logic appears higher on the stack than the currently
+executing stack frame.  The first stack frame entered by the Promise scheduler at the beginning of each new turn has
+this property.  A computation with Top-of-Turn is guaranteed that it cannot be reentering another abstraction when
+calling that abstractions methods because no other stack frames are executing above the current frame and so that
+abstraction could **NOT** already have been entered higher up on the stack.  Reentrancy issues are very common when
+multiple abstractions synchronously call between each other such that the callee then calls back into its caller.
 
-For example, a common case for such issues occurs when an abstraction's method take a functional closure as an argument
+For example, a common case for such issues occurs when an abstraction's method takes a functional closure as an argument
 and then execute that closure in the middle of a method (an upcall).  It can be much easier to avoid reentrancy issues
 that occur when abstractions make upcalls by scheduling such upcalls in a future turn (i.e. deferred execution) instead
 of executing them directly in the middle of a method.  While in the middle of a method, an abstraction may have
@@ -187,9 +187,9 @@ invariants _before_ the caller controlled code executes. Since the upcall then e
 Top-of-Turn, no reentrancy occurs and no invariants are violated.
 
 #### **Turn**
-A bounded, finite, prompt computation that forms part of a larger activity.  A turn ends when the computation is either
-(1) preempted (say, by the scheduler), (2) yields on its own (say, as part of cooperative scheduling), or
-(3) awaits on an awaitable (such as on IO, a Promise, or a Task).  
+A bounded, finite, prompt computation that forms part of a larger activity.  A turn ends when the computation either (1)
+is preempted (say, by the scheduler), (2) yields on its own (say, as part of cooperative scheduling), (3) awaits on an
+awaitable (such as on IO, a Promise, or a Task), or (4) terminates (say, because it has completed it work).  
 
 ## Feedback
 Write us with [feedback][feedback].
