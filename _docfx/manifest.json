@@ -26,6 +26,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.ClockResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.ClockResolution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.ClockResolution",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.ClockResolution.yml\" sourcestartlinenumber=\"1\">Controls the resolution of the system clock.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Collections.Trie-2.yml",
       "output": {
         ".html": {
@@ -1520,6 +1534,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Rpc.Exceptions.UninitializedExceptionSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityException",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityException.yml\" sourcestartlinenumber=\"1\">The operation could not be performed due to a version incompatibility.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityExceptionSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityExceptionSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Exceptions.VersionCompatibilityExceptionSerializer",
       "Summary": null
     },
     {
@@ -3550,6 +3592,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.BroadcastUploadStop",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.CGameID.EGameIDType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.CGameID.EGameIDType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.CGameID.EGameIDType",
       "Summary": null
     },
     {
@@ -10914,6 +10970,300 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.VolumeHasChanged",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetGlobalAchievementPercentagesForAppResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetGlobalAchievementPercentagesForAppResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GetGlobalAchievementPercentagesForAppResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetNumberOfCurrentPlayersResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetNumberOfCurrentPlayersResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GetNumberOfCurrentPlayersResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetPlayerAchievementsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetPlayerAchievementsResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GetPlayerAchievementsResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetSchemaForGameResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetSchemaForGameResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GetSchemaForGameResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetUserStatsForGameResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GetUserStatsForGameResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GetUserStatsForGameResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.GlobalAchievementPercentages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.NumberOfCurrentPlayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.NumberOfCurrentPlayers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.NumberOfCurrentPlayers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamAchievement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievementSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievementSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamAchievementSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievementStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamAchievementStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamAchievementStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamGameSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamGameSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamGameSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamPlayerAchievements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamPlayerAchievements.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamPlayerAchievements",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamPlayerStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamPlayerStats.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamPlayerStats",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamStat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStatSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStatSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamStatSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStatSchemaList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamStatSchemaList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamStatSchemaList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamWebApi",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamWebClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebUserStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.SteamWebUserStats.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web.SteamWebUserStats",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Web.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Web.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Web",
       "Summary": null
     },
     {
