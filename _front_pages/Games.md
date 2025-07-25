@@ -16,6 +16,6 @@ ultimate weapon to defeat your enemy.
 
 Download now on [![TicTacBlow on Steam][steam]][tictacblow-steam]
 
-[tictacblow-capsule]: img/tictacblow_header_capsule.png
-[steam]: img/Steam128x48.png
+[tictacblow-capsule]: /img/tictacblow_header_capsule.png
+[steam]: /img/Steam128x48.png
 [tictacblow-steam]: https://store.steampowered.com/app/3717160/TicTacBlow/
