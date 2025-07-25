@@ -8,7 +8,7 @@ fa-icon: gamepad
 
 # Games
 
-![TicTacBlow][tictacblow-capsule]
+[![TicTacBlow][tictacblow-capsule]][tictacblow-steam]
 
 TicTacBlow is a modern take on classic tic-tac-toe with new gameplay mechanics that create fresh opportunities for
 clever strategies and extended play. Attack settlements, lay mines, play cards with powerful effects, and construct the
