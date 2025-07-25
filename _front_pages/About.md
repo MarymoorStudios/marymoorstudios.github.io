@@ -1,6 +1,6 @@
 ---
-order: 2
-title: "Games"
+order: 1
+title: "About"
 bg: white
 color: black
 style: center
