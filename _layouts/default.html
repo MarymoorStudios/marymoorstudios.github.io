@@ -20,7 +20,8 @@
   <div id="main">
     <nav>
       <ul>
-        {% for node in site.front_pages | sort: "order" %}
+        {% assign sorted_front_pages = site.front_pages | sort: "order" %}
+        {% for node in sorted_front_pages %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
         {% endfor %}
