@@ -152,8 +152,8 @@ public sealed class Endorsement</code></pre>
 
   <a id="MarymoorStudios_Core_Rpc_Identity_Endorsement__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.#ctor*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_Endorsement__ctor_System_String_System_ReadOnlyMemory_System_Byte__System_DateTime_System_String_System_ReadOnlyMemory_System_Byte__System_ReadOnlyMemory_System_Byte__System_String___" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.#ctor(System.String,System.ReadOnlyMemory{System.Byte},System.DateTime,System.String,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},System.String[])">
-  Endorsement(string, ReadOnlyMemory&lt;byte&gt;, DateTime, string, ReadOnlyMemory&lt;byte&gt;, ReadOnlyMemory&lt;byte&gt;, string[]?)
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_Endorsement__ctor_System_String_System_ReadOnlyMemory_System_Byte__System_DateTime_System_String_System_ReadOnlyMemory_System_Byte__System_ReadOnlyMemory_System_Byte__MarymoorStudios_Core_Rpc_Identity_Claim___" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.#ctor(System.String,System.ReadOnlyMemory{System.Byte},System.DateTime,System.String,System.ReadOnlyMemory{System.Byte},System.ReadOnlyMemory{System.Byte},MarymoorStudios.Core.Rpc.Identity.Claim[])">
+  Endorsement(string, ReadOnlyMemory&lt;byte&gt;, DateTime, string, ReadOnlyMemory&lt;byte&gt;, ReadOnlyMemory&lt;byte&gt;, Claim[])
   
   </h3>
 
@@ -161,7 +161,7 @@ public sealed class Endorsement</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Endorsement(string email, ReadOnlyMemory&lt;byte&gt; publicKey, DateTime created, string issuer, ReadOnlyMemory&lt;byte&gt; issuerPublicKey, ReadOnlyMemory&lt;byte&gt; signature, string[]? claims = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Endorsement(string email, ReadOnlyMemory&lt;byte&gt; publicKey, DateTime created, string issuer, ReadOnlyMemory&lt;byte&gt; issuerPublicKey, ReadOnlyMemory&lt;byte&gt; signature, Claim[] claims)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -178,7 +178,7 @@ public sealed class Endorsement</code></pre>
     <dd></dd>
     <dt><code>signature</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
     <dd></dd>
-    <dt><code>claims</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><code>claims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -210,7 +210,7 @@ public sealed class Endorsement</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[DataMember]
-public string[]? Claims { get; }</code></pre>
+public Claim[] Claims { get; }</code></pre>
   </div>
 
 
@@ -219,7 +219,7 @@ public string[]? Claims { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -473,6 +473,60 @@ public ReadOnlyMemory&lt;byte&gt; Signature { get; }</code></pre>
 
   <a id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate*"></a>
 
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_MarymoorStudios_Core_Rpc_Identity_Claim___MarymoorStudios_Core_Rpc_Identity_Endorsement__" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate(MarymoorStudios.Core.Rpc.Identity.CertificateManager,MarymoorStudios.Core.Rpc.Identity.UserIdentity,System.DateTime,MarymoorStudios.Core.Rpc.Identity.Claim[],MarymoorStudios.Core.Rpc.Identity.Endorsement@)">
+  TryCreate(CertificateManager, UserIdentity, DateTime, Claim[], out Endorsement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an endorsement for a given identity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryCreate(CertificateManager issuer, UserIdentity target, DateTime timestamp, Claim[] claims, out Endorsement endorsement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>issuer</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.CertificateManager.html">CertificateManager</a></dt>
+    <dd><p>The identity issuing the endorsement.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
+    <dd><p>The identity to be endorsed.</p>
+</dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The timestamp to use for the creation time.</p>
+</dd>
+    <dt><code>claims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
+    <dd><p>An (optional) set of additional claims.</p>
+</dd>
+    <dt><code>endorsement</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Endorsement.html">Endorsement</a></dt>
+    <dd><p>If successful, the endorsement.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True is successful, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_MarymoorStudios_Core_Rpc_Identity_Claim___MarymoorStudios_Core_Rpc_Identity_Endorsement___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <code class="paramref">issuer</code> MUST include a private key.</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate*"></a>
+
   <h3 id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_MarymoorStudios_Core_Rpc_Identity_Endorsement__" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate(MarymoorStudios.Core.Rpc.Identity.CertificateManager,MarymoorStudios.Core.Rpc.Identity.UserIdentity,System.DateTime,MarymoorStudios.Core.Rpc.Identity.Endorsement@)">
   TryCreate(CertificateManager, UserIdentity, DateTime, out Endorsement)
   
@@ -516,60 +570,6 @@ public ReadOnlyMemory&lt;byte&gt; Signature { get; }</code></pre>
 
 
   <h4 class="section" id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_MarymoorStudios_Core_Rpc_Identity_Endorsement___remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The <code class="paramref">issuer</code> MUST include a private key.</p>
-</div>
-
-
-
-
-  <a id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate*"></a>
-
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_System_String___MarymoorStudios_Core_Rpc_Identity_Endorsement__" data-uid="MarymoorStudios.Core.Rpc.Identity.Endorsement.TryCreate(MarymoorStudios.Core.Rpc.Identity.CertificateManager,MarymoorStudios.Core.Rpc.Identity.UserIdentity,System.DateTime,System.String[],MarymoorStudios.Core.Rpc.Identity.Endorsement@)">
-  TryCreate(CertificateManager, UserIdentity, DateTime, string[], out Endorsement)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates an endorsement for a given identity.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryCreate(CertificateManager issuer, UserIdentity target, DateTime timestamp, string[] claims, out Endorsement endorsement)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>issuer</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.CertificateManager.html">CertificateManager</a></dt>
-    <dd><p>The identity issuing the endorsement.</p>
-</dd>
-    <dt><code>target</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
-    <dd><p>The identity to be endorsed.</p>
-</dd>
-    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd><p>The timestamp to use for the creation time.</p>
-</dd>
-    <dt><code>claims</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>An (optional) set of additional claims.</p>
-</dd>
-    <dt><code>endorsement</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Endorsement.html">Endorsement</a></dt>
-    <dd><p>If successful, the endorsement.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True is successful, false otherwise.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MarymoorStudios_Core_Rpc_Identity_Endorsement_TryCreate_MarymoorStudios_Core_Rpc_Identity_CertificateManager_MarymoorStudios_Core_Rpc_Identity_UserIdentity_System_DateTime_System_String___MarymoorStudios_Core_Rpc_Identity_Endorsement___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The <code class="paramref">issuer</code> MUST include a private key.</p>
 </div>
 

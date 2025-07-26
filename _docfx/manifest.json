@@ -1720,6 +1720,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.Claim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.Claim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.Claim",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.Claim.yml\" sourcestartlinenumber=\"1\">Additional identity data associated with a <xref href=\"MarymoorStudios.Core.Rpc.Identity.UserIdentity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.ClaimSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.ClaimSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.ClaimSerializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.Endorsement.yml",
       "output": {
         ".html": {
@@ -1913,6 +1941,34 @@
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager",
       "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.yml\" sourcestartlinenumber=\"1\">An implementation of <xref href=\"MarymoorStudios.Core.Rpc.Identity.CertificateManager\" data-throw-if-not-resolved=\"false\"></xref> that stores its certificates in an\n<xref href=\"System.Security.Cryptography.X509Certificates.X509Store\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StringClaim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StringClaim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.StringClaim",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Rpc.Identity.StringClaim.yml\" sourcestartlinenumber=\"1\">Simple string metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StringClaimSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Rpc.Identity.StringClaimSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Rpc.Identity.StringClaimSerializer",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -9094,6 +9150,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Steamworks.Rpc.SteamFactoryConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaim",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaim.yml\" sourcestartlinenumber=\"1\">Adds a Steam identifier as metadata to a <xref href=\"MarymoorStudios.Core.Rpc.Identity.UserIdentity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaimSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaimSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Steamworks.Rpc.SteamIdClaimSerializer",
       "Summary": null
     },
     {

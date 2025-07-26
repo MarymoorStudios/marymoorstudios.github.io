@@ -112,7 +112,7 @@ Class UserIdentitySerializer
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer.html">Serializer</a></div>
-      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e530ac0e51889cd21de1ce49e5b5c7d90aa31468&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">Serializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e9f801662f64c931636fa752de7bbaf071ead4ef&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">Serializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</div>
       <div><span class="xref">UserIdentitySerializer</span></div>
     </dd>
   </dl>
@@ -120,7 +120,7 @@ Class UserIdentitySerializer
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e530ac0e51889cd21de1ce49e5b5c7d90aa31468&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">IDerivedSerializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e9f801662f64c931636fa752de7bbaf071ead4ef&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">IDerivedSerializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a>&gt;</div>
       <div><a class="xref" href="MarymoorStudios.Core.Serialization.System.IDerivedSerializer.html">IDerivedSerializer</a></div>
     </dd>
   </dl>
@@ -393,8 +393,8 @@ Class UserIdentitySerializer
 
   <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentitySerializer_TryReadSegment_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer.TryReadSegment*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentitySerializer_TryReadSegment_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_String__System_String__System_ReadOnlyMemory_System_Byte___System_DateTime__" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer.TryReadSegment(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.String@,System.String@,System.ReadOnlyMemory{System.Byte}@,System.DateTime@)">
-  TryReadSegment(SerializationContext, ref ReadOnlyRowBuffer, out string, out string, out ReadOnlyMemory&lt;byte&gt;, out DateTime)
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentitySerializer_TryReadSegment_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_String__System_String__System_ReadOnlyMemory_System_Byte___System_DateTime__MarymoorStudios_Core_Rpc_Identity_Claim____" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentitySerializer.TryReadSegment(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.String@,System.String@,System.ReadOnlyMemory{System.Byte}@,System.DateTime@,MarymoorStudios.Core.Rpc.Identity.Claim[]@)">
+  TryReadSegment(SerializationContext, ref ReadOnlyRowBuffer, out string, out string, out ReadOnlyMemory&lt;byte&gt;, out DateTime, out Claim[])
   
   </h3>
 
@@ -402,7 +402,7 @@ Class UserIdentitySerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryReadSegment(SerializationContext context, ref ReadOnlyRowBuffer buffer, out string memberName, out string memberEmail, out ReadOnlyMemory&lt;byte&gt; memberPublicKey, out DateTime memberCreated)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryReadSegment(SerializationContext context, ref ReadOnlyRowBuffer buffer, out string memberName, out string memberEmail, out ReadOnlyMemory&lt;byte&gt; memberPublicKey, out DateTime memberCreated, out Claim[] memberClaims)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -418,6 +418,8 @@ Class UserIdentitySerializer
     <dt><code>memberPublicKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
     <dd></dd>
     <dt><code>memberCreated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>memberClaims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
     <dd></dd>
   </dl>
 

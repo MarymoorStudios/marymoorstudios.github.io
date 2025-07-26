@@ -200,8 +200,8 @@ Class StoreCertificateManager
 
   <a id="MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.#ctor*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager__ctor_System_String_System_String_MarymoorStudios_Core_Rpc_Identity_AdmissionManager_" data-uid="MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.#ctor(System.String,System.String,MarymoorStudios.Core.Rpc.Identity.AdmissionManager)">
-  StoreCertificateManager(string, string, AdmissionManager)
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager__ctor_System_String_System_String_MarymoorStudios_Core_Rpc_Identity_Claim___MarymoorStudios_Core_Rpc_Identity_AdmissionManager_" data-uid="MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.#ctor(System.String,System.String,MarymoorStudios.Core.Rpc.Identity.Claim[],MarymoorStudios.Core.Rpc.Identity.AdmissionManager)">
+  StoreCertificateManager(string, string, Claim[], AdmissionManager)
   
   </h3>
 
@@ -209,7 +209,7 @@ Class StoreCertificateManager
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StoreCertificateManager(string name, string email, AdmissionManager admission)</code></pre>
+    <pre><code class="lang-csharp hljs">public StoreCertificateManager(string name, string email, Claim[] claims, AdmissionManager admission)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -217,6 +217,8 @@ Class StoreCertificateManager
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>email</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>claims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
     <dd></dd>
     <dt><code>admission</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.AdmissionManager.html">AdmissionManager</a></dt>
     <dd></dd>
@@ -498,7 +500,7 @@ Class StoreCertificateManager
     <dd><p>The identity of the user to be admitted.</p>
 </dd>
     <dt><code>endorsements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Endorsement.html">Endorsement</a>&gt;</dt>
-    <dd><p>Endorsements that support the identity provided by <code class="paramref">identity</code>.</p>
+    <dd><p>Endorsements that support <code class="paramref">identity</code>.</p>
 </dd>
     <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd><p>The timestamp.</p>
@@ -543,7 +545,7 @@ Class StoreCertificateManager
     <dd><p>The user's certificate.</p>
 </dd>
     <dt><code>endorsements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Endorsement.html">Endorsement</a>&gt;</dt>
-    <dd><p>Endorsements that support the identity provided by <code class="paramref">cert</code>.</p>
+    <dd><p>Endorsements that support <code class="paramref">cert</code>.</p>
 </dd>
     <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd><p>The timestamp.</p>

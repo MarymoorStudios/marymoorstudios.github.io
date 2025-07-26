@@ -150,8 +150,8 @@ public sealed class UserIdentity</code></pre>
 
   <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentity__ctor_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.#ctor*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentity__ctor_System_String_System_String_System_ReadOnlyMemory_System_Byte__System_DateTime_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.#ctor(System.String,System.String,System.ReadOnlyMemory{System.Byte},System.DateTime)">
-  UserIdentity(string, string, ReadOnlyMemory&lt;byte&gt;, DateTime)
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentity__ctor_System_String_System_String_System_ReadOnlyMemory_System_Byte__System_DateTime_MarymoorStudios_Core_Rpc_Identity_Claim___" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.#ctor(System.String,System.String,System.ReadOnlyMemory{System.Byte},System.DateTime,MarymoorStudios.Core.Rpc.Identity.Claim[])">
+  UserIdentity(string, string, ReadOnlyMemory&lt;byte&gt;, DateTime, Claim[])
   
   </h3>
 
@@ -160,7 +160,7 @@ public sealed class UserIdentity</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UserIdentity(string name, string email, ReadOnlyMemory&lt;byte&gt; publicKey, DateTime created)</code></pre>
+    <pre><code class="lang-csharp hljs">public UserIdentity(string name, string email, ReadOnlyMemory&lt;byte&gt; publicKey, DateTime created, Claim[] claims)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -172,6 +172,8 @@ public sealed class UserIdentity</code></pre>
     <dt><code>publicKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
     <dd></dd>
     <dt><code>created</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>claims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -254,6 +256,39 @@ public sealed class UserIdentity</code></pre>
 
   <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_Claims_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.Claims*"></a>
+
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_Claims" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.Claims">
+  Claims
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An (optional) set of additional claims.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Claim[] Claims { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_Created_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.Created*"></a>
@@ -596,8 +631,8 @@ public ReadOnlyMemory&lt;byte&gt; PublicKey { get; }</code></pre>
 
   <a id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_TryCreateFromCert_" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.TryCreateFromCert*"></a>
 
-  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_TryCreateFromCert_System_Security_Cryptography_X509Certificates_X509Certificate2_MarymoorStudios_Core_Rpc_Identity_UserIdentity__" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.TryCreateFromCert(System.Security.Cryptography.X509Certificates.X509Certificate2,MarymoorStudios.Core.Rpc.Identity.UserIdentity@)">
-  TryCreateFromCert(X509Certificate2, out UserIdentity)
+  <h3 id="MarymoorStudios_Core_Rpc_Identity_UserIdentity_TryCreateFromCert_System_Security_Cryptography_X509Certificates_X509Certificate2_MarymoorStudios_Core_Rpc_Identity_Claim___MarymoorStudios_Core_Rpc_Identity_UserIdentity__" data-uid="MarymoorStudios.Core.Rpc.Identity.UserIdentity.TryCreateFromCert(System.Security.Cryptography.X509Certificates.X509Certificate2,MarymoorStudios.Core.Rpc.Identity.Claim[],MarymoorStudios.Core.Rpc.Identity.UserIdentity@)">
+  TryCreateFromCert(X509Certificate2, Claim[], out UserIdentity)
   
   </h3>
 
@@ -606,13 +641,16 @@ public ReadOnlyMemory&lt;byte&gt; PublicKey { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryCreateFromCert(X509Certificate2 cert, out UserIdentity identity)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryCreateFromCert(X509Certificate2 cert, Claim[] claims, out UserIdentity identity)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate2">X509Certificate2</a></dt>
     <dd><p>The certificate from which to extract an identity.</p>
+</dd>
+    <dt><code>claims</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.Claim.html">Claim</a>[]</dt>
+    <dd><p>An (optional) set of additional claims.</p>
 </dd>
     <dt><code>identity</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.UserIdentity.html">UserIdentity</a></dt>
     <dd><p>If successful the identity extracted from the certificate.</p>
