@@ -305,8 +305,13 @@ span.lineno {
 .err { color: #960050; background-color: #1e0010 } /* Error */
 .k { color: #2384FF } /* Keyword */
 .l { color: #CE5858 } /* Literal */
+<<<<<<< HEAD
 .n { color: #FFFFFF } /* Name */
 .o { color: #FFFFFF } /* Operator */
+=======
+.n { color: #3FD5FF } /* Name */
+.o { color: #2384FF } /* Operator */
+>>>>>>> main
 .p { color: #FFFFFF } /* Punctuation */
 .cm { color: #5EE02F } /* Comment.Multiline */
 .cp { color: #5EE02F } /* Comment.Preproc */
@@ -337,7 +342,11 @@ span.lineno {
 .py { color: #FFFFFF } /* Name.Property */
 .nt { color: #FFFFFF } /* Name.Tag */
 .nv { color: #FFFFFF } /* Name.Variable */
+<<<<<<< HEAD
 .ow { color: #FFFFFF } /* Operator.Word */
+=======
+.ow { color: #2384FF } /* Operator.Word */
+>>>>>>> main
 .w { color: #FFFFFF } /* Text.Whitespace */
 .mf { color: #CE5858 } /* Literal.Number.Float */
 .mh { color: #CE5858 } /* Literal.Number.Hex */
