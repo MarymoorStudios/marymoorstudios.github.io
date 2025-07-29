@@ -45,11 +45,24 @@ match the call order.  The distributed computing notion of _serializability_ des
 order and the order of applied effects (commit order).  In a system with true parallelism, multiple calls may be made
 simultaenously, in which case the call order is only a partial order.
 
+#### **Bearer Token**
+A cryptographic or pseudo-random token that grants access to some resource simply by being presented without any strong
+verification of the presenter's identity.  The name refers to the fact that access it granted to whomever bears (i.e.
+carries or holds) the token.  A bearer token can easily be transferred allowing access delegation to a third party
+without requiring additional communication.
+
 #### **Caller (RPC)**
 The sender of a message.
 
 #### **Callee (RPC)**
 The receiver of a message.
+
+#### **Capability**
+A communicable, unforgeable, reference to a (possibly remote) object along with an associated set of access rights.
+
+#### **Capability Exchange**
+A feature of a message passing system that allows capabilities to be passed in the payload of a message (including
+response messages).
 
 #### **Commit Order**
 In a distributed system, the order in which the applied effects of a sequence of operations are externalized (i.e. made
@@ -101,6 +114,10 @@ The _happens-before_ relation itself does not imply causality, but it does provi
 causually consistent system it is generally necessary to _take into account the effects of_ any event `A` that _happened
 before_ a given event `B` unless it can be proven that `A` and `B` are independent.
 
+#### **Instance Order Constraint**
+An ordering constraint that dictates that call order will match dispatch order for all calls made on the _same proxy
+instance_.
+
 #### **Interleaving**
 A unique sequence of turns executed by a scheduler.  An interleaving is always a total order of the actual set of turns
 that were executed.  An interleaving only captures the sequence of operations on a single logical vCore.  There can be
@@ -134,6 +151,14 @@ distributed system this is closely related to the [Commit Order](#commit-order).
 the callee's burden for handling the message, and all callee-side resources can be released.  The retirement rate
 (retirements per second for a given dispatch rate) is often a good metric of server efficiency.  In a system with true
 parallelism, multiple handlers may run simultaenously, in which case the retirement order is only a partial order.
+
+#### **Root Capability**
+The first capability received when successfully initiating a new connected session.  The root capability is made
+available directly as a result of session establishment and doesn't require any additional method to be called.  This is
+the ONLY capability that is delivered without a method call.  All other reachable capabilities MUST be obtained through
+some sequence of calls to either the root capability or another capability returned directly or indirectly from the
+root.  Each party exports their own root capability to the opposite party in a bidrectional session.  Either party may
+export the `Nothing` capability if _no actions are authorized_ in that direction.
 
 #### **Scheduler**
 Something that decides which activity to execute next.  If there is only a single runnable activity then the choice is
