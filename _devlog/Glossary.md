@@ -45,6 +45,12 @@ match the call order.  The distributed computing notion of _serializability_ des
 order and the order of applied effects (commit order).  In a system with true parallelism, multiple calls may be made
 simultaenously, in which case the call order is only a partial order.
 
+#### **Bearer Token**
+A cryptographic or pseudo-random token that grants access to some resource simply by being presented without any strong
+verification of the presenter's identity.  The name refers to the fact that access it granted to whomever bears (i.e.
+carries or holds) the token.  A bearer token can easily be transferred allowing access delegation to a third party
+without requiring additional communication.
+
 #### **Caller (RPC)**
 The sender of a message.
 
