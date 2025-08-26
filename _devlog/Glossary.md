@@ -174,6 +174,13 @@ systems may perform queuing, have parallel send queues, use multiple simultaneou
 internal design choices that lead the actual send order to be different than the original call order.  See also [Arrival
 Order](#arrival-order).
 
+#### **Server Push**
+A feature of some message passing and communication systems that allows the server to send data to the client without
+the client first making an explicit request for it.  Server push aims to reduce network latency (and network
+utilization) by allowing the server to send data preemptively that the server anticipates the client will need.  When
+coupled with server-side [Pipelining](#pipelining), overall latency for a complex, multipart interaction can be
+dramatically reduced.
+
 #### **SIP**
 See [Software Isolated Process](#software-isolated-process).
 
@@ -184,6 +191,15 @@ Sequential Processes (CSP).  A SIP also meets the defintion of "process" in Lesl
 the Ordering of Events in a Distributed System".  A SIP may be trivially defined by a straight-line synchronous program,
 but is also satisfied by a system with multiple concurrent activites which are scheduled by a single-threaded
 [Scheduler](#scheduler).
+
+#### **Streaming**
+Something that is produce or consumed incrementally.  A streaming network protocol might deliver a sequence of items
+incrementally over time.  A streaming serialization might allow deserialization by reading the bytes from a file
+incrementally starting at the top to the bottom.  A _key characteristic_ of streaming is that **the whole sequence never
+needs to be present in memory at the same time**.  Instead a smaller, fixed, sliding window of items (maybe even a
+single item) are made available at any given time before the streaming sequence is _moved forward_ to make room for the
+next window of items.  Streaming sequences usually only move in a single (forward) direction, but some streaming
+sequences can be restarted and read multiple times.
 
 #### **TOCTOU**
 Time of Check, Time of Use.  Refers to issues that arise when an invariant is checked (say, a member variable has a
