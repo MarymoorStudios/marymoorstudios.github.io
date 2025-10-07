@@ -64,6 +64,12 @@ A communicable, unforgeable, reference to a (possibly remote) object along with 
 A feature of a message passing system that allows capabilities to be passed in the payload of a message (including
 response messages).
 
+#### **Capability Revocation**
+When a capability is revoked the access rights it formerly granted are removed.  Subsequent attempts to use a revoked
+capability will fail.  Revocation is a terminal state for a capability.  Once revoked a capability cannot be restored,
+and instead a new capability must be acquired.  Capabilities are typically revoked automatically when any session they
+span is terminated, but may also be revoked explicitly.
+
 #### **Commit Order**
 In a distributed system, the order in which the applied effects of a sequence of operations are externalized (i.e. made
 visible externally).  See also [Retirement Order](#retirement-order).
@@ -98,6 +104,19 @@ Something that produces the same outcome given the same inputs.
 
 Deterministic software is much easier to write and test because its behavior is repeatable and predicable.  It exhibits
 the same behavior during every execution.
+
+#### **Eventual Value**
+Sometimes called a **Promise**, a **Future**, a **Task**, or a **Proxy**.  Any of several kinds of values representing
+the result of a future computation that will eventually complete, including:
+
+* **Void Promises:**  
+  Track the completion of an activity.  They have only a `void` value, but may resolve to an error if the computation
+  failed.
+* **Data Promises:**  
+  Track the completion of an activity and resolve to a data value that the computation produces as its return value. May
+  resolve to an error if the computation failed to produce a result.
+* **Proxy:**  
+  Track the completion of an activity producing a capability and provide access to the methods of that capability.  
 
 #### **Global Reasoning**
 When you have to think globally about the entire program (or a large portion of it) when deciding if the logic in the
@@ -145,6 +164,12 @@ but batching deals more with the _framing_ around mutiple requests than with the
 depending on the specific API, a single batch may be ordered or unordered, and may execute sequentially, concurrently,
 or even in parallel.
 
+#### **Promise**
+See [Eventual Value](#eventual value).
+
+#### **Proxy**
+See [Eventual Value](#eventual value).
+
 #### **Retirement Order**
 In an RPC system, the order in which responses are sent for a sequence of methods that are resolved at the callee.  In a
 distributed system this is closely related to the [Commit Order](#commit-order).  The retirement of a method completes
@@ -180,6 +205,12 @@ the client first making an explicit request for it.  Server push aims to reduce 
 utilization) by allowing the server to send data preemptively that the server anticipates the client will need.  When
 coupled with server-side [Pipelining](#pipelining), overall latency for a complex, multipart interaction can be
 dramatically reduced.
+
+#### **Session Layer**
+A session defines the logical protocol for communication.  It is responsible for designating the structure of messages,
+the format of message serialization, and the semantics of message exchange.  It is also responsible for authentication,
+versioning, and configuration negotiations.  Sessions and their semantics implement the logic of a message passing
+system.
 
 #### **SIP**
 See [Software Isolated Process](#software-isolated-process).
@@ -226,6 +257,13 @@ abstraction could carefully restore invariants _before_ making the upcall, but t
 by scheduling such an upcall in a future turn the abstraction has a more natural opportunity to restore its own
 invariants _before_ the caller controlled code executes. Since the upcall then executes in a new turn which itself has
 Top-of-Turn, no reentrancy occurs and no invariants are violated.
+
+#### **Transport Layer**
+A transport defines the mechanics of physically moving data between two endpoints across some medium.  It is usually
+also responsible for data ordering, reliability and integrity.  Transports may be stateless or stateful, unreliable or
+reliable, connectionless or connection-oriented, and unordered or ordered.  Transports can be nested, implementing a new
+transport on top of another one.  Examples of common transports include UDP and TCP on the network, and shared-memory or
+pipes between processes on the same machine.
 
 #### **Turn**
 A bounded, finite, prompt computation that forms part of a larger activity.  A turn ends when the computation either (1)
