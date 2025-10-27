@@ -144,6 +144,17 @@ no specific total order across the set of interleavings spanning all of the vCor
 the operations happen simultaneously.  A partial order that is essentially a merge of multiple core-specific
 interleavings _can_ be specified.
 
+#### **Linear Transfer**
+A linear transfer (in the ownership sense) refers to a model of exclusive memory access transfer, where a resource (such
+as a memory region, pointer, or capability) is handed from one entity (sender) to another (recipient) in such a way that
+the recipient gains access only if the sender simultaneously relinquishes it. This ensures there is never more than one
+valid owner at a time, preventing aliasing and race conditions.
+
+#### **Linear Type**
+A type whose implementation in the type system guarantees that all instance references can ONLY be exchanged through a
+[Linear Transfer](#linear-transfer).  The in-memory state of a linear type is therefore guaranteed to have exactly one
+owner (with no aliasing) throughout its lifetime.
+
 #### **Local Reasoning**
 When you only have to look at a small subset of the program to determine if that _part_ of the program is correct.
 Contrast with [Global Reasoning](#global-reasoning).
