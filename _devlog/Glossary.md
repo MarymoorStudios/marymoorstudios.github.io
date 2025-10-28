@@ -118,6 +118,12 @@ the result of a future computation that will eventually complete, including:
 * **Proxy:**  
   Track the completion of an activity producing a capability and provide access to the methods of that capability.  
 
+#### **Failure Domain**
+A failure domain is a physical or logical subset of a hardware or software system that can fail independently of the
+rest of the system.  If a component within the domain fails it may affect other things within the domain, but everything
+outside the domain continues to function normally.  Architects can use failure domains in their designs to define the
+scope of impact when something goes wrong, and to limit the extent of required recovery operations.
+
 #### **Global Reasoning**
 When you have to think globally about the entire program (or a large portion of it) when deciding if the logic in the
 program is correct.  Contrast with [Local Reasoning](#local-reasoning).
@@ -154,6 +160,12 @@ valid owner at a time, preventing aliasing and race conditions.
 A type whose implementation in the type system guarantees that all instance references can ONLY be exchanged through a
 [Linear Transfer](#linear-transfer).  The in-memory state of a linear type is therefore guaranteed to have exactly one
 owner (with no aliasing) throughout its lifetime.
+
+#### **Liveness**
+A system satisfies the liveness property if, from any valid state, it is guaranteed to eventually reach a desirable
+state.  Or less formally: the system, given enough time, eventually makes progress.  Liveness generally implies the
+three sub-properties: (a) freedom from deadlocks, (b) fairness, and (c) termination.  Liveness, together with _safety_,
+form the foundation of reasoning about correctness in concurrent and distributed systems.
 
 #### **Local Reasoning**
 When you only have to look at a small subset of the program to determine if that _part_ of the program is correct.
