@@ -124,6 +124,13 @@ rest of the system.  If a component within the domain fails it may affect other 
 outside the domain continues to function normally.  Architects can use failure domains in their designs to define the
 scope of impact when something goes wrong, and to limit the extent of required recovery operations.
 
+#### **Finite State Machine**
+An event-driven program that decides _what to do_ when an event arrives based on the _state it is in_ at the time of
+arrival.  See our [FSM post](/devlog/2025-11-26-FSM) for more detail.
+
+#### **FSM**
+See [Finite State Machine](#finite-state-machine).
+
 #### **Global Reasoning**
 When you have to think globally about the entire program (or a large portion of it) when deciding if the logic in the
 program is correct.  Contrast with [Local Reasoning](#local-reasoning).
