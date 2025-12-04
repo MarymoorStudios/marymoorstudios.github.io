@@ -314,7 +314,7 @@ Class ReadOnlySpanSerializer&lt;T&gt;
   <a id="MarymoorStudios_Core_Serialization_System_ReadOnlySpanSerializer_1_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.ReadOnlySpanSerializer`1.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_ReadOnlySpanSerializer_1_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_ReadOnlySpan__0___" data-uid="MarymoorStudios.Core.Serialization.System.ReadOnlySpanSerializer`1.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.ReadOnlySpan{`0}@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out ReadOnlySpan&lt;T&gt;)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out ReadOnlySpan&lt;T&gt;)
   
   </h3>
 
@@ -322,7 +322,7 @@ Class ReadOnlySpanSerializer&lt;T&gt;
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out ReadOnlySpan&lt;T&gt; value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out ReadOnlySpan&lt;T&gt; value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

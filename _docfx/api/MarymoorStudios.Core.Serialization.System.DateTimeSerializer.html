@@ -309,7 +309,7 @@ Class DateTimeSerializer
   <a id="MarymoorStudios_Core_Serialization_System_DateTimeSerializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.DateTimeSerializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_DateTimeSerializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_DateTime__" data-uid="MarymoorStudios.Core.Serialization.System.DateTimeSerializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.DateTime@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out DateTime)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out DateTime)
   
   </h3>
 
@@ -317,7 +317,7 @@ Class DateTimeSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out DateTime value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out DateTime value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

@@ -112,7 +112,7 @@ Class UnavailableExceptionSerializer
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer.html">Serializer</a></div>
-      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e9f801662f64c931636fa752de7bbaf071ead4ef&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">Serializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.html">UnavailableException</a>&gt;</div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">Serializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.html">UnavailableException</a>&gt;</div>
       <div><span class="xref">UnavailableExceptionSerializer</span></div>
     </dd>
   </dl>
@@ -120,7 +120,7 @@ Class UnavailableExceptionSerializer
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e9f801662f64c931636fa752de7bbaf071ead4ef&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">IDerivedSerializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.html">UnavailableException</a>&gt;</div>
+      <div><a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Serialization/System/Serializer.cs">IDerivedSerializer</a>&lt;<a class="xref" href="MarymoorStudios.Core.Rpc.Exceptions.UnavailableException.html">UnavailableException</a>&gt;</div>
       <div><a class="xref" href="MarymoorStudios.Core.Serialization.System.IDerivedSerializer.html">IDerivedSerializer</a></div>
     </dd>
   </dl>
@@ -354,7 +354,7 @@ Class UnavailableExceptionSerializer
   <a id="MarymoorStudios_Core_Rpc_Exceptions_UnavailableExceptionSerializer_TryRead_" data-uid="MarymoorStudios.Core.Rpc.Exceptions.UnavailableExceptionSerializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Rpc_Exceptions_UnavailableExceptionSerializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__MarymoorStudios_Core_Rpc_Exceptions_UnavailableException__" data-uid="MarymoorStudios.Core.Rpc.Exceptions.UnavailableExceptionSerializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,MarymoorStudios.Core.Rpc.Exceptions.UnavailableException@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out UnavailableException?)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out UnavailableException?)
   
   </h3>
 
@@ -362,7 +362,7 @@ Class UnavailableExceptionSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out UnavailableException? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out UnavailableException? value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

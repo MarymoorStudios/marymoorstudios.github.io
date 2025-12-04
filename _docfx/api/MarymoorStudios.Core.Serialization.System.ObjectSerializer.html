@@ -205,6 +205,41 @@ Class ObjectSerializer
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Serialization_System_ObjectSerializer_Instance" data-uid="MarymoorStudios.Core.Serialization.System.ObjectSerializer.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A global empty object instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly object Instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -354,7 +389,7 @@ Class ObjectSerializer
   <a id="MarymoorStudios_Core_Serialization_System_ObjectSerializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.ObjectSerializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_ObjectSerializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_Object__" data-uid="MarymoorStudios.Core.Serialization.System.ObjectSerializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.Object@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out object?)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out object?)
   
   </h3>
 
@@ -362,7 +397,7 @@ Class ObjectSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out object? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out object? value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

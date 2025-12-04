@@ -309,7 +309,7 @@ Class UInt16Serializer
   <a id="MarymoorStudios_Core_Serialization_System_UInt16Serializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.UInt16Serializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_UInt16Serializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_UInt16__" data-uid="MarymoorStudios.Core.Serialization.System.UInt16Serializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.UInt16@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out ushort)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out ushort)
   
   </h3>
 
@@ -317,7 +317,7 @@ Class UInt16Serializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out ushort value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out ushort value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

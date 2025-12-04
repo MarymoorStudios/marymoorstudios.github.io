@@ -12,6 +12,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.BucketRateLimiter.ResetBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.BucketRateLimiter.ResetBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.BucketRateLimiter.ResetBehavior",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.BucketRateLimiter.ResetBehavior.yml\" sourcestartlinenumber=\"1\">Affects how the number of tokens is impacted by a reset.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.BucketRateLimiter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.BucketRateLimiter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.BucketRateLimiter",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.BucketRateLimiter.yml\" sourcestartlinenumber=\"1\">A leaky bucket rate limiter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.CertificateExtensions.yml",
       "output": {
         ".html": {

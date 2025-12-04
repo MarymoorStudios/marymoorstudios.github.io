@@ -309,7 +309,7 @@ Class Int8Serializer
   <a id="MarymoorStudios_Core_Serialization_System_Int8Serializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.Int8Serializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_Int8Serializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_SByte__" data-uid="MarymoorStudios.Core.Serialization.System.Int8Serializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.SByte@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out sbyte)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out sbyte)
   
   </h3>
 
@@ -317,7 +317,7 @@ Class Int8Serializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out sbyte value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out sbyte value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

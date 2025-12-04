@@ -309,7 +309,7 @@ Class TimeSpanSerializer
   <a id="MarymoorStudios_Core_Serialization_System_TimeSpanSerializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.TimeSpanSerializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_TimeSpanSerializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_TimeSpan__" data-uid="MarymoorStudios.Core.Serialization.System.TimeSpanSerializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.TimeSpan@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out TimeSpan)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out TimeSpan)
   
   </h3>
 
@@ -317,7 +317,7 @@ Class TimeSpanSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out TimeSpan value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out TimeSpan value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

@@ -314,7 +314,7 @@ Class NullableSerializer&lt;T&gt;
   <a id="MarymoorStudios_Core_Serialization_System_NullableSerializer_1_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.NullableSerializer`1.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_NullableSerializer_1_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_Nullable__0___" data-uid="MarymoorStudios.Core.Serialization.System.NullableSerializer`1.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.Nullable{`0}@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out T?)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out T?)
   
   </h3>
 
@@ -322,7 +322,7 @@ Class NullableSerializer&lt;T&gt;
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out T? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out T? value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
