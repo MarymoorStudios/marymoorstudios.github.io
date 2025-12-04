@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HsmStateMeta&lt;T, THsm, TState, TInputs&gt; </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HsmStateMeta&lt;T, THsm, TState, TInputs&gt; ">
+      
+      <meta name="description" content="Metadata for a single state in an HSM.">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4">
+
+
+
+  <h1 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4" class="text-break">
+Class HsmStateMeta&lt;T, THsm, TState, TInputs&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Fsm.html">Fsm</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Fsm.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Metadata for a single state in an HSM.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class HsmStateMeta&lt;T, THsm, TState, TInputs&gt; where THsm : Hsm&lt;T, THsm, TState, TInputs&gt;, IHsm&lt;T, THsm, TState, TInputs&gt; where TState : HsmState&lt;T, THsm, TState, TInputs&gt;, IHsmState&lt;T, THsm, TState, TInputs&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The data class for the state machine.</p>
+</dd>
+    <dt><code>THsm</code></dt>
+    <dd><p>The class for the state machine itself.</p>
+</dd>
+    <dt><code>TState</code></dt>
+    <dd><p>The base-type for all states in the machine.</p>
+</dd>
+    <dt><code>TInputs</code></dt>
+    <dd><p>The class that defines inputs to the machine.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">HsmStateMeta&lt;T, THsm, TState, TInputs&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3__System_Action__1__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3},System.Action{`1},System.ReadOnlySpan{`2})">
+  Edge(HsmInputMeta&lt;T, THsm, TState, TInputs&gt;, Action&lt;THsm&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge(HsmInputMeta&lt;T, THsm, TState, TInputs&gt; input, Action&lt;THsm&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-4.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;THsm&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3__System_Action__1__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__1_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0__System_Func__1___0__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``1(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0},System.Func{`1,``0},System.ReadOnlySpan{`2})">
+  Edge&lt;TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TReturn&gt;, Func&lt;THsm, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TReturn&gt; input, Func&lt;THsm, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-5.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;THsm, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__1_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0__System_Func__1___0__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__1_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0__System_Action__1___0__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``1(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0},System.Action{`1,``0},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1&gt;, Action&lt;THsm, TArg1&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1&gt; input, Action&lt;THsm, TArg1&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-5.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;THsm, TArg1&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__1_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0__System_Action__1___0__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__2_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1__System_Func__1___0___1__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``2(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1},System.Func{`1,``0,``1},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TReturn&gt;, Func&lt;THsm, TArg1, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TReturn&gt; input, Func&lt;THsm, TArg1, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-6.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;THsm, TArg1, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__2_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1__System_Func__1___0___1__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__2_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1__System_Action__1___0___1__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``2(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1},System.Action{`1,``0,``1},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2&gt;, Action&lt;THsm, TArg1, TArg2&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2&gt; input, Action&lt;THsm, TArg1, TArg2&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-6.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;THsm, TArg1, TArg2&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__2_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1__System_Action__1___0___1__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__3_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2__System_Func__1___0___1___2__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``3(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2},System.Func{`1,``0,``1,``2},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-7.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;THsm, TArg1, TArg2, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__3_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2__System_Func__1___0___1___2__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__3_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2__System_Action__1___0___1___2__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``3(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2},System.Action{`1,``0,``1,``2},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3&gt;, Action&lt;THsm, TArg1, TArg2, TArg3&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-7.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;THsm, TArg1, TArg2, TArg3&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__3_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2__System_Action__1___0___1___2__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__4_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3__System_Func__1___0___1___2___3__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``4(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3},System.Func{`1,``0,``1,``2,``3},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-8.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__4_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3__System_Func__1___0___1___2___3__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__4_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3__System_Action__1___0___1___2___3__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``4(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2,``3},System.Action{`1,``0,``1,``2,``3},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4&gt;, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-8.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__4_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3__System_Action__1___0___1___2___3__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__5_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4__System_Func__1___0___1___2___3___4__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``5(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4},System.Func{`1,``0,``1,``2,``3,``4},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-9.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__5_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4__System_Func__1___0___1___2___3___4__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__5_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4__System_Action__1___0___1___2___3___4__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``5(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4},System.Action{`1,``0,``1,``2,``3,``4},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5&gt;, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-9.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-6">Action</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__5_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4__System_Action__1___0___1___2___3___4__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__6_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5__System_Func__1___0___1___2___3___4___5__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``6(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5},System.Func{`1,``0,``1,``2,``3,``4,``5},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-10.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-7">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__6_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5__System_Func__1___0___1___2___3___4___5__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__6_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5__System_Action__1___0___1___2___3___4___5__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``6(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5},System.Action{`1,``0,``1,``2,``3,``4,``5},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-10.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-7">Action</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__6_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5__System_Action__1___0___1___2___3___4___5__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__7_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6__System_Func__1___0___1___2___3___4___5___6__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``7(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5,``6},System.Func{`1,``0,``1,``2,``3,``4,``5,``6},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-11.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-8">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__7_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6__System_Func__1___0___1___2___3___4___5___6__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__7_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5___6__System_Action__1___0___1___2___3___4___5___6__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``7(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5,``6},System.Action{`1,``0,``1,``2,``3,``4,``5,``6},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-11.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-8">Action</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg7</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__7_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5___6__System_Action__1___0___1___2___3___4___5___6__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__8_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6___7__System_Func__1___0___1___2___3___4___5___6___7__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``8(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5,``6,``7},System.Func{`1,``0,``1,``2,``3,``4,``5,``6,``7},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-12.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-9">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg7</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__8_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6___7__System_Func__1___0___1___2___3___4___5___6___7__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__8_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5___6___7__System_Action__1___0___1___2___3___4___5___6___7__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``8(MarymoorStudios.Core.Fsm.HsmInputMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5,``6,``7},System.Action{`1,``0,``1,``2,``3,``4,``5,``6,``7},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;(HsmInputMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt; input, Action&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputMeta-12.html">HsmInputMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-9">Action</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg7</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg8</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__8_MarymoorStudios_Core_Fsm_HsmInputMeta__0__1__2__3___0___1___2___3___4___5___6___7__System_Action__1___0___1___2___3___4___5___6___7__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__9_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6___7___8__System_Func__1___0___1___2___3___4___5___6___7___8__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.Edge``9(MarymoorStudios.Core.Fsm.HsmInputFuncMeta{`0,`1,`2,`3,``0,``1,``2,``3,``4,``5,``6,``7,``8},System.Func{`1,``0,``1,``2,``3,``4,``5,``6,``7,``8},System.ReadOnlySpan{`2})">
+  Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines an input handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; Edge&lt;TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;(HsmInputFuncMeta&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt; input, Func&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt; action, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="MarymoorStudios.Core.Fsm.HsmInputFuncMeta-13.html">HsmInputFuncMeta</a>&lt;T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;</dt>
+    <dd><p>The input signal to handle.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-10">Func</a>&lt;THsm, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn&gt;</dt>
+    <dd><p>The handler to be called when an input signal occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArg1</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg2</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg3</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg4</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg5</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg6</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg7</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TArg8</code></dt>
+    <dd><p>Argument to the input.</p>
+</dd>
+    <dt><code>TReturn</code></dt>
+    <dd><p>Return type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_Edge__9_MarymoorStudios_Core_Fsm_HsmInputFuncMeta__0__1__2__3___0___1___2___3___4___5___6___7___8__System_Func__1___0___1___2___3___4___5___6___7___8__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnEnter*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnEnter(System.Action{`1})">
+  OnEnter(Action&lt;THsm&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a method to be called when the state is entered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnEnter(Action&lt;THsm&gt; method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;THsm&gt;</dt>
+    <dd><p>The handler to be called when a state is entered.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__">OnEnter(Action&lt;THsm&gt;)</a> handler is ONLY called when a state is entered during operation in a transition
+from another state.  The <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__">OnEnter(Action&lt;THsm&gt;)</a> handler is NOT called as part of initialization (see <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1__">OnStart(Action&lt;THsm&gt;)</a>).</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnError_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnError*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnError_System_Action__1__2_MarymoorStudios_Core_Fsm_ErrorScope_System_Exception__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnError(System.Action{`1,`2,MarymoorStudios.Core.Fsm.ErrorScope,System.Exception},System.ReadOnlySpan{`2})">
+  OnError(Action&lt;THsm, TState, ErrorScope, Exception&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a method to be called when a state machine encounters an unhandled error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnError(Action&lt;THsm, TState, ErrorScope, Exception&gt; method, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;THsm, TState, <a class="xref" href="MarymoorStudios.Core.Fsm.ErrorScope.html">ErrorScope</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</dt>
+    <dd><p>The handler to be called when an error occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnError_System_Action__1__2_MarymoorStudios_Core_Fsm_ErrorScope_System_Exception__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnExit_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnExit*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnExit_System_Action__1__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnExit(System.Action{`1})">
+  OnExit(Action&lt;THsm&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a method to be called when the state is exited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnExit(Action&lt;THsm&gt; method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;THsm&gt;</dt>
+    <dd><p>The handler to be called when a state is exited.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnExit_System_Action__1___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnExit_System_Action__1__">OnExit(Action&lt;THsm&gt;)</a> handler is ONLY called when a state is exited during operation in a
+transition to another state.  <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnExit_System_Action__1__">OnExit(Action&lt;THsm&gt;)</a> is NOT called during a pending call to
+<a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__">OnEnter(Action&lt;THsm&gt;)</a> (e.g. if a parent state transitions to a substate during <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__">OnEnter(Action&lt;THsm&gt;)</a>).</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnStart*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnStart(System.Action{`1})">
+  OnStart(Action&lt;THsm&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a method to be called when a state is started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnStart(Action&lt;THsm&gt; method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;THsm&gt;</dt>
+    <dd><p>The handler to be called when a state is started.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1__">OnStart(Action&lt;THsm&gt;)</a> handler is ONLY called during initialization, NOT when a
+state is reentered during operation (see <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnEnter_System_Action__1__">OnEnter(Action&lt;THsm&gt;)</a>).</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnStart*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart__2_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnStart(`2)">
+  OnStart(TState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Define a shortcut for <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1__">OnStart(Action&lt;THsm&gt;)</a> that just moves to the declared state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnStart(TState s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">TState</span></dt>
+    <dd><p>The state to move to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart__2__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html#MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnStart_System_Action__1__">OnStart(Action&lt;THsm&gt;)</a>.</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnSuccess_" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnSuccess*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnSuccess_System_Action__1__System_ReadOnlySpan__2__" data-uid="MarymoorStudios.Core.Fsm.HsmStateMeta`4.OnSuccess(System.Action{`1},System.ReadOnlySpan{`2})">
+  OnSuccess(Action&lt;THsm&gt;, params ReadOnlySpan&lt;TState&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines a method to be called when a state machine encounters an unhandled eventual successes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HsmStateMeta&lt;T, THsm, TState, TInputs&gt; OnSuccess(Action&lt;THsm&gt; method, params ReadOnlySpan&lt;TState&gt; destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;THsm&gt;</dt>
+    <dd><p>The handler to be called when a success occurs.</p>
+</dd>
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;TState&gt;</dt>
+    <dd><p>The set of states the handler is permitted to transitions to while handling the
+input signal.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Fsm.HsmStateMeta-4.html">HsmStateMeta</a>&lt;T, THsm, TState, TInputs&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Fsm_HsmStateMeta_4_OnSuccess_System_Action__1__System_ReadOnlySpan__2___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To remain in the same state after handling a signal, either <code class="paramref">destination</code> MUST be
+left empty OR the Self state MUST be explicitly provided in <code class="paramref">destination</code> .</p>
+</div>
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -138,6 +138,468 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.ErrorScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.ErrorScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.ErrorScope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.Hsm-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.Hsm-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.Hsm<T, THsm, TState, TInputs>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.Hsm-4.yml\" sourcestartlinenumber=\"1\">Abstract base class for Hierarchical State Machines.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.HsmAttribute.yml\" sourcestartlinenumber=\"1\">Designates classes that contain state machine implementations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.HsmInputAttribute.yml\" sourcestartlinenumber=\"1\">Defines an input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-10.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-11.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-12.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-13.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-13.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputFuncMeta-9.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputFuncMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TReturn>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-10.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-11.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-12.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-7.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-8.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta-9.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta<T, THsm, TState, TInputs, TArg1, TArg2, TArg3, TArg4, TArg5>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmInputMeta.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmInputMeta",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmMeta-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmMeta-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmMeta<T, THsm, TState, TInputs>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.HsmMeta-4.yml\" sourcestartlinenumber=\"1\">HSM metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmState-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmState-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmState<T, THsm, TState, TInputs>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmStateMeta-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmStateMeta-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmStateMeta<T, THsm, TState, TInputs>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.HsmStateMeta-4.yml\" sourcestartlinenumber=\"1\">Metadata for a single state in an HSM.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.HsmStatesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.HsmStatesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.HsmStatesAttribute",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.HsmStatesAttribute.yml\" sourcestartlinenumber=\"1\">Defines a state metadata builder.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.IHistoryState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.IHistoryState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.IHistoryState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.IHsm-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.IHsm-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.IHsm<T, THsm, TState, TInputs>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.IHsm-4.yml\" sourcestartlinenumber=\"1\">Defines required constraints for Hierarchical State Machines.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.IHsmState-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.IHsmState-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.IHsmState<T, THsm, TState, TInputs>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.ISelfState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.ISelfState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.ISelfState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.PromiseHsm-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.PromiseHsm-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm.PromiseHsm<T, THsm, TState, TInputs>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Fsm.PromiseHsm-4.yml\" sourcestartlinenumber=\"1\">Abstract base class for Hierarchical State Machines that involve at least one eventual input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Fsm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Fsm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Fsm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.GcNotify.yml",
       "output": {
         ".html": {

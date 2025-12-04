@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PromiseHsm&lt;T, THsm, TState, TInputs&gt; </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PromiseHsm&lt;T, THsm, TState, TInputs&gt; ">
+      
+      <meta name="description" content="Abstract base class for Hierarchical State Machines that involve at least one eventual input.">
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4">
+
+
+
+  <h1 id="MarymoorStudios_Core_Fsm_PromiseHsm_4" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4" class="text-break">
+Class PromiseHsm&lt;T, THsm, TState, TInputs&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a>.<a class="xref" href="MarymoorStudios.Core.Fsm.html">Fsm</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.Fsm.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Abstract base class for Hierarchical State Machines that involve at least one eventual input.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PromiseHsm&lt;T, THsm, TState, TInputs&gt; : Hsm&lt;T, THsm, TState, TInputs&gt;, IPromiseDisposable where THsm : PromiseHsm&lt;T, THsm, TState, TInputs&gt;, IHsm&lt;T, THsm, TState, TInputs&gt; where TState : HsmState&lt;T, THsm, TState, TInputs&gt;, IHsmState&lt;T, THsm, TState, TInputs&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The data class for the state machine.</p>
+</dd>
+    <dt><code>THsm</code></dt>
+    <dd><p>The class for the state machine itself.</p>
+</dd>
+    <dt><code>TState</code></dt>
+    <dd><p>The base-type for all states in the machine.</p>
+</dd>
+    <dt><code>TInputs</code></dt>
+    <dd><p>The class that defines inputs to the machine.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html">Hsm</a>&lt;T, THsm, TState, TInputs&gt;</div>
+      <div><span class="xref">PromiseHsm&lt;T, THsm, TState, TInputs&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MarymoorStudios.Core.Promises.IPromiseDisposable.html">IPromiseDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_AppendPending_System_Action_">Hsm&lt;T, THsm, TState, TInputs&gt;.AppendPending(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_HandlePending">Hsm&lt;T, THsm, TState, TInputs&gt;.HandlePending()</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_SetInput_MarymoorStudios_Core_Fsm_HsmInputMeta_">Hsm&lt;T, THsm, TState, TInputs&gt;.SetInput(HsmInputMeta)</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_ApplyStateChanges__0_">Hsm&lt;T, THsm, TState, TInputs&gt;.ApplyStateChanges(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_SetNext__2_">Hsm&lt;T, THsm, TState, TInputs&gt;.SetNext(TState)</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_CurrentState">Hsm&lt;T, THsm, TState, TInputs&gt;.CurrentState</a>
+    </div>
+    <div>
+      <a class="xref" href="MarymoorStudios.Core.Fsm.Hsm-4.html#MarymoorStudios_Core_Fsm_Hsm_4_IsExecuting">Hsm&lt;T, THsm, TState, TInputs&gt;.IsExecuting</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Fsm_PromiseHsm_4__ctor_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.#ctor*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_PromiseHsm_4__ctor__0_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.#ctor(`0)">
+  PromiseHsm(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PromiseHsm(T data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_Fsm_PromiseHsm_4_DisposeAsync_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.DisposeAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_PromiseHsm_4_DisposeAsync" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_PromiseHsm_4_PendingDecrement_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.PendingDecrement*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_PromiseHsm_4_PendingDecrement" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.PendingDecrement">
+  PendingDecrement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PendingDecrement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_PromiseHsm_4_PendingIncrement_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.PendingIncrement*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_PromiseHsm_4_PendingIncrement" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.PendingIncrement">
+  PendingIncrement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PendingIncrement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Fsm_PromiseHsm_4_Wait_" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.Wait*"></a>
+
+  <h3 id="MarymoorStudios_Core_Fsm_PromiseHsm_4_Wait" data-uid="MarymoorStudios.Core.Fsm.PromiseHsm`4.Wait">
+  Wait()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Promise Wait()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
