@@ -146,7 +146,7 @@ Class ValueTupleSerializer&lt;T1, T2, T3, T4, T5, T6, T7&gt;
       <a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer-1.html#MarymoorStudios_Core_Serialization_System_Serializer_1_Write_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_RowBuffer___0__">Serializer&lt;(T1, T2, T3, T4, T5, T6, T7)&gt;.Write(SerializationContext, ref RowBuffer, in (T1, T2, T3, T4, T5, T6, T7))</a>
     </div>
     <div>
-      <a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer-1.html#MarymoorStudios_Core_Serialization_System_Serializer_1_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer___0__">Serializer&lt;(T1, T2, T3, T4, T5, T6, T7)&gt;.TryRead(SerializationContext, ref ReadOnlyRowBuffer, out (T1, T2, T3, T4, T5, T6, T7))</a>
+      <a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer-1.html#MarymoorStudios_Core_Serialization_System_Serializer_1_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer___0__">Serializer&lt;(T1, T2, T3, T4, T5, T6, T7)&gt;.TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out (T1, T2, T3, T4, T5, T6, T7))</a>
     </div>
     <div>
       <a class="xref" href="MarymoorStudios.Core.Serialization.System.Serializer-1.html#MarymoorStudios_Core_Serialization_System_Serializer_1_Default">Serializer&lt;(T1, T2, T3, T4, T5, T6, T7)&gt;.Default</a>
@@ -335,7 +335,7 @@ Class ValueTupleSerializer&lt;T1, T2, T3, T4, T5, T6, T7&gt;
   <a id="MarymoorStudios_Core_Serialization_System_ValueTupleSerializer_7_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.ValueTupleSerializer`7.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_ValueTupleSerializer_7_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_ValueTuple__0__1__2__3__4__5__6___" data-uid="MarymoorStudios.Core.Serialization.System.ValueTupleSerializer`7.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.ValueTuple{`0,`1,`2,`3,`4,`5,`6}@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out (T1, T2, T3, T4, T5, T6, T7))
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out (T1, T2, T3, T4, T5, T6, T7))
   
   </h3>
 
@@ -343,7 +343,7 @@ Class ValueTupleSerializer&lt;T1, T2, T3, T4, T5, T6, T7&gt;
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out (T1, T2, T3, T4, T5, T6, T7) value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out (T1, T2, T3, T4, T5, T6, T7) value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

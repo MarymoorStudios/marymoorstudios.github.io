@@ -309,7 +309,7 @@ Class Float32Serializer
   <a id="MarymoorStudios_Core_Serialization_System_Float32Serializer_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.Float32Serializer.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_Float32Serializer_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_Single__" data-uid="MarymoorStudios.Core.Serialization.System.Float32Serializer.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.Single@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out float)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out float)
   
   </h3>
 
@@ -317,7 +317,7 @@ Class Float32Serializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out float value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out float value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

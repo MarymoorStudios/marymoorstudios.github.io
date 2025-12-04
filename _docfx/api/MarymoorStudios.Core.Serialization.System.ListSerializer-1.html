@@ -314,7 +314,7 @@ Class ListSerializer&lt;T&gt;
   <a id="MarymoorStudios_Core_Serialization_System_ListSerializer_1_TryRead_" data-uid="MarymoorStudios.Core.Serialization.System.ListSerializer`1.TryRead*"></a>
 
   <h3 id="MarymoorStudios_Core_Serialization_System_ListSerializer_1_TryRead_MarymoorStudios_Core_Serialization_System_SerializationContext_MarymoorStudios_Core_Serialization_System_ReadOnlyRowBuffer__System_Collections_Generic_List__0___" data-uid="MarymoorStudios.Core.Serialization.System.ListSerializer`1.TryRead(MarymoorStudios.Core.Serialization.System.SerializationContext,MarymoorStudios.Core.Serialization.System.ReadOnlyRowBuffer@,System.Collections.Generic.List{`0}@)">
-  TryRead(SerializationContext, ref ReadOnlyRowBuffer, out List&lt;T&gt;?)
+  TryRead(SerializationContext, scoped ref ReadOnlyRowBuffer, out List&lt;T&gt;?)
   
   </h3>
 
@@ -322,7 +322,7 @@ Class ListSerializer&lt;T&gt;
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, ref ReadOnlyRowBuffer buffer, out List&lt;T&gt;? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool TryRead(SerializationContext context, scoped ref ReadOnlyRowBuffer buffer, out List&lt;T&gt;? value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

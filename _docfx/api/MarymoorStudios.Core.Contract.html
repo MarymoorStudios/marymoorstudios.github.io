@@ -232,7 +232,7 @@ public static void Assert(bool condition, string message)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T Assert&lt;T&gt;(T retval, bool condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T Assert&lt;T&gt;(T retval, bool condition) where T : allows ref struct</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -275,7 +275,7 @@ public static void Assert(bool condition, string message)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T Assert&lt;T&gt;(T retval, bool condition, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static T Assert&lt;T&gt;(T retval, bool condition, string message) where T : allows ref struct</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -544,7 +544,7 @@ contractual reasons even if they are unused in the current implementation.</p>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
-public static void Unused&lt;T&gt;(T unused)</code></pre>
+public static void Unused&lt;T&gt;(T unused) where T : allows ref struct</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

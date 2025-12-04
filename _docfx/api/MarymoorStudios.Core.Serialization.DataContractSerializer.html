@@ -164,7 +164,7 @@ Class DataContractSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TypeId GetTypeId&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">public static TypeId GetTypeId&lt;T&gt;() where T : allows ref struct</code></pre>
   </div>
 
 
@@ -202,7 +202,7 @@ Class DataContractSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ReadOnlyMemory&lt;byte&gt; Serialize&lt;T&gt;(T data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ReadOnlyMemory&lt;byte&gt; Serialize&lt;T&gt;(T data) where T : allows ref struct</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -247,7 +247,7 @@ Class DataContractSerializer
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryDeserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt; bytes, out T data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryDeserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt; bytes, out T data) where T : allows ref struct</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
