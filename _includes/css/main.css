@@ -75,6 +75,7 @@ pre code {
   padding: 0 0;
   background: rgba(255,255,255,1) !important;
   word-wrap: break-word;
+  width: 110%;
 }
 
 /* ----- base elements ----- */
