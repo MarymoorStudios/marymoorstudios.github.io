@@ -12,8 +12,8 @@ featured: "true"
 
 [MarymoorStudios.Core.Fsm][nuget-fsm] is a new MSC library for defining finite state machines:
 
-* [API Documentation](_docfx/api/MarymoorStudios.Core.Fsm.html)
-* [Samples](https://github.com/MarymoorStudios/Core/Samples/HsmSample)
+* [API Documentation](/_docfx/api/MarymoorStudios.Core.Fsm.html)
+* [Samples](https://github.com/MarymoorStudios/Core/tree/main/Samples/HsmSample)
 
 ## New C#-based language for defining FSMs
 * Declarative FSM definitions using a C# fluent builder pattern.
