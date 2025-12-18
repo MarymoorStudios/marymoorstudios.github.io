@@ -69,6 +69,13 @@ pre code {
   background: rgba(0,0,0,1) !important;
 }
 
+.language-mermaid {
+  display: block;
+  margin: 20px 5%;
+  padding: 8px 8px;
+  background: rgba(255,255,255,1) !important;
+  word-wrap: break-word;
+}
 
 /* ----- base elements ----- */
 
