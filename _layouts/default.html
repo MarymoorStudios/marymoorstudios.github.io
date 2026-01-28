@@ -16,18 +16,22 @@
   {% include analytics.html %}
 </head>
 <body>
-<script type="module">
-  Array.from(document.getElementsByClassName("language-mermaid"))
-    .forEach(element => { element.classList.add("mermaid"); });
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ 
-    startOnLoad: true,
-    theme: "forest",
-    fontFamily: "Arial, Helvetica, sans-serif",
-    fontSize: 17,
-    fontWeight: "normal"
-  });
+  <!-- Mermaid -->
+  <script type="module">
+    Array.from(document.getElementsByClassName("language-mermaid"))
+      .forEach(element => { element.classList.add("mermaid"); });
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "forest",
+      fontFamily: "Arial, Helvetica, sans-serif",
+      fontSize: 17,
+      fontWeight: "normal"
+    });
   </script>
+  <!-- MathJax CDN -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <!-- Main Layout -->
   <div id="main">
     <nav>
       <ul>
