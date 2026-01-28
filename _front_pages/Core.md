@@ -18,7 +18,7 @@ Both **free** non-commercial use licenses, and paid commercial licenses are avai
 ## The Core Libraries
 The Core Libraries are a suite of C# tools offering a unique, easy to use, correct-by-construction, approach to
 race-free concurrent programming.  Inspired by Midori, E-lang and Erlang, the Core is a Promise-based, single-threaded 
-software-isolated process (Sip) model loosely conforming to Tony Hoarse's Communicating Sequential Processes (CSP)
+software-isolated process (Sip) model loosely conforming to Tony Hoare's Communicating Sequential Processes (CSP)
 formalism.
 
 * [API Documentation](_docfx/api/MarymoorStudios.Core.html)
