@@ -186,6 +186,9 @@ Most software has some sources of nondeterminism, but it is a good practice to l
 to control the points in the software where they can introduce behavior variability.  This practice helps isolate
 variability to well known components making the remaining portions of the software easier to write and test.
 
+#### **Orphaned Computation**
+A background [activity](#activity) that continues to execute after its result or side-effects are no longer required.
+
 #### **Pipelining**
 To issue multiple _ordered_ requests without waiting for the previous ones to complete.  We distinguish pipelined
 requests from parallel requests (both of which represent kinds concurrent requests) in that pipelined requests maintain
