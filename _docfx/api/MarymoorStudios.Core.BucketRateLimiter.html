@@ -175,7 +175,8 @@ Class BucketRateLimiter
 </dd>
     <dt><code>refreshRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
     <dd><p>The time it takes to refresh one unit (e.g., TimeSpan.FromMilliseconds(200) means 5
-units/sec).</p>
+units/sec).  A value of <code>0</code> means the limiter will never refill after
+<code class="paramref">initialTokens</code> are exhausted.</p>
 </dd>
     <dt><code>initialTokens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
     <dd><p>The number of initial tokens in the bucket.</p>
@@ -229,8 +230,76 @@ units/sec).</p>
 
 
 
+  <a id="MarymoorStudios_Core_BucketRateLimiter_Capacity_" data-uid="MarymoorStudios.Core.BucketRateLimiter.Capacity*"></a>
+
+  <h3 id="MarymoorStudios_Core_BucketRateLimiter_Capacity" data-uid="MarymoorStudios.Core.BucketRateLimiter.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of tokens the bucket can hold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="MarymoorStudios_Core_BucketRateLimiter_Add_" data-uid="MarymoorStudios.Core.BucketRateLimiter.Add*"></a>
+
+  <h3 id="MarymoorStudios_Core_BucketRateLimiter_Add_System_Double_" data-uid="MarymoorStudios.Core.BucketRateLimiter.Add(System.Double)">
+  Add(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds tokens to the bucket immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double refill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number of tokens to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_BucketRateLimiter_Add_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The bucket cannot be filled beyond <a class="xref" href="MarymoorStudios.Core.BucketRateLimiter.html#MarymoorStudios_Core_BucketRateLimiter_Capacity">Capacity</a>.</p>
+</div>
+
+
 
 
   <a id="MarymoorStudios_Core_BucketRateLimiter_Process_" data-uid="MarymoorStudios.Core.BucketRateLimiter.Process*"></a>

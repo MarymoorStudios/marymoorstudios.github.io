@@ -768,20 +768,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions",
-      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandLineBuilderExtensions.yml\" sourcestartlinenumber=\"1\">Extensions for <xref href=\"System.CommandLine.Builder.CommandLineBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.yml",
       "output": {
         ".html": {
@@ -796,20 +782,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT",
-      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensionsT.yml\" sourcestartlinenumber=\"1\">Extends <xref href=\"System.CommandLine\" data-throw-if-not-resolved=\"false\"></xref> with support for Promise-based handlers.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.OptionAttribute.yml",
       "output": {
         ".html": {
@@ -821,20 +793,6 @@
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Promises.CommandLine.OptionAttribute",
       "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.OptionAttribute.yml\" sourcestartlinenumber=\"1\">Defines a command line command group.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder<T>",
-      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.CommandLine.ServiceProviderBinder-1.yml\" sourcestartlinenumber=\"1\">Custom binder for binding through a <xref href=\"System.CommandLine.Binding.BindingContext\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2994,20 +2952,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Rpc.SyncMessage<TServer>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessage.yml",
       "output": {
         ".html": {
@@ -3018,20 +2962,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Rpc.SyncMessage",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessageSerializer-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MarymoorStudios.Core.Rpc.SyncMessageSerializer-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MarymoorStudios.Core.Rpc.SyncMessageSerializer<TServer>",
       "Summary": null
     },
     {
