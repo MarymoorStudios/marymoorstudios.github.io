@@ -149,30 +149,130 @@ Class CommandLineExtensions
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_IdentityEmailOption" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.IdentityEmailOption">
+  IdentityEmailOption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Option&lt;string&gt; IdentityEmailOption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.option-1">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_IdentityNameOption" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.IdentityNameOption">
+  IdentityNameOption
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Option&lt;string&gt; IdentityNameOption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.option-1">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_GetMarymoorAuthentication_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.GetMarymoorAuthentication*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_System_CommandLine_Command_System_Func_MarymoorStudios_Core_Promises_Promise__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler(System.CommandLine.Command,System.Func{MarymoorStudios.Core.Promises.Promise})">
-  SetHandler(Command, Func&lt;Promise&gt;)
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_GetMarymoorAuthentication_System_CommandLine_ParseResult_Microsoft_Extensions_Logging_ILoggerFactory_MarymoorStudios_Core_Rpc_Identity_AdmissionManager__MarymoorStudios_Core_Rpc_Identity_CertificateManager__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.GetMarymoorAuthentication(System.CommandLine.ParseResult,Microsoft.Extensions.Logging.ILoggerFactory,MarymoorStudios.Core.Rpc.Identity.AdmissionManager@,MarymoorStudios.Core.Rpc.Identity.CertificateManager@)">
+  GetMarymoorAuthentication(ParseResult, ILoggerFactory, out AdmissionManager?, out CertificateManager?)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler(this Command command, Func&lt;Promise&gt; handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GetMarymoorAuthentication(this ParseResult parseResult, ILoggerFactory iLoggerFactory, out AdmissionManager? admissionManager, out CertificateManager? certificateManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parseResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.parseresult">ParseResult</a></dt>
+    <dd></dd>
+    <dt><code>iLoggerFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></dt>
+    <dd></dd>
+    <dt><code>admissionManager</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.AdmissionManager.html">AdmissionManager</a></dt>
+    <dd></dd>
+    <dt><code>certificateManager</code> <a class="xref" href="MarymoorStudios.Core.Rpc.Identity.CertificateManager.html">CertificateManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_System_CommandLine_Command_System_Action_System_CommandLine_ParseResult_System_Threading_CancellationToken__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction(System.CommandLine.Command,System.Action{System.CommandLine.ParseResult,System.Threading.CancellationToken})">
+  SetPromiseAction(Command, Action&lt;ParseResult, CancellationToken&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPromiseAction(this Command command, Action&lt;ParseResult, CancellationToken&gt; handler)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
     <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a>&gt;</dt>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.parseresult">ParseResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -187,26 +287,25 @@ Class CommandLineExtensions
 
 
 
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_System_CommandLine_Command_System_Func_System_CommandLine_Invocation_InvocationContext_MarymoorStudios_Core_Promises_Promise__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler(System.CommandLine.Command,System.Func{System.CommandLine.Invocation.InvocationContext,MarymoorStudios.Core.Promises.Promise})">
-  SetHandler(Command, Func&lt;InvocationContext, Promise&gt;)
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_System_CommandLine_Command_System_Func_System_CommandLine_ParseResult_System_Threading_CancellationToken_MarymoorStudios_Core_Promises_Promise_System_Int32___" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction(System.CommandLine.Command,System.Func{System.CommandLine.ParseResult,System.Threading.CancellationToken,MarymoorStudios.Core.Promises.Promise{System.Int32}})">
+  SetPromiseAction(Command, Func&lt;ParseResult, CancellationToken, Promise&lt;int&gt;&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler(this Command command, Func&lt;InvocationContext, Promise&gt; handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetPromiseAction(this Command command, Func&lt;ParseResult, CancellationToken, Promise&lt;int&gt;&gt; handler)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
     <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.invocation.invocationcontext">InvocationContext</a>, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.parseresult">ParseResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e6ddcecd67b7c430ff64b32468d11c2e0b9ba099&amp;path=/Core/MarymoorStudios.Core.Promises/PromiseT.cs">Promise</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -221,35 +320,25 @@ Class CommandLineExtensions
 
 
 
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__1_System_CommandLine_Command_System_Func___0_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``1(System.CommandLine.Command,System.Func{``0,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0})">
-  SetHandler&lt;T&gt;(Command, Func&lt;T, Promise&gt;, IValueDescriptor&lt;T&gt;)
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_System_CommandLine_Command_System_Func_System_CommandLine_ParseResult_System_Threading_CancellationToken_MarymoorStudios_Core_Promises_Promise__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction(System.CommandLine.Command,System.Func{System.CommandLine.ParseResult,System.Threading.CancellationToken,MarymoorStudios.Core.Promises.Promise})">
+  SetPromiseAction(Command, Func&lt;ParseResult, CancellationToken, Promise&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T&gt;(this Command command, Func&lt;T, Promise&gt; handle, IValueDescriptor&lt;T&gt; symbol)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetPromiseAction(this Command command, Func&lt;ParseResult, CancellationToken, Promise&gt; handler)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
     <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.parseresult">ParseResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=e6ddcecd67b7c430ff64b32468d11c2e0b9ba099&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -262,39 +351,27 @@ Class CommandLineExtensions
 
 
 
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__2_System_CommandLine_Command_System_Func___0___1_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``2(System.CommandLine.Command,System.Func{``0,``1,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1})">
-  SetHandler&lt;T1, T2&gt;(Command, Func&lt;T1, T2, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;)
+
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetPromiseAction_System_CommandLine_Command_System_Func_System_CommandLine_ParseResult_System_Threading_CancellationToken_System_Int32__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetPromiseAction(System.CommandLine.Command,System.Func{System.CommandLine.ParseResult,System.Threading.CancellationToken,System.Int32})">
+  SetPromiseAction(Command, Func&lt;ParseResult, CancellationToken, int&gt;)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func&lt;T1, T2, TResult&gt;</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2&gt;(this Command command, Func&lt;T1, T2, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetPromiseAction(this Command command, Func&lt;ParseResult, CancellationToken, int&gt; handler)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
     <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T1, T2, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.parseresult">ParseResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -307,350 +384,30 @@ Class CommandLineExtensions
 
 
 
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__3_System_CommandLine_Command_System_Func___0___1___2_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``3(System.CommandLine.Command,System.Func{``0,``1,``2,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2})">
-  SetHandler&lt;T1, T2, T3&gt;(Command, Func&lt;T1, T2, T3, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;)
+
+  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_UseMarymoorAuthentication_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.UseMarymoorAuthentication*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_UseMarymoorAuthentication_System_CommandLine_Command_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.UseMarymoorAuthentication(System.CommandLine.Command)">
+  UseMarymoorAuthentication(Command)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func&lt;T1, T2, T3, TResult&gt;</a>.</p>
+  <div class="markdown level1 summary"><p>Adds Identity management.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3&gt;(this Command command, Func&lt;T1, T2, T3, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UseMarymoorAuthentication(this Command command)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
     <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;T1, T2, T3, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
   </dl>
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
-
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__4_System_CommandLine_Command_System_Func___0___1___2___3_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__System_CommandLine_Binding_IValueDescriptor___3__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``4(System.CommandLine.Command,System.Func{``0,``1,``2,``3,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2},System.CommandLine.Binding.IValueDescriptor{``3})">
-  SetHandler&lt;T1, T2, T3, T4&gt;(Command, Func&lt;T1, T2, T3, T4, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;, IValueDescriptor&lt;T4&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func&lt;T1, T2, T3, T4, TResult&gt;</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3, T4&gt;(this Command command, Func&lt;T1, T2, T3, T4, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3, IValueDescriptor&lt;T4&gt; symbol4)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
-    <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-5">Func</a>&lt;T1, T2, T3, T4, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T4&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-    <dt><code>T4</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
-
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__5_System_CommandLine_Command_System_Func___0___1___2___3___4_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__System_CommandLine_Binding_IValueDescriptor___3__System_CommandLine_Binding_IValueDescriptor___4__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``5(System.CommandLine.Command,System.Func{``0,``1,``2,``3,``4,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2},System.CommandLine.Binding.IValueDescriptor{``3},System.CommandLine.Binding.IValueDescriptor{``4})">
-  SetHandler&lt;T1, T2, T3, T4, T5&gt;(Command, Func&lt;T1, T2, T3, T4, T5, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;, IValueDescriptor&lt;T4&gt;, IValueDescriptor&lt;T5&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func&lt;T1, T2, T3, T4, T5, TResult&gt;</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3, T4, T5&gt;(this Command command, Func&lt;T1, T2, T3, T4, T5, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3, IValueDescriptor&lt;T4&gt; symbol4, IValueDescriptor&lt;T5&gt; symbol5)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
-    <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-6">Func</a>&lt;T1, T2, T3, T4, T5, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T4&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T5&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-    <dt><code>T4</code></dt>
-    <dd></dd>
-    <dt><code>T5</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
-
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__6_System_CommandLine_Command_System_Func___0___1___2___3___4___5_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__System_CommandLine_Binding_IValueDescriptor___3__System_CommandLine_Binding_IValueDescriptor___4__System_CommandLine_Binding_IValueDescriptor___5__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``6(System.CommandLine.Command,System.Func{``0,``1,``2,``3,``4,``5,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2},System.CommandLine.Binding.IValueDescriptor{``3},System.CommandLine.Binding.IValueDescriptor{``4},System.CommandLine.Binding.IValueDescriptor{``5})">
-  SetHandler&lt;T1, T2, T3, T4, T5, T6&gt;(Command, Func&lt;T1, T2, T3, T4, T5, T6, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;, IValueDescriptor&lt;T4&gt;, IValueDescriptor&lt;T5&gt;, IValueDescriptor&lt;T6&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-7">Func&lt;T1, T2, T3, T4, T5, T6, TResult&gt;</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3, T4, T5, T6&gt;(this Command command, Func&lt;T1, T2, T3, T4, T5, T6, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3, IValueDescriptor&lt;T4&gt; symbol4, IValueDescriptor&lt;T5&gt; symbol5, IValueDescriptor&lt;T6&gt; symbol6)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
-    <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-7">Func</a>&lt;T1, T2, T3, T4, T5, T6, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T4&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T5&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T6&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-    <dt><code>T4</code></dt>
-    <dd></dd>
-    <dt><code>T5</code></dt>
-    <dd></dd>
-    <dt><code>T6</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
-
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__7_System_CommandLine_Command_System_Func___0___1___2___3___4___5___6_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__System_CommandLine_Binding_IValueDescriptor___3__System_CommandLine_Binding_IValueDescriptor___4__System_CommandLine_Binding_IValueDescriptor___5__System_CommandLine_Binding_IValueDescriptor___6__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``7(System.CommandLine.Command,System.Func{``0,``1,``2,``3,``4,``5,``6,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2},System.CommandLine.Binding.IValueDescriptor{``3},System.CommandLine.Binding.IValueDescriptor{``4},System.CommandLine.Binding.IValueDescriptor{``5},System.CommandLine.Binding.IValueDescriptor{``6})">
-  SetHandler&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Command, Func&lt;T1, T2, T3, T4, T5, T6, T7, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;, IValueDescriptor&lt;T4&gt;, IValueDescriptor&lt;T5&gt;, IValueDescriptor&lt;T6&gt;, IValueDescriptor&lt;T7&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-8">Func&lt;T1, T2, T3, T4, T5, T6, T7, TResult&gt;</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3, T4, T5, T6, T7&gt;(this Command command, Func&lt;T1, T2, T3, T4, T5, T6, T7, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3, IValueDescriptor&lt;T4&gt; symbol4, IValueDescriptor&lt;T5&gt; symbol5, IValueDescriptor&lt;T6&gt; symbol6, IValueDescriptor&lt;T7&gt; symbol7)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
-    <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-8">Func</a>&lt;T1, T2, T3, T4, T5, T6, T7, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T4&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T5&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T6&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T7&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-    <dt><code>T4</code></dt>
-    <dd></dd>
-    <dt><code>T5</code></dt>
-    <dd></dd>
-    <dt><code>T6</code></dt>
-    <dd></dd>
-    <dt><code>T7</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler_" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler*"></a>
-
-  <h3 id="MarymoorStudios_Core_Promises_CommandLine_CommandLineExtensions_SetHandler__8_System_CommandLine_Command_System_Func___0___1___2___3___4___5___6___7_MarymoorStudios_Core_Promises_Promise__System_CommandLine_Binding_IValueDescriptor___0__System_CommandLine_Binding_IValueDescriptor___1__System_CommandLine_Binding_IValueDescriptor___2__System_CommandLine_Binding_IValueDescriptor___3__System_CommandLine_Binding_IValueDescriptor___4__System_CommandLine_Binding_IValueDescriptor___5__System_CommandLine_Binding_IValueDescriptor___6__System_CommandLine_Binding_IValueDescriptor___7__" data-uid="MarymoorStudios.Core.Promises.CommandLine.CommandLineExtensions.SetHandler``8(System.CommandLine.Command,System.Func{``0,``1,``2,``3,``4,``5,``6,``7,MarymoorStudios.Core.Promises.Promise},System.CommandLine.Binding.IValueDescriptor{``0},System.CommandLine.Binding.IValueDescriptor{``1},System.CommandLine.Binding.IValueDescriptor{``2},System.CommandLine.Binding.IValueDescriptor{``3},System.CommandLine.Binding.IValueDescriptor{``4},System.CommandLine.Binding.IValueDescriptor{``5},System.CommandLine.Binding.IValueDescriptor{``6},System.CommandLine.Binding.IValueDescriptor{``7})">
-  SetHandler&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Command, Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, Promise&gt;, IValueDescriptor&lt;T1&gt;, IValueDescriptor&lt;T2&gt;, IValueDescriptor&lt;T3&gt;, IValueDescriptor&lt;T4&gt;, IValueDescriptor&lt;T5&gt;, IValueDescriptor&lt;T6&gt;, IValueDescriptor&lt;T7&gt;, IValueDescriptor&lt;T8&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sets a command's handler based on a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-9">Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, TResult&gt;</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetHandler&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(this Command command, Func&lt;T1, T2, T3, T4, T5, T6, T7, T8, Promise&gt; handle, IValueDescriptor&lt;T1&gt; symbol1, IValueDescriptor&lt;T2&gt; symbol2, IValueDescriptor&lt;T3&gt; symbol3, IValueDescriptor&lt;T4&gt; symbol4, IValueDescriptor&lt;T5&gt; symbol5, IValueDescriptor&lt;T6&gt; symbol6, IValueDescriptor&lt;T7&gt; symbol7, IValueDescriptor&lt;T8&gt; symbol8)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>command</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.command">Command</a></dt>
-    <dd></dd>
-    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-9">Func</a>&lt;T1, T2, T3, T4, T5, T6, T7, T8, <a class="xref" href="https://dev.azure.com/marymoorstudios/Game/_apis/git/repositories/Game/items?api-version=1.0&amp;versionType=commit&amp;version=53ab40cda9244ae0fc921cb0d45d615f9d124c38&amp;path=/Core/MarymoorStudios.Core.Promises/Promise.cs">Promise</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T1&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T2&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T3&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T4&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T5&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T6&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T7&gt;</dt>
-    <dd></dd>
-    <dt><code>symbol8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.commandline.binding.ivaluedescriptor-1">IValueDescriptor</a>&lt;T8&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T1</code></dt>
-    <dd></dd>
-    <dt><code>T2</code></dt>
-    <dd></dd>
-    <dt><code>T3</code></dt>
-    <dd></dd>
-    <dt><code>T4</code></dt>
-    <dd></dd>
-    <dt><code>T5</code></dt>
-    <dd></dd>
-    <dt><code>T6</code></dt>
-    <dd></dd>
-    <dt><code>T7</code></dt>
-    <dd></dd>
-    <dt><code>T8</code></dt>
-    <dd></dd>
-  </dl>
 
 
 
