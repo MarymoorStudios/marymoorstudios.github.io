@@ -11,6 +11,12 @@ The following contains a glossary of terms used in the documentation and other d
 
 ### Terms:
 
+#### **Active Abstraction**
+An abstraction whose state can change independently of any direct interaction through their public-facing interface.
+Active abstractions include within their implementation background computation that closes over externally visible
+state.  As the background compution executes it may produce mutation or side-effects that are visible as changes to
+state to the consumers of the abstraction.
+
 #### **Activity**
 A logical thread of execution.  An activity is a logical representation of a single-threaded sequential flow of control
 within a larger program.  Programs can be a single activity but are usually comprised of more than one. Activities can
@@ -188,6 +194,10 @@ variability to well known components making the remaining portions of the softwa
 
 #### **Orphaned Computation**
 A background [activity](#activity) that continues to execute after its result or side-effects are no longer required.
+
+#### **Passive Abstraction**
+An abstraction with no internal background computation whose state is always completely determined by the sequence of
+their public interactions (in contrast with an [Active Abstraction](#active-abstraction)).
 
 #### **Pipelining**
 To issue multiple _ordered_ requests without waiting for the previous ones to complete.  We distinguish pipelined
