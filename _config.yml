@@ -13,6 +13,7 @@ lsi: false
 markdown: kramdown
 include:
   - "_docfx"
+  - "_engine"
 
 ### content configuration ###
 title:       "Marymoor Studios"
