@@ -13,8 +13,8 @@ lsi: false
 markdown: kramdown
 include:
   - "_docfx"
-  - "_engine"
-  - "_engine/Samples/MarymoorStudios.Games.Demo.WebAssembly/_framework"
+  - "wasm"
+  - "wasm/MarymoorStudios.Games.Demo.WebAssembly/_framework"
 
 ### content configuration ###
 title:       "Marymoor Studios"
