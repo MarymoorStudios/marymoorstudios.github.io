@@ -91,6 +91,18 @@ references:
   commentId: Overload:MarymoorStudios.Core.BucketRateLimiter.Process
   fullName: MarymoorStudios.Core.BucketRateLimiter.Process
   nameWithType: BucketRateLimiter.Process
+- uid: MarymoorStudios.Core.BucketRateLimiter.RefreshRate
+  name: RefreshRate
+  href: api/MarymoorStudios.Core.BucketRateLimiter.html#MarymoorStudios_Core_BucketRateLimiter_RefreshRate
+  commentId: P:MarymoorStudios.Core.BucketRateLimiter.RefreshRate
+  fullName: MarymoorStudios.Core.BucketRateLimiter.RefreshRate
+  nameWithType: BucketRateLimiter.RefreshRate
+- uid: MarymoorStudios.Core.BucketRateLimiter.RefreshRate*
+  name: RefreshRate
+  href: api/MarymoorStudios.Core.BucketRateLimiter.html#MarymoorStudios_Core_BucketRateLimiter_RefreshRate_
+  commentId: Overload:MarymoorStudios.Core.BucketRateLimiter.RefreshRate
+  fullName: MarymoorStudios.Core.BucketRateLimiter.RefreshRate
+  nameWithType: BucketRateLimiter.RefreshRate
 - uid: MarymoorStudios.Core.BucketRateLimiter.Reset(MarymoorStudios.Core.BucketRateLimiter.ResetBehavior)
   name: Reset(ResetBehavior)
   href: api/MarymoorStudios.Core.BucketRateLimiter.html#MarymoorStudios_Core_BucketRateLimiter_Reset_MarymoorStudios_Core_BucketRateLimiter_ResetBehavior_
@@ -522,6 +534,57 @@ references:
   commentId: Overload:MarymoorStudios.Core.Crc32.Update
   fullName: MarymoorStudios.Core.Crc32.Update
   nameWithType: Crc32.Update
+- uid: MarymoorStudios.Core.EnumExtensions
+  name: EnumExtensions
+  href: api/MarymoorStudios.Core.EnumExtensions.html
+  commentId: T:MarymoorStudios.Core.EnumExtensions
+  fullName: MarymoorStudios.Core.EnumExtensions
+  nameWithType: EnumExtensions
+- uid: MarymoorStudios.Core.EnumExtensions.ClearBits*
+  name: ClearBits
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_ClearBits_
+  commentId: Overload:MarymoorStudios.Core.EnumExtensions.ClearBits
+  fullName: MarymoorStudios.Core.EnumExtensions.ClearBits
+  nameWithType: EnumExtensions.ClearBits
+- uid: MarymoorStudios.Core.EnumExtensions.ClearBits``1(``0,``0)
+  name: ClearBits<T>(T, T)
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_ClearBits__1___0___0_
+  commentId: M:MarymoorStudios.Core.EnumExtensions.ClearBits``1(``0,``0)
+  name.vb: ClearBits(Of T)(T, T)
+  fullName: MarymoorStudios.Core.EnumExtensions.ClearBits<T>(T, T)
+  fullName.vb: MarymoorStudios.Core.EnumExtensions.ClearBits(Of T)(T, T)
+  nameWithType: EnumExtensions.ClearBits<T>(T, T)
+  nameWithType.vb: EnumExtensions.ClearBits(Of T)(T, T)
+- uid: MarymoorStudios.Core.EnumExtensions.HasBits*
+  name: HasBits
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_HasBits_
+  commentId: Overload:MarymoorStudios.Core.EnumExtensions.HasBits
+  fullName: MarymoorStudios.Core.EnumExtensions.HasBits
+  nameWithType: EnumExtensions.HasBits
+- uid: MarymoorStudios.Core.EnumExtensions.HasBits``1(``0,``0)
+  name: HasBits<T>(T, T)
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_HasBits__1___0___0_
+  commentId: M:MarymoorStudios.Core.EnumExtensions.HasBits``1(``0,``0)
+  name.vb: HasBits(Of T)(T, T)
+  fullName: MarymoorStudios.Core.EnumExtensions.HasBits<T>(T, T)
+  fullName.vb: MarymoorStudios.Core.EnumExtensions.HasBits(Of T)(T, T)
+  nameWithType: EnumExtensions.HasBits<T>(T, T)
+  nameWithType.vb: EnumExtensions.HasBits(Of T)(T, T)
+- uid: MarymoorStudios.Core.EnumExtensions.SetBits*
+  name: SetBits
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_SetBits_
+  commentId: Overload:MarymoorStudios.Core.EnumExtensions.SetBits
+  fullName: MarymoorStudios.Core.EnumExtensions.SetBits
+  nameWithType: EnumExtensions.SetBits
+- uid: MarymoorStudios.Core.EnumExtensions.SetBits``1(``0,``0)
+  name: SetBits<T>(T, T)
+  href: api/MarymoorStudios.Core.EnumExtensions.html#MarymoorStudios_Core_EnumExtensions_SetBits__1___0___0_
+  commentId: M:MarymoorStudios.Core.EnumExtensions.SetBits``1(``0,``0)
+  name.vb: SetBits(Of T)(T, T)
+  fullName: MarymoorStudios.Core.EnumExtensions.SetBits<T>(T, T)
+  fullName.vb: MarymoorStudios.Core.EnumExtensions.SetBits(Of T)(T, T)
+  nameWithType: EnumExtensions.SetBits<T>(T, T)
+  nameWithType.vb: EnumExtensions.SetBits(Of T)(T, T)
 - uid: MarymoorStudios.Core.EnumTraits`1
   name: EnumTraits<TEnum>
   href: api/MarymoorStudios.Core.EnumTraits-1.html
@@ -2187,6 +2250,65 @@ references:
   commentId: Overload:MarymoorStudios.Core.GcNotify.OnGC
   fullName: MarymoorStudios.Core.GcNotify.OnGC
   nameWithType: GcNotify.OnGC
+- uid: MarymoorStudios.Core.IStructEnumerable`2
+  name: IStructEnumerable<T, TEnumerator>
+  href: api/MarymoorStudios.Core.IStructEnumerable-2.html
+  commentId: T:MarymoorStudios.Core.IStructEnumerable`2
+  name.vb: IStructEnumerable(Of T, TEnumerator)
+  fullName: MarymoorStudios.Core.IStructEnumerable<T, TEnumerator>
+  fullName.vb: MarymoorStudios.Core.IStructEnumerable(Of T, TEnumerator)
+  nameWithType: IStructEnumerable<T, TEnumerator>
+  nameWithType.vb: IStructEnumerable(Of T, TEnumerator)
+- uid: MarymoorStudios.Core.IStructEnumerable`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/MarymoorStudios.Core.IStructEnumerable-2.html#MarymoorStudios_Core_IStructEnumerable_2_GetEnumerator
+  commentId: M:MarymoorStudios.Core.IStructEnumerable`2.GetEnumerator
+  fullName: MarymoorStudios.Core.IStructEnumerable<T, TEnumerator>.GetEnumerator()
+  fullName.vb: MarymoorStudios.Core.IStructEnumerable(Of T, TEnumerator).GetEnumerator()
+  nameWithType: IStructEnumerable<T, TEnumerator>.GetEnumerator()
+  nameWithType.vb: IStructEnumerable(Of T, TEnumerator).GetEnumerator()
+- uid: MarymoorStudios.Core.IStructEnumerable`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/MarymoorStudios.Core.IStructEnumerable-2.html#MarymoorStudios_Core_IStructEnumerable_2_GetEnumerator_
+  commentId: Overload:MarymoorStudios.Core.IStructEnumerable`2.GetEnumerator
+  fullName: MarymoorStudios.Core.IStructEnumerable<T, TEnumerator>.GetEnumerator
+  fullName.vb: MarymoorStudios.Core.IStructEnumerable(Of T, TEnumerator).GetEnumerator
+  nameWithType: IStructEnumerable<T, TEnumerator>.GetEnumerator
+  nameWithType.vb: IStructEnumerable(Of T, TEnumerator).GetEnumerator
+- uid: MarymoorStudios.Core.IStructEnumeratorActivator`3
+  name: IStructEnumeratorActivator<T, TInit, TEnumerator>
+  href: api/MarymoorStudios.Core.IStructEnumeratorActivator-3.html
+  commentId: T:MarymoorStudios.Core.IStructEnumeratorActivator`3
+  name.vb: IStructEnumeratorActivator(Of T, TInit, TEnumerator)
+  fullName: MarymoorStudios.Core.IStructEnumeratorActivator<T, TInit, TEnumerator>
+  fullName.vb: MarymoorStudios.Core.IStructEnumeratorActivator(Of T, TInit, TEnumerator)
+  nameWithType: IStructEnumeratorActivator<T, TInit, TEnumerator>
+  nameWithType.vb: IStructEnumeratorActivator(Of T, TInit, TEnumerator)
+- uid: MarymoorStudios.Core.IStructEnumeratorActivator`3.Create(`1)
+  name: Create(TInit)
+  href: api/MarymoorStudios.Core.IStructEnumeratorActivator-3.html#MarymoorStudios_Core_IStructEnumeratorActivator_3_Create__1_
+  commentId: M:MarymoorStudios.Core.IStructEnumeratorActivator`3.Create(`1)
+  fullName: MarymoorStudios.Core.IStructEnumeratorActivator<T, TInit, TEnumerator>.Create(TInit)
+  fullName.vb: MarymoorStudios.Core.IStructEnumeratorActivator(Of T, TInit, TEnumerator).Create(TInit)
+  nameWithType: IStructEnumeratorActivator<T, TInit, TEnumerator>.Create(TInit)
+  nameWithType.vb: IStructEnumeratorActivator(Of T, TInit, TEnumerator).Create(TInit)
+- uid: MarymoorStudios.Core.IStructEnumeratorActivator`3.Create*
+  name: Create
+  href: api/MarymoorStudios.Core.IStructEnumeratorActivator-3.html#MarymoorStudios_Core_IStructEnumeratorActivator_3_Create_
+  commentId: Overload:MarymoorStudios.Core.IStructEnumeratorActivator`3.Create
+  fullName: MarymoorStudios.Core.IStructEnumeratorActivator<T, TInit, TEnumerator>.Create
+  fullName.vb: MarymoorStudios.Core.IStructEnumeratorActivator(Of T, TInit, TEnumerator).Create
+  nameWithType: IStructEnumeratorActivator<T, TInit, TEnumerator>.Create
+  nameWithType.vb: IStructEnumeratorActivator(Of T, TInit, TEnumerator).Create
+- uid: MarymoorStudios.Core.IStructEnumerator`2
+  name: IStructEnumerator<T, TEnumerator>
+  href: api/MarymoorStudios.Core.IStructEnumerator-2.html
+  commentId: T:MarymoorStudios.Core.IStructEnumerator`2
+  name.vb: IStructEnumerator(Of T, TEnumerator)
+  fullName: MarymoorStudios.Core.IStructEnumerator<T, TEnumerator>
+  fullName.vb: MarymoorStudios.Core.IStructEnumerator(Of T, TEnumerator)
+  nameWithType: IStructEnumerator<T, TEnumerator>
+  nameWithType.vb: IStructEnumerator(Of T, TEnumerator)
 - uid: MarymoorStudios.Core.Linear
   name: Linear
   href: api/MarymoorStudios.Core.Linear.html
@@ -2244,6 +2366,183 @@ references:
   fullName.vb: MarymoorStudios.Core.LinqExtensions.WithIndex(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: LinqExtensions.WithIndex<T>(IEnumerable<T>)
   nameWithType.vb: LinqExtensions.WithIndex(Of T)(IEnumerable(Of T))
+- uid: MarymoorStudios.Core.LinqStructExtensions
+  name: LinqStructExtensions
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html
+  commentId: T:MarymoorStudios.Core.LinqStructExtensions
+  fullName: MarymoorStudios.Core.LinqStructExtensions
+  nameWithType: LinqStructExtensions
+- uid: MarymoorStudios.Core.LinqStructExtensions.Any*
+  name: Any
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Any_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.Any
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Any
+  nameWithType: LinqStructExtensions.Any
+- uid: MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name: Any<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Any__3_MarymoorStudios_Core_StructEnumerable___1___2___0__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name.vb: Any(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Any<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Any(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator))
+  nameWithType: LinqStructExtensions.Any<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  nameWithType.vb: LinqStructExtensions.Any(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+- uid: MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name: Any<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Any__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name.vb: Any(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Any<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Func<TSource, bool>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Any(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Func(Of TSource, Boolean))
+  nameWithType: LinqStructExtensions.Any<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  nameWithType.vb: LinqStructExtensions.Any(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+- uid: MarymoorStudios.Core.LinqStructExtensions.Contains*
+  name: Contains
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Contains_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.Contains
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Contains
+  nameWithType: LinqStructExtensions.Contains
+- uid: MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1)
+  name: Contains<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, TSource)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Contains__3_MarymoorStudios_Core_StructEnumerable___1___2___0____1_
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1)
+  name.vb: Contains(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), TSource)
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Contains<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, TSource)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Contains(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), TSource)
+  nameWithType: LinqStructExtensions.Contains<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, TSource)
+  nameWithType.vb: LinqStructExtensions.Contains(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), TSource)
+- uid: MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1,System.Collections.Generic.EqualityComparer{``1})
+  name: Contains<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, TSource, EqualityComparer<TSource>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Contains__3_MarymoorStudios_Core_StructEnumerable___1___2___0____1_System_Collections_Generic_EqualityComparer___1__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1,System.Collections.Generic.EqualityComparer{``1})
+  name.vb: Contains(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), TSource, EqualityComparer(Of TSource))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Contains<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, TSource, System.Collections.Generic.EqualityComparer<TSource>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Contains(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), TSource, System.Collections.Generic.EqualityComparer(Of TSource))
+  nameWithType: LinqStructExtensions.Contains<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, TSource, EqualityComparer<TSource>)
+  nameWithType.vb: LinqStructExtensions.Contains(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), TSource, EqualityComparer(Of TSource))
+- uid: MarymoorStudios.Core.LinqStructExtensions.Count*
+  name: Count
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Count_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.Count
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Count
+  nameWithType: LinqStructExtensions.Count
+- uid: MarymoorStudios.Core.LinqStructExtensions.Count``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name: Count<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Count__3_MarymoorStudios_Core_StructEnumerable___1___2___0__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Count``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name.vb: Count(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Count<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Count(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator))
+  nameWithType: LinqStructExtensions.Count<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  nameWithType.vb: LinqStructExtensions.Count(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+- uid: MarymoorStudios.Core.LinqStructExtensions.First*
+  name: First
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_First_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.First
+  fullName: MarymoorStudios.Core.LinqStructExtensions.First
+  nameWithType: LinqStructExtensions.First
+- uid: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault*
+  name: FirstOrDefault
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault
+  fullName: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault
+  nameWithType: LinqStructExtensions.FirstOrDefault
+- uid: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name: FirstOrDefault<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault__3_MarymoorStudios_Core_StructEnumerable___1___2___0__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name.vb: FirstOrDefault(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator))
+  nameWithType: LinqStructExtensions.FirstOrDefault<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  nameWithType.vb: LinqStructExtensions.FirstOrDefault(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+- uid: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name: FirstOrDefault<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name.vb: FirstOrDefault(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Func<TSource, bool>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Func(Of TSource, Boolean))
+  nameWithType: LinqStructExtensions.FirstOrDefault<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  nameWithType.vb: LinqStructExtensions.FirstOrDefault(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+- uid: MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name: First<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_First__3_MarymoorStudios_Core_StructEnumerable___1___2___0__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name.vb: First(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.First<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.First(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator))
+  nameWithType: LinqStructExtensions.First<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  nameWithType.vb: LinqStructExtensions.First(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+- uid: MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name: First<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_First__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name.vb: First(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.First<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Func<TSource, bool>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.First(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Func(Of TSource, Boolean))
+  nameWithType: LinqStructExtensions.First<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  nameWithType.vb: LinqStructExtensions.First(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+- uid: MarymoorStudios.Core.LinqStructExtensions.ForEach*
+  name: ForEach
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_ForEach_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.ForEach
+  fullName: MarymoorStudios.Core.LinqStructExtensions.ForEach
+  nameWithType: LinqStructExtensions.ForEach
+- uid: MarymoorStudios.Core.LinqStructExtensions.ForEach``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Action{``1})
+  name: ForEach<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Action<TSource>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_ForEach__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Action___1__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.ForEach``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Action{``1})
+  name.vb: ForEach(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Action(Of TSource))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.ForEach<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Action<TSource>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.ForEach(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Action(Of TSource))
+  nameWithType: LinqStructExtensions.ForEach<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Action<TSource>)
+  nameWithType.vb: LinqStructExtensions.ForEach(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Action(Of TSource))
+- uid: MarymoorStudios.Core.LinqStructExtensions.Select*
+  name: Select
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Select_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.Select
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Select
+  nameWithType: LinqStructExtensions.Select
+- uid: MarymoorStudios.Core.LinqStructExtensions.Select``4(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,``3})
+  name: Select<TEnumerator, TSource, TInit, TResult>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, TResult>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Select__4_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1___3__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Select``4(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,``3})
+  name.vb: Select(Of TEnumerator, TSource, TInit, TResult)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, TResult))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Select<TEnumerator, TSource, TInit, TResult>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Func<TSource, TResult>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Select(Of TEnumerator, TSource, TInit, TResult)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Func(Of TSource, TResult))
+  nameWithType: LinqStructExtensions.Select<TEnumerator, TSource, TInit, TResult>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, TResult>)
+  nameWithType.vb: LinqStructExtensions.Select(Of TEnumerator, TSource, TInit, TResult)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, TResult))
+- uid: MarymoorStudios.Core.LinqStructExtensions.ToArray*
+  name: ToArray
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_ToArray_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.ToArray
+  fullName: MarymoorStudios.Core.LinqStructExtensions.ToArray
+  nameWithType: LinqStructExtensions.ToArray
+- uid: MarymoorStudios.Core.LinqStructExtensions.ToArray``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name: ToArray<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_ToArray__3_MarymoorStudios_Core_StructEnumerable___1___2___0__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.ToArray``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})
+  name.vb: ToArray(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.ToArray<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.ToArray(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator))
+  nameWithType: LinqStructExtensions.ToArray<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>)
+  nameWithType.vb: LinqStructExtensions.ToArray(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator))
+- uid: MarymoorStudios.Core.LinqStructExtensions.Where*
+  name: Where
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Where_
+  commentId: Overload:MarymoorStudios.Core.LinqStructExtensions.Where
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Where
+  nameWithType: LinqStructExtensions.Where
+- uid: MarymoorStudios.Core.LinqStructExtensions.Where``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name: Where<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  href: api/MarymoorStudios.Core.LinqStructExtensions.html#MarymoorStudios_Core_LinqStructExtensions_Where__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__
+  commentId: M:MarymoorStudios.Core.LinqStructExtensions.Where``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})
+  name.vb: Where(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
+  fullName: MarymoorStudios.Core.LinqStructExtensions.Where<TEnumerator, TSource, TInit>(MarymoorStudios.Core.StructEnumerable<TSource, TInit, TEnumerator>, System.Func<TSource, bool>)
+  fullName.vb: MarymoorStudios.Core.LinqStructExtensions.Where(Of TEnumerator, TSource, TInit)(MarymoorStudios.Core.StructEnumerable(Of TSource, TInit, TEnumerator), System.Func(Of TSource, Boolean))
+  nameWithType: LinqStructExtensions.Where<TEnumerator, TSource, TInit>(StructEnumerable<TSource, TInit, TEnumerator>, Func<TSource, bool>)
+  nameWithType.vb: LinqStructExtensions.Where(Of TEnumerator, TSource, TInit)(StructEnumerable(Of TSource, TInit, TEnumerator), Func(Of TSource, Boolean))
 - uid: MarymoorStudios.Core.MathExtensions
   name: MathExtensions
   href: api/MarymoorStudios.Core.MathExtensions.html
@@ -2532,6 +2831,126 @@ references:
   fullName.vb: MarymoorStudios.Core.MurmurHash3.Hash64(Of T)(T, ULong)
   nameWithType: MurmurHash3.Hash64<T>(T, ulong)
   nameWithType.vb: MurmurHash3.Hash64(Of T)(T, ULong)
+- uid: MarymoorStudios.Core.NumericExtensions
+  name: NumericExtensions
+  href: api/MarymoorStudios.Core.NumericExtensions.html
+  commentId: T:MarymoorStudios.Core.NumericExtensions
+  fullName: MarymoorStudios.Core.NumericExtensions
+  nameWithType: NumericExtensions
+- uid: MarymoorStudios.Core.NumericExtensions.Range*
+  name: Range
+  href: api/MarymoorStudios.Core.NumericExtensions.html#MarymoorStudios_Core_NumericExtensions_Range_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.Range
+  fullName: MarymoorStudios.Core.NumericExtensions.Range
+  nameWithType: NumericExtensions.Range
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1
+  name: NumericExtensions.RangeEnumerator<T>
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html
+  commentId: T:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1
+  name.vb: NumericExtensions.RangeEnumerator(Of T)
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T)
+  nameWithType: NumericExtensions.RangeEnumerator<T>
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T)
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Create(System.ValueTuple{`0,`0})
+  name: Create((T Start, T End))
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Create_System_ValueTuple__0__0__
+  commentId: M:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Create(System.ValueTuple{`0,`0})
+  name.vb: Create((Start As T, End As T))
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Create((T Start, T End))
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Create((Start As T, End As T))
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Create((T Start, T End))
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Create((Start As T, End As T))
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Create*
+  name: Create
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Create_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Create
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Create
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Create
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Create
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Create
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Current
+  name: Current
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Current
+  commentId: P:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Current
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Current
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Current
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Current
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Current
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Current*
+  name: Current
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Current_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Current
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Current
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Current
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Current
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Current
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Dispose
+  name: Dispose()
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Dispose
+  commentId: M:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Dispose
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Dispose()
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Dispose()
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Dispose()
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Dispose()
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Dispose*
+  name: Dispose
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Dispose_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Dispose
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Dispose
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Dispose
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Dispose
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Dispose
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.MoveNext
+  name: MoveNext()
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_MoveNext
+  commentId: M:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.MoveNext
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.MoveNext()
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).MoveNext()
+  nameWithType: NumericExtensions.RangeEnumerator<T>.MoveNext()
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).MoveNext()
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.MoveNext*
+  name: MoveNext
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_MoveNext_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.MoveNext
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.MoveNext
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).MoveNext
+  nameWithType: NumericExtensions.RangeEnumerator<T>.MoveNext
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).MoveNext
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Reset
+  name: Reset()
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Reset
+  commentId: M:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Reset
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Reset()
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Reset()
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Reset()
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Reset()
+- uid: MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Reset*
+  name: Reset
+  href: api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html#MarymoorStudios_Core_NumericExtensions_RangeEnumerator_1_Reset_
+  commentId: Overload:MarymoorStudios.Core.NumericExtensions.RangeEnumerator`1.Reset
+  fullName: MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>.Reset
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.RangeEnumerator(Of T).Reset
+  nameWithType: NumericExtensions.RangeEnumerator<T>.Reset
+  nameWithType.vb: NumericExtensions.RangeEnumerator(Of T).Reset
+- uid: MarymoorStudios.Core.NumericExtensions.Range``1(``0)
+  name: Range<T>(T)
+  href: api/MarymoorStudios.Core.NumericExtensions.html#MarymoorStudios_Core_NumericExtensions_Range__1___0_
+  commentId: M:MarymoorStudios.Core.NumericExtensions.Range``1(``0)
+  name.vb: Range(Of T)(T)
+  fullName: MarymoorStudios.Core.NumericExtensions.Range<T>(T)
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.Range(Of T)(T)
+  nameWithType: NumericExtensions.Range<T>(T)
+  nameWithType.vb: NumericExtensions.Range(Of T)(T)
+- uid: MarymoorStudios.Core.NumericExtensions.Range``1(``0,``0)
+  name: Range<T>(T, T)
+  href: api/MarymoorStudios.Core.NumericExtensions.html#MarymoorStudios_Core_NumericExtensions_Range__1___0___0_
+  commentId: M:MarymoorStudios.Core.NumericExtensions.Range``1(``0,``0)
+  name.vb: Range(Of T)(T, T)
+  fullName: MarymoorStudios.Core.NumericExtensions.Range<T>(T, T)
+  fullName.vb: MarymoorStudios.Core.NumericExtensions.Range(Of T)(T, T)
+  nameWithType: NumericExtensions.Range<T>(T, T)
+  nameWithType.vb: NumericExtensions.Range(Of T)(T, T)
 - uid: MarymoorStudios.Core.OwnedMem`1
   name: OwnedMem<T>
   href: api/MarymoorStudios.Core.OwnedMem-1.html
@@ -2831,6 +3250,75 @@ references:
   commentId: Overload:MarymoorStudios.Core.Promises.AutoResetEventAsync.WaitAsync
   fullName: MarymoorStudios.Core.Promises.AutoResetEventAsync.WaitAsync
   nameWithType: AutoResetEventAsync.WaitAsync
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource
+  name: AutoResetValueTaskSource
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html
+  commentId: T:MarymoorStudios.Core.Promises.AutoResetValueTaskSource
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource
+  nameWithType: AutoResetValueTaskSource
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor
+  name: AutoResetValueTaskSource()
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource__ctor
+  commentId: M:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor
+  name.vb: New()
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.AutoResetValueTaskSource()
+  fullName.vb: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.New()
+  nameWithType: AutoResetValueTaskSource.AutoResetValueTaskSource()
+  nameWithType.vb: AutoResetValueTaskSource.New()
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor(System.Boolean)
+  name: AutoResetValueTaskSource(bool)
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource__ctor_System_Boolean_
+  commentId: M:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.AutoResetValueTaskSource(bool)
+  fullName.vb: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.New(Boolean)
+  nameWithType: AutoResetValueTaskSource.AutoResetValueTaskSource(bool)
+  nameWithType.vb: AutoResetValueTaskSource.New(Boolean)
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor*
+  name: AutoResetValueTaskSource
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource__ctor_
+  commentId: Overload:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.#ctor
+  name.vb: New
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.AutoResetValueTaskSource
+  fullName.vb: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.New
+  nameWithType: AutoResetValueTaskSource.AutoResetValueTaskSource
+  nameWithType.vb: AutoResetValueTaskSource.New
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose
+  name: Dispose()
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_Dispose
+  commentId: M:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose()
+  nameWithType: AutoResetValueTaskSource.Dispose()
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose*
+  name: Dispose
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_Dispose_
+  commentId: Overload:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Dispose
+  nameWithType: AutoResetValueTaskSource.Dispose
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set
+  name: Set()
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_Set
+  commentId: M:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set()
+  nameWithType: AutoResetValueTaskSource.Set()
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set*
+  name: Set
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_Set_
+  commentId: Overload:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.Set
+  nameWithType: AutoResetValueTaskSource.Set
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask
+  name: ValueTask
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_ValueTask
+  commentId: P:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask
+  nameWithType: AutoResetValueTaskSource.ValueTask
+- uid: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask*
+  name: ValueTask
+  href: api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html#MarymoorStudios_Core_Promises_AutoResetValueTaskSource_ValueTask_
+  commentId: Overload:MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask
+  fullName: MarymoorStudios.Core.Promises.AutoResetValueTaskSource.ValueTask
+  nameWithType: AutoResetValueTaskSource.ValueTask
 - uid: MarymoorStudios.Core.Promises.CommandLine
   name: MarymoorStudios.Core.Promises.CommandLine
   href: api/MarymoorStudios.Core.Promises.CommandLine.html
@@ -5639,18 +6127,18 @@ references:
   commentId: Overload:MarymoorStudios.Core.Promises.Runner.Run
   fullName: MarymoorStudios.Core.Promises.Runner.Run
   nameWithType: Runner.Run
-- uid: MarymoorStudios.Core.Promises.Runner.WaitHandle
-  name: WaitHandle
-  href: api/MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_WaitHandle
-  commentId: P:MarymoorStudios.Core.Promises.Runner.WaitHandle
-  fullName: MarymoorStudios.Core.Promises.Runner.WaitHandle
-  nameWithType: Runner.WaitHandle
-- uid: MarymoorStudios.Core.Promises.Runner.WaitHandle*
-  name: WaitHandle
-  href: api/MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_WaitHandle_
-  commentId: Overload:MarymoorStudios.Core.Promises.Runner.WaitHandle
-  fullName: MarymoorStudios.Core.Promises.Runner.WaitHandle
-  nameWithType: Runner.WaitHandle
+- uid: MarymoorStudios.Core.Promises.Runner.ValueTask
+  name: ValueTask
+  href: api/MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_ValueTask
+  commentId: P:MarymoorStudios.Core.Promises.Runner.ValueTask
+  fullName: MarymoorStudios.Core.Promises.Runner.ValueTask
+  nameWithType: Runner.ValueTask
+- uid: MarymoorStudios.Core.Promises.Runner.ValueTask*
+  name: ValueTask
+  href: api/MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_ValueTask_
+  commentId: Overload:MarymoorStudios.Core.Promises.Runner.ValueTask
+  fullName: MarymoorStudios.Core.Promises.Runner.ValueTask
+  nameWithType: Runner.ValueTask
 - uid: MarymoorStudios.Core.Promises.SafeDispose
   name: SafeDispose
   href: api/MarymoorStudios.Core.Promises.SafeDispose.html
@@ -5870,6 +6358,18 @@ references:
   commentId: Overload:MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelled
   fullName: MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelled
   nameWithType: Scheduler.RunUntilCancelled
+- uid: MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync(System.Threading.CancellationToken)
+  name: RunUntilCancelledAsync(CancellationToken)
+  href: api/MarymoorStudios.Core.Promises.Scheduler.html#MarymoorStudios_Core_Promises_Scheduler_RunUntilCancelledAsync_System_Threading_CancellationToken_
+  commentId: M:MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync(System.Threading.CancellationToken)
+  fullName: MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync(System.Threading.CancellationToken)
+  nameWithType: Scheduler.RunUntilCancelledAsync(CancellationToken)
+- uid: MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync*
+  name: RunUntilCancelledAsync
+  href: api/MarymoorStudios.Core.Promises.Scheduler.html#MarymoorStudios_Core_Promises_Scheduler_RunUntilCancelledAsync_
+  commentId: Overload:MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync
+  fullName: MarymoorStudios.Core.Promises.Scheduler.RunUntilCancelledAsync
+  nameWithType: Scheduler.RunUntilCancelledAsync
 - uid: MarymoorStudios.Core.Promises.Scheduler.Unregister(MarymoorStudios.Core.Promises.Runner)
   name: Unregister(Runner)
   href: api/MarymoorStudios.Core.Promises.Scheduler.html#MarymoorStudios_Core_Promises_Scheduler_Unregister_MarymoorStudios_Core_Promises_Runner_
@@ -5921,6 +6421,21 @@ references:
   commentId: Overload:MarymoorStudios.Core.Promises.Sip.CreateAndRun
   fullName: MarymoorStudios.Core.Promises.Sip.CreateAndRun
   nameWithType: Sip.CreateAndRun
+- uid: MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync*
+  name: CreateAndRunAsync
+  href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_CreateAndRunAsync_
+  commentId: Overload:MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync
+  fullName: MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync
+  nameWithType: Sip.CreateAndRunAsync
+- uid: MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
+  name: CreateAndRunAsync<TArgs>(TArgs, Func<TArgs, Promise>)
+  href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_CreateAndRunAsync__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__
+  commentId: M:MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
+  name.vb: CreateAndRunAsync(Of TArgs)(TArgs, Func(Of TArgs, Promise))
+  fullName: MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync<TArgs>(TArgs, System.Func<TArgs, MarymoorStudios.Core.Promises.Promise>)
+  fullName.vb: MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync(Of TArgs)(TArgs, System.Func(Of TArgs, MarymoorStudios.Core.Promises.Promise))
+  nameWithType: Sip.CreateAndRunAsync<TArgs>(TArgs, Func<TArgs, Promise>)
+  nameWithType.vb: Sip.CreateAndRunAsync(Of TArgs)(TArgs, Func(Of TArgs, Promise))
 - uid: MarymoorStudios.Core.Promises.Sip.CreateAndRun``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
   name: CreateAndRun<TArgs>(TArgs, Func<TArgs, Promise>)
   href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_CreateAndRun__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__
@@ -5966,6 +6481,21 @@ references:
   commentId: Overload:MarymoorStudios.Core.Promises.Sip.Run
   fullName: MarymoorStudios.Core.Promises.Sip.Run
   nameWithType: Sip.Run
+- uid: MarymoorStudios.Core.Promises.Sip.RunAsync*
+  name: RunAsync
+  href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_RunAsync_
+  commentId: Overload:MarymoorStudios.Core.Promises.Sip.RunAsync
+  fullName: MarymoorStudios.Core.Promises.Sip.RunAsync
+  nameWithType: Sip.RunAsync
+- uid: MarymoorStudios.Core.Promises.Sip.RunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
+  name: RunAsync<TArgs>(TArgs, Func<TArgs, Promise>)
+  href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_RunAsync__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__
+  commentId: M:MarymoorStudios.Core.Promises.Sip.RunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
+  name.vb: RunAsync(Of TArgs)(TArgs, Func(Of TArgs, Promise))
+  fullName: MarymoorStudios.Core.Promises.Sip.RunAsync<TArgs>(TArgs, System.Func<TArgs, MarymoorStudios.Core.Promises.Promise>)
+  fullName.vb: MarymoorStudios.Core.Promises.Sip.RunAsync(Of TArgs)(TArgs, System.Func(Of TArgs, MarymoorStudios.Core.Promises.Promise))
+  nameWithType: Sip.RunAsync<TArgs>(TArgs, Func<TArgs, Promise>)
+  nameWithType.vb: Sip.RunAsync(Of TArgs)(TArgs, Func(Of TArgs, Promise))
 - uid: MarymoorStudios.Core.Promises.Sip.Run``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})
   name: Run<TArgs>(TArgs, Func<TArgs, Promise>)
   href: api/MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_Run__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__
@@ -13316,6 +13846,12 @@ references:
   fullName.vb: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.New
   nameWithType: StoreCertificateManager.StoreCertificateManager
   nameWithType.vb: StoreCertificateManager.New
+- uid: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.AuthenticationId
+  name: AuthenticationId
+  href: api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html#MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager_AuthenticationId
+  commentId: F:MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.AuthenticationId
+  fullName: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.AuthenticationId
+  nameWithType: StoreCertificateManager.AuthenticationId
 - uid: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.ClientOptions
   name: ClientOptions
   href: api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html#MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager_ClientOptions
@@ -13328,6 +13864,21 @@ references:
   commentId: Overload:MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.ClientOptions
   fullName: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.ClientOptions
   nameWithType: StoreCertificateManager.ClientOptions
+- uid: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate(System.String,System.String,System.TimeSpan,System.Int32)
+  name: CreateIdentityCertificate(string, string, TimeSpan, int)
+  href: api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html#MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager_CreateIdentityCertificate_System_String_System_String_System_TimeSpan_System_Int32_
+  commentId: M:MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate(System.String,System.String,System.TimeSpan,System.Int32)
+  name.vb: CreateIdentityCertificate(String, String, TimeSpan, Integer)
+  fullName: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate(string, string, System.TimeSpan, int)
+  fullName.vb: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate(String, String, System.TimeSpan, Integer)
+  nameWithType: StoreCertificateManager.CreateIdentityCertificate(string, string, TimeSpan, int)
+  nameWithType.vb: StoreCertificateManager.CreateIdentityCertificate(String, String, TimeSpan, Integer)
+- uid: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate*
+  name: CreateIdentityCertificate
+  href: api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html#MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager_CreateIdentityCertificate_
+  commentId: Overload:MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate
+  fullName: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.CreateIdentityCertificate
+  nameWithType: StoreCertificateManager.CreateIdentityCertificate
 - uid: MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.Dispose(System.Boolean)
   name: Dispose(bool)
   href: api/MarymoorStudios.Core.Rpc.Identity.StoreCertificateManager.html#MarymoorStudios_Core_Rpc_Identity_StoreCertificateManager_Dispose_System_Boolean_
@@ -13826,12 +14377,6 @@ references:
   commentId: F:MarymoorStudios.Core.Rpc.Identity.UserIdentity.AuthScopeUri
   fullName: MarymoorStudios.Core.Rpc.Identity.UserIdentity.AuthScopeUri
   nameWithType: UserIdentity.AuthScopeUri
-- uid: MarymoorStudios.Core.Rpc.Identity.UserIdentity.AuthenticationId
-  name: AuthenticationId
-  href: api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html#MarymoorStudios_Core_Rpc_Identity_UserIdentity_AuthenticationId
-  commentId: F:MarymoorStudios.Core.Rpc.Identity.UserIdentity.AuthenticationId
-  fullName: MarymoorStudios.Core.Rpc.Identity.UserIdentity.AuthenticationId
-  nameWithType: UserIdentity.AuthenticationId
 - uid: MarymoorStudios.Core.Rpc.Identity.UserIdentity.Claims
   name: Claims
   href: api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html#MarymoorStudios_Core_Rpc_Identity_UserIdentity_Claims
@@ -13844,21 +14389,6 @@ references:
   commentId: Overload:MarymoorStudios.Core.Rpc.Identity.UserIdentity.Claims
   fullName: MarymoorStudios.Core.Rpc.Identity.UserIdentity.Claims
   nameWithType: UserIdentity.Claims
-- uid: MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate(System.String,System.String,System.TimeSpan,System.Int32)
-  name: CreateIdentityCertificate(string, string, TimeSpan, int)
-  href: api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html#MarymoorStudios_Core_Rpc_Identity_UserIdentity_CreateIdentityCertificate_System_String_System_String_System_TimeSpan_System_Int32_
-  commentId: M:MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate(System.String,System.String,System.TimeSpan,System.Int32)
-  name.vb: CreateIdentityCertificate(String, String, TimeSpan, Integer)
-  fullName: MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate(string, string, System.TimeSpan, int)
-  fullName.vb: MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate(String, String, System.TimeSpan, Integer)
-  nameWithType: UserIdentity.CreateIdentityCertificate(string, string, TimeSpan, int)
-  nameWithType.vb: UserIdentity.CreateIdentityCertificate(String, String, TimeSpan, Integer)
-- uid: MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate*
-  name: CreateIdentityCertificate
-  href: api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html#MarymoorStudios_Core_Rpc_Identity_UserIdentity_CreateIdentityCertificate_
-  commentId: Overload:MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate
-  fullName: MarymoorStudios.Core.Rpc.Identity.UserIdentity.CreateIdentityCertificate
-  nameWithType: UserIdentity.CreateIdentityCertificate
 - uid: MarymoorStudios.Core.Rpc.Identity.UserIdentity.Created
   name: Created
   href: api/MarymoorStudios.Core.Rpc.Identity.UserIdentity.html#MarymoorStudios_Core_Rpc_Identity_UserIdentity_Created
@@ -17203,6 +17733,96 @@ references:
   commentId: F:MarymoorStudios.Core.Rpc.SyncMessage.SyncMethodName
   fullName: MarymoorStudios.Core.Rpc.SyncMessage.SyncMethodName
   nameWithType: SyncMessage.SyncMethodName
+- uid: MarymoorStudios.Core.SelectEnumerator`3
+  name: SelectEnumerator<TEnumerator, TSource, TResult>
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html
+  commentId: T:MarymoorStudios.Core.SelectEnumerator`3
+  name.vb: SelectEnumerator(Of TEnumerator, TSource, TResult)
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult)
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult)
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Create(System.ValueTuple{`0,System.Func{`1,`2}})
+  name: Create((TEnumerator Inner, Func<TSource, TResult> Selector))
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Create_System_ValueTuple__0_System_Func__1__2___
+  commentId: M:MarymoorStudios.Core.SelectEnumerator`3.Create(System.ValueTuple{`0,System.Func{`1,`2}})
+  name.vb: Create((Inner As TEnumerator, Selector As Func(Of TSource, TResult)))
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Create((TEnumerator Inner, System.Func<TSource, TResult> Selector))
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Create((Inner As TEnumerator, Selector As System.Func(Of TSource, TResult)))
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Create((TEnumerator Inner, Func<TSource, TResult> Selector))
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Create((Inner As TEnumerator, Selector As Func(Of TSource, TResult)))
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Create*
+  name: Create
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Create_
+  commentId: Overload:MarymoorStudios.Core.SelectEnumerator`3.Create
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Create
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Create
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Create
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Create
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Current
+  name: Current
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Current
+  commentId: P:MarymoorStudios.Core.SelectEnumerator`3.Current
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Current
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Current
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Current
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Current
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Current*
+  name: Current
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Current_
+  commentId: Overload:MarymoorStudios.Core.SelectEnumerator`3.Current
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Current
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Current
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Current
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Current
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Dispose
+  name: Dispose()
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Dispose
+  commentId: M:MarymoorStudios.Core.SelectEnumerator`3.Dispose
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Dispose()
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Dispose()
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Dispose()
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Dispose()
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Dispose*
+  name: Dispose
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Dispose_
+  commentId: Overload:MarymoorStudios.Core.SelectEnumerator`3.Dispose
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Dispose
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Dispose
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Dispose
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Dispose
+- uid: MarymoorStudios.Core.SelectEnumerator`3.MoveNext
+  name: MoveNext()
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_MoveNext
+  commentId: M:MarymoorStudios.Core.SelectEnumerator`3.MoveNext
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.MoveNext()
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).MoveNext()
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.MoveNext()
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).MoveNext()
+- uid: MarymoorStudios.Core.SelectEnumerator`3.MoveNext*
+  name: MoveNext
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_MoveNext_
+  commentId: Overload:MarymoorStudios.Core.SelectEnumerator`3.MoveNext
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.MoveNext
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).MoveNext
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.MoveNext
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).MoveNext
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Reset
+  name: Reset()
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Reset
+  commentId: M:MarymoorStudios.Core.SelectEnumerator`3.Reset
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Reset()
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Reset()
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Reset()
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Reset()
+- uid: MarymoorStudios.Core.SelectEnumerator`3.Reset*
+  name: Reset
+  href: api/MarymoorStudios.Core.SelectEnumerator-3.html#MarymoorStudios_Core_SelectEnumerator_3_Reset_
+  commentId: Overload:MarymoorStudios.Core.SelectEnumerator`3.Reset
+  fullName: MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>.Reset
+  fullName.vb: MarymoorStudios.Core.SelectEnumerator(Of TEnumerator, TSource, TResult).Reset
+  nameWithType: SelectEnumerator<TEnumerator, TSource, TResult>.Reset
+  nameWithType.vb: SelectEnumerator(Of TEnumerator, TSource, TResult).Reset
 - uid: MarymoorStudios.Core.Serialization
   name: MarymoorStudios.Core.Serialization
   href: api/MarymoorStudios.Core.Serialization.html
@@ -77598,6 +78218,31 @@ references:
   fullName.vb: MarymoorStudios.Core.Steamworks.servernetadr.<=
   nameWithType: servernetadr.operator <=
   nameWithType.vb: servernetadr.<=
+- uid: MarymoorStudios.Core.StructEnumerable`3
+  name: StructEnumerable<T, TInit, TEnumerator>
+  href: api/MarymoorStudios.Core.StructEnumerable-3.html
+  commentId: T:MarymoorStudios.Core.StructEnumerable`3
+  name.vb: StructEnumerable(Of T, TInit, TEnumerator)
+  fullName: MarymoorStudios.Core.StructEnumerable<T, TInit, TEnumerator>
+  fullName.vb: MarymoorStudios.Core.StructEnumerable(Of T, TInit, TEnumerator)
+  nameWithType: StructEnumerable<T, TInit, TEnumerator>
+  nameWithType.vb: StructEnumerable(Of T, TInit, TEnumerator)
+- uid: MarymoorStudios.Core.StructEnumerable`3.GetEnumerator
+  name: GetEnumerator()
+  href: api/MarymoorStudios.Core.StructEnumerable-3.html#MarymoorStudios_Core_StructEnumerable_3_GetEnumerator
+  commentId: M:MarymoorStudios.Core.StructEnumerable`3.GetEnumerator
+  fullName: MarymoorStudios.Core.StructEnumerable<T, TInit, TEnumerator>.GetEnumerator()
+  fullName.vb: MarymoorStudios.Core.StructEnumerable(Of T, TInit, TEnumerator).GetEnumerator()
+  nameWithType: StructEnumerable<T, TInit, TEnumerator>.GetEnumerator()
+  nameWithType.vb: StructEnumerable(Of T, TInit, TEnumerator).GetEnumerator()
+- uid: MarymoorStudios.Core.StructEnumerable`3.GetEnumerator*
+  name: GetEnumerator
+  href: api/MarymoorStudios.Core.StructEnumerable-3.html#MarymoorStudios_Core_StructEnumerable_3_GetEnumerator_
+  commentId: Overload:MarymoorStudios.Core.StructEnumerable`3.GetEnumerator
+  fullName: MarymoorStudios.Core.StructEnumerable<T, TInit, TEnumerator>.GetEnumerator
+  fullName.vb: MarymoorStudios.Core.StructEnumerable(Of T, TInit, TEnumerator).GetEnumerator
+  nameWithType: StructEnumerable<T, TInit, TEnumerator>.GetEnumerator
+  nameWithType.vb: StructEnumerable(Of T, TInit, TEnumerator).GetEnumerator
 - uid: MarymoorStudios.Core.UpgradableLockScope
   name: UpgradableLockScope
   href: api/MarymoorStudios.Core.UpgradableLockScope.html
@@ -77652,6 +78297,96 @@ references:
   commentId: Overload:MarymoorStudios.Core.WaitHandleExtensions.WaitOneAsync
   fullName: MarymoorStudios.Core.WaitHandleExtensions.WaitOneAsync
   nameWithType: WaitHandleExtensions.WaitOneAsync
+- uid: MarymoorStudios.Core.WhereEnumerator`2
+  name: WhereEnumerator<TEnumerator, TSource>
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html
+  commentId: T:MarymoorStudios.Core.WhereEnumerator`2
+  name.vb: WhereEnumerator(Of TEnumerator, TSource)
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource)
+  nameWithType: WhereEnumerator<TEnumerator, TSource>
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource)
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Create(System.ValueTuple{`0,System.Func{`1,System.Boolean}})
+  name: Create((TEnumerator Inner, Func<TSource, bool> Predicate))
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Create_System_ValueTuple__0_System_Func__1_System_Boolean___
+  commentId: M:MarymoorStudios.Core.WhereEnumerator`2.Create(System.ValueTuple{`0,System.Func{`1,System.Boolean}})
+  name.vb: Create((Inner As TEnumerator, Predicate As Func(Of TSource, Boolean)))
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Create((TEnumerator Inner, System.Func<TSource, bool> Predicate))
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Create((Inner As TEnumerator, Predicate As System.Func(Of TSource, Boolean)))
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Create((TEnumerator Inner, Func<TSource, bool> Predicate))
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Create((Inner As TEnumerator, Predicate As Func(Of TSource, Boolean)))
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Create*
+  name: Create
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Create_
+  commentId: Overload:MarymoorStudios.Core.WhereEnumerator`2.Create
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Create
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Create
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Create
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Create
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Current
+  name: Current
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Current
+  commentId: P:MarymoorStudios.Core.WhereEnumerator`2.Current
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Current
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Current
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Current
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Current
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Current*
+  name: Current
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Current_
+  commentId: Overload:MarymoorStudios.Core.WhereEnumerator`2.Current
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Current
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Current
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Current
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Current
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Dispose
+  name: Dispose()
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Dispose
+  commentId: M:MarymoorStudios.Core.WhereEnumerator`2.Dispose
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Dispose()
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Dispose()
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Dispose()
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Dispose()
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Dispose*
+  name: Dispose
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Dispose_
+  commentId: Overload:MarymoorStudios.Core.WhereEnumerator`2.Dispose
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Dispose
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Dispose
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Dispose
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Dispose
+- uid: MarymoorStudios.Core.WhereEnumerator`2.MoveNext
+  name: MoveNext()
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_MoveNext
+  commentId: M:MarymoorStudios.Core.WhereEnumerator`2.MoveNext
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.MoveNext()
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).MoveNext()
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.MoveNext()
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).MoveNext()
+- uid: MarymoorStudios.Core.WhereEnumerator`2.MoveNext*
+  name: MoveNext
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_MoveNext_
+  commentId: Overload:MarymoorStudios.Core.WhereEnumerator`2.MoveNext
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.MoveNext
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).MoveNext
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.MoveNext
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).MoveNext
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Reset
+  name: Reset()
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Reset
+  commentId: M:MarymoorStudios.Core.WhereEnumerator`2.Reset
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Reset()
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Reset()
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Reset()
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Reset()
+- uid: MarymoorStudios.Core.WhereEnumerator`2.Reset*
+  name: Reset
+  href: api/MarymoorStudios.Core.WhereEnumerator-2.html#MarymoorStudios_Core_WhereEnumerator_2_Reset_
+  commentId: Overload:MarymoorStudios.Core.WhereEnumerator`2.Reset
+  fullName: MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>.Reset
+  fullName.vb: MarymoorStudios.Core.WhereEnumerator(Of TEnumerator, TSource).Reset
+  nameWithType: WhereEnumerator<TEnumerator, TSource>.Reset
+  nameWithType.vb: WhereEnumerator(Of TEnumerator, TSource).Reset
 - uid: MarymoorStudios.Core.WriteLockScope
   name: WriteLockScope
   href: api/MarymoorStudios.Core.WriteLockScope.html

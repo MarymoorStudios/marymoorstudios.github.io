@@ -193,19 +193,19 @@ to the local <a class="xref" href="MarymoorStudios.Core.Promises.Scheduler.html"
 </h2>
 
 
-  <a id="MarymoorStudios_Core_Promises_Runner_WaitHandle_" data-uid="MarymoorStudios.Core.Promises.Runner.WaitHandle*"></a>
+  <a id="MarymoorStudios_Core_Promises_Runner_ValueTask_" data-uid="MarymoorStudios.Core.Promises.Runner.ValueTask*"></a>
 
-  <h3 id="MarymoorStudios_Core_Promises_Runner_WaitHandle" data-uid="MarymoorStudios.Core.Promises.Runner.WaitHandle">
-  WaitHandle
+  <h3 id="MarymoorStudios_Core_Promises_Runner_ValueTask" data-uid="MarymoorStudios.Core.Promises.Runner.ValueTask">
+  ValueTask
   
   </h3>
 
-  <div class="markdown level1 summary"><p>A wait handle for efficient waiting for work.</p>
+  <div class="markdown level1 summary"><p>A value task for efficient waiting for work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract WaitHandle WaitHandle { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract ValueTask ValueTask { get; }</code></pre>
   </div>
 
 
@@ -214,22 +214,22 @@ to the local <a class="xref" href="MarymoorStudios.Core.Promises.Scheduler.html"
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.waithandle">WaitHandle</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
     <dd></dd>
   </dl>
 
 
 
 
-  <h4 class="section" id="MarymoorStudios_Core_Promises_Runner_WaitHandle_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>This wait handle should become signaled when <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a> is likely to produce turns.</p>
+  <h4 class="section" id="MarymoorStudios_Core_Promises_Runner_ValueTask_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This task should become resolved when <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a> is likely to produce turns.</p>
 <p>
-A <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> with a signaled wait handle is consider "runnable" and will be scheduled
-(according to a fair scheduling policy defined by the <a class="xref" href="MarymoorStudios.Core.Promises.Scheduler.html">Scheduler</a> in some order interleaved with
-other runnable <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a>s and other local turns.
+A <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> with a resolved task is considered "runnable" and will be scheduled (according
+to a fair scheduling policy defined by the <a class="xref" href="MarymoorStudios.Core.Promises.Scheduler.html">Scheduler</a> in some order interleaved with other
+runnable <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a>s and other local turns.
 </p>
 <p>
-It is acceptable for <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_WaitHandle">WaitHandle</a> to over-signal (i.e. to become signaled even when
+It is acceptable for <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_ValueTask">ValueTask</a> to over-signal (i.e. to become signaled even when
 <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a> does NOT have work to do), but it MUST never be under-signaled (i.e. it MUST become
 signaled whenever <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_Run">Run()</a> DOES have work to do).  Under-signaled <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a>s will not be
 properly scheduled by the <a class="xref" href="MarymoorStudios.Core.Promises.Scheduler.html">Scheduler</a>.
@@ -350,9 +350,9 @@ resources (i.e. in finalizer).</p>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if this <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> is still &quot;runnable&quot; after this call returns (and so should be
-scheduled again without waiting for <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_WaitHandle">WaitHandle</a> to become signaled).  False if this
+scheduled again without waiting for <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_ValueTask">ValueTask</a> to become signaled).  False if this
 <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html">Runner</a> is no longer &quot;runnable&quot; (has completed all pending work) and shouldn't be scheduled
-again until its <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_WaitHandle">WaitHandle</a> becomes signaled once again.</p>
+again until its <a class="xref" href="MarymoorStudios.Core.Promises.Runner.html#MarymoorStudios_Core_Promises_Runner_ValueTask">ValueTask</a> becomes signaled once again.</p>
 </dd>
   </dl>
 

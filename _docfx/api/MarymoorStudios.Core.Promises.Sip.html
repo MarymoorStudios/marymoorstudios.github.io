@@ -152,23 +152,24 @@ Class Sip
 
   <h2 id="MarymoorStudios_Core_Promises_Sip_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-A Software Isolated Process (SIP) is a single-threaded container that logically encapsulates a
-collection of concurrent (but not parallel) activities.  A SIP may only execute on a single thread at a time,
-but at certain points (aka top-of-turn) it can be moved between threads (as all program state is known to be
-in the heap).
-</p>
-<p>
-Being single-threaded, all computation within a SIP does not need locks, and is free from race
-conditions.
-</p>
-<p>
-Computations running within a SIP can communicate with other SIP, either in the same process, in
-another process on the same machine, or on another machine, by using non-blocking Remote Procedure Calls
-(such as through Promise-based RPC).
-</p>
-<p>
-Once created, a SIP can be run until either: <ol><li>The completion of a root computation (e.g. an AsyncMain function).</li><li>The SIP's progress is blocked on IO (including timers).</li></ol>
-
+            A Software Isolated Process (SIP) is a single-threaded container that logically encapsulates a
+            collection of concurrent (but not parallel) activities.  A SIP may only execute on a single thread at a time,
+            but at certain points (aka top-of-turn) it can be moved between threads (as all program state is known to be
+            in the heap).
+            </p>
+            <p>
+            Being single-threaded, all computation within a SIP does not need locks, and is free from race
+            conditions.
+            </p>
+            <p>
+            Computations running within a SIP can communicate with other SIP, either in the same process, in
+            another process on the same machine, or on another machine, by using non-blocking Remote Procedure Calls
+            (such as through Promise-based RPC).
+            </p>
+            <p>
+            Once created, a SIP can be run until either: 
+<ol><li>The completion of a root computation (e.g. an AsyncMain function).</li><li>The SIP's progress is blocked on IO (including timers).</li></ol>
+            
 </div>
 
 
@@ -230,6 +231,52 @@ Once created, a SIP can be run until either: <ol><li>The completion of a root co
   </dl>
 
 
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_Sip_CreateAndRunAsync_" data-uid="MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Sip_CreateAndRunAsync__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__" data-uid="MarymoorStudios.Core.Promises.Sip.CreateAndRunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})">
+  CreateAndRunAsync&lt;TArgs&gt;(TArgs, Func&lt;TArgs, Promise&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a sip, run it to completion on the current thread, and then dispose it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task CreateAndRunAsync&lt;TArgs&gt;(TArgs args, Func&lt;TArgs, Promise&gt; asyncMain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">TArgs</span></dt>
+    <dd><p>The arguments to the root computation.</p>
+</dd>
+    <dt><code>asyncMain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TArgs, <a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a>&gt;</dt>
+    <dd><p>The root computation.  See <a class="xref" href="MarymoorStudios.Core.Promises.Sip.html#MarymoorStudios_Core_Promises_Sip_Run_System_Func_MarymoorStudios_Core_Promises_Promise__">Run(Func&lt;Promise&gt;)</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArgs</code></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -385,6 +432,56 @@ Once created, a SIP can be run until either: <ol><li>The completion of a root co
 
 
   <h4 class="section" id="MarymoorStudios_Core_Promises_Sip_Run_System_Func_MarymoorStudios_Core_Promises_Promise___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All computation within the SIP should be rolled up hierarchically into the return value of
+<code class="paramref">asyncMain</code>.</p>
+</div>
+
+
+
+
+  <a id="MarymoorStudios_Core_Promises_Sip_RunAsync_" data-uid="MarymoorStudios.Core.Promises.Sip.RunAsync*"></a>
+
+  <h3 id="MarymoorStudios_Core_Promises_Sip_RunAsync__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise__" data-uid="MarymoorStudios.Core.Promises.Sip.RunAsync``1(``0,System.Func{``0,MarymoorStudios.Core.Promises.Promise})">
+  RunAsync&lt;TArgs&gt;(TArgs, Func&lt;TArgs, Promise&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Run until the root computation <code class="paramref">asyncMain</code> has completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunAsync&lt;TArgs&gt;(TArgs args, Func&lt;TArgs, Promise&gt; asyncMain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">TArgs</span></dt>
+    <dd><p>The arguments to the root computation.</p>
+</dd>
+    <dt><code>asyncMain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TArgs, <a class="xref" href="MarymoorStudios.Core.Promises.Promise.html">Promise</a>&gt;</dt>
+    <dd><p>The root computation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TArgs</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MarymoorStudios_Core_Promises_Sip_RunAsync__1___0_System_Func___0_MarymoorStudios_Core_Promises_Promise___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>All computation within the SIP should be rolled up hierarchically into the return value of
 <code class="paramref">asyncMain</code>.</p>
 </div>

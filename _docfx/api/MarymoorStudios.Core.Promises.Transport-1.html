@@ -268,7 +268,7 @@ successfully started.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract WaitHandle ConsumerEvent { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract ValueTask ConsumerEvent { get; }</code></pre>
   </div>
 
 
@@ -277,7 +277,7 @@ successfully started.
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.waithandle">WaitHandle</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
     <dd></dd>
   </dl>
 
@@ -304,7 +304,7 @@ the caller should read the queue to completion before waiting on this event.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract WaitHandle ProducerEvent { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract ValueTask ProducerEvent { get; }</code></pre>
   </div>
 
 
@@ -313,7 +313,7 @@ the caller should read the queue to completion before waiting on this event.</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.waithandle">WaitHandle</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
     <dd></dd>
   </dl>
 

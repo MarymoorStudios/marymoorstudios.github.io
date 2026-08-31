@@ -386,28 +386,29 @@ side increasing costs in memory, CPU, and kernel transitions.
 
   <h4 class="section" id="MarymoorStudios_Core_Rpc_Net_TcpFactoryConfig_RingCapacity_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>
-The buffers are used to pipeline transitions between IO completion threads and the Sip-thread for the
-<span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> they are servicing.
-</p>
-<p>
-If this value is <b>too small</b>: <ul><li><span class="term">Sending</span>
-The <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> will stall more often and be forced to buffer outgoing messages in
-its own queue leading potentially to increased GC memory usage and additional send latency.
-</li><li><span class="term">Receiving</span>
-IO completion threads will stall more often and be forced to provide network backpressure
-impacting network transmission speeds.
-</li></ul>
-
-<p>
-If this value is <b>too large</b> then buffer memory will be wasted for each <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span>.
-Buffer capacity is a fixed allocation with the same lifetime as the <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span>.
-</p>
-<p>
-Ideally this value matches the maximum number of messages in flight in either direction
-<b>under normal operating conditions</b>. When these conditions are exceeded then stalling is the best
-responses for the system and the network providing backpressure to slow production in either direction to
-avoid resource exhaustion.
-</p>
+            The buffers are used to pipeline transitions between IO completion threads and the Sip-thread for the
+            <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> they are servicing.
+            </p>
+            <p>
+            If this value is <b>too small</b>: 
+<ul><li><span class="term">Sending</span>
+            The <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span> will stall more often and be forced to buffer outgoing messages in
+            its own queue leading potentially to increased GC memory usage and additional send latency.
+            </li><li><span class="term">Receiving</span>
+            IO completion threads will stall more often and be forced to provide network backpressure
+            impacting network transmission speeds.
+            </li></ul>
+            
+            <p>
+            If this value is <b>too large</b> then buffer memory will be wasted for each <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span>.
+            Buffer capacity is a fixed allocation with the same lifetime as the <span class="xref">MarymoorStudios.Core.Rpc.CommChannel</span>.
+            </p>
+            <p>
+            Ideally this value matches the maximum number of messages in flight in either direction
+            <b>under normal operating conditions</b>. When these conditions are exceeded then stalling is the best
+            responses for the system and the network providing backpressure to slow production in either direction to
+            avoid resource exhaustion.
+            </p>
 </div>
 
 
