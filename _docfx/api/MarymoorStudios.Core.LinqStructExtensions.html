@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LinqStructExtensions </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LinqStructExtensions ">
+      
+      
+      <link rel="icon" href="../logo.svg">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="https://marymoorstudios.com">
+            <img id="logo" class="svg" src="../logo.svg" alt="Marymoor Studios Core">
+            Marymoor Studios Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MarymoorStudios.Core.LinqStructExtensions">
+
+
+
+  <h1 id="MarymoorStudios_Core_LinqStructExtensions" data-uid="MarymoorStudios.Core.LinqStructExtensions" class="text-break">
+Class LinqStructExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MarymoorStudios.html">MarymoorStudios</a>.<a class="xref" href="MarymoorStudios.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MarymoorStudios.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LinqStructExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LinqStructExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Any_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Any*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Any__3_MarymoorStudios_Core_StructEnumerable___1___2___0__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})">
+  Any&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Any&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Any_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Any*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Any__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Any``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})">
+  Any&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Func&lt;TSource, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Any&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Func&lt;TSource, bool&gt; predicate) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Contains_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Contains*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Contains__3_MarymoorStudios_Core_StructEnumerable___1___2___0____1_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1)">
+  Contains&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, TSource)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, TSource x) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>x</code> <span class="xref">TSource</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Contains_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Contains*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Contains__3_MarymoorStudios_Core_StructEnumerable___1___2___0____1_System_Collections_Generic_EqualityComparer___1__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Contains``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},``1,System.Collections.Generic.EqualityComparer{``1})">
+  Contains&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, TSource, EqualityComparer&lt;TSource&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, TSource x, EqualityComparer&lt;TSource&gt; comparer) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>x</code> <span class="xref">TSource</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.equalitycomparer-1">EqualityComparer</a>&lt;TSource&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Count_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Count*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Count__3_MarymoorStudios_Core_StructEnumerable___1___2___0__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Count``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})">
+  Count&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Count&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault_" data-uid="MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault__3_MarymoorStudios_Core_StructEnumerable___1___2___0__" data-uid="MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})">
+  FirstOrDefault&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource? FirstOrDefault&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TSource</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault_" data-uid="MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_FirstOrDefault__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__" data-uid="MarymoorStudios.Core.LinqStructExtensions.FirstOrDefault``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})">
+  FirstOrDefault&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Func&lt;TSource, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource? FirstOrDefault&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Func&lt;TSource, bool&gt; predicate) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TSource</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_First_" data-uid="MarymoorStudios.Core.LinqStructExtensions.First*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_First__3_MarymoorStudios_Core_StructEnumerable___1___2___0__" data-uid="MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})">
+  First&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource First&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TSource</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_First_" data-uid="MarymoorStudios.Core.LinqStructExtensions.First*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_First__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__" data-uid="MarymoorStudios.Core.LinqStructExtensions.First``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})">
+  First&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Func&lt;TSource, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource First&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Func&lt;TSource, bool&gt; predicate) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TSource</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_ForEach_" data-uid="MarymoorStudios.Core.LinqStructExtensions.ForEach*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_ForEach__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Action___1__" data-uid="MarymoorStudios.Core.LinqStructExtensions.ForEach``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Action{``1})">
+  ForEach&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Action&lt;TSource&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Action&lt;TSource&gt; action) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TSource&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Select_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Select*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Select__4_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1___3__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Select``4(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,``3})">
+  Select&lt;TEnumerator, TSource, TInit, TResult&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Func&lt;TSource, TResult&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StructEnumerable&lt;TResult, (TEnumerator Inner, Func&lt;TSource, TResult&gt; Selector), SelectEnumerator&lt;TEnumerator, TSource, TResult&gt;&gt; Select&lt;TEnumerator, TSource, TInit, TResult&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Func&lt;TSource, TResult&gt; selector) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TResult, (TEnumerator <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.func---1,--3--.inner">Inner</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, TResult&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.func---1,--3--.selector">Selector</a>), <a class="xref" href="MarymoorStudios.Core.SelectEnumerator-3.html">SelectEnumerator</a>&lt;TEnumerator, TSource, TResult&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_ToArray_" data-uid="MarymoorStudios.Core.LinqStructExtensions.ToArray*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_ToArray__3_MarymoorStudios_Core_StructEnumerable___1___2___0__" data-uid="MarymoorStudios.Core.LinqStructExtensions.ToArray``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0})">
+  ToArray&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSource[] ToArray&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TSource[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="MarymoorStudios_Core_LinqStructExtensions_Where_" data-uid="MarymoorStudios.Core.LinqStructExtensions.Where*"></a>
+
+  <h3 id="MarymoorStudios_Core_LinqStructExtensions_Where__3_MarymoorStudios_Core_StructEnumerable___1___2___0__System_Func___1_System_Boolean__" data-uid="MarymoorStudios.Core.LinqStructExtensions.Where``3(MarymoorStudios.Core.StructEnumerable{``1,``2,``0},System.Func{``1,System.Boolean})">
+  Where&lt;TEnumerator, TSource, TInit&gt;(StructEnumerable&lt;TSource, TInit, TEnumerator&gt;, Func&lt;TSource, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StructEnumerable&lt;TSource, (TEnumerator Inner, Func&lt;TSource, bool&gt; Predicate), WhereEnumerator&lt;TEnumerator, TSource&gt;&gt; Where&lt;TEnumerator, TSource, TInit&gt;(this StructEnumerable&lt;TSource, TInit, TEnumerator&gt; source, Func&lt;TSource, bool&gt; predicate) where TEnumerator : struct, IStructEnumerator&lt;TSource, TEnumerator&gt;, IStructEnumeratorActivator&lt;TSource, TInit, TEnumerator&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, TInit, TEnumerator&gt;</dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MarymoorStudios.Core.StructEnumerable-3.html">StructEnumerable</a>&lt;TSource, (TEnumerator <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.func---1,system.boolean--.inner">Inner</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TSource, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple---0,system.func---1,system.boolean--.predicate">Predicate</a>), <a class="xref" href="MarymoorStudios.Core.WhereEnumerator-2.html">WhereEnumerator</a>&lt;TEnumerator, TSource&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnumerator</code></dt>
+    <dd></dd>
+    <dt><code>TSource</code></dt>
+    <dd></dd>
+    <dt><code>TInit</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

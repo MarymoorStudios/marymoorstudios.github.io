@@ -124,6 +124,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.EnumExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.EnumExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.EnumTraits-1.yml",
       "output": {
         ".html": {
@@ -614,6 +628,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.IStructEnumerable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.IStructEnumerable-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.IStructEnumerable<T, TEnumerator>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.IStructEnumerable-2.yml\" sourcestartlinenumber=\"1\">Exposes the enumerator, which supports a simple iteration over a collection of a specified type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.IStructEnumerator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.IStructEnumerator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.IStructEnumerator<T, TEnumerator>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.IStructEnumerator-2.yml\" sourcestartlinenumber=\"1\">Non-allocating enumerator for numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.IStructEnumeratorActivator-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.IStructEnumeratorActivator-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.IStructEnumeratorActivator<T, TInit, TEnumerator>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.IStructEnumeratorActivator-3.yml\" sourcestartlinenumber=\"1\">Non-allocating enumerator for numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.Linear.yml",
       "output": {
         ".html": {
@@ -638,6 +694,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.LinqExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.LinqStructExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.LinqStructExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.LinqStructExtensions",
       "Summary": null
     },
     {
@@ -684,6 +754,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.NumericExtensions.RangeEnumerator<T>",
+      "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.NumericExtensions.RangeEnumerator-1.yml\" sourcestartlinenumber=\"1\">Non-allocating enumerator for numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.NumericExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.NumericExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.NumericExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.OwnedMem-1.yml",
       "output": {
         ".html": {
@@ -723,6 +821,20 @@
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Promises.AutoResetEventAsync",
       "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.Promises.AutoResetEventAsync.yml\" sourcestartlinenumber=\"1\">An eventual auto-reset event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.Promises.AutoResetValueTaskSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.Promises.AutoResetValueTaskSource",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -2976,6 +3088,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.Rpc",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.SelectEnumerator-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.SelectEnumerator-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.SelectEnumerator<TEnumerator, TSource, TResult>",
       "Summary": null
     },
     {
@@ -11898,6 +12024,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.StructEnumerable-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.StructEnumerable-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.StructEnumerable<T, TInit, TEnumerator>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MarymoorStudios.Core.UpgradableLockScope.yml",
       "output": {
         ".html": {
@@ -11923,6 +12063,20 @@
       "IsMRef": true,
       "Title": "MarymoorStudios.Core.WaitHandleExtensions",
       "Summary": "<p sourcefile=\"api/MarymoorStudios.Core.WaitHandleExtensions.yml\" sourcestartlinenumber=\"1\">Extensions to the standard <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MarymoorStudios.Core.WhereEnumerator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MarymoorStudios.Core.WhereEnumerator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MarymoorStudios.Core.WhereEnumerator<TEnumerator, TSource>",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

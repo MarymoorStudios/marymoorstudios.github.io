@@ -262,6 +262,39 @@ units/sec).  A value of <code>0</code> means the limiter will never refill after
 
 
 
+  <a id="MarymoorStudios_Core_BucketRateLimiter_RefreshRate_" data-uid="MarymoorStudios.Core.BucketRateLimiter.RefreshRate*"></a>
+
+  <h3 id="MarymoorStudios_Core_BucketRateLimiter_RefreshRate" data-uid="MarymoorStudios.Core.BucketRateLimiter.RefreshRate">
+  RefreshRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time it takes to refresh one unit (e.g., TimeSpan.FromMilliseconds(200) means 5 units/sec).  A
+value of <code>0</code> means the limiter will never refill after any initial tokens are exhausted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan RefreshRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 

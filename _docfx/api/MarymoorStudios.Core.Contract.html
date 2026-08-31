@@ -104,7 +104,8 @@ the error, and will throw a ContractViolationException.</p>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Contract</code></pre>
+    <pre><code class="lang-csharp hljs">[ExcludeFromCodeCoverage]
+public static class Contract</code></pre>
   </div>
 
 
@@ -320,7 +321,8 @@ public static void Assert(bool condition, string message)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Fail()</code></pre>
+    <pre><code class="lang-csharp hljs">[DoesNotReturn]
+public static void Fail()</code></pre>
   </div>
 
 
@@ -346,7 +348,8 @@ public static void Assert(bool condition, string message)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Fail(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">[DoesNotReturn]
+public static void Fail(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -377,7 +380,8 @@ public static void Assert(bool condition, string message)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Exception FailThrow(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">[DoesNotReturn]
+public static Exception FailThrow(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
